@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Market xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="CH.mkt" InternalName="Switzerland">
+  <Version Major="3" Minor="8" DataVersion="1"/>
+  <Preferences>
+    <Pref ID="UseUCL" Type="Boolean" DefaultValue="0"/>
+    <Pref ID="MuteHIWhenFitting" Type="Boolean" DefaultValue="1"/>
+    <Pref ID="BASS" Type="Enum" DefaultValue="P1AsBasic"/>
+    <Pref ID="BASS3" Type="Enum" DefaultValue="P1AsNaturalDirectionality"/>
+    <Pref ID="CommDevices" Type="Enum" DefaultValue="FittingDongle:0"/>
+    <Pref ID="ExperienceLevel" Type="Enum" DefaultValue="ComfortUser"/>
+    <Pref ID="Language" Type="Enum" DefaultValue="de-DE"/>
+    <Pref ID="PediatricTargetRule" Type="Enum" DefaultValue="6"/>
+    <Pref ID="PinCode" Type="Int" DefaultValue="0"/>
+    <Pref ID="SpecType" Type="Enum" DefaultValue="IEC118_0"/>
+    <Pref ID="UpdatesCheckOnSchedule" Type="Boolean" DefaultValue="1"/>
+    <Pref ID="UpdatesFrequency" Type="Enum" DefaultValue="OneWeek"/>
+    <Pref ID="UseBoneConduction" Type="Boolean" DefaultValue="0"/>
+    <Pref ID="WebLaunchSite" Type="String" DefaultValue="www.gnresound.ch"/>
+    <Pref ID="FrequentEnvironments2" Type="Enum" DefaultValue="None"/>
+    <Pref ID="SupportThreeGainHandles" Type="Boolean" DefaultValue="0"/>
+  </Preferences>
+</Market>

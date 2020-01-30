@@ -1,0 +1,139 @@
+<Counseling xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <VideoPresenters>
+    <VideoPresenter VideoName="ReSound_480x480_FeatureDemo_BASS4_002.wmv">
+      <Explanations>
+        <Explanation Header="8683" Text="8681" />
+      </Explanations>
+    </VideoPresenter>
+    <VideoPresenter VideoName="ReSound_480x480_FeatureDemo_SHL_001.wmv">
+      <Explanations>
+        <Explanation Header="8578" Text="8807" />
+      </Explanations>
+    </VideoPresenter>
+    <VideoPresenter VideoName="ReSound_480x480_FeatureDemo_TSG Natural Sounds_002.wmv">
+      <Explanations>
+        <Explanation Header="8684" Text="8682" />
+      </Explanations>
+    </VideoPresenter>
+    <VideoPresenter VideoName="ReSound_480x480_FeatureDemo_Accessories_MFI_004.wmv">
+      <Explanations>
+        <Explanation Header="8834" Text="8844" />
+      </Explanations>
+    </VideoPresenter>
+    <VideoPresenter VideoName="ReSound_480x480_FeatureDemo18_DeviceToDevice_003.wmv">
+      <Explanations>
+        <Explanation Header="8391" Text="8554" />
+      </Explanations>
+    </VideoPresenter>
+    <VideoPresenter VideoName="ReSound_480x480_FeatureDemo01_BinDir_002.wmv">
+      <Explanations>
+        <Explanation Header="6946" Text="8380" />
+      </Explanations>
+    </VideoPresenter>
+    <VideoPresenter VideoName="ReSound_480x480_FeatureDemo02_NaturalDir_002.wmv">
+      <Explanations>
+        <Explanation Header="291" Text="8381" />
+      </Explanations>
+    </VideoPresenter>
+    <VideoPresenter VideoName="ReSound_480x480_FeatureDemo04_DirMix_003.wmv">
+      <Explanations>
+        <Explanation Header="8392" Text="8556" />
+      </Explanations>
+    </VideoPresenter>
+    <VideoPresenter VideoName="ReSound_480x480_FeatureDemo05_ABWA_003.wmv">
+      <Explanations>
+        <Explanation Header="3660" Text="8383" />
+      </Explanations>
+    </VideoPresenter>
+    <VideoPresenter VideoName="ReSound_480x480_FeatureDemo09_DFS_Ultra_003.wmv">
+      <Explanations>
+        <Explanation Header="6971" Text="8387" />
+      </Explanations>
+    </VideoPresenter>
+    <VideoPresenter VideoName="ReSound_480x480_FeatureDemo09_DFS_Ultra_003.wmv">
+      <Explanations>
+        <Explanation Header="8139" Text="8557" />
+      </Explanations>
+    </VideoPresenter>
+    <VideoPresenter VideoName="ReSound_480x480_FeatureDemo09_DFS_Ultra_003.wmv">
+      <Explanations>
+        <Explanation Header="6160" Text="8812" />
+      </Explanations>
+    </VideoPresenter>
+    <VideoPresenter VideoName="ReSound_480x480_FeatureDemo06_NoiseReduction_003.wmv">
+      <Explanations>
+        <Explanation Header="8393" Text="8384" />
+      </Explanations>
+    </VideoPresenter>
+    <VideoPresenter VideoName="ReSound_480x480_FeatureDemo06_NoiseReduction_003.wmv">
+      <Explanations>
+        <Explanation Header="6247" Text="8813" />
+      </Explanations>
+    </VideoPresenter>
+    <VideoPresenter VideoName="ReSound_480x480_FeatureDemo07_WNR_003.wmv">
+      <Explanations>
+        <Explanation Header="5704" Text="8385" />
+      </Explanations>
+    </VideoPresenter>
+    <VideoPresenter VideoName="ReSound_480x480_FeatureDemo08_Expansion_002.wmv">
+      <Explanations>
+        <Explanation Header="236" Text="8386" />
+      </Explanations>
+    </VideoPresenter>
+    <VideoPresenter VideoName="ReSound_480x480_FeatureDemo13_LowFrequencyBoost_003.wmv">
+      <Explanations>
+        <Explanation Header="8376" Text="8389" />
+      </Explanations>
+    </VideoPresenter>
+    <VideoPresenter VideoName="ReSound_480x480_FeatureDemo03_EVFT2_005.wmv">
+      <Explanations>
+        <Explanation Header="8394" Text="8382" />
+      </Explanations>
+    </VideoPresenter>
+    <VideoPresenter VideoName="ReSound_480x480_FeatureDemo12_SoundShaper_002.wmv">
+      <Explanations>
+        <Explanation Header="7905" Text="8388" />
+      </Explanations>
+    </VideoPresenter>
+    <VideoPresenter VideoName="ReSound_480x480_FeatureDemo15_AcceptanceManager_003.wmv">
+      <Explanations>
+        <Explanation Header="7917" Text="8390" />
+      </Explanations>
+    </VideoPresenter>
+    <VideoPresenter VideoName="ReSound_480x480_FeatureDemo25_PhoneNowComfortPhone_005.wmv">
+      <Explanations>
+        <Explanation Header="8740" Text="8809" />
+      </Explanations>
+    </VideoPresenter>
+    <VideoPresenter VideoName="ReSound_480x480_FeatureDemo24_PhoneNow_003.wmv">
+      <Explanations>
+        <Explanation Header="8810" Text="8811" />
+      </Explanations>
+    </VideoPresenter>
+    <VideoPresenter VideoName="ReSound_480x480_FeatureDemo17_StreamerBassBoost_001.wmv">
+      <Explanations>
+        <Explanation Header="5543" Text="8553" />
+      </Explanations>
+    </VideoPresenter>
+    <VideoPresenter VideoName="ReSound_480x480_FeatureDemo_Accessories_TV_004.wmv">
+      <Explanations>
+        <Explanation Header="8835" Text="8845" />
+      </Explanations>
+    </VideoPresenter>
+    <VideoPresenter VideoName="ReSound_480x480_FeatureDemo_Accessories_SM_004.wmv">
+      <Explanations>
+        <Explanation Header="8836" Text="8846" />
+      </Explanations>
+    </VideoPresenter>
+    <VideoPresenter VideoName="ReSound_480x480_FeatureDemo_Accessories_PC_004.wmv">
+      <Explanations>
+        <Explanation Header="8837" Text="8847" />
+      </Explanations>
+    </VideoPresenter>
+    <VideoPresenter VideoName="ReSound_480x480_FeatureDemo_Accessories_RC_004.wmv">
+      <Explanations>
+        <Explanation Header="8838" Text="8848" />
+      </Explanations>
+    </VideoPresenter>
+  </VideoPresenters>
+</Counseling>

@@ -1,0 +1,349 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.5">
+  <file original="english.txt" source-language="en-US" target-language="ru-RU" datatype="plaintext" category="brand" codepage="1251" language-version="1.7">
+    <body>
+      <trans-unit approved="no" id="3" xml:space="preserve">
+        <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="01/01/0001">French (Standard)</source>
+        <target xml:lang="ru-RU" state="translated" LastModifiedDate="01/01/0001">Французский (стандарт)</target>
+      </trans-unit>
+      <trans-unit approved="no" id="820" xml:space="preserve">
+        <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="01/01/0001">Default Language:</source>
+        <target xml:lang="ru-RU" state="translated" LastModifiedDate="01/01/0001">Язык (по умолчанию):</target>
+      </trans-unit>
+      <trans-unit approved="no" id="821" xml:space="preserve">
+        <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="01/01/0001">English</source>
+        <target xml:lang="ru-RU" state="translated" LastModifiedDate="01/01/0001">Английский</target>
+      </trans-unit>
+      <trans-unit approved="no" id="2184" xml:space="preserve">
+        <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="01/01/0001">Save</source>
+        <target xml:lang="ru-RU" state="translated" LastModifiedDate="01/01/0001">Сохранить</target>
+      </trans-unit>
+      <trans-unit approved="no" id="2190" xml:space="preserve">
+        <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="01/01/0001">Cancel</source>
+        <target xml:lang="ru-RU" state="translated" LastModifiedDate="01/01/0001">Отменить</target>
+      </trans-unit>
+      <trans-unit approved="no" id="2874" xml:space="preserve">
+        <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="01/01/0001">Close</source>
+        <target xml:lang="ru-RU" state="translated" LastModifiedDate="01/01/0001">Закрыть</target>
+      </trans-unit>
+      <trans-unit approved="no" id="3001" xml:space="preserve">
+        <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="01/01/0001">New</source>
+        <target xml:lang="ru-RU" state="translated" LastModifiedDate="01/01/0001">Новый</target>
+      </trans-unit>
+      <trans-unit approved="no" id="3243" xml:space="preserve">
+        <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="01/01/0001">Patient</source>
+        <target xml:lang="ru-RU" state="translated" LastModifiedDate="01/01/0001">Пациент</target>
+      </trans-unit>
+      <trans-unit approved="no" id="3299" xml:space="preserve">
+        <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="01/01/0001">Try Again</source>
+        <target xml:lang="ru-RU" state="translated" LastModifiedDate="01/01/0001">Повторить попытку</target>
+      </trans-unit>
+      <trans-unit approved="no" id="3503" xml:space="preserve">
+        <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="01/01/0001">All</source>
+        <target xml:lang="ru-RU" state="translated" LastModifiedDate="01/01/0001">Все</target>
+      </trans-unit>
+      <trans-unit approved="no" id="3650" xml:space="preserve">
+        <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="01/01/0001">Loading...</source>
+        <target xml:lang="ru-RU" state="translated" LastModifiedDate="01/01/0001">Загружается...</target>
+      </trans-unit>
+      <trans-unit approved="no" id="3698" xml:space="preserve">
+        <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="01/01/0001">State</source>
+        <target xml:lang="ru-RU" state="translated" LastModifiedDate="01/01/0001">Регион</target>
+      </trans-unit>
+      <trans-unit approved="no" id="4098" xml:space="preserve">
+        <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="01/01/0001">Greek</source>
+        <target xml:lang="ru-RU" state="translated" LastModifiedDate="01/01/0001">Греческий</target>
+      </trans-unit>
+      <trans-unit approved="no" id="4099" xml:space="preserve">
+        <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="01/01/0001">Spanish</source>
+        <target xml:lang="ru-RU" state="translated" LastModifiedDate="01/01/0001">Испанский</target>
+      </trans-unit>
+      <trans-unit approved="no" id="4100" xml:space="preserve">
+        <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="01/01/0001">German</source>
+        <target xml:lang="ru-RU" state="translated" LastModifiedDate="01/01/0001">Немецкий</target>
+      </trans-unit>
+      <trans-unit approved="no" id="4101" xml:space="preserve">
+        <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="01/01/0001">Danish</source>
+        <target xml:lang="ru-RU" state="translated" LastModifiedDate="01/01/0001">Датский</target>
+      </trans-unit>
+      <trans-unit approved="no" id="4102" xml:space="preserve">
+        <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="01/01/0001">Finnish</source>
+        <target xml:lang="ru-RU" state="translated" LastModifiedDate="01/01/0001">Финский</target>
+      </trans-unit>
+      <trans-unit approved="no" id="4103" xml:space="preserve">
+        <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="01/01/0001">Italian</source>
+        <target xml:lang="ru-RU" state="translated" LastModifiedDate="01/01/0001">Итальянский</target>
+      </trans-unit>
+      <trans-unit approved="no" id="4104" xml:space="preserve">
+        <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="01/01/0001">Dutch</source>
+        <target xml:lang="ru-RU" state="translated" LastModifiedDate="01/01/0001">Голландский</target>
+      </trans-unit>
+      <trans-unit approved="no" id="4105" xml:space="preserve">
+        <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="01/01/0001">Swedish</source>
+        <target xml:lang="ru-RU" state="translated" LastModifiedDate="01/01/0001">Шведский</target>
+      </trans-unit>
+      <trans-unit approved="no" id="4106" xml:space="preserve">
+        <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="01/01/0001">Norwegian</source>
+        <target xml:lang="ru-RU" state="translated" LastModifiedDate="01/01/0001">Норвежский</target>
+      </trans-unit>
+      <trans-unit approved="no" id="4107" xml:space="preserve">
+        <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="01/01/0001">Chinese</source>
+        <target xml:lang="ru-RU" state="translated" LastModifiedDate="01/01/0001">Китайский</target>
+      </trans-unit>
+      <trans-unit approved="no" id="4108" xml:space="preserve">
+        <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="01/01/0001">Portuguese</source>
+        <target xml:lang="ru-RU" state="translated" LastModifiedDate="01/01/0001">Португальский</target>
+      </trans-unit>
+      <trans-unit approved="no" id="4109" xml:space="preserve">
+        <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="01/01/0001">Polish</source>
+        <target xml:lang="ru-RU" state="translated" LastModifiedDate="01/01/0001">Польский</target>
+      </trans-unit>
+      <trans-unit approved="no" id="4110" xml:space="preserve">
+        <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="01/01/0001">Japanese</source>
+        <target xml:lang="ru-RU" state="translated" LastModifiedDate="01/01/0001">Японский</target>
+      </trans-unit>
+      <trans-unit approved="no" id="4111" xml:space="preserve">
+        <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="01/01/0001">Czech</source>
+        <target xml:lang="ru-RU" state="translated" LastModifiedDate="01/01/0001">Чешский</target>
+      </trans-unit>
+      <trans-unit approved="no" id="4112" xml:space="preserve">
+        <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="01/01/0001">Hungarian</source>
+        <target xml:lang="ru-RU" state="translated" LastModifiedDate="01/01/0001">Венгерский</target>
+      </trans-unit>
+      <trans-unit approved="no" id="4113" xml:space="preserve">
+        <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="01/01/0001">Korean</source>
+        <target xml:lang="ru-RU" state="translated" LastModifiedDate="01/01/0001">Корейский</target>
+      </trans-unit>
+      <trans-unit approved="no" id="4114" xml:space="preserve">
+        <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="01/01/0001">Russian</source>
+        <target xml:lang="ru-RU" state="translated" LastModifiedDate="01/01/0001">Русский</target>
+      </trans-unit>
+      <trans-unit approved="no" id="4115" xml:space="preserve">
+        <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="01/01/0001">Turkish</source>
+        <target xml:lang="ru-RU" state="translated" LastModifiedDate="01/01/0001">Турецкий</target>
+      </trans-unit>
+      <trans-unit approved="no" id="4117" xml:space="preserve">
+        <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="01/01/0001">Bulgarian</source>
+        <target xml:lang="ru-RU" state="translated" LastModifiedDate="01/01/0001">Болгарский</target>
+      </trans-unit>
+      <trans-unit approved="no" id="4118" xml:space="preserve">
+        <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="01/01/0001">Traditional Chinese</source>
+        <target xml:lang="ru-RU" state="translated" LastModifiedDate="01/01/0001">Традиционный китайский</target>
+      </trans-unit>
+      <trans-unit approved="no" id="4119" xml:space="preserve">
+        <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="01/01/0001">Thai</source>
+        <target xml:lang="ru-RU" state="translated" LastModifiedDate="01/01/0001">Тайский</target>
+      </trans-unit>
+      <trans-unit approved="no" id="4120" xml:space="preserve">
+        <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="01/01/0001">Romanian</source>
+        <target xml:lang="ru-RU" state="translated" LastModifiedDate="01/01/0001">Румынский</target>
+      </trans-unit>
+      <trans-unit approved="no" id="4122" xml:space="preserve">
+        <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="01/01/0001">Hindi</source>
+        <target xml:lang="ru-RU" state="translated" LastModifiedDate="01/01/0001">Хинди</target>
+      </trans-unit>
+      <trans-unit approved="no" id="4993" xml:space="preserve">
+        <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="01/01/0001">Chinese</source>
+        <target xml:lang="ru-RU" state="translated" LastModifiedDate="01/01/0001">Китайский</target>
+      </trans-unit>
+      <trans-unit approved="no" id="4994" xml:space="preserve">
+        <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="01/01/0001">Warning</source>
+        <target xml:lang="ru-RU" state="translated" LastModifiedDate="4/29/2016">Предупреждение</target>
+      </trans-unit>
+      <trans-unit approved="no" id="5502" xml:space="preserve">
+        <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="01/01/0001">Croatian</source>
+        <target xml:lang="ru-RU" state="translated" LastModifiedDate="4/29/2016">Хорватский</target>
+      </trans-unit>
+      <trans-unit approved="no" id="5503" xml:space="preserve">
+        <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="01/01/0001">Slovakian</source>
+        <target xml:lang="ru-RU" state="translated" LastModifiedDate="4/29/2016">Словацкий</target>
+      </trans-unit>
+      <trans-unit approved="no" id="7668" xml:space="preserve">
+        <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="01/01/0001">OK</source>
+        <target xml:lang="ru-RU" state="translated" LastModifiedDate="01/01/0001">Да</target>
+      </trans-unit>
+      <trans-unit approved="no" id="7820" xml:space="preserve">
+        <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="01/01/0001">Read</source>
+        <target xml:lang="ru-RU" state="translated" LastModifiedDate="01/01/0001">Считать</target>
+      </trans-unit>
+      <trans-unit approved="no" id="9138" xml:space="preserve">
+        <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="03/31/2016">New notification count: </source>
+        <target xml:lang="ru-RU" state="translated" LastModifiedDate="03/31/2016">Количество новых уведомлений: </target>
+      </trans-unit>
+      <trans-unit approved="no" id="9139" xml:space="preserve">
+        <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="03/31/2016">View Notifications</source>
+        <target xml:lang="ru-RU" state="translated" LastModifiedDate="03/31/2016">Просмотреть уведомления</target>
+      </trans-unit>
+      <trans-unit approved="no" id="9140" xml:space="preserve">
+        <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="03/31/2016">Exit Notifications</source>
+        <target xml:lang="ru-RU" state="translated" LastModifiedDate="03/31/2016">Выйти из Уведомлений</target>
+      </trans-unit>
+      <trans-unit approved="no" id="9141" xml:space="preserve">
+        <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="03/31/2016">Mark All As Read</source>
+        <target xml:lang="ru-RU" state="translated" LastModifiedDate="03/31/2016">Отметить все как прочитанные</target>
+      </trans-unit>
+      <trans-unit approved="no" id="9142" xml:space="preserve">
+        <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="03/31/2016">GN Notifications</source>
+        <target xml:lang="ru-RU" state="translated" LastModifiedDate="03/31/2016">Уведомления GN</target>
+      </trans-unit>
+      <trans-unit approved="no" id="9143" xml:space="preserve">
+        <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="03/31/2016">RSR Notifications</source>
+        <target xml:lang="ru-RU" state="translated" LastModifiedDate="03/31/2016">Уведомления RSR</target>
+      </trans-unit>
+      <trans-unit approved="no" id="9144" xml:space="preserve">
+        <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="03/31/2016">Please Check Your Internet Connection</source>
+        <target xml:lang="ru-RU" state="translated" LastModifiedDate="03/31/2016">Проверьте подключение к интернету.</target>
+      </trans-unit>
+      <trans-unit approved="no" id="9145" xml:space="preserve">
+        <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="03/31/2016">Load More Notifications...</source>
+        <target xml:lang="ru-RU" state="translated" LastModifiedDate="03/31/2016">Загрузить больше уведомлений...</target>
+      </trans-unit>
+      <trans-unit approved="no" id="9146" xml:space="preserve">
+        <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="03/31/2016">Unread</source>
+        <target xml:lang="ru-RU" state="translated" LastModifiedDate="03/31/2016">Не прочитано</target>
+      </trans-unit>
+      <trans-unit approved="no" id="9147" xml:space="preserve">
+        <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="03/31/2016">Filter</source>
+        <target xml:lang="ru-RU" state="translated" LastModifiedDate="03/31/2016">Фильтр</target>
+      </trans-unit>
+      <trans-unit approved="no" id="9148" xml:space="preserve">
+        <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="03/31/2016">Close Filter</source>
+        <target xml:lang="ru-RU" state="translated" LastModifiedDate="03/31/2016">Закрыть фильтр</target>
+      </trans-unit>
+      <trans-unit approved="no" id="9149" xml:space="preserve">
+        <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="03/31/2016">HCP</source>
+        <target xml:lang="ru-RU" state="translated" LastModifiedDate="03/31/2016">Главная панель управления, HCP</target>
+      </trans-unit>
+      <trans-unit approved="no" id="9150" xml:space="preserve">
+        <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="03/31/2016">Type</source>
+        <target xml:lang="ru-RU" state="translated" LastModifiedDate="03/31/2016">Тип</target>
+      </trans-unit>
+      <trans-unit approved="no" id="9151" xml:space="preserve">
+        <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="03/31/2016">Remove from List</source>
+        <target xml:lang="ru-RU" state="translated" LastModifiedDate="03/31/2016">Удалить из списка</target>
+      </trans-unit>
+      <trans-unit approved="no" id="9152" xml:space="preserve">
+        <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="03/31/2016">Open {0}</source>
+        <target xml:lang="ru-RU" state="translated" LastModifiedDate="03/31/2016">Открыть {0}</target>
+      </trans-unit>
+      <trans-unit approved="no" id="9154" xml:space="preserve">
+        <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="03/31/2016">Read Message</source>
+        <target xml:lang="ru-RU" state="translated" LastModifiedDate="03/31/2016">Прочитать сообщение</target>
+      </trans-unit>
+      <trans-unit approved="no" id="9155" xml:space="preserve">
+        <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="03/31/2016">Today at</source>
+        <target xml:lang="ru-RU" state="translated" LastModifiedDate="03/31/2016">Сегодня в</target>
+      </trans-unit>
+      <trans-unit approved="no" id="9156" xml:space="preserve">
+        <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="03/31/2016">New Request</source>
+        <target xml:lang="ru-RU" state="translated" LastModifiedDate="03/31/2016">Новый запрос</target>
+      </trans-unit>
+      <trans-unit approved="no" id="9157" xml:space="preserve">
+        <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="03/31/2016">Fine-tuning Accepted</source>
+        <target xml:lang="ru-RU" state="translated" LastModifiedDate="03/31/2016">Тонкая настройка одобрена</target>
+      </trans-unit>
+      <trans-unit approved="no" id="9158" xml:space="preserve">
+        <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="03/31/2016">Fine-tuning Unaccepted</source>
+        <target xml:lang="ru-RU" state="translated" LastModifiedDate="03/31/2016">Тонкая настройка не одобрена</target>
+      </trans-unit>
+      <trans-unit approved="no" id="9159" xml:space="preserve">
+        <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="03/31/2016">Are you sure you want to remove this notification?</source>
+        <target xml:lang="ru-RU" state="translated" LastModifiedDate="03/31/2016">Действительно удалить это уведомление?</target>
+      </trans-unit>
+      <trans-unit approved="no" id="9322" xml:space="preserve">
+      <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="07/22/2016">Sign in from Fitting Software to use service</source>
+      <target xml:lang="ru-RU" state="translated" LastModifiedDate="07/22/2016">Чтобы воспользоваться сервисом, войдите через ПО подбора и настройки</target>
+    </trans-unit>
+      <trans-unit approved="no" id="9432" xml:space="preserve">
+      <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="06/14/2016">Patient Name</source>
+      <target xml:lang="ru-RU" state="translated" LastModifiedDate="06/14/2016">Имя и фамилия пациента</target>
+    </trans-unit>
+      <trans-unit approved="no" id="9433" xml:space="preserve">
+      <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="06/15/2016">Mark As Read</source>
+      <target xml:lang="ru-RU" state="translated" LastModifiedDate="06/15/2016">Отметить как прочитанное</target>
+    </trans-unit>
+      <trans-unit approved="no" id="9434" xml:space="preserve">
+      <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="06/15/2016">Mark As Unread</source>
+      <target xml:lang="ru-RU" state="translated" LastModifiedDate="06/15/2016">Отметить как не прочитанное</target>
+    </trans-unit>
+      <trans-unit approved="no" id="9572" xml:space="preserve">
+      <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="08/19/2016">GN Notification</source>
+      <target xml:lang="ru-RU" state="translated" LastModifiedDate="08/19/2016">Уведомление от GN</target>
+    </trans-unit>
+      <trans-unit approved="no" id="9581" xml:space="preserve">
+      <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="08/23/2016">Released</source>
+      <target xml:lang="ru-RU" state="translated" LastModifiedDate="08/23/2016">Выпущено</target>
+    </trans-unit>
+      <trans-unit approved="no" id="9582" xml:space="preserve">
+      <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="08/23/2016">Remote Hearing Aid Update</source>
+      <target xml:lang="ru-RU" state="translated" LastModifiedDate="08/23/2016">Удаленное обновление прошивки СА</target>
+    </trans-unit>
+      <trans-unit approved="no" id="9583" xml:space="preserve">
+      <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="08/23/2016">ReSound has released a firmware update for the following models</source>
+      <target xml:lang="ru-RU" state="translated" LastModifiedDate="08/23/2016">Выпущены обновления прошивки для следующих моделей ReSound</target>
+    </trans-unit>
+      <trans-unit approved="no" id="9727" xml:space="preserve">
+        <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="11/01/2016">Remote Update Notifications</source>
+        <target xml:lang="ru-RU" state="translated" LastModifiedDate="11/01/2016">Удаленные уведомления об обновлениях</target>
+      </trans-unit>
+      <trans-unit approved="no" id="9826" xml:space="preserve">
+      <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="01/27/2017">GN Online Services is temporarily down, please check back later.</source>
+      <target xml:lang="ru-RU" state="translated" LastModifiedDate="01/27/2017">Облачный сервис GN временно недоступен, попробуйте, пожалуйста, позже.</target>
+    </trans-unit>
+      <trans-unit approved="no" id="9835" xml:space="preserve">
+      <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="02/10/2017">Must contain only numbers</source>
+      <target xml:lang="ru-RU" state="translated" LastModifiedDate="02/10/2017">Должны входить только числа</target>
+    </trans-unit>
+      <trans-unit approved="no" id="9836" xml:space="preserve">
+      <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="02/10/2017">Enter interval in minutes</source>
+      <target xml:lang="ru-RU" state="translated" LastModifiedDate="02/10/2017">Введите интервал в минутах</target>
+    </trans-unit>
+      <trans-unit approved="no" id="9837" xml:space="preserve">
+      <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="02/10/2017">The new settings saved successfully</source>
+      <target xml:lang="ru-RU" state="translated" LastModifiedDate="02/10/2017">Новые настройки успешно сохранены</target>
+    </trans-unit>
+      <trans-unit approved="no" id="9838" xml:space="preserve">
+      <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="02/10/2017">Update in Minutes</source>
+      <target xml:lang="ru-RU" state="translated" LastModifiedDate="02/10/2017">Обновите в минутах</target>
+    </trans-unit>
+      <trans-unit approved="no" id="9839" xml:space="preserve">
+      <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="02/10/2017">Notifications Settings</source>
+      <target xml:lang="ru-RU" state="translated" LastModifiedDate="02/10/2017">Настройки уведомлений</target>
+    </trans-unit>
+      <trans-unit approved="no" id="9840" xml:space="preserve">
+      <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="02/10/2017">One or more messages not updated because of patient consent issues</source>
+      <target xml:lang="ru-RU" state="translated" LastModifiedDate="02/10/2017">Одно или более сообщений не обновлены ввиду проблем с согласием пациента</target>
+    </trans-unit>
+      <trans-unit approved="no" id="9939" xml:space="preserve">
+      <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="06/26/2017">Should be at least 15 min</source>
+      <target xml:lang="ru-RU" state="translated" LastModifiedDate="06/26/2017">Должно быть минимум 15 минут</target>
+    </trans-unit>
+      <trans-unit approved="no" id="9946" xml:space="preserve">
+      <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="07/06/2017">Icelandic</source>
+      <target xml:lang="ru-RU" state="translated" LastModifiedDate="07/06/2017">Исландский</target>
+    </trans-unit>
+      <trans-unit approved="no" id="9950" xml:space="preserve">
+      <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="05/04/2018">{0} is not supporting switching patients.
+Please, launch patient from your database directly.</source>
+      <target xml:lang="ru-RU" state="needs-translation" LastModifiedDate="05/04/2018">{0} is not supporting switching patients.
+Please, launch patient from your database directly.</target>
+    </trans-unit>
+      <trans-unit approved="no" id="9951" xml:space="preserve">
+      <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="05/04/2018">{0} is not installed.
+Cannot launch patient.</source>
+      <target xml:lang="ru-RU" state="needs-translation" LastModifiedDate="05/04/2018">{0} is not installed.
+Cannot launch patient.</target>
+    </trans-unit>
+      <trans-unit approved="no" id="9952" xml:space="preserve">
+      <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="05/04/2018">{0} remote fine tuning services are disabled.
+Cannot launch patient.</source>
+      <target xml:lang="ru-RU" state="needs-translation" LastModifiedDate="05/04/2018">{0} remote fine tuning services are disabled.
+Cannot launch patient.</target>
+    </trans-unit>
+      <trans-unit approved="no" id="9953" xml:space="preserve">
+      <source xml:lang="en-US" xml:space="preserve" LastModifiedDate="12/26/2018">{0} can’t be launched, because hearing instruments were fitted with the newest software version.</source>
+      <target xml:lang="ru-RU" state="needs-translation" LastModifiedDate="12/26/2018">{0} can’t be launched, because hearing instruments were fitted with the newest software version.</target>
+    </trans-unit>
+    </body>
+  </file>
+</xliff>

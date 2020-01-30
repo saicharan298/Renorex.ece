@@ -1,0 +1,488 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Settings</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script src="lang/resource.js"></script>
+<link id="uistyles" href="UpdaterStyle.css" rel="stylesheet" type="text/css"/>
+<script>
+var twdl = unescape(top.window.document.location);
+var twdls = twdl.substr(twdl.indexOf("?"));
+var attribs = twdls.split("&");
+var _CustomCSS="";
+var _CustomStrings="";
+var _CustomProds="";
+for (ii = 0; ii < attribs.length; ii++)
+{
+	var attrib = attribs[ii].split("=");
+	if (attrib[0].indexOf("CSS") != -1)
+		_CustomCSS = unescape(attrib[1]);
+	if (attrib[0].indexOf("Strings") != -1)
+		_CustomStrings = unescape(attrib[1]);
+	if (attrib[0].indexOf("prods") != -1)
+		_CustomProds = unescape(attrib[1]);		
+}
+if (_CustomCSS.length > 0)
+	document.getElementById("uistyles").href=_CustomCSS;
+</script>
+</head>
+<body topmargin="0" bottommargin="0" leftmargin="0" rightmargin="0" onload="OnPageLoad()" scroll="no">
+<!-- TOP NAVIGATION AND LOGO -->
+<div id="mainNavHeader">
+	<div id="mainNavLogo"></div>
+	<div id="mainNavIconUpdatesS">
+		<div class="theNav">
+		<a href="updates.htm"><img src="images/icon_update.gif" width="32" height="32" border="0"></a><br>
+		<a href="updates.htm" id="ids_updates">Updates</a>
+		</div>
+	</div>
+	<div id="mainNavIconSettings">
+		<div class="theNavS">
+		<a ><img src="images/icon_settings.gif" width="32" height="32" border="0"></a><br>
+		<a id="ids_settings">Settings</a>
+		</div>
+	</div>
+	<div id="mainNavIconAbout">
+		<div class="theNav">
+		<a href="about.htm"><img src="images/icon_about.gif" width="32" height="32" border="0"></a><br>
+		<a href="about.htm" id="ids_about">About</a>
+		</div>
+	</div>
+</div>
+
+<!-- SECONDARY NAVIGATION -->
+<div id="secNavHeader">
+	<div id="secNavTitle">Settings</div>
+	<div id="secNavSeparator"></div>
+	<div id="secNavLink">
+		<strong><span id="navlink_your_settings">Settings</span></strong>
+	</div>
+</div>
+
+<div id="mainContent">
+	<div id="mainPanel">
+		<div class="contentHeader" id="contentheader1">Settings</div>
+		<div id="settingsColumnContainer">
+			<div id="settingsProductHeaderCell">Product</div>
+			<div id="settingsImportantHeaderCell">Important</div>
+		</div>
+		<div class="scrollerSettings" name="theList" id="theList">
+		</div>
+		<div class="radioSettings" name="radioSettings" id="radioSettings">
+			<table cellpadding="5" cellspacing="1" border="0" width="400" bgcolor="CCCCCC">
+			<tr>
+			<td bgcolor="FFFFFF">
+				<table cellpadding="1" cellspacing="0" border="0" width="100%">
+				<tr>
+				<td colspan="2"><strong><span id="prodsev">Product 1 - Critical</span> <span id="prodsev2">updates & messages</span></strong></td>
+				</tr>
+				<tr>
+				<td width="20"><input type="radio" name="radioFreq" value="N" onclick="OnRadioManually()"></td>
+				<td width="380" id="radiotext1">Manually</td>
+				</tr>
+				<tr>
+				<td width="20"><input type="radio" name="radioFreq" value="D" onclick="OnRadioDaily()"></td>
+				<td width="380" id="radiotext2">Daily</td>
+				</tr>
+				<tr>
+				<td width="20"><input type="radio" name="radioFreq" value="W" onclick="OnRadioWeekly()"></td>
+				<td width="380" id="radiotext3">Weekly</td>
+				</tr>
+				<tr>
+				<td width="20"><input type="radio" name="radioFreq" value="M" onclick="OnRadioMonthly()"></td>
+				<td width="380" id="radiotext4">Monthly</td>
+				</tr>
+				<tr>
+				<td colspan="2">
+					<table cellpadding="2" cellspacing="0" border="0">
+					<tr>
+					<td name="every" id="every">Every</td>
+					<td>
+					<select name="week" id="week">
+					<option value="0">1st</option>
+					<option value="1">2nd</option>
+					<option value="2">3rd</option>
+					<option value="3">4th</option>
+					</select></td>
+					<td>
+					<select name="day" id="day">
+					<option value="0">Sunday</option>
+					<option value="1">Monday</option>
+					<option value="2">Tuesday</option>
+					<option value="3">Wednesday</option>
+					<option value="4">Thursday</option>
+					<option value="5">Friday</option>
+					<option value="6">Saturday</option>
+					</select></td>
+					<td name="at" id="at">at</td>
+					<td>
+					<select name="time" id="time">
+					<option id="0" value="0000">12:00 AM</option>
+					<option id="100" value="0100">1:00 AM</option>
+					<option id="200" value="0200">2:00 AM</option>
+					<option id="300" value="0300">3:00 AM</option>
+					<option id="400" value="0400">4:00 AM</option>
+					<option id="500" value="0500">5:00 AM</option>
+					<option id="600" value="0600">6:00 AM</option>
+					<option id="700" value="0700">7:00 AM</option>
+					<option id="800" value="0800">8:00 AM</option>
+					<option id="900" value="0900">9:00 AM</option>
+					<option id="1000" value="1000">10:00 AM</option>
+					<option id="1100" value="1100">11:00 AM</option>
+					<option id="1200" value="1200">12:00 PM</option>
+					<option id="1300" value="1300">1:00 PM</option>
+					<option id="1400" value="1400">2:00 PM</option>
+					<option id="1500" value="1500">3:00 PM</option>
+					<option id="1600" value="1600">4:00 PM</option>
+					<option id="1700" value="1700">5:00 PM</option>
+					<option id="1800" value="1800">6:00 PM</option>
+					<option id="1900" value="1900">7:00 PM</option>
+					<option id="2000" value="2000">8:00 PM</option>
+					<option id="2100" value="2100">9:00 PM</option>
+					<option id="2200" value="2200">10:00 PM</option>
+					<option id="2300" value="2300">11:00 PM</option>
+					</select></td>
+					</tr>
+					</table>
+				</td>
+				</tr>
+				</table>
+			</td>
+			</tr>
+			</table>
+			<table cellpadding="1" cellspacing="0" border="0" width="400">
+			<tr>
+			<td colspan="2"><input type="button" id="apply" name="apply" value="Apply" style="width: 80px" onclick="DoApply()">&nbsp;&nbsp;<input type="button" id="applyall" name="applyall" value="Apply to all products" onclick="DoApplyAll()">&nbsp;&nbsp;<input type="button" id="cancel" name="cancel" value="Cancel" style="width: 80px" onclick="DoCancel()"></td>
+			</tr>
+			</table>
+		</div>
+	</div>
+</div>
+		<div id="bottom">
+			<table cellpadding=0 cellspacing=0>
+			<tr>
+			<td>
+			<div id="copyright"><span id="ids_copyright">Copyright (C) 1997-2011 Flexera Software LLC. and/or InstallShield Co. Inc.  All Rights Reserved.</span>| <a id="Aterms" href="http://www.flexerasoftware.com/company/terms_of_use.htm" target="_blank"><span id="ids_terms">Terms of Use</span></a>  | <a id="Aprivacy" href="http://www.flexerasoftware.com/company/legal.htm" target="_blank"><span id="ids_privacy">Privacy Statement</span></a></div></td>
+			<td width="18"><a href="help.htm" target="_blank"><img src="images/icon_help.gif" width="14" height="14" border="0" align="left"></a></td>
+			<td><a href="help.htm" target="_blank"><span id="ids_help">Help</span></a></td>
+			</tr>
+			</table>
+		</div>
+</body>
+<script defer>
+	var ProductSchedules;
+	function OnPageLoad()
+	{
+		loadStrings();
+
+		document.getElementById("radioSettings").style.display = "none";
+		ProductSchedules = window.parent.USUM.EnumProductSchedules();
+		
+		var customprods = _CustomProds.split(";");
+		
+		var i=0;
+		var dynHTML="<table cellpadding='1' cellspacing='1' bgcolor='999999' border='0' width='745'>";
+		var pc="";
+		var pname="";
+		var time;
+		var wkdy;
+		var mtwk;
+		var s="";
+		var j=0;
+		var jj=0;
+		for (i = 1; i <= ProductSchedules.Count; i++)
+		{
+			var P = ProductSchedules.Item(i);
+			pc = P.getProductCode();
+
+			var found = false;
+			for (jj = 0; jj < customprods.length; jj++)
+			{
+				if (pc.toLowerCase().indexOf(customprods[jj].toLowerCase()) != -1)
+					found = true;
+			}
+			if (found == false)
+				continue;
+
+			pname = P.getProductName();
+			dynHTML = dynHTML + "<tr valign='top'><td width='50%' bgcolor='eeeeee' style='padding-left:3px'><span id='" + pc + "_name'>" + pname + "</span></td>";
+			j = 1
+            time = P.getTime(j);
+            wkdy = P.getWeekday(j);
+            mtwk = P.getWeek(j);
+            if ((time == -1) && (wkdy == -1) && (mtwk == -1))
+                s = ar[IDS_MANUALLY];
+            else
+            {
+                if ((wkdy == -1) && (mtwk == -1))
+                    s = ar[IDS_DAILY] + " " + ar[IDS_AT] + " " + document.getElementById("time").options[time/100].text;
+                else
+                {
+                    if (mtwk == -1)
+                        s = ar[IDS_EVERY] + " " + document.getElementById("day").options[wkdy].text + " " + ar[IDS_AT] + " " + document.getElementById("time").options[time/100].text;
+                    else
+                    {
+                        s = ar[IDS_EVERY] + " " + document.getElementById("week").options[mtwk].text + " " + document.getElementById("day").options[wkdy].text + " " + ar[IDS_AT] + " " + document.getElementById("time").options[time/100].text;
+                    }
+                }
+            }
+            dynHTML = dynHTML + "<td width='100%' bgcolor='eeeeee' style='padding-left:3px'><a href='javascript:OnSettingChange(\"" + pc + "_" + j + "\")' id='" + pc + "_" + j + "' name='" + time + "_" + wkdy + "_" + mtwk + "'>";
+            dynHTML = dynHTML + s + "</a></td>";
+			dynHTML = dynHTML + "</tr>";
+		}
+		dynHTML = dynHTML + "</table>";
+		document.getElementById("theList").insertAdjacentHTML("beforeEnd", dynHTML);
+	}
+
+	function OnRadioManually()
+	{
+		document.all.every.style.display = "none";
+		document.all.week.style.display = "none";
+		document.all.day.style.display = "none";
+		document.all.at.style.display = "none";
+		document.all.time.style.display = "none";
+	}
+	function OnRadioDaily()
+	{
+		document.all.every.style.display = "none";
+		document.all.week.style.display = "none";
+		document.all.day.style.display = "none";
+		document.all.at.style.display = "block";
+		document.all.time.style.display = "block";
+	}
+	function OnRadioWeekly()
+	{
+		document.all.every.style.display = "block";
+		document.all.week.style.display = "none";
+		document.all.day.style.display = "block";
+		document.all.at.style.display = "block";
+		document.all.time.style.display = "block";
+	}
+	function OnRadioMonthly()
+	{
+		document.all.every.style.display = "block";
+		document.all.week.style.display = "block";
+		document.all.day.style.display = "block";
+		document.all.at.style.display = "block";
+		document.all.time.style.display = "block";
+	}
+	var selectedID;
+	var selectedSev;
+	function OnSettingChange(ID)
+	{
+		document.getElementById("radioSettings").style.display = "block";
+		var b = document.getElementById(ID).id.split("_");
+		selectedID = b[0];
+		selectedSev = b[1];
+		var title = document.getElementById(b[0]+"_name").innerText + " - ";
+		if (b[1] == "2")
+			title = title + document.getElementById("settingsImportantHeaderCell").innerText;
+		if (b[1] == "3")
+			title = title + document.getElementById("settingsOptionalHeaderCell").innerText;
+		document.getElementById("prodsev").innerText = title;
+		var a = document.getElementById(ID).name.split("_");
+		if (a[0] == "-1") // manual
+		{
+			document.all.radioFreq[0].checked = true;
+			OnRadioManually();
+		}
+		else 
+		{
+			document.getElementById("time").options[Number(a[0])/100].selected = true;			
+			if (a[1] == "-1") // daily
+			{
+				document.all.radioFreq[1].checked = true;
+				OnRadioDaily();
+			}
+			else
+			{
+				document.getElementById("day").options[Number(a[1])].selected = true;			
+				if (a[2] == "-1") // weekly
+				{
+					document.all.radioFreq[2].checked = true;
+					OnRadioWeekly();
+				}
+				else // monthly
+				{
+					document.getElementById("week").options[Number(a[2])].selected = true;			
+					document.all.radioFreq[3].checked = true;
+					OnRadioMonthly();
+				}
+			}
+		}
+	}
+	function DoApply()
+	{
+		var T=-1;
+		var W=-1;
+		var M=-1;
+
+		if (document.all.radioFreq[0].checked != true)
+		{
+			T = document.getElementById("time").options[document.getElementById("time").selectedIndex].value;
+			if (document.all.radioFreq[1].checked != true)
+			{
+				W = document.getElementById("day").options[document.getElementById("day").selectedIndex].value;
+				if (document.all.radioFreq[2].checked != true)
+					M = document.getElementById("week").options[document.getElementById("week").selectedIndex].value;
+			}
+		}
+		var i = 0;
+		var pc = "";
+		for (i = 1; i <= ProductSchedules.Count; i++)
+		{
+			var P = ProductSchedules.Item(i);
+			pc = P.getProductCode();
+			if (pc.indexOf(selectedID) != -1)
+			{
+				P.setSchedule(Number(selectedSev), Number(T), Number(W), Number(M));
+				var obj = document.getElementById(selectedID + "_" + selectedSev);
+				obj.name = T + "_" + W + "_" + M;
+				if (document.all.radioFreq[0].checked == true)
+					s = ar[IDS_MANUALLY];
+				else
+				{
+					if (document.all.radioFreq[1].checked == true)
+						s = ar[IDS_DAILY] + " " + ar[IDS_AT] + " " + document.getElementById("time").options[Number(T)/100].text;
+					else
+					{
+						if (document.all.radioFreq[2].checked == true)
+							s = ar[IDS_EVERY] + " " + document.getElementById("day").options[Number(W)].text + " " + ar[IDS_AT] + " " + document.getElementById("time").options[Number(T)/100].text;
+						else
+						{
+							s = ar[IDS_EVERY] + " " + document.getElementById("week").options[Number(M)].text + " " + document.getElementById("day").options[Number(W)].text + " " + ar[IDS_AT] + " " + document.getElementById("time").options[Number(T)/100].text;
+						}
+					}
+				}
+				obj.innerText = s;
+				break;
+			}
+		}
+	}
+	function DoApplyAll()
+	{
+		var T=-1;
+		var W=-1;
+		var M=-1;
+
+		if (document.all.radioFreq[0].checked != true)
+		{
+			T = document.getElementById("time").options[document.getElementById("time").selectedIndex].value;
+			if (document.all.radioFreq[1].checked != true)
+			{
+				W = document.getElementById("day").options[document.getElementById("day").selectedIndex].value;
+				if (document.all.radioFreq[2].checked != true)
+					M = document.getElementById("week").options[document.getElementById("week").selectedIndex].value;
+			}
+		}
+		var i = 0;
+		var pc = "";
+		for (i = 1; i <= ProductSchedules.Count; i++)
+		{
+			var P = ProductSchedules.Item(i);
+			pc = P.getProductCode();
+			P.setSchedule(Number(selectedSev), Number(T), Number(W), Number(M));
+			var obj = document.getElementById(pc + "_" + selectedSev);
+			obj.name = T + "_" + W + "_" + M;
+			if (document.all.radioFreq[0].checked == true)
+				s = ar[IDS_MANUALLY];
+			else
+			{
+				if (document.all.radioFreq[1].checked == true)
+					s = ar[IDS_DAILY] + " " + ar[IDS_AT] + " " + document.getElementById("time").options[Number(T)/100].text;
+				else
+				{
+					if (document.all.radioFreq[2].checked == true)
+						s = ar[IDS_EVERY] + " " + document.getElementById("day").options[Number(W)].text + " " + ar[IDS_AT] + " " + document.getElementById("time").options[Number(T)/100].text;
+					else
+					{
+						s = ar[IDS_EVERY] + " " + document.getElementById("week").options[Number(M)].text + " " + document.getElementById("day").options[Number(W)].text + " " + ar[IDS_AT] + " " + document.getElementById("time").options[Number(T)/100].text;
+					}
+				}
+			}
+			obj.innerText = s;
+		}
+	}
+	function DoCancel()
+	{
+		document.getElementById("radioSettings").style.display = "none";
+	}
+	function loadStrings()
+	{
+		document.charset = window.parent._UIcharset;
+
+		if (_CustomStrings.length > 0)
+			document.getElementById("strings").src = _CustomStrings + "/strings" + window.parent._UILangID + ".js";
+		else
+			document.getElementById("strings").src = "lang/strings" + window.parent._UILangID + ".js";
+		if (typeof(ar) == "undefined")
+			document.getElementById("strings").src = "lang/strings" + ((window.parent._UILangID & 0xff) + 1024) + ".js";
+		if (typeof(ar) == "undefined")
+			document.getElementById("strings").src = "lang/strings1033.js";
+
+		document.getElementById("ids_settings").innerText = ar[IDS_SETTINGS];
+		document.getElementById("ids_about").innerText = ar[IDS_ABOUT];
+		document.getElementById("ids_updates").innerText = ar[IDS_UPDATES];
+		document.getElementById("secNavTitle").innerText = ar[IDS_SETTINGS];
+		document.getElementById("navlink_your_settings").innerText = ar[IDS_SETTINGS];
+		document.getElementById("contentheader1").innerText = ar[IDS_SETTINGS];
+		document.getElementById("settingsProductHeaderCell").innerText = ar[IDS_PRODUCT];
+		document.getElementById("settingsImportantHeaderCell").innerText = ar[IDS_IMPORTANT];
+//		document.getElementById("settingsOptionalHeaderCell").innerText = ar[IDS_MINOR];
+		document.getElementById("prodsev2").innerText = ar[IDS_NEW_UPDATES];
+//		document.getElementById("ids_new_updates2").innerText = ar[IDS_NEW_UPDATES];
+		document.getElementById("radiotext1").innerText = ar[IDS_MANUALLY];
+		document.getElementById("radiotext2").innerText = ar[IDS_DAILY];
+		document.getElementById("radiotext3").innerText = ar[IDS_WEEKLY];
+		document.getElementById("radiotext4").innerText = ar[IDS_MONTHLY];
+		document.getElementById("every").innerText = ar[IDS_EVERY];
+		document.getElementById("at").value = ar[IDS_AT];
+		document.getElementById("week").options[0].innerText = ar[IDS_FIRST];
+		document.getElementById("week").options[1].innerText = ar[IDS_SECOND];
+		document.getElementById("week").options[2].innerText = ar[IDS_THIRD];
+		document.getElementById("week").options[3].innerText = ar[IDS_FOURTH];
+		document.getElementById("day").options[0].innerText = ar[IDS_SUN];
+		document.getElementById("day").options[1].innerText = ar[IDS_MON];
+		document.getElementById("day").options[2].innerText = ar[IDS_TUES];
+		document.getElementById("day").options[3].innerText = ar[IDS_WED];
+		document.getElementById("day").options[4].innerText = ar[IDS_THURS];
+		document.getElementById("day").options[5].innerText = ar[IDS_FRI];
+		document.getElementById("day").options[6].innerText = ar[IDS_SAT];
+		var am = ar[IDS_AM];
+		var pm = ar[IDS_PM];
+		document.getElementById("time").options[0].innerText = "12:00 " + am;
+		document.getElementById("time").options[1].innerText = "1:00 " + am;
+		document.getElementById("time").options[2].innerText = "2:00 " + am;
+		document.getElementById("time").options[3].innerText = "3:00 " + am;
+		document.getElementById("time").options[4].innerText = "4:00 " + am;
+		document.getElementById("time").options[5].innerText = "5:00 " + am;
+		document.getElementById("time").options[6].innerText = "6:00 " + am;
+		document.getElementById("time").options[7].innerText = "7:00 " + am;
+		document.getElementById("time").options[8].innerText = "8:00 " + am;
+		document.getElementById("time").options[9].innerText = "9:00" + am;
+		document.getElementById("time").options[10].innerText = "10:00 " + am;
+		document.getElementById("time").options[11].innerText = "11:00 " + am;
+		document.getElementById("time").options[12].innerText = "12:00 " + pm;
+		document.getElementById("time").options[13].innerText = "1:00 " + pm;
+		document.getElementById("time").options[14].innerText = "2:00 " + pm;
+		document.getElementById("time").options[15].innerText = "3:00 " + pm;
+		document.getElementById("time").options[16].innerText = "4:00 " + pm;
+		document.getElementById("time").options[17].innerText = "5:00 " + pm;
+		document.getElementById("time").options[18].innerText = "6:00 " + pm;
+		document.getElementById("time").options[19].innerText = "7:00 " + pm;
+		document.getElementById("time").options[20].innerText = "8:00 " + pm;
+		document.getElementById("time").options[21].innerText = "9:00" + pm;
+		document.getElementById("time").options[22].innerText = "10:00 " + pm;
+		document.getElementById("time").options[23].innerText = "11:00 " + pm;
+		document.getElementById("apply").value = ar[IDS_APPLY];
+		document.getElementById("applyall").value = ar[IDS_APPLYALL];
+		document.getElementById("cancel").value = ar[IDS_CANCEL];
+		document.getElementById("ids_copyright").innerText = ar[IDS_COPYRIGHT];
+		document.getElementById("ids_terms").innerText = ar[IDS_TERMS];
+		document.getElementById("ids_privacy").innerText = ar[IDS_PRIVACY];
+		document.getElementById("ids_help").innerText = ar[IDS_HELP];
+	}
+</script>
+	<script id="strings">
+	</script>
+</html>

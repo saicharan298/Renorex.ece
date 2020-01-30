@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Market xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Sku="RS">
+  <Version Major="1" Minor="5" DataVersion="1"/>
+  <FeatureFlags ID="ALL">
+    <FeatureFlag Key="undoredo-master"                       Value="True"  Description="Enable all undo/redo features"/>
+    <FeatureFlag Key="undoredo-gains-fsw"                    Value="True"  Description="Enable undo/redo of Gain in FSW"/>
+
+    <FeatureFlag Key="pediatrics-master"                     Value="True"  Description="Enable all pediatrics features"/>
+    <FeatureFlag Key="pediatrics-fsw"                        Value="True"  Description="Enable pediatrics in FSW"/>
+    <FeatureFlag Key="pediatrics-app"                        Value="False" Description="Enable pediatrics in App"/>
+    <FeatureFlag Key="pediatrics-is"                         Value="False" Description="Enable pediatrics in Internet Services"/>
+
+    <FeatureFlag Key="teleaudiology-master"                  Value="True"  Description="Enable all Tele-Audiology features"/>
+    <FeatureFlag Key="teleaudiology-video-fsw"               Value="True"  Description="Enable the video Tele-Audiology feature in FSW"/>
+    <FeatureFlag Key="teleaudiology-fitting-fsw"             Value="True"  Description="Enable the fitting Tele-Audiology feature in FSW"/>
+    <FeatureFlag Key="teleaudiology-tsgrestricted-fsw"       Value="False" Description="Enable the TSG Tele-Audiology feature in FSW"/>
+    <FeatureFlag Key="teleaudiology-unsupported-devices-fsw" Value="True"  Description="Enable the error checking for Tele-Audiology unsupported devices in FSW"/>
+
+    <FeatureFlag Key="offline-firmware-update-master"        Value="True"  Description="Enable all offline firmware features"/>
+    <FeatureFlag Key="offline-firmware-update-fsw"           Value="True"  Description="Enable the offline firmware feature in FSW"/>
+
+    <FeatureFlag Key="fitting-rules-master"                  Value="True"  Description="Enable all fitting rules features"/>
+    <FeatureFlag Key="fitting-rules-pediatrics-fsw"          Value="True"  Description="Enable pediatrics fitting rules &amp; the RECD/REUG feature in FSW"/>
+
+    <FeatureFlag Key="detectable-receiver-master"            Value="False" Description="Enable all detectable receiver features"/>
+    <FeatureFlag Key="detectable-receiver-fsw"               Value="False" Description="Enable the detectable receiver feature in FSW"/>
+
+    <FeatureFlag Key="autorem-master"                        Value="True"  Description="Enable all AutoREM features"/>
+    <FeatureFlag Key="autorem-fsw"                           Value="True"  Description="Enable all AutoREM FSW features"/>
+    <FeatureFlag Key="autorem-unity-fsw"                     Value="True"  Description="Enable the AutoREM Unity feature in FSW"/>
+    <FeatureFlag Key="autorem-primus-fsw"                    Value="True"  Description="Enable the AutoREM Primus feature in FSW"/>
+    <FeatureFlag Key="autorem-avant-fsw"                     Value="True"  Description="Enable the AutoREM Avant feature in FSW"/>
+    <FeatureFlag Key="autorem-imccompliance-fsw"             Value="True"  Description="Enable the AutoREM IMC Compliance feature in FSW"/>
+
+    <FeatureFlag Key="connectionrefactoring-master"          Value="True"  Description="Enable all connection flow refactoring features"/>
+    <FeatureFlag Key="connectionrefactoring-connection"      Value="True"  Description="Enable the connection flow refactoring connect feature in FSW"/>
+    <FeatureFlag Key="connectionrefactoring-simulation"      Value="True"  Description="Enable the connection flow refactoring simulate feature in FSW"/>
+    <FeatureFlag Key="connectionrefactoring-reconfiguration" Value="True"  Description="Enable the connection flow refactoring reconfigure feature in FSW"/>
+    <FeatureFlag Key="connectionrefactoring-autofit"         Value="True"  Description="Enable the connection flow refactoring autofit feature in FSW"/>
+    <FeatureFlag Key="connectionrefactoring-restore"         Value="True"  Description="Enable the connection flow refactoring restore feature in FSW"/>
+  </FeatureFlags>
+</Market>

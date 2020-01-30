@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <Version Major="1" Minor="0"/>
+  <Preferences>
+    <!-- -->
+    <!-- Language - Must appear at top of this file -->
+    <!-- -->
+    <Pref ID="Language" Type="Enum" DefaultValue="en-US">
+      <Name ID="820"/>
+      <Values>
+        <!-- These values need to be in alphabetical display order with English at the top -->
+        <Value ID="en-US">
+          <Name ID="821"/>
+        </Value>
+        <Value ID="bg-BG">
+          <Name ID="4117"/>
+        </Value>
+        <Value ID="fr-FR">
+          <Name ID="3"/>
+        </Value>
+        <Value ID="el-GR">
+          <Name ID="4098"/>
+        </Value>
+        <Value ID="is-IS">
+          <Name ID="9946"/>
+        </Value>
+        <Value ID="es-ES">
+          <Name ID="4099"/>
+        </Value>
+        <Value ID="th-TH">
+          <Name ID="4119"/>
+        </Value>
+        <Value ID="ko-KR">
+          <Name ID="4113"/>
+        </Value>
+        <Value ID="ja-JP">
+          <Name ID="4110"/>
+        </Value>
+        <Value ID="hr-HR">
+          <Name ID="5502"/>
+        </Value>
+        <Value ID="de-DE">
+          <Name ID="4100"/>
+        </Value>
+        <Value ID="da-DK">
+          <Name ID="4101"/>
+        </Value>
+        <Value ID="fi-FI">
+          <Name ID="4102"/>
+        </Value>
+        <Value ID="it-IT">
+          <Name ID="4103"/>
+        </Value>
+        <Value ID="nl-NL">
+          <Name ID="4104"/>
+        </Value>
+        <Value ID="sv-SE">
+          <Name ID="4105"/>
+        </Value>
+        <Value ID="no-NO">
+          <Name ID="4106"/>
+        </Value>
+        <Value ID="pt-PT">
+          <Name ID="4108"/>
+        </Value>
+        <Value ID="pl-PL">
+          <Name ID="4109"/>
+        </Value>
+        <Value ID="cs-CZ">
+          <Name ID="4111"/>
+        </Value>
+        <Value ID="hu-HU">
+          <Name ID="4112"/>
+        </Value>
+        <Value ID="ru-RU">
+          <Name ID="4114"/>
+        </Value>
+        <Value ID="tr-TR">
+          <Name ID="4115"/>
+        </Value>
+        <Value ID="zh-CN">
+          <Name ID="4993"/>
+        </Value>
+        <Value ID="zh-CHT">
+          <Name ID="4118"/>
+        </Value>
+        <Value ID="ro-RO">
+          <Name ID="4120"/>
+        </Value>
+        <!--<Value ID="hi-IN">
+          <Name ID="4122"/>
+        </Value>-->
+      </Values>
+    </Pref>
+    <!-- -->
+    <!-- Costco Support -->
+    <!-- -->
+    <Pref ID="IsCostcoCounselingToolUsed" Type="Boolean" DefaultValue="0"/>
+    <!-- -->
+    <!-- Target Rule -->
+    <!-- -->
+    <Pref ID="TargetRule" Type="Enum" DefaultValue="0">
+      <Values>
+        <Value ID="0" Type="RulePreference" BaseType="AudioPlus">
+          <Name ID="837"/>
+        </Value>
+      </Values>
+    </Pref>
+    <Pref ID="PediatricTargetRule" Type="Enum" DefaultValue="7">
+      <Values>
+        <Value ID="7" Type="RulePreference" BaseType="DSLV5_Pediatric">
+          <Name ID="6299"/>
+        </Value>
+      </Values>
+    </Pref>
+    <!--  -->
+    <!-- Environments -->
+    <!--  -->
+    <Pref ID="UseLectureEnvironment" Type="Boolean" DefaultValue="0"/>
+    <Pref ID="UseDemoEnvironment" Type="Boolean" DefaultValue="0"/>
+    <!-- -->
+    <!-- Frequent Environments -->
+    <!-- -->
+    <Pref ID="ShowFrequentEnvironments" Type="Boolean" DefaultValue="1">
+      <Name ID="3629"/>
+    </Pref>
+    <Pref ID="FrequentEnvironments1" Type="Enum" DefaultValue="Basic">
+      <Name ID="5592"/>
+      <Values>
+        <Value ID="Basic">
+          <Name ID="3654"/>
+        </Value>
+        <Value ID="Restaurant">
+          <Name ID="3655"/>
+        </Value>
+        <Value ID="Music">
+          <Name ID="3656"/>
+        </Value>
+        <Value ID="Outdoor">
+          <Name ID="5996"/>
+        </Value>
+        <Value ID="AcousticTelephone">
+          <Name ID="6029"/>
+        </Value>
+        <Value ID="TelecoilPhone">
+          <Name ID="4969"/>
+        </Value>
+        <Value ID="TelecoilLoop">
+          <Name ID="8737"/>
+        </Value>
+        <Value ID="DAI">
+          <Name ID="6918"/>
+        </Value>
+      </Values>
+    </Pref>
+    <Pref ID="FrequentEnvironments2" Type="Enum" DefaultValue="Restaurant">
+      <Name ID="5593"/>
+      <Values>
+        <Value ID="None">
+          <Name ID="2861"/>
+        </Value>
+        <Value ID="Basic">
+          <Name ID="3654"/>
+        </Value>
+        <Value ID="Restaurant">
+          <Name ID="3655"/>
+        </Value>
+        <Value ID="Music">
+          <Name ID="3656"/>
+        </Value>
+        <Value ID="Outdoor">
+          <Name ID="5996"/>
+        </Value>
+        <Value ID="AcousticTelephone">
+          <Name ID="6029"/>
+        </Value>
+        <Value ID="TelecoilPhone">
+          <Name ID="4969"/>
+        </Value>
+        <Value ID="TelecoilLoop">
+          <Name ID="8737"/>
+        </Value>
+        <Value ID="DAI">
+          <Name ID="6918"/>
+        </Value>
+      </Values>
+    </Pref>
+    <Pref ID="FrequentEnvironments3" Type="Enum" DefaultValue="Outdoor">
+      <Name ID="5594"/>
+      <Values>
+        <Value ID="None">
+          <Name ID="2861"/>
+        </Value>
+        <Value ID="Basic">
+          <Name ID="3654"/>
+        </Value>
+        <Value ID="Restaurant">
+          <Name ID="3655"/>
+        </Value>
+        <Value ID="Music">
+          <Name ID="3656"/>
+        </Value>
+        <Value ID="Outdoor">
+          <Name ID="5996"/>
+        </Value>
+        <Value ID="AcousticTelephone">
+          <Name ID="6029"/>
+        </Value>
+        <Value ID="TelecoilPhone">
+          <Name ID="4969"/>
+        </Value>
+        <Value ID="TelecoilLoop">
+          <Name ID="8737"/>
+        </Value>
+        <Value ID="DAI">
+          <Name ID="6918"/>
+        </Value>
+      </Values>
+    </Pref>
+    <Pref ID="FrequentEnvironments4" Type="Enum" DefaultValue="None">
+      <Name ID="5595"/>
+      <Values>
+        <Value ID="None">
+          <Name ID="2861"/>
+        </Value>
+        <Value ID="Basic">
+          <Name ID="3654"/>
+        </Value>
+        <Value ID="Restaurant">
+          <Name ID="3655"/>
+        </Value>
+        <Value ID="Music">
+          <Name ID="3656"/>
+        </Value>
+        <Value ID="Outdoor">
+          <Name ID="5996"/>
+        </Value>
+        <Value ID="AcousticTelephone">
+          <Name ID="6029"/>
+        </Value>
+        <Value ID="TelecoilPhone">
+          <Name ID="4969"/>
+        </Value>
+        <Value ID="TelecoilLoop">
+          <Name ID="8737"/>
+        </Value>
+        <Value ID="DAI">
+          <Name ID="6918"/>
+        </Value>
+      </Values>
+    </Pref>
+    <!-- ApplyEnvOffsets - ReSound = False, Beltone = True -->
+    <Pref ID="ApplyEnvOffsetsToTarget" Type="Boolean" DefaultValue="0">
+      <Name ID="4984"/>
+    </Pref>
+    <Pref ID="BinauralCorrection" Type="Boolean" DefaultValue="0"/>
+    <!-- -->
+    <!-- Websites -->
+    <!-- -->
+    <Pref ID="CableGuideWebSite" Type="String" DefaultValue="http://go.gn.com/b-rs">
+      <Name ID="1976"/>
+    </Pref>
+    <Pref ID="UserGuideWebSite" Type="String" DefaultValue="http://go.gn.com/b-rs"/>
+    <Pref ID="WebLaunchSite" Type="String" DefaultValue="www.resound.com"/>
+    <Pref ID="EcademyWebSite" Type="String" DefaultValue="http://www.resoundpro.com/e-cademy">
+      <Name ID="5938"/>
+    </Pref>
+    <!-- E-CommerceWebsite is a placeholder here - each market that enables e-Commerce should have its own website -->
+    <Pref ID="ECommerceWebSite" Type="String" DefaultValue="http://www.gnresound.com">
+      <Name ID="7734"/>
+    </Pref>
+    <!-- -->
+    <!-- Misc -->
+    <!-- -->
+    <Pref ID="DefaultTimeConstant" Type="String" DefaultValue="Fast"/>
+    <Pref ID="SuperPowerLoudTargetCurvePercent" Type="Int" DefaultValue="40"/>
+    <Pref ID="SuperPowerSoftTargetCurvePercent" Type="Int" DefaultValue="50"/>
+  </Preferences>
+</Root>

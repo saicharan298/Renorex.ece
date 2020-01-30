@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <Version Major="1" Minor="0" />
+  <SoundAssets>
+      <SoundAsset Name="5471" SoundName="_DECDFemale.ave"/>
+      <SoundAsset Name="5472" SoundName="_DECDMale.ave"/>
+      <SoundAsset Name="5473" SoundName="cold season_german.ave"/>
+      <SoundAsset Name="2249" SoundName="md+5lunch_german.ave"/>
+      <SoundAsset Name="2250" SoundName="morning_g.ave"/>
+      <SoundAsset Name="5475" SoundName="Police_Norway.ave"/>
+      <SoundAsset Name="2256" SoundName="soccer_german.ave"/>
+      <SoundAsset Name="2251" SoundName="stocktip_german.ave"/>
+      <SoundAsset Name="2252" SoundName="summer_g.ave"/>
+  </SoundAssets>
+</Root>

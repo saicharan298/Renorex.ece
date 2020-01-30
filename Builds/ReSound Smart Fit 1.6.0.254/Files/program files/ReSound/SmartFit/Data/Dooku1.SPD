@@ -1,0 +1,2722 @@
+<?xml version="1.0"?>
+<SPDProductData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" AlgoPackageName="D1" AlgoPackage="Dooku1">
+  <Version MajorVersion="1" MinorVersion="0" DataVersion="1"/>
+  <PricePoints>
+    <PricePoint PricePoint="Top">
+      <Accessories>
+        <Accessory AccessoryType="RemoteControl" IsSupported="true"/>
+        <Accessory AccessoryType="BTB" IsSupported="true"/>
+        <Accessory AccessoryType="SAS" IsSupported="true"/>
+        <Accessory AccessoryType="SAS" IsSupported="true"/>
+        <Accessory AccessoryType="SAS" IsSupported="true"/>
+        <Accessory AccessoryType="BLE" IsSupported="true"/>
+        <Accessory AccessoryType="BLE" IsSupported="true"/>
+        <Accessory AccessoryType="BLE" IsSupported="true"/>
+        <Accessory AccessoryType="BLE" IsSupported="true"/>
+        <Accessory AccessoryType="BLE" IsSupported="true"/>
+		<Accessory AccessoryType="SpouseMicrophone" IsSupported="true" />
+		<Accessory AccessoryType="SpouseMicrophone2" IsSupported="true" />
+		<Accessory AccessoryType="SpouseMicrophone2Pro" IsSupported="true" />
+		<Accessory AccessoryType="SpouseMicrophone2Micro" IsSupported="true" />
+      </Accessories>
+    </PricePoint>
+    <PricePoint PricePoint="Plus">
+      <Accessories>
+        <Accessory AccessoryType="RemoteControl" IsSupported="true"/>
+        <Accessory AccessoryType="BTB" IsSupported="true"/>
+        <Accessory AccessoryType="SAS" IsSupported="true"/>
+        <Accessory AccessoryType="SAS" IsSupported="true"/>
+        <Accessory AccessoryType="SAS" IsSupported="true"/>
+        <Accessory AccessoryType="BLE" IsSupported="true"/>
+        <Accessory AccessoryType="BLE" IsSupported="true"/>
+        <Accessory AccessoryType="BLE" IsSupported="true"/>
+        <Accessory AccessoryType="BLE" IsSupported="true"/>
+        <Accessory AccessoryType="BLE" IsSupported="true"/>
+		<Accessory AccessoryType="SpouseMicrophone" IsSupported="true" />
+		<Accessory AccessoryType="SpouseMicrophone2" IsSupported="true" />
+		<Accessory AccessoryType="SpouseMicrophone2Pro" IsSupported="true" />
+		<Accessory AccessoryType="SpouseMicrophone2Micro" IsSupported="true" />
+      </Accessories>
+    </PricePoint>
+    <PricePoint PricePoint="Basic">
+      <Accessories>
+        <Accessory AccessoryType="RemoteControl" IsSupported="true"/>
+        <Accessory AccessoryType="BTB" IsSupported="true"/>
+        <Accessory AccessoryType="SAS" IsSupported="true"/>
+        <Accessory AccessoryType="SAS" IsSupported="true"/>
+        <Accessory AccessoryType="SAS" IsSupported="true"/>
+        <Accessory AccessoryType="BLE" IsSupported="true"/>
+        <Accessory AccessoryType="BLE" IsSupported="true"/>
+        <Accessory AccessoryType="BLE" IsSupported="true"/>
+        <Accessory AccessoryType="BLE" IsSupported="true"/>
+        <Accessory AccessoryType="BLE" IsSupported="true"/>
+		<Accessory AccessoryType="SpouseMicrophone" IsSupported="true" />
+		<Accessory AccessoryType="SpouseMicrophone2" IsSupported="true" />
+		<Accessory AccessoryType="SpouseMicrophone2Pro" IsSupported="true" />
+		<Accessory AccessoryType="SpouseMicrophone2Micro" IsSupported="true" />
+      </Accessories>
+    </PricePoint>
+  </PricePoints>
+  <FormFactors>
+    <FormFactor HWPlatform="Luxor_Lima" Type="RecieverInTheEar" BatterySize="Size45" MicroPhone="Dual" IsWireless="true" ModelExtension="Extension_None" DeviceConfiguration="NormalPowerClosed" ID="0" FormFactorName="LxRIE45DW" FF="1"/>
+    <FormFactor HWPlatform="Berlin" Type="RecieverInTheEar" BatterySize="Size13" MicroPhone="Dual" IsWireless="true" ModelExtension="Extension_None" DeviceConfiguration="NormalPowerClosed" ID="0" FormFactorName="BeRIE13DW" FF="2"/>
+  </FormFactors>
+  <ProductFeatures>
+    <HandleProperties>
+      <HandleProperty HandleID="Max">
+        <DefaultValues>
+          <DefaultValue PP="1" Value="Extended17"/>
+          <DefaultValue PP="4" Value="Extended14"/>
+          <DefaultValue PP="8" Value="Extended12"/>
+        </DefaultValues>
+      </HandleProperty>
+      <HandleProperty HandleID="Mid">
+        <DefaultValues>
+          <DefaultValue PP="1" Value="Extended10"/>
+          <DefaultValue PP="4" Value="Extended8"/>
+          <DefaultValue PP="8" Value="Extended6"/>
+        </DefaultValues>
+      </HandleProperty>
+      <HandleProperty HandleID="Min">
+        <DefaultValues>
+          <DefaultValue PP="1" Value="Extended6"/>
+          <DefaultValue PP="4" Value="Extended4"/>
+          <DefaultValue PP="8" Value="Extended3"/>
+        </DefaultValues>
+      </HandleProperty>
+      <HandleProperty HandleID="ClassifierHandles">
+        <DefaultValues>
+          <DefaultValue Value="ClassifierHandle77"/>
+        </DefaultValues>
+      </HandleProperty>
+    </HandleProperties>
+    <ProductProperties>
+      <ProductProperty Property="SupportsMFI">
+        <DefaultValues>
+          <DefaultValue Value="true"/>
+        </DefaultValues>
+      </ProductProperty>
+      <ProductProperty Property="SupportsInsitu">
+        <DefaultValues>
+          <DefaultValue Value="true"/>
+        </DefaultValues>
+      </ProductProperty>
+      <ProductProperty Property="SupportsMultiButton">
+        <DefaultValues>
+          <DefaultValue FF="2" Value="true"/>
+        </DefaultValues>
+      </ProductProperty>
+      <ProductProperty Property="SupportsPBVCASMultiButton">
+        <DefaultValues>
+          <DefaultValue FF="1" Value="true"/>
+        </DefaultValues>
+      </ProductProperty>
+      <ProductProperty Property="SupportsEar2Ear">
+        <DefaultValues>
+          <DefaultValue Value="true"/>
+        </DefaultValues>
+      </ProductProperty>
+      <ProductProperty Property="SupportsSatisfy">
+        <DefaultValues>
+          <DefaultValue Value="true"/>
+        </DefaultValues>
+      </ProductProperty>
+      <ProductProperty Property="SupportsEVFT">
+        <DefaultValues>
+          <DefaultValue PP="7" Value="true"/>
+        </DefaultValues>
+      </ProductProperty>
+      <ProductProperty Property="SupportsTSGOnly">
+        <DefaultValues>
+          <DefaultValue Value="true"/>
+        </DefaultValues>
+      </ProductProperty>
+      <ProductProperty Property="SupportsTSGNaturalSounds">
+        <DefaultValues>
+          <DefaultValue Value="true"/>
+        </DefaultValues>
+      </ProductProperty>
+      <ProductProperty Property="SupportsAutoPhone">
+        <DefaultValues>
+          <DefaultValue Value="true"/>
+        </DefaultValues>
+      </ProductProperty>
+      <ProductProperty Property="SupportsPediatrics">
+        <DefaultValues>
+          <DefaultValue Value="false"/>
+        </DefaultValues>
+      </ProductProperty>
+      <ProductProperty Property="SupportsLED">
+        <DefaultValues>
+          <DefaultValue Value="false"/>
+        </DefaultValues>
+      </ProductProperty>
+      <ProductProperty Property="SupportsDisableDAIJump">
+        <DefaultValues>
+          <DefaultValue Value="false"/>
+        </DefaultValues>
+      </ProductProperty>
+      <ProductProperty Property="SupportsRFT">
+        <DefaultValues>
+          <DefaultValue Value="true"/>
+        </DefaultValues>
+      </ProductProperty>
+      <ProductProperty Property="SupportsRFU">
+        <DefaultValues>
+          <DefaultValue Value="true"/>
+        </DefaultValues>
+      </ProductProperty>
+      <ProductProperty Property="SupportsExtendedBandwidth">
+        <DefaultValues>
+          <DefaultValue Value="true"/>
+        </DefaultValues>
+      </ProductProperty>
+    </ProductProperties>
+    <MelodyFeatures/>
+    <SatisfyFeatures/>
+    <ButtonEventFeatures>
+      <ButtonEventFeature FeatureID="Os.WirelessMode" RatatoskID="Os.WirelessMode" DataType="Enum" FeatureRestriction="NeedsRechargeable" FeatureType="Instrument" SupportsSurround="false" NeedsBinaural="false" OffValue="Disabled" RftRestricted="false">
+        <UICategories>
+          <UICategory Category="ToggleButton"/>
+        </UICategories>
+        <Strings>
+          <String StringID="3663"/>
+        </Strings>
+        <FeatureValues>
+          <FeatureValue FeatureValueId="Off" RatatoskID="FlightModeDisabled" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="237"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue FeatureValueId="On" RatatoskID="FlightModeButtonInitiated" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="257"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+        </FeatureValues>
+        <DefaultValues/>
+        <ImageResources/>
+      </ButtonEventFeature>
+    </ButtonEventFeatures>
+    <RangeFeatures/>
+  </ProductFeatures>
+  <ProgramFeatures>
+    <DirectionalFeatures>
+      <Feature EV="4255" FF="0" FeatureID="Mic" RatatoskID="InputMode" DataType="Enum" FeatureRestriction="NoRestriction" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="Omni" RftRestricted="false">
+        <UICategories>
+          <UICategory Category="None"/>
+        </UICategories>
+        <Strings>
+          <String StringID="927" ToolTipId="9796"/>
+        </Strings>
+        <FeatureValues>
+          <FeatureValue EV="4255" FeatureValueId="MicOnly" RatatoskID="Omni" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="286"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+        </FeatureValues>
+        <DefaultValues/>
+      </Feature>
+      <Feature EV="1536" FeatureID="ExternalStreaming" RatatoskID="InputMode" DataType="Enum" FeatureRestriction="NeedsWireless" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="Omni" RftRestricted="false">
+        <UICategories>
+          <UICategory Category="None"/>
+        </UICategories>
+        <Strings>
+          <String StringID="3439" ToolTipId="9797"/>
+        </Strings>
+        <FeatureValues>
+          <FeatureValue EV="1536" FeatureValueId="ExternalStreamingMic" RatatoskID="ExternalStreamingMic1" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="3440"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+        </FeatureValues>
+        <DefaultValues/>
+      </Feature>
+      <Feature EV="96" FF="0" FeatureID="Tel" RatatoskID="InputMode" DataType="Enum" FeatureRestriction="NeedsTelcoil" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="Omni" RftRestricted="false">
+        <UICategories>
+          <UICategory Category="None"/>
+        </UICategories>
+        <Strings>
+          <String StringID="283" ToolTipId="9798"/>
+        </Strings>
+        <FeatureValues>
+          <FeatureValue EV="96" FeatureValueId="MicPlusTel" RatatoskID="TelecoilMic1" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="285"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+        </FeatureValues>
+        <DefaultValues/>
+      </Feature>
+      <Feature EV="256" FF="0" FeatureID="DAI" RatatoskID="InputMode" DataType="Enum" FeatureRestriction="NeedsDAI" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="Omni" RftRestricted="false">
+        <UICategories>
+          <UICategory Category="None"/>
+        </UICategories>
+        <Strings>
+          <String StringID="253" ToolTipId="9799"/>
+        </Strings>
+        <FeatureValues>
+          <FeatureValue EV="256" FeatureValueId="MicPlusDai" RatatoskID="DAIMic1" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="255"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+        </FeatureValues>
+        <DefaultValues/>
+      </Feature>
+      <Feature EV="4255" FeatureID="Directionality" RatatoskID="InputMode" DataType="Enum" FeatureRestriction="NeedsDualMicrophone" FeatureType="Program" SupportsSurround="false" NeedsBinaural="true" OffValue="Omni" RftRestricted="false">
+        <UICategories>
+          <UICategory Category="AdvancedFeature"/>
+        </UICategories>
+        <Strings>
+          <String StringID="3652" ToolTipId="8696"/>
+        </Strings>
+        <FeatureValues>
+          <FeatureValue EV="4255" FeatureValueId="Omni" RatatoskID="Omni" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="262"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue EV="156" PP="13" Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue EV="4255" FeatureValueId="SoftSwitching" RatatoskID="AdaptiveDirectionalitySoftSwitching" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="264"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue EV="1" PP="13" Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue EV="4254" FeatureValueId="AdaptiveDirectionality" RatatoskID="AdaptiveDirectionality" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String EV="4254" PP="1" StringID="5281"/>
+              <String EV="4254" PP="4" StringID="5284"/>
+              <String EV="4254" PP="8" StringID="5465"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue EV="2" PP="13" Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue EV="4254" FeatureValueId="Fixed" RatatoskID="Bass2FocusHyperCardioid" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="265"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue EV="1" FeatureValueId="FocusEar" RatatoskID="Bass2FocusHyperCardioid" NeedsBinaural="true" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="8658"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue EV="1" FeatureValueId="MonitorEar" RatatoskID="Bass2Monitor" NeedsBinaural="true" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="8659"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue EV="1" PP="4" FeatureValueId="FocusEar3" RatatoskID="Bass3Focus" NeedsBinaural="true" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="8660"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue EV="1" PP="1" FeatureValueId="SpatialHearingLite" RatatoskID="SpatialHearingLite" NeedsBinaural="true" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="8578"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue EV="1" PP="4" FeatureValueId="MonitorEar3" RatatoskID="Bass3Monitor" NeedsBinaural="true" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="8660"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue EV="1" FF="0" PP="0" FeatureValueId="FocusEar3" RatatoskID="Bass3Focus" NeedsBinaural="true" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="8660"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue EV="1" FF="0" PP="0" FeatureValueId="MonitorEar3" RatatoskID="Bass3Monitor" NeedsBinaural="true" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="8660"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue EV="1" FF="0" PP="0" FeatureValueId="FocusEar4" RatatoskID="Bass4Focus" NeedsBinaural="true" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="8661"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue EV="1" FF="0" PP="0" FeatureValueId="MonitorEar4" RatatoskID="Bass4Monitor" NeedsBinaural="true" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="8661"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue EV="1" PP="1" FeatureValueId="MonitorEar45" RatatoskID="Bass45Monitor" NeedsBinaural="true" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="9321"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue EV="1" PP="1" FeatureValueId="FocusEar45" RatatoskID="Bass45Focus" NeedsBinaural="true" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="9321"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+        </FeatureValues>
+        <DefaultValues/>
+      </Feature>
+      <Feature EV="4255" FeatureID="BeamWidthLevel" RatatoskID="Directionality.BeamwidthLevel" DataType="Enum" FeatureRestriction="NeedsDualMicrophone" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="ABWA Narrow" RftRestricted="false">
+        <UICategories>
+          <UICategory EV="4255" PP="5" Category="AdvancedFeature"/>
+          <UICategory EV="4255" PP="8" Category="None"/>
+        </UICategories>
+        <Strings>
+          <String EV="4255" PP="1" StringID="3660" ToolTipId="8383"/>
+          <String EV="4255" PP="12" StringID="287" ToolTipId="8383"/>
+        </Strings>
+        <FeatureValues>
+          <FeatureValue EV="4255" FeatureValueId="Narrow" RatatoskID="ABWA Narrow" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="288"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue EV="4252" PP="1" Value="true"/>
+              <DefaultValue EV="4254" PP="2" Value="true"/>
+              <DefaultValue EV="4255" PP="4" Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue EV="4255" FeatureValueId="Medium" RatatoskID="ABWA Medium" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="290"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue EV="4255" FeatureValueId="Wide" RatatoskID="ABWA Wide" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="289"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue EV="4255" PP="8" Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue EV="4255" PP="1" FeatureValueId="Automatic" RatatoskID="ABWA Dynamic" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="3662"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue EV="4099" PP="1" Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+        </FeatureValues>
+        <DefaultValues/>
+      </Feature>
+      <Feature EV="4255" FeatureID="BandsplitLevel" RatatoskID="Directionality.BandsplitLevel" DataType="Enum" FeatureRestriction="NeedsDualMicrophone" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="Low" RftRestricted="false">
+        <UICategories>
+          <UICategory EV="4255" PP="1" Category="AdvancedFeature"/>
+          <UICategory EV="4255" PP="12" Category="None"/>
+        </UICategories>
+        <Strings>
+          <String StringID="3455" ToolTipId="8556"/>
+        </Strings>
+        <FeatureValues>
+          <FeatureValue EV="4255" FeatureValueId="High" RatatoskID="High" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="3456"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue EV="4255" FeatureValueId="Medium" RatatoskID="Medium" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="3457"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue EV="4255" FeatureValueId="Mild" RatatoskID="Mild" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="3458"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue EV="4255" FeatureValueId="Low" RatatoskID="Low" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="3459"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+        </FeatureValues>
+        <DefaultValues/>
+      </Feature>
+      <Feature EV="4255" FeatureID="BandsplitBassLevel" RatatoskID="Directionality.BassboostLevel" DataType="Enum" FeatureRestriction="NeedsDualMicrophone" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="Low" RftRestricted="false">
+        <UICategories>
+          <UICategory Category="None"/>
+        </UICategories>
+        <Strings>
+          <String StringID="8651" ToolTipId="9800"/>
+        </Strings>
+        <FeatureValues>
+          <FeatureValue EV="4255" FeatureValueId="High" RatatoskID="High" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="3456"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue EV="4255" FeatureValueId="Medium" RatatoskID="Medium" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="3457"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue EV="4255" FeatureValueId="Mild" RatatoskID="Mild" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="3458"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue EV="4255" FeatureValueId="Low" RatatoskID="Low" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="3459"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+        </FeatureValues>
+        <DefaultValues/>
+      </Feature>
+      <Feature EV="4255" PP="5" FeatureID="E2E.SynchronizedAutosteering" RatatoskID="AutoSteering.Synchronized" DataType="Boolean" FeatureRestriction="NeedsEar2EarSupport" FeatureType="Program" SupportsSurround="false" NeedsBinaural="true" OffValue="false" RftRestricted="false">
+        <UICategories>
+          <UICategory Category="None"/>
+        </UICategories>
+        <Strings>
+          <String PP="1" StringID="7847"/>
+          <String PP="4" StringID="9862"/>
+        </Strings>
+        <FeatureValues/>
+        <DefaultValues>
+          <DefaultValue Value="false"/>
+        </DefaultValues>
+      </Feature>
+      <Feature xsi:type="ProductEVFTFeature" PP="1" FeatureID="E2E.EVFT.Synchronized" RatatoskID="FineTuner.Synchronized" DataType="Boolean" FeatureRestriction="NeedsEar2EarSupport" FeatureType="Program" SupportsSurround="false" NeedsBinaural="true" OffValue="false" RftRestricted="false">
+        <UICategories>
+          <UICategory PP="1" Category="None"/>
+        </UICategories>
+        <Strings>
+          <String PP="1" StringID="3468"/>
+        </Strings>
+        <FeatureValues/>
+        <DefaultValues>
+          <DefaultValue PP="1" Value="true"/>
+        </DefaultValues>
+      </Feature>
+    </DirectionalFeatures>
+    <AudiologicalFeatures>
+      <Feature FeatureID="AGCI" RatatoskID="AgciTimeConstantsMode" DataType="Enum" FeatureRestriction="NoRestriction" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="Syllabic" RftRestricted="false">
+        <UICategories>
+          <UICategory EV="6143" PP="5" Category="AdvancedFeature"/>
+          <UICategory EV="6143" PP="8" Category="None"/>
+        </UICategories>
+        <Strings>
+          <String StringID="3665" ToolTipId="9801"/>
+        </Strings>
+        <FeatureValues>
+          <FeatureValue FeatureValueId="Syllabic" RatatoskID="Syllabic" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="3666"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue EV="6139" Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue FeatureValueId="Fast" RatatoskID="Fast" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="3667"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue FeatureValueId="Moderate" RatatoskID="Moderate" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="3668"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue FeatureValueId="Slow" RatatoskID="Slow" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="3669"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue EV="4" Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+        </FeatureValues>
+        <DefaultValues/>
+      </Feature>
+      <Feature FeatureID="DFS" RatatoskID="Afxdfs.Mode" DataType="Enum" FeatureRestriction="NoRestriction" FeatureType="Program" SupportsSurround="true" NeedsBinaural="false" OffValue="" RftRestricted="true">
+        <UICategories>
+          <UICategory Category="AdvancedFeature"/>
+        </UICategories>
+        <Strings>
+          <String StringID="6971" ToolTipId="8387"/>
+        </Strings>
+        <FeatureValues>
+          <FeatureValue FeatureValueId="Off" RatatoskID="Off" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="237"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue PP="0" FeatureValueId="On" RatatoskID="AFX-DFS" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="257"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue FeatureValueId="Mild" RatatoskID="AFX-DFS and AFGC mild" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="296"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue EV="6123" Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue FeatureValueId="Moderate" RatatoskID="AFX-DFS and AFGC moderate" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="297"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue FeatureValueId="Strong" RatatoskID="AFX-DFS and AFGC strong" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="299"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue EV="16" Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue FeatureValueId="Music" RatatoskID="AFX-DFS music mode and AFGC mild" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="1256"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue EV="4" Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+        </FeatureValues>
+        <DefaultValues/>
+      </Feature>
+      <Feature FeatureID="AfxdfsInitFree" RatatoskID="AfxdfsInitFree" DataType="Boolean" FeatureRestriction="NoRestriction" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="false" RftRestricted="false">
+        <UICategories>
+          <UICategory Category="AdvancedFeature"/>
+        </UICategories>
+        <Strings>
+          <String StringID="6281" ToolTipId="9942"/>
+        </Strings>
+        <FeatureValues/>
+        <DefaultValues>
+          <DefaultValue Value="true"/>
+        </DefaultValues>
+      </Feature>
+      <Feature FeatureID="NoiseTracker" RatatoskID="Pnr.Mode" DataType="Enum" FeatureRestriction="NoRestriction" FeatureType="Program" SupportsSurround="true" NeedsBinaural="false" OffValue="Off" RftRestricted="false">
+        <UICategories>
+          <UICategory Category="AdvancedFeature"/>
+        </UICategories>
+        <Strings>
+          <String StringID="294" ToolTipId="8813"/>
+        </Strings>
+        <FeatureValues>
+          <FeatureValue FeatureValueId="Off" RatatoskID="Off" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="295"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue EV="132" Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue FeatureValueId="Mild" RatatoskID="Mild" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="296"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue EV="1792" PP="1" Value="true"/>
+              <DefaultValue EV="1793" PP="12" Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue FeatureValueId="Medium" RatatoskID="Medium" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="297"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue EV="106" PP="1" Value="true"/>
+              <DefaultValue EV="4218" PP="12" Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue PP="5" FeatureValueId="Strong" RatatoskID="Strong" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="298"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue PP="1" FeatureValueId="VeryStrong" RatatoskID="Very Strong" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="299"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue EV="4255" PP="1" FeatureValueId="PerEnv" RatatoskID="PerEnvironment" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="3855"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue EV="17" PP="1" Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+        </FeatureValues>
+        <DefaultValues/>
+      </Feature>
+      <Feature EV="4255" FeatureID="WindNoiseReduction.Mode" RatatoskID="WindNoiseReduction.ReductionMode" DataType="Enum" FeatureRestriction="NoRestriction" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="Off" RftRestricted="false">
+        <UICategories>
+          <UICategory Category="AdvancedFeature"/>
+        </UICategories>
+        <Strings>
+          <String StringID="5704" ToolTipId="8385"/>
+        </Strings>
+        <FeatureValues>
+          <FeatureValue EV="5791" FeatureValueId="Off" RatatoskID="Off" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="5705"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue EV="5879" FF="2161728916354758163" Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue EV="5791" FeatureValueId="Mild" RatatoskID="Mild" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String EV="5887" FF="2161728916354758163" PP="7" StringID="5706"/>
+              <String EV="5887" FF="2161728916354758163" PP="248" StringID="257"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue EV="8" FF="2161728916354758163" Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue EV="5791" PP="5" FeatureValueId="Medium" RatatoskID="Medium" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="5707"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue EV="5791" PP="1" FeatureValueId="Strong" RatatoskID="Strong" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="5708"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+        </FeatureValues>
+        <DefaultValues/>
+      </Feature>
+      <Feature EV="4255" PP="5" FeatureID="ImpulseNoiseReduction" RatatoskID="ImpulseNoiseReductionMode" DataType="Enum" FeatureRestriction="NoRestriction" FeatureType="Program" SupportsSurround="true" NeedsBinaural="false" OffValue="Off" RftRestricted="false">
+        <UICategories>
+          <UICategory PP="5" Category="AdvancedFeature"/>
+        </UICategories>
+        <Strings>
+          <String PP="5" StringID="9888" ToolTipId="9889"/>
+        </Strings>
+        <FeatureValues>
+          <FeatureValue PP="5" FeatureValueId="Off" RatatoskID="Off" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String PP="5" StringID="5705"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue EV="2052" PP="5" Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue EV="5791" PP="5" FeatureValueId="Mild" RatatoskID="Mild" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String EV="5791" PP="5" StringID="5706"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue EV="524347" PP="5" Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue EV="5791" PP="5" FeatureValueId="Moderate" RatatoskID="Moderate" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="9913"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue EV="5791" PP="5" FeatureValueId="Strong" RatatoskID="Strong" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="5708"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+        </FeatureValues>
+        <DefaultValues/>
+      </Feature>
+      <Feature FeatureID="Expansion" RatatoskID="Expansion" DataType="Enum" FeatureRestriction="NoRestriction" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="Off" RftRestricted="false">
+        <UICategories>
+          <UICategory Category="AdvancedFeature"/>
+        </UICategories>
+        <Strings>
+          <String StringID="236" ToolTipId="8386"/>
+        </Strings>
+        <FeatureValues>
+          <FeatureValue EV="96" FeatureValueId="Off" RatatoskID="Off" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="237"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue EV="6047" FeatureValueId="Mild" RatatoskID="Mild" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="237"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue EV="6047" FeatureValueId="Medium" RatatoskID="Medium" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String EV="6047" PP="5" StringID="817"/>
+              <String EV="6047" PP="8" StringID="257"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue EV="6047" PP="5" FeatureValueId="Moderate" RatatoskID="Moderate" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="4998"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue EV="6047" PP="1" FeatureValueId="Strong" RatatoskID="Strong" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="1786"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue EV="96" FeatureValueId="TeleCoilMild" RatatoskID="TelecoilMild" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String EV="96" PP="5" StringID="817"/>
+              <String EV="96" PP="8" StringID="257"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue EV="96" PP="5" FeatureValueId="TeleCoilModerate" RatatoskID="TelecoilMedium" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="4998"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue EV="96" PP="1" FeatureValueId="TeleCoilStrong" RatatoskID="TelecoilModerate" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="1786"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+        </FeatureValues>
+        <DefaultValues/>
+      </Feature>
+      <Feature FeatureID="CodecBassBoostSas" RatatoskID="CodecBassBoostSas" DataType="Enum" FeatureRestriction="NeedsStreaming" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="Off" RftRestricted="false">
+        <UICategories>
+          <UICategory Category="AdvancedFeature"/>
+        </UICategories>
+        <Strings>
+          <String StringID="9924" ToolTipId="8553"/>
+        </Strings>
+        <FeatureValues>
+          <FeatureValue EV="1536" FeatureValueId="Off" RatatoskID="Off" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="237"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue EV="1536" FeatureValueId="Mild" RatatoskID="Mild" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String EV="1536" PP="5" StringID="296"/>
+              <String EV="1536" PP="8" StringID="257"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue EV="1536" PP="5" FeatureValueId="Moderate" RatatoskID="Moderate" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="297"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue EV="1536" PP="1" FeatureValueId="Strong" RatatoskID="Strong" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="299"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+        </FeatureValues>
+        <DefaultValues/>
+      </Feature>
+      <Feature FeatureID="CodecBassBoostSm" RatatoskID="CodecBassBoostSm" DataType="Enum" FeatureRestriction="NeedsStreaming" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="Off" RftRestricted="false">
+        <UICategories>
+          <UICategory Category="AdvancedFeature"/>
+        </UICategories>
+        <Strings>
+          <String StringID="9916" ToolTipId="10065"/>
+        </Strings>
+        <FeatureValues>
+          <FeatureValue EV="1536" FeatureValueId="Off" RatatoskID="Off" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="237"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue EV="1536" FeatureValueId="Mild" RatatoskID="Mild" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String EV="1536" PP="5" StringID="296"/>
+              <String EV="1536" PP="8" StringID="257"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue EV="1536" PP="5" FeatureValueId="Moderate" RatatoskID="Moderate" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="297"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue EV="1536" PP="1" FeatureValueId="Strong" RatatoskID="Strong" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="299"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+        </FeatureValues>
+        <DefaultValues/>
+      </Feature>
+      <Feature FeatureID="CodecBassBoostBtb" RatatoskID="CodecBassBoostBtb" DataType="Enum" FeatureRestriction="NoRestriction" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="Off" RftRestricted="false">
+        <UICategories>
+          <UICategory Category="None"/>
+        </UICategories>
+        <Strings>
+          <String StringID="9923" ToolTipId="8553"/>
+        </Strings>
+        <FeatureValues>
+          <FeatureValue FeatureValueId="Off" RatatoskID="Off" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="237"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue FeatureValueId="Mild" RatatoskID="Mild" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String PP="5" StringID="296"/>
+              <String PP="8" StringID="257"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue PP="5" FeatureValueId="Moderate" RatatoskID="Moderate" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="297"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue PP="1" FeatureValueId="Strong" RatatoskID="Strong" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="299"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+        </FeatureValues>
+        <DefaultValues/>
+      </Feature>
+      <Feature FeatureID="CodecBassBoostPhone" RatatoskID="CodecBassBoostPhone" DataType="Enum" FeatureRestriction="NoRestriction" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="Off" RftRestricted="false" IsMixInFeature="true">
+        <UICategories>
+          <UICategory Category="AdvancedFeature"/>
+        </UICategories>
+        <Strings>
+          <String StringID="9923" ToolTipId="8553"/>
+        </Strings>
+        <FeatureValues>
+          <FeatureValue FeatureValueId="Off" RatatoskID="Off" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="237"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue FeatureValueId="Mild" RatatoskID="Mild" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String PP="5" StringID="296"/>
+              <String PP="8" StringID="257"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue PP="5" FeatureValueId="Moderate" RatatoskID="Moderate" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="297"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue PP="1" FeatureValueId="Strong" RatatoskID="Strong" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="299"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+        </FeatureValues>
+        <DefaultValues/>
+      </Feature>
+      <Feature FeatureID="AutoPhoneLevel" RatatoskID="AutoPhoneLevel" DataType="Int32" FeatureRestriction="NeedsAutoPhoneSupport" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="0" RftRestricted="false">
+        <UICategories>
+          <UICategory Category="None"/>
+        </UICategories>
+        <Strings>
+          <String StringID="0" ToolTipId="9803"/>
+        </Strings>
+        <FeatureValues/>
+        <DefaultValues>
+          <DefaultValue Value="6"/>
+        </DefaultValues>
+      </Feature>
+      <Feature FeatureID="FreqLow.Level" RatatoskID="FreqLow.Level" DataType="Enum" FeatureRestriction="NoRestriction" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="Off" RftRestricted="false">
+        <UICategories>
+          <UICategory Category="AdvancedFeature"/>
+        </UICategories>
+        <Strings>
+          <String StringID="7905" ToolTipId="8388"/>
+        </Strings>
+        <FeatureValues>
+          <FeatureValue FeatureValueId="LevelOff" RatatoskID="Off" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="7906"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue FeatureValueId="Level1" RatatoskID="1" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="9903"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue FeatureValueId="Level2" RatatoskID="2" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="7907"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue FeatureValueId="Level4" RatatoskID="4" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="7908"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue FeatureValueId="Level6" RatatoskID="6" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="7909"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+        </FeatureValues>
+        <DefaultValues/>
+      </Feature>
+    </AudiologicalFeatures>
+    <TinnitusFeatures>
+      <Feature FeatureID="TSG.Profile" RatatoskID="FittingSoftwareData.TsgProfile" DataType="Enum" FeatureRestriction="NeedsTSG" FeatureType="ProgramInfoSpace" SupportsSurround="false" NeedsBinaural="false" OffValue="" RftRestricted="true">
+        <UICategories>
+          <UICategory Category="TSG"/>
+        </UICategories>
+        <Strings>
+          <String StringID="7951"/>
+        </Strings>
+        <FeatureValues>
+          <FeatureValue FeatureValueId="Custom" RatatoskID="0" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="7952"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue FeatureValueId="HighToneNoise" RatatoskID="1" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="7953"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue FeatureValueId="WhiteNoise" RatatoskID="2" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="7954"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue FeatureValueId="SpeechNoise" RatatoskID="3" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="7955"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue FeatureValueId="PinkNoise" RatatoskID="4" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="7956"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+        </FeatureValues>
+        <DefaultValues/>
+      </Feature>
+      <Feature FeatureID="TSG.NoiseLevel" RatatoskID="Tsg.NoiseLevel" DataType="Int16" FeatureRestriction="NeedsTSG" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="0" RftRestricted="true">
+        <UICategories>
+          <UICategory Category="TSG"/>
+        </UICategories>
+        <Strings>
+          <String StringID="6799"/>
+        </Strings>
+        <FeatureValues/>
+        <DefaultValues>
+          <DefaultValue Value="55"/>
+        </DefaultValues>
+      </Feature>
+      <Feature FeatureID="TSG.LowPassFilterFreq" RatatoskID="Tsg.LowpassCutoffFrequency" DataType="Enum" FeatureRestriction="NeedsTSG" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="" RftRestricted="true">
+        <UICategories>
+          <UICategory Category="TSG"/>
+        </UICategories>
+        <Strings>
+          <String StringID="6798"/>
+        </Strings>
+        <FeatureValues>
+          <FeatureValue FeatureValueId="F8000Hz" RatatoskID="8000Hz" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="9234"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue FeatureValueId="F6000Hz" RatatoskID="6000Hz" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="1782"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue FeatureValueId="F5000Hz" RatatoskID="5000Hz" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="5678"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue FeatureValueId="F4000Hz" RatatoskID="4000Hz" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="1781"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue FeatureValueId="F3000Hz" RatatoskID="3000Hz" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="1780"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue FeatureValueId="F2000Hz" RatatoskID="2000Hz" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="1779"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue FeatureValueId="Off" RatatoskID="Off" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="3735"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+        </FeatureValues>
+        <DefaultValues/>
+      </Feature>
+      <Feature FeatureID="TSG.HighPassFilterFreq" RatatoskID="Tsg.HighpassCutoffFrequency" DataType="Enum" FeatureRestriction="NeedsTSG" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="" RftRestricted="true">
+        <UICategories>
+          <UICategory Category="TSG"/>
+        </UICategories>
+        <Strings>
+          <String StringID="6797"/>
+        </Strings>
+        <FeatureValues>
+          <FeatureValue FeatureValueId="Off" RatatoskID="Off" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="3737"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue FeatureValueId="F500Hz" RatatoskID="500Hz" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="1773"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue FeatureValueId="F750Hz" RatatoskID="750Hz" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="1774"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue FeatureValueId="F1000Hz" RatatoskID="1000Hz" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="1775"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue FeatureValueId="F1500Hz" RatatoskID="1500Hz" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="1776"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue FeatureValueId="F2000Hz" RatatoskID="2000Hz" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="1777"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+        </FeatureValues>
+        <DefaultValues/>
+      </Feature>
+      <Feature EV="2207" FeatureID="Tsg.EnvironmentalSteeringEnabled" RatatoskID="Tsg.EnvironmentalSteeringEnabled" DataType="Boolean" FeatureRestriction="NeedsTSG" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="false" RftRestricted="true" IsMixInFeature="false">
+        <UICategories>
+          <UICategory Category="TSG"/>
+        </UICategories>
+        <Strings>
+          <String StringID="8653"/>
+        </Strings>
+        <FeatureValues/>
+        <DefaultValues>
+          <DefaultValue Value="false"/>
+        </DefaultValues>
+      </Feature>
+      <Feature FeatureID="TSG.ModulationSpeed" RatatoskID="Tsg.AmplitudeModulationSpeed" DataType="Enum" FeatureRestriction="NeedsTSG" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="" RftRestricted="true">
+        <UICategories>
+          <UICategory Category="TSG"/>
+        </UICategories>
+        <Strings>
+          <String StringID="1753"/>
+        </Strings>
+        <FeatureValues>
+          <FeatureValue FeatureValueId="Slow" RatatoskID="Slow" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="1765"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue FeatureValueId="Medium" RatatoskID="Medium" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="1766"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue FeatureValueId="Fast" RatatoskID="Fast" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="1767"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+        </FeatureValues>
+        <DefaultValues/>
+      </Feature>
+      <Feature FeatureID="TSG.ModulationLevel" RatatoskID="Tsg.AmplitudeModulationAttenuation" DataType="Enum" FeatureRestriction="NeedsTSG" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="" RftRestricted="true">
+        <UICategories>
+          <UICategory Category="TSG"/>
+        </UICategories>
+        <Strings>
+          <String StringID="1754"/>
+        </Strings>
+        <FeatureValues>
+          <FeatureValue FeatureValueId="Off" RatatoskID="Off" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="1768"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue FeatureValueId="Mild" RatatoskID="Mild" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="1769"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue FeatureValueId="Moderate" RatatoskID="Moderate" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="1770"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue FeatureValueId="Strong" RatatoskID="Strong" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="1771"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+        </FeatureValues>
+        <DefaultValues/>
+      </Feature>
+      <Feature EV="159" FeatureID="TSG.Enabled" RatatoskID="Tsg.Enabled" DataType="Boolean" FeatureRestriction="NeedsTSG" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="false" RftRestricted="true">
+        <UICategories>
+          <UICategory Category="TSG"/>
+        </UICategories>
+        <Strings>
+          <String StringID="1991"/>
+        </Strings>
+        <FeatureValues/>
+        <DefaultValues>
+          <DefaultValue Value="false"/>
+        </DefaultValues>
+      </Feature>
+      <Feature FeatureID="TSG.NaturalSound" RatatoskID="Tsg.NaturalSound" DataType="Enum" FeatureRestriction="NeedsTSG" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="" RftRestricted="true">
+        <UICategories>
+          <UICategory Category="TSG"/>
+        </UICategories>
+        <Strings>
+          <String StringID="8612"/>
+        </Strings>
+        <FeatureValues>
+          <FeatureValue FeatureValueId="Off" RatatoskID="Off" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="1762"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue FeatureValueId="BeachWavesOnRock" RatatoskID="Beach waves on rock" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="8614"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue FeatureValueId="Brook" RatatoskID="Brook" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="8615"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue FeatureValueId="IdyllicBeach" RatatoskID="Idyllic beach" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="8616"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue FeatureValueId="OceanSurf" RatatoskID="Ocean surf" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="8617"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue FeatureValueId="OceanWaves" RatatoskID="Ocean waves" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="8619"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue FeatureValueId="OceanWavesOnShore" RatatoskID="Ocean waves on shore" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="8618"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+        </FeatureValues>
+        <DefaultValues/>
+      </Feature>
+      <Feature FeatureID="TSG.NSHighGain" RatatoskID="Tsg.NSHighGain" DataType="Int16" FeatureRestriction="NeedsTSG" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="-30" RftRestricted="true">
+        <UICategories>
+          <UICategory Category="TSG"/>
+        </UICategories>
+        <Strings>
+          <String StringID="8624"/>
+        </Strings>
+        <FeatureValues/>
+        <DefaultValues>
+          <DefaultValue Value="0"/>
+        </DefaultValues>
+      </Feature>
+      <Feature FeatureID="TSG.NSLowGain" RatatoskID="Tsg.NSLowGain" DataType="Int16" FeatureRestriction="NeedsTSG" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="-30" RftRestricted="true">
+        <UICategories>
+          <UICategory Category="TSG"/>
+        </UICategories>
+        <Strings>
+          <String StringID="8622"/>
+        </Strings>
+        <FeatureValues/>
+        <DefaultValues>
+          <DefaultValue Value="0"/>
+        </DefaultValues>
+      </Feature>
+      <Feature FeatureID="TSG.NSMiddleGain" RatatoskID="Tsg.NSMiddleGain" DataType="Int16" FeatureRestriction="NeedsTSG" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="-30" RftRestricted="true">
+        <UICategories>
+          <UICategory Category="TSG"/>
+        </UICategories>
+        <Strings>
+          <String StringID="8623"/>
+        </Strings>
+        <FeatureValues/>
+        <DefaultValues>
+          <DefaultValue Value="0"/>
+        </DefaultValues>
+      </Feature>
+      <Feature FeatureID="TSG.TSGRemoteControlMute" RatatoskID="RemoteControlMute.Master" DataType="Boolean" FeatureRestriction="NeedsTSG" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="false" RftRestricted="false">
+        <UICategories>
+          <UICategory Category="TSG"/>
+        </UICategories>
+        <Strings>
+          <String StringID="9944"/>
+        </Strings>
+        <FeatureValues/>
+        <DefaultValues>
+          <DefaultValue Value="false"/>
+        </DefaultValues>
+      </Feature>
+      <Feature xsi:type="ProductRangeFeature" FeatureID="TSG.TSGBalance" RatatoskID="TelDaiTsgBalance" DataType="Enum" FeatureRestriction="NeedsTSG" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="" RftRestricted="false" MinValue="-12" MaxValue="0" StepSize="3">
+        <UICategories>
+          <UICategory Category="TSG"/>
+        </UICategories>
+        <Strings>
+          <String StringID="9943" ToolTipId="9799"/>
+        </Strings>
+        <FeatureValues>
+          <FeatureValue FeatureValueId="Full" RatatoskID="0" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="9945"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue FeatureValueId="Value3" RatatoskID="-3" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="9497"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue FeatureValueId="Value6" RatatoskID="-6" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="9498"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue FeatureValueId="Value9" RatatoskID="-9" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="9499"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue FeatureValueId="Value12" RatatoskID="-12" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="9500"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+        </FeatureValues>
+        <DefaultValues/>
+      </Feature>
+      <Feature xsi:type="ProductRangeFeature" FeatureID="TSG.MicTSGBalance" RatatoskID="MicTelDaiTsgBalance" DataType="Enum" FeatureRestriction="NeedsTSG" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="" RftRestricted="false" MinValue="-6" MaxValue="0" StepSize="1">
+        <UICategories>
+          <UICategory Category="TSG"/>
+        </UICategories>
+        <Strings>
+          <String StringID="9943" ToolTipId="9643"/>
+        </Strings>
+        <FeatureValues>
+          <FeatureValue FeatureValueId="Full" RatatoskID="0" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="9945"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue FeatureValueId="Value3" RatatoskID="-3" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="9497"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue FeatureValueId="Value6" RatatoskID="-6" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="9498"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue FeatureValueId="Value9" RatatoskID="-9" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="9499"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue FeatureValueId="Value12" RatatoskID="-12" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="9500"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+        </FeatureValues>
+        <DefaultValues>
+          <DefaultValue Value="-3"/>
+        </DefaultValues>
+      </Feature>
+    </TinnitusFeatures>
+    <BalanceFeatures>
+      <Feature xsi:type="ProductRangeFeature" EV="512" FeatureID="SAS.StreamingBalance" RatatoskID="StreamingBalance" DataType="Enum" FeatureRestriction="NeedsStreaming" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="" RftRestricted="false" MinValue="-6" MaxValue="0" StepSize="1">
+        <UICategories>
+          <UICategory EV="512" Category="AdvancedFeature"/>
+        </UICategories>
+        <Strings>
+          <String EV="512" StringID="9503" ToolTipId="9643"/>
+        </Strings>
+        <FeatureValues>
+          <FeatureValue FeatureValueId="Full" RatatoskID="0" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="9501"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue FeatureValueId="Value3" RatatoskID="-3" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="9497"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue FeatureValueId="Value6" RatatoskID="-6" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="9498"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue FeatureValueId="Value9" RatatoskID="-9" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="9499"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue FeatureValueId="Value12" RatatoskID="-12" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="9500"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+        </FeatureValues>
+        <DefaultValues/>
+      </Feature>
+      <Feature xsi:type="ProductRangeFeature" EV="512" FeatureID="SAS.MicStreamingBalance" RatatoskID="MicStreamingBalance" DataType="Enum" FeatureRestriction="NeedsStreaming" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="-12" RftRestricted="false" MinValue="-12" MaxValue="0" StepSize="1">
+        <UICategories>
+          <UICategory EV="512" Category="AdvancedFeature"/>
+        </UICategories>
+        <Strings>
+          <String StringID="9503" ToolTipId="9643"/>
+        </Strings>
+        <FeatureValues>
+          <FeatureValue FeatureValueId="Full" RatatoskID="0" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="9501"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue FeatureValueId="Value3" RatatoskID="-3" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="9497"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue FeatureValueId="Value6" RatatoskID="-6" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="9498"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue FeatureValueId="Value9" RatatoskID="-9" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="9499"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue FeatureValueId="Value12" RatatoskID="-12" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="9500"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+        </FeatureValues>
+        <DefaultValues>
+          <DefaultValue EV="512" Value="-3"/>
+        </DefaultValues>
+      </Feature>
+      <Feature EV="512" FeatureID="SAS.RemoteControlMute.Sas" RatatoskID="RemoteControlMute.Sas" DataType="Boolean" FeatureRestriction="NeedsStreaming" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="false" RftRestricted="false">
+        <UICategories>
+          <UICategory EV="512" Category="AdvancedFeature"/>
+        </UICategories>
+        <Strings>
+          <String StringID="9502"/>
+        </Strings>
+        <FeatureValues/>
+        <DefaultValues>
+          <DefaultValue Value="false"/>
+        </DefaultValues>
+      </Feature>
+      <Feature xsi:type="ProductRangeFeature" EV="512" FeatureID="SM.StreamingSMMicBalance" RatatoskID="StreamingSMBalance" DataType="Enum" FeatureRestriction="NeedsStreaming" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="" RftRestricted="false" MinValue="-6" MaxValue="0" StepSize="1">
+        <UICategories>
+          <UICategory EV="512" Category="AdvancedFeature"/>
+        </UICategories>
+        <Strings>
+          <String StringID="9507" ToolTipId="9796"/>
+        </Strings>
+        <FeatureValues>
+          <FeatureValue FeatureValueId="Full" RatatoskID="0" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="9501"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue FeatureValueId="Value3" RatatoskID="-3" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="9497"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue FeatureValueId="Value6" RatatoskID="-6" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="9498"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue FeatureValueId="Value9" RatatoskID="-9" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="9499"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue FeatureValueId="Value12" RatatoskID="-12" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="9500"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+        </FeatureValues>
+        <DefaultValues>
+          <DefaultValue Value="0"/>
+        </DefaultValues>
+      </Feature>
+      <Feature xsi:type="ProductRangeFeature" EV="512" FeatureID="SM.MicStreamingSMMicBalance" RatatoskID="MicStreamingSMBalance" DataType="Enum" FeatureRestriction="NeedsStreaming" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="-12" RftRestricted="false" MinValue="-12" MaxValue="0" StepSize="1">
+        <UICategories>
+          <UICategory EV="512" Category="AdvancedFeature"/>
+        </UICategories>
+        <Strings>
+          <String EV="512" StringID="9507" ToolTipId="9796"/>
+        </Strings>
+        <FeatureValues>
+          <FeatureValue FeatureValueId="Full" RatatoskID="0" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="9501"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue FeatureValueId="Value3" RatatoskID="-3" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="9497"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue FeatureValueId="Value6" RatatoskID="-6" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="9498"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue FeatureValueId="Value9" RatatoskID="-9" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="9499"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue FeatureValueId="Value12" RatatoskID="-12" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="9500"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+        </FeatureValues>
+        <DefaultValues>
+          <DefaultValue Value="-6"/>
+        </DefaultValues>
+      </Feature>
+      <Feature EV="512" FeatureID="SM.RemoteControlMute.Sm.Mic" RatatoskID="RemoteControlMute.Sm" DataType="Boolean" FeatureRestriction="NeedsStreaming" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="false" RftRestricted="false">
+        <UICategories>
+          <UICategory EV="512" Category="AdvancedFeature"/>
+        </UICategories>
+        <Strings>
+          <String StringID="9502"/>
+        </Strings>
+        <FeatureValues/>
+        <DefaultValues>
+          <DefaultValue Value="false"/>
+        </DefaultValues>
+      </Feature>
+      <Feature FeatureID="iPhone.RemoteControlMute" RatatoskID="RemoteControlMute.Phone" DataType="Boolean" FeatureRestriction="NoRestriction" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="false" RftRestricted="false" IsMixInFeature="true">
+        <UICategories>
+          <UICategory Category="AdvancedFeature"/>
+        </UICategories>
+        <Strings>
+          <String StringID="9502"/>
+        </Strings>
+        <FeatureValues/>
+        <DefaultValues>
+          <DefaultValue Value="false"/>
+        </DefaultValues>
+      </Feature>
+      <Feature xsi:type="ProductRangeFeature" FeatureID="iPhone.MicBalance" RatatoskID="MicStreamingPhoneBalance" DataType="Enum" FeatureRestriction="NoRestriction" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="" RftRestricted="false" MinValue="0" MaxValue="0" StepSize="0" IsMixInFeature="true">
+        <UICategories>
+          <UICategory Category="AdvancedFeature"/>
+        </UICategories>
+        <Strings>
+          <String StringID="9508" ToolTipId="9797"/>
+        </Strings>
+        <FeatureValues>
+          <FeatureValue FeatureValueId="Full" RatatoskID="0" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="9501"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue FeatureValueId="Value3" RatatoskID="-3" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="9497"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue FeatureValueId="Value6" RatatoskID="-6" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="9498"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue FeatureValueId="Value9" RatatoskID="-9" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="9499"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue FeatureValueId="Value12" RatatoskID="-12" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="9500"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+        </FeatureValues>
+        <DefaultValues>
+          <DefaultValue Value="-3"/>
+        </DefaultValues>
+      </Feature>
+      <Feature xsi:type="ProductRangeFeature" FeatureID="BTB.StreamingBTBPhoneBalance" RatatoskID="StreamingBTBBalance" DataType="Enum" FeatureRestriction="NoRestriction" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="" RftRestricted="false" MinValue="-6" MaxValue="0" StepSize="1" IsMixInFeature="true">
+        <UICategories>
+          <UICategory Category="AdvancedFeature"/>
+        </UICategories>
+        <Strings>
+          <String StringID="8587" ToolTipId="9643"/>
+        </Strings>
+        <FeatureValues>
+          <FeatureValue FeatureValueId="Full" RatatoskID="0" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="9501"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue FeatureValueId="Value3" RatatoskID="-3" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="9497"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue FeatureValueId="Value6" RatatoskID="-6" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="9498"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue FeatureValueId="Value9" RatatoskID="-9" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="9499"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue FeatureValueId="Value12" RatatoskID="-12" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="9500"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+        </FeatureValues>
+        <DefaultValues/>
+      </Feature>
+      <Feature xsi:type="ProductRangeFeature" FeatureID="BTB.MicStreamingBTBPhoneBalance" RatatoskID="MicStreamingBTBBalance" DataType="Enum" FeatureRestriction="NoRestriction" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="-12" RftRestricted="false" MinValue="-12" MaxValue="0" StepSize="1" IsMixInFeature="true">
+        <UICategories>
+          <UICategory Category="AdvancedFeature"/>
+        </UICategories>
+        <Strings>
+          <String StringID="8587 " ToolTipId="9643"/>
+        </Strings>
+        <FeatureValues>
+          <FeatureValue FeatureValueId="Full" RatatoskID="0" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="9501"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue FeatureValueId="Value3" RatatoskID="-3" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="9497"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue FeatureValueId="Value6" RatatoskID="-6" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="9498"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue FeatureValueId="Value9" RatatoskID="-9" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="9499"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue FeatureValueId="Value12" RatatoskID="-12" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="9500"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+        </FeatureValues>
+        <DefaultValues>
+          <DefaultValue Value="-3"/>
+        </DefaultValues>
+      </Feature>
+      <Feature FeatureID="BTB.RemoteControlMute.Btb.Phone" RatatoskID="RemoteControlMute.Btb" DataType="Boolean" FeatureRestriction="NoRestriction" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="false" RftRestricted="false" IsMixInFeature="true">
+        <UICategories>
+          <UICategory Category="AdvancedFeature"/>
+        </UICategories>
+        <Strings>
+          <String StringID="9502"/>
+        </Strings>
+        <FeatureValues/>
+        <DefaultValues>
+          <DefaultValue Value="false"/>
+        </DefaultValues>
+      </Feature>
+    </BalanceFeatures>
+    <EVFTFeatures>
+      <Feature EV="159" FeatureID="EVFT.GainDepthMaximumValue" RatatoskID="FineTuner.GainDepthsMaximumValue" DataType="Int32" FeatureRestriction="NeedsEVFTSupport" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="0" RftRestricted="false">
+        <UICategories>
+          <UICategory Category="EVFT"/>
+        </UICategories>
+        <Strings>
+          <String StringID="3461"/>
+        </Strings>
+        <FeatureValues/>
+        <DefaultValues>
+          <DefaultValue EV="159" Value="0"/>
+        </DefaultValues>
+      </Feature>
+      <Feature EV="159" FeatureID="EVFT.GainDepthMinimumValue" RatatoskID="FineTuner.GainDepthsMinimumValue" DataType="Int32" FeatureRestriction="NeedsEVFTSupport" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="0" RftRestricted="false">
+        <UICategories>
+          <UICategory Category="EVFT"/>
+        </UICategories>
+        <Strings>
+          <String StringID="3462"/>
+        </Strings>
+        <FeatureValues/>
+        <DefaultValues>
+          <DefaultValue Value="-10"/>
+        </DefaultValues>
+      </Feature>
+      <Feature EV="159" FeatureID="EVFT.Mode" RatatoskID="FineTuner.Mode" DataType="Enum" FeatureRestriction="NeedsEVFTSupport" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="Off" RftRestricted="false">
+        <UICategories>
+          <UICategory Category="EVFT"/>
+        </UICategories>
+        <Strings>
+          <String StringID="3463"/>
+        </Strings>
+        <FeatureValues>
+          <FeatureValue xsi:type="ProductEVFTFeatureValue" FeatureValueId="Off" RatatoskID="Off" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction" ArrayIndex="0">
+            <Strings>
+              <String StringID="3464"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue EV="132" Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xsi:type="ProductEVFTFeatureValue" FeatureValueId="Volume" RatatoskID="Volume" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction" ArrayIndex="0">
+            <Strings>
+              <String StringID="3465"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue EV="27" Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+        </FeatureValues>
+        <DefaultValues/>
+      </Feature>
+      <Feature EV="159" FeatureID="EVFT.VolumesMaximumValue" RatatoskID="FineTuner.VolumesMaximumValue" DataType="Int32" FeatureRestriction="NeedsEVFTSupport" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="0" RftRestricted="false">
+        <UICategories>
+          <UICategory Category="EVFT"/>
+        </UICategories>
+        <Strings>
+          <String StringID="3470"/>
+        </Strings>
+        <FeatureValues/>
+        <DefaultValues>
+          <DefaultValue Value="6"/>
+        </DefaultValues>
+      </Feature>
+      <Feature EV="159" FeatureID="EVFT.VolumesMinimumValue" RatatoskID="FineTuner.VolumesMinimumValue" DataType="Int32" FeatureRestriction="NeedsEVFTSupport" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="0" RftRestricted="false">
+        <UICategories>
+          <UICategory Category="EVFT"/>
+        </UICategories>
+        <Strings>
+          <String StringID="3471"/>
+        </Strings>
+        <FeatureValues/>
+        <DefaultValues>
+          <DefaultValue Value="-6"/>
+        </DefaultValues>
+      </Feature>
+      <Feature EV="159" FeatureID="EVFT.PNR.GainDepths" RatatoskID="FineTuner.GainDepths" DataType="EVFT" FeatureRestriction="NeedsEVFTSupport" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="" RftRestricted="false">
+        <UICategories>
+          <UICategory Category="EVFT"/>
+        </UICategories>
+        <Strings>
+          <String StringID="3460"/>
+        </Strings>
+        <FeatureValues>
+          <FeatureValue xsi:type="ProductEVFTFeatureValue" EV="4255" FeatureValueId="PNR.Quiet" RatatoskID="" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction" ArrayIndex="0">
+            <Strings>
+              <String StringID="3472"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="-3"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xsi:type="ProductEVFTFeatureValue" EV="4255" FeatureValueId="PNR.SpeechSoft" RatatoskID="" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction" ArrayIndex="1">
+            <Strings>
+              <String StringID="3473"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="-3"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xsi:type="ProductEVFTFeatureValue" EV="4255" FeatureValueId="PNR.SpeechLoud" RatatoskID="" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction" ArrayIndex="2">
+            <Strings>
+              <String StringID="3474"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="-4"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xsi:type="ProductEVFTFeatureValue" EV="4255" FeatureValueId="PNR.SpeechNoiseModerate" RatatoskID="" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction" ArrayIndex="3">
+            <Strings>
+              <String StringID="3475"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="-6"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xsi:type="ProductEVFTFeatureValue" EV="4255" FeatureValueId="PNR.SpeechNoiseLoud" RatatoskID="" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction" ArrayIndex="4">
+            <Strings>
+              <String StringID="3476"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="-6"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xsi:type="ProductEVFTFeatureValue" EV="4255" FeatureValueId="PNR.NoiseModerate" RatatoskID="" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction" ArrayIndex="5">
+            <Strings>
+              <String StringID="3477"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="-8"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xsi:type="ProductEVFTFeatureValue" EV="4255" FeatureValueId="PNR.NoiseLoud" RatatoskID="" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction" ArrayIndex="6">
+            <Strings>
+              <String StringID="3478"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="-9"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+        </FeatureValues>
+        <DefaultValues>
+          <DefaultValue Value="0"/>
+        </DefaultValues>
+      </Feature>
+      <Feature EV="159" FeatureID="EVFT.Volume.GainDepths" RatatoskID="FineTuner.Volumes" DataType="EVFT" FeatureRestriction="NeedsEVFTSupport" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="" RftRestricted="false">
+        <UICategories>
+          <UICategory Category="EVFT"/>
+        </UICategories>
+        <Strings>
+          <String StringID="3460"/>
+        </Strings>
+        <FeatureValues>
+          <FeatureValue xsi:type="ProductEVFTFeatureValue" EV="4255" FeatureValueId="Vol.Quiet" RatatoskID="" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction" ArrayIndex="0">
+            <Strings>
+              <String StringID="3472"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="2"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xsi:type="ProductEVFTFeatureValue" EV="4255" FeatureValueId="Vol.SpeechSoft" RatatoskID="" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction" ArrayIndex="1">
+            <Strings>
+              <String StringID="3473"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="2"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xsi:type="ProductEVFTFeatureValue" EV="4255" FeatureValueId="Vol.SpeechLoud" RatatoskID="" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction" ArrayIndex="2">
+            <Strings>
+              <String StringID="3474"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="2"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xsi:type="ProductEVFTFeatureValue" EV="4255" FeatureValueId="Vol.SpeechNoiseModerate" RatatoskID="" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction" ArrayIndex="3">
+            <Strings>
+              <String StringID="3475"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="1"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xsi:type="ProductEVFTFeatureValue" EV="4255" FeatureValueId="Vol.SpeechNoiseLoud" RatatoskID="" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction" ArrayIndex="4">
+            <Strings>
+              <String StringID="3476"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="0"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xsi:type="ProductEVFTFeatureValue" EV="4255" FeatureValueId="Vol.NoiseModerate" RatatoskID="" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction" ArrayIndex="5">
+            <Strings>
+              <String StringID="3477"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="-2"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xsi:type="ProductEVFTFeatureValue" EV="4255" FeatureValueId="Vol.NoiseLoud" RatatoskID="" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction" ArrayIndex="6">
+            <Strings>
+              <String StringID="3478"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="-3"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+        </FeatureValues>
+        <DefaultValues>
+          <DefaultValue Value="0"/>
+        </DefaultValues>
+      </Feature>
+    </EVFTFeatures>
+    <SynchronizationFeatures>
+      <!-- ************************************************************* -->
+      <!-- E2E Features - In Standard PE Order                                      -->
+      <!-- Moved Here From FSWGlobalData to allow product filtering -->
+      <!-- ************************************************************* -->
+      <!-- -->
+      <!-- Program Sync -->
+      <Feature xml:id="SFOSWPS" FeatureID="OS.WirelessProgramSync" RatatoskID="Os.IsMirrorServiceEnabled" DataType="Boolean" FeatureRestriction="NeedsEar2EarSupport" FeatureType="Instrument" SupportsSurround="false" NeedsBinaural="false" OffValue="false" RftRestricted="false">
+        <UICategories xml:id="UICATS">
+          <UICategory Category="None"/>
+        </UICategories>
+        <Strings/>
+        <FeatureValues/>
+        <DefaultValues xml:id="DFTVALS">
+          <DefaultValue Value="false"/>
+        </DefaultValues>
+      </Feature>
+      <!-- ******************************************************************************************* -->
+      <!-- EVFT Sync  - This File under Directional Features - FeatureID="E2E.EVFT.Synchronized" -->
+      <!-- ******************************************************************************************* -->
+      <!-- ********************************************************************************************************* -->
+      <!-- BASS Sync  - This File under Directional Features - FeatureID="E2E.EVFT.SynchronizedAutosteering" -->
+      <!-- ********************************************************************************************************* -->
+      <!-- *********************************************************** -->
+      <!-- Sync Spatial Sense -Controlled only be feature existence -->
+      <!-- *********************************************************** -->
+      <!-- Volume Sync -->
+      <Feature xml:id="SFEIME" FeatureID="E2E.IsMSVCEnabled" RatatoskID="MirrorServicePresetBasedVC.Enable" DataType="Boolean" FeatureRestriction="NeedsEar2EarSupport" FeatureType="Program" SupportsSurround="false" NeedsBinaural="true" OffValue="false" RftRestricted="false">
+        <UICategories xml:id="UICATS">
+          <UICategory Category="None"/>
+        </UICategories>
+        <Strings xml:id="STRNGS">
+          <String StringID="6441"/>
+        </Strings>
+        <FeatureValues/>
+        <DefaultValues xml:id="DFTVALS">
+          <DefaultValue Value="true"/>
+        </DefaultValues>
+      </Feature>
+      <!-- Main TSG Sync -->
+      <Feature xml:id="SFETES" FeatureID="E2E.TSG.EnvironmentalSynchronized" RatatoskID="Tsg.EnvironmentalSynchronized" DataType="Boolean" FeatureRestriction="NeedsTSG" FeatureType="Program" SupportsSurround="false" NeedsBinaural="true" OffValue="false" RftRestricted="false">
+        <UICategories xml:id="UICATS">
+          <UICategory Category="TSG"/>
+        </UICategories>
+        <Strings xml:id="STRNGS">
+          <String StringID="0"/>
+        </Strings>
+        <FeatureValues/>
+        <DefaultValues xml:id="DFTVALS">
+          <DefaultValue Value="true"/>
+        </DefaultValues>
+      </Feature>
+      <!-- Secondary TSG Sync Feature -->
+      <Feature xml:id="SFETAS" FeatureID="E2E.TSG.AmplitudeSynchronized" RatatoskID="Tsg.AmplitudeModulationSynchronized" DataType="Boolean" FeatureRestriction="NeedsTSG" FeatureType="Program" SupportsSurround="false" NeedsBinaural="true" OffValue="false" RftRestricted="false">
+        <UICategories xml:id="UICATS">
+          <UICategory Category="TSG"/>
+        </UICategories>
+        <Strings xml:id="STRNGS">
+          <String StringID="0"/>
+        </Strings>
+        <FeatureValues/>
+        <DefaultValues xml:id="DFTVALS">
+          <DefaultValue Value="true"/>
+        </DefaultValues>
+      </Feature>
+      <!-- Secondary TSG Sync Feature -->
+      <Feature xml:id="SFETNSS" FeatureID="E2E.TSG.NaturalSoundSynchronized" RatatoskID="Tsg.NaturalSoundSynchronized" DataType="Boolean" FeatureRestriction="NeedsTSG" FeatureType="Program" SupportsSurround="false" NeedsBinaural="true" OffValue="false" RftRestricted="false">
+        <UICategories xml:id="UICATS">
+          <UICategory Category="TSG"/>
+        </UICategories>
+        <Strings xml:id="STRNGS">
+          <String StringID="0"/>
+        </Strings>
+        <FeatureValues/>
+        <DefaultValues xml:id="DFTVALS">
+          <DefaultValue Value="true"/>
+        </DefaultValues>
+      </Feature>
+      <!-- ****************************************************************************** -->
+      <!-- Sync Softswitch - Requires SyncAutoSterring and Softswitch directionality -->
+      <!-- ****************************************************************************** -->
+      <!-- ***************************************************************** -->
+      <!-- Sync AutoPhone - Requires AutoPhone program on both sides -->
+      <!-- ***************************************************************** -->
+      <!-- *********************************************************** -->
+      <!-- Satisfy Sync - See SatisfyFeatures in FSWGlobalData.xml -->
+      <!-- *********************************************************** -->
+      <!-- ********************** -->
+      <!-- END OF E2E Features -->
+      <!-- ********************** -->
+    </SynchronizationFeatures>
+    <FSWFeatures>
+      <Feature FeatureID="CompressionLimitMode" RatatoskID="AgcoTimeConstantsMode" DataType="Enum" FeatureRestriction="NeedsUPReciever" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="CompressionLimiting" RftRestricted="false">
+        <UICategories>
+          <UICategory Category="AdvancedFeature"/>
+        </UICategories>
+        <Strings>
+          <String StringID="7920" ToolTipId="9804"/>
+        </Strings>
+        <FeatureValues>
+          <FeatureValue FeatureValueId="SoftPeakClipping" RatatoskID="SoftPeakClipping" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="7921"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue FeatureValueId="SemiHardClipping" RatatoskID="HardPeakClipping" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="7922"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+        </FeatureValues>
+        <DefaultValues/>
+      </Feature>
+      <Feature FeatureID="FSW.CompressionMode" RatatoskID="FittingSoftwareData.CompressionMode" DataType="Enum" FeatureRestriction="NeedsUPReciever" FeatureType="ProgramInfoSpace" SupportsSurround="false" NeedsBinaural="false" OffValue="" RftRestricted="false">
+        <UICategories>
+          <UICategory Category="None"/>
+        </UICategories>
+        <Strings>
+          <String StringID="7933" ToolTipId="9805"/>
+        </Strings>
+        <FeatureValues>
+          <FeatureValue FeatureValueId="Linear" RatatoskID="2" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="7934" ToolTipId="9643"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue PP="5" FeatureValueId="SemiLinear" RatatoskID="1" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="7935"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue FeatureValueId="WDRC" RatatoskID="0" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="7936"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+        </FeatureValues>
+        <DefaultValues/>
+      </Feature>
+      <Feature FeatureID="FSW.LFBassboost" RatatoskID="FittingSoftwareData.LFBassboost" DataType="Enum" FeatureRestriction="NeedsUPReciever" FeatureType="ProgramInfoSpace" SupportsSurround="false" NeedsBinaural="false" OffValue="" RftRestricted="false">
+        <UICategories>
+          <UICategory Category="AdvancedFeature"/>
+        </UICategories>
+        <Strings>
+          <String StringID="7923" ToolTipId="9806"/>
+        </Strings>
+        <FeatureValues>
+          <FeatureValue FeatureValueId="None" RatatoskID="0" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="7924" ToolTipId="9643"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="true"/>
+            </DefaultValues>
+            <Offsets>
+              <SoundInputLevel InputLevel="DB50"> (250 0) (500 0) (750 0) (1000 0) (1500 0) (2000 0) (3000 0) (4000 0) (6000 0) (8000 0) </SoundInputLevel>
+              <SoundInputLevel InputLevel="DB65"> (250 0) (500 0) (750 0) (1000 0) (1500 0) (2000 0) (3000 0) (4000 0) (6000 0) (8000 0) </SoundInputLevel>
+              <SoundInputLevel InputLevel="DB80"> (250 0) (500 0) (750 0) (1000 0) (1500 0) (2000 0) (3000 0) (4000 0) (6000 0) (8000 0) </SoundInputLevel>
+            </Offsets>
+          </FeatureValue>
+          <FeatureValue FeatureValueId="Low" RatatoskID="1" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String PP="5" StringID="7925"/>
+              <String PP="8" StringID="257"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets>
+              <SoundInputLevel InputLevel="DB50"> (250 3) (500 6) (750 3) (1000 1) (1500 0) (2000 0) (3000 0) (4000 0) (6000 0) (8000 0) </SoundInputLevel>
+              <SoundInputLevel InputLevel="DB65"> (250 3) (500 6) (750 3) (1000 1) (1500 0) (2000 0) (3000 0) (4000 0) (6000 0) (8000 0) </SoundInputLevel>
+              <SoundInputLevel InputLevel="DB80"> (250 3) (500 6) (750 3) (1000 1) (1500 0) (2000 0) (3000 0) (4000 0) (6000 0) (8000 0) </SoundInputLevel>
+            </Offsets>
+          </FeatureValue>
+          <FeatureValue PP="5" FeatureValueId="Medium" RatatoskID="2" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="7926"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets>
+              <SoundInputLevel InputLevel="DB50"> (250 6) (500 9) (750 5) (1000 2) (1500 0) (2000 0) (3000 0) (4000 0) (6000 0) (8000 0) </SoundInputLevel>
+              <SoundInputLevel InputLevel="DB65"> (250 6) (500 9) (750 5) (1000 2) (1500 0) (2000 0) (3000 0) (4000 0) (6000 0) (8000 0) </SoundInputLevel>
+              <SoundInputLevel InputLevel="DB80"> (250 6) (500 9) (750 5) (1000 2) (1500 0) (2000 0) (3000 0) (4000 0) (6000 0) (8000 0) </SoundInputLevel>
+            </Offsets>
+          </FeatureValue>
+          <FeatureValue PP="1" FeatureValueId="High" RatatoskID="3" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings>
+              <String StringID="7927"/>
+            </Strings>
+            <DefaultValues>
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets>
+              <SoundInputLevel InputLevel="DB50"> (250 9) (500 12) (750 8) (1000 3) (1500 0) (2000 0) (3000 0) (4000 0) (6000 0) (8000 0) </SoundInputLevel>
+              <SoundInputLevel InputLevel="DB65"> (250 9) (500 12) (750 8) (1000 3) (1500 0) (2000 0) (3000 0) (4000 0) (6000 0) (8000 0) </SoundInputLevel>
+              <SoundInputLevel InputLevel="DB80"> (250 9) (500 12) (750 8) (1000 3) (1500 0) (2000 0) (3000 0) (4000 0) (6000 0) (8000 0) </SoundInputLevel>
+            </Offsets>
+          </FeatureValue>
+        </FeatureValues>
+        <DefaultValues/>
+      </Feature>
+      <Feature xsi:type="ProductEVFTFeature" EV="159" FeatureID="FSW.EVFT.Enabled" RatatoskID="FittingSoftwareData.EvftEnabled" DataType="Boolean" FeatureRestriction="NeedsEVFTSupport" FeatureType="ProgramInfoSpace" SupportsSurround="true" NeedsBinaural="false" OffValue="false" RftRestricted="false">
+        <UICategories>
+          <UICategory EV="159" Category="EVFT"/>
+        </UICategories>
+        <Strings>
+          <String EV="159" PP="1" StringID="3734 "/>
+          <String EV="159" PP="12" StringID="3062"/>
+        </Strings>
+        <FeatureValues/>
+        <DefaultValues>
+          <DefaultValue EV="4123" Value="true"/>
+        </DefaultValues>
+      </Feature>
+    </FSWFeatures>
+  </ProgramFeatures>
+</SPDProductData>

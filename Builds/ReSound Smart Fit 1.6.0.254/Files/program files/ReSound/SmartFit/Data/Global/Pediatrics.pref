@@ -1,0 +1,174 @@
+﻿<PediatricsPreferences xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/resound.fuse2.pediatrics">
+  <NHLToEHLCurve i:nil="true" />
+  <PreferenceAudiogramInputs i:type="PreferenceAudiogramInputs">
+    <PreferenceMeasurementMethods xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+      <d3p1:anyType i:type="PreferenceMeasurementMethod">
+        <AudiometricMeasurements>
+          <d3p1:anyType i:type="PreferenceAudiometricMeasurement">
+            <AudiometricMeasurement>dbHL</AudiometricMeasurement>
+            <StringID>6386</StringID>
+          </d3p1:anyType>
+        </AudiometricMeasurements>
+        <DefaultAudiometricMeasurement>dbHL</DefaultAudiometricMeasurement>
+        <DefaultTransducer>INSERT_TIP</DefaultTransducer>
+        <MeasurementMethod>PureToneAudiometry</MeasurementMethod>
+        <StringID>6306</StringID>
+        <Transducers>
+          <d3p1:anyType i:type="PreferenceTransducer">
+            <StringID>6311</StringID>
+            <Transducer>INSERT_TIP</Transducer>
+          </d3p1:anyType>
+          <d3p1:anyType i:type="PreferenceTransducer">
+            <StringID>6310</StringID>
+            <Transducer>INSERT_EARMOLD</Transducer>
+          </d3p1:anyType>
+          <d3p1:anyType i:type="PreferenceTransducer">
+            <StringID>6309</StringID>
+            <Transducer>TDH_HEADPHONE</Transducer>
+          </d3p1:anyType>
+          <d3p1:anyType i:type="PreferenceTransducer">
+            <StringID>6389</StringID>
+            <Transducer>LOUDSPEAKERZERODEGREE</Transducer>
+          </d3p1:anyType>
+          <d3p1:anyType i:type="PreferenceTransducer">
+            <StringID>6390</StringID>
+            <Transducer>LOUDSPEAKER45DEGREE</Transducer>
+          </d3p1:anyType>
+          <d3p1:anyType i:type="PreferenceTransducer">
+            <StringID>6391</StringID>
+            <Transducer>LOUDSPEAKER90DEGREE</Transducer>
+          </d3p1:anyType>
+        </Transducers>
+      </d3p1:anyType>
+      <d3p1:anyType i:type="PreferenceMeasurementMethod">
+        <AudiometricMeasurements>
+          <d3p1:anyType i:type="PreferenceAudiometricMeasurement">
+            <AudiometricMeasurement>dbeHL</AudiometricMeasurement>
+            <StringID>6388</StringID>
+          </d3p1:anyType>
+          <d3p1:anyType i:type="PreferenceAudiometricMeasurement">
+            <AudiometricMeasurement>dbnHL</AudiometricMeasurement>
+            <StringID>6387</StringID>
+          </d3p1:anyType>
+        </AudiometricMeasurements>
+        <DefaultAudiometricMeasurement>dbeHL</DefaultAudiometricMeasurement>
+        <DefaultTransducer>ABR_TIP</DefaultTransducer>
+        <MeasurementMethod>ABRToneBurst</MeasurementMethod>
+        <StringID>6307</StringID>
+        <Transducers>
+          <d3p1:anyType i:type="PreferenceTransducer">
+            <StringID>6311</StringID>
+            <Transducer>ABR_TIP</Transducer>
+          </d3p1:anyType>
+          <d3p1:anyType i:type="PreferenceTransducer">
+            <StringID>6310</StringID>
+            <Transducer>ABR_EARMOLD</Transducer>
+          </d3p1:anyType>
+        </Transducers>
+      </d3p1:anyType>
+      <d3p1:anyType i:type="PreferenceMeasurementMethod">
+        <AudiometricMeasurements>
+          <d3p1:anyType i:type="PreferenceAudiometricMeasurement">
+            <AudiometricMeasurement>Undefined</AudiometricMeasurement>
+            <StringID i:nil="true" />
+          </d3p1:anyType>
+        </AudiometricMeasurements>
+        <DefaultAudiometricMeasurement>Undefined</DefaultAudiometricMeasurement>
+        <DefaultTransducer>Undefined</DefaultTransducer>
+        <MeasurementMethod>Other</MeasurementMethod>
+        <StringID>6308</StringID>
+        <Transducers>
+          <d3p1:anyType i:type="PreferenceTransducer">
+            <StringID i:nil="true" />
+            <Transducer>Undefined</Transducer>
+          </d3p1:anyType>
+        </Transducers>
+      </d3p1:anyType>
+    </PreferenceMeasurementMethods>
+  </PreferenceAudiogramInputs>
+<PreferenceRECDInputs i:type="PreferenceRealEarInputs">
+
+    <AcousticTransformProcedures xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+
+      <d3p1:anyType i:type="PreferenceAcousticTransformProcedures">
+
+        <AcousticTransformProcedure>HA1_MOLD</AcousticTransformProcedure>
+
+        <StringID>6662</StringID>
+
+      </d3p1:anyType>
+
+      <d3p1:anyType i:type="PreferenceAcousticTransformProcedures">
+
+        <AcousticTransformProcedure>HA1_TIP</AcousticTransformProcedure>
+
+        <StringID>6661</StringID>
+
+      </d3p1:anyType>
+
+      <d3p1:anyType i:type="PreferenceAcousticTransformProcedures">
+
+        <AcousticTransformProcedure>HA2_MOLD</AcousticTransformProcedure>
+
+        <StringID>6660</StringID>
+
+      </d3p1:anyType>
+
+      <d3p1:anyType i:type="PreferenceAcousticTransformProcedures">
+
+        <AcousticTransformProcedure>HA2_TIP</AcousticTransformProcedure>
+
+        <StringID>6659</StringID>
+
+      </d3p1:anyType>
+
+    </AcousticTransformProcedures>
+
+    <DefaultAcousticTransformProcedure>HA2_MOLD</DefaultAcousticTransformProcedure>
+
+    <StringID>10158</StringID>
+
+  </PreferenceRECDInputs>
+
+  <PreferenceREUGInputs i:type="PreferenceRealEarInputs">
+
+    <AcousticTransformProcedures xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+
+      <d3p1:anyType i:type="PreferenceAcousticTransformProcedures">
+
+        <AcousticTransformProcedure>SF0</AcousticTransformProcedure>
+
+        <StringID>6389</StringID>
+
+      </d3p1:anyType>
+
+      <d3p1:anyType i:type="PreferenceAcousticTransformProcedures">
+
+        <AcousticTransformProcedure>SF45</AcousticTransformProcedure>
+
+        <StringID>6390</StringID>
+
+      </d3p1:anyType>
+
+      <d3p1:anyType i:type="PreferenceAcousticTransformProcedures">
+
+        <AcousticTransformProcedure>SF90</AcousticTransformProcedure>
+
+        <StringID>6391</StringID>
+
+      </d3p1:anyType>
+
+    </AcousticTransformProcedures>
+
+    <DefaultAcousticTransformProcedure>SF0</DefaultAcousticTransformProcedure>
+
+    <StringID>10158</StringID>
+
+  </PreferenceREUGInputs>  
+  <Version xmlns:d2p1="http://schemas.datacontract.org/2004/07/System">
+    <d2p1:_Build>0</d2p1:_Build>
+    <d2p1:_Major>1</d2p1:_Major>
+    <d2p1:_Minor>0</d2p1:_Minor>
+    <d2p1:_Revision>0</d2p1:_Revision>
+  </Version>
+</PediatricsPreferences>

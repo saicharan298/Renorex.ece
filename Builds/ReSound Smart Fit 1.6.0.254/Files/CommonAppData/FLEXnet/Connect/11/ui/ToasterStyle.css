@@ -1,0 +1,92 @@
+/*******************************************************************/
+/*                                                                 */
+/* UpdaterStyle.css - definition of global styles                     */
+/*                                                                 */
+/* Copyright © 2005 Macrovision Corporation                        */
+/*                                                                 */
+
+BODY, P, A, LI, LABEL, FILE, FIELDSET, LEGEND, OBJECT, TD {
+    font-family: verdana;
+    font-size: 7pt;
+	line-height: 11pt;
+    /* color: #4F6A81; */
+	color: #143857;
+	list-style-type: square;
+}
+
+BODY {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+}
+
+IMG {
+    border: none;
+}
+
+FORM, INPUT, TEXTAREA, BUTTON, SELECT{
+    font-family: verdana;
+	font-size: 7pt; 
+	color: #333;
+}
+
+#exit {
+	float: right;
+	padding:  0 5px 0 0;
+	display: block;
+}
+
+#severity {
+	float: right;
+	padding:  10px 0 0 10px;
+	display: block;
+}
+
+#textBlock {
+	padding:  1px 0 2px 0;
+	display: block;
+}
+
+#installButton {
+	height: 37px;
+	width: 139px;
+	background: url("images/install_button.gif") no-repeat left top;
+	display: block;
+	font-family: verdana;
+	font-weight: bold;
+	text-align: center;
+}
+
+#installButton a {
+	padding:  10px 0 0 0;
+	font-size: 9pt; 
+	color: #FFF;
+	text-decoration: none;
+	display: block;
+}
+
+#goButton {
+	width: 25px;
+	height: 20px;
+	float: right;
+	display: block;
+}
+
+#updateType {
+            font-family: verdana;
+            font-weight: bold;
+            font-size: 10pt; 
+            color: #445;
+            display: block;
+}
+ 
+#product {
+            font-family: verdana;
+            font-weight: bold;
+            font-size: 8pt; 
+            color: #556;
+            display: block;
+}
+
+

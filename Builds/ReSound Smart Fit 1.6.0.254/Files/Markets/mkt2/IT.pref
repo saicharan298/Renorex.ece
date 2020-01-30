@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Market xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="IT.mkt">
+  <Version Major="1" Minor="1" DataVersion="0"/>
+  <Preferences>
+    <Pref ID="Language" Type="Enum" DefaultValue="it-IT"/>
+    <Pref ID="FrequentEnvironments3" Type="Enum" DefaultValue="None"/>
+    <Pref ID="SpecType" Type="Enum" DefaultValue="IEC118_0"/>
+    <Pref ID="ExperienceLevel" Type="Enum" DefaultValue="ComfortUser"/>
+    <Pref ID="UpdatesCheckOnSchedule" Type="Boolean" DefaultValue="0"/>
+    <Pref ID="UpdatesFrequency" Type="Enum" DefaultValue="FourWeeks"/>
+    <Pref ID="UpdatesDownloadAutomatically" Type="Boolean" DefaultValue="0"/>
+  </Preferences>
+</Market>

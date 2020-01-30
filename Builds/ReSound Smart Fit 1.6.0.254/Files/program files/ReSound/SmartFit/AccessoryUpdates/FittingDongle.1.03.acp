@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<FirmwareUpdatePackage CustomUpdater="HornToHorn2Updater">
+  <FirmwareUpdate ProcessorType="MicroController" FirmwareFileName="FittingDongle\1.03\Airlink2_v1.3.hex" Version="1.3"/>
+  <FirmwareUpdate ProcessorType="NordicRadio51" FirmwareFileName="FittingDongle\1.03\Airlink2_nRF51_v0_92.hex" Version="0.92"/>
+</FirmwareUpdatePackage>

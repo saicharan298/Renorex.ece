@@ -1,0 +1,543 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<title>Update Service</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+		<meta http-equiv="pragma" content="no-cache"/>
+		<meta http-equiv="cache-control" content="no-cache"/>
+		<meta http-equiv="expires" content="-1"/>
+		<link id="uistyles" href="UpdaterStyle.css" rel="stylesheet" type="text/css" />
+<script>
+var twdl = unescape(top.window.document.location);
+var twdls = twdl.substr(twdl.indexOf("?"));
+var attribs = twdls.split("&");
+var _CustomCSS="";
+var _CustomStrings="";
+for (ii = 0; ii < attribs.length; ii++)
+{
+	var attrib = attribs[ii].split("=");
+	if (attrib[0].indexOf("CSS") != -1)
+		_CustomCSS = unescape(attrib[1]);
+	if (attrib[0].indexOf("Strings") != -1)
+		_CustomStrings = unescape(attrib[1]);
+}
+if (_CustomCSS.length > 0)
+	document.getElementById("uistyles").href=_CustomCSS;
+</script>
+		<script src="lang/resource.js"></script>
+
+		<div name="objecttag" id="objecttag">
+		</div>
+
+		<script language="javascript">
+			var arprid = window.parent.getupdates.prid.value.split("~~~\$\$\$~~~");
+			var arrlsid = window.parent.getupdates.rlsid.value.split("~~~\$\$\$~~~");
+			var arPRODUCTNAME = window.parent.getupdates.PRODUCTNAME.value.split("~~~\$\$\$~~~");
+			var arRELEASENAME = window.parent.getupdates.RELEASENAME.value.split("~~~\$\$\$~~~");
+			var ardispver = window.parent.getupdates.dispver.value.split("~~~\$\$\$~~~");
+			var arMSGID = window.parent.getupdates.MSGID.value.split("~~~\$\$\$~~~");
+			var arMSGTYPE = window.parent.getupdates.MSGTYPE.value.split("~~~\$\$\$~~~");
+			var arMSGNAME = window.parent.getupdates.MSGNAME.value.split("~~~\$\$\$~~~");
+			var arUPDATETITLE = window.parent.getupdates.UPDATETITLE.value.split("~~~\$\$\$~~~");
+			var arDOWNLOADSIZE = window.parent.getupdates.DOWNLOADSIZE.value.split("~~~\$\$\$~~~");
+			var arDESCRIPTION = window.parent.getupdates.DESCRIPTION.value.split("~~~\$\$\$~~~");
+			var arDETAILSURL = window.parent.getupdates.DETAILSURL.value.split("~~~\$\$\$~~~");
+			var arDOWNLOADURL = window.parent.getupdates.DOWNLOADURL.value.split("~~~\$\$\$~~~");
+			var arCommandLine = window.parent.getupdates.CommandLine.value.split("~~~\$\$\$~~~");
+			var arMediaType = window.parent.getupdates.MediaType.value.split("~~~\$\$\$~~~");
+			var arTargetDir = window.parent.getupdates.TargetDir.value.split("~~~\$\$\$~~~");
+			var arBasketable = window.parent.getupdates.Basketable.value.split("~~~\$\$\$~~~");
+			var arBasketPriority = window.parent.getupdates.BasketPriority.value.split("~~~\$\$\$~~~");
+			var arAuthID = window.parent.getupdates.AuthID.value.split("~~~\$\$\$~~~");
+			var arAuthMsgDisplay = window.parent.getupdates.AuthMsgDisplay.value.split("~~~\$\$\$~~~");
+			var arAuthMsgFailed = window.parent.getupdates.AuthMsgFailed.value.split("~~~\$\$\$~~~");
+			var arDetails = window.parent.getupdates.Details.value.split("~~~\$\$\$~~~");
+			var arCalloutURL = window.parent.getupdates.CalloutURL.value.split("~~~\$\$\$~~~");
+			var arVersionID = window.parent.getupdates.VersionID.value.split("~~~\$\$\$~~~");
+			var arSecurityType = window.parent.getupdates.SecurityType.value.split("~~~\$\$\$~~~");
+			var arSecuritySignature = window.parent.getupdates.SecuritySignature.value.split("~~~\$\$\$~~~");
+			var arinstalltype = window.parent.getupdates.installtype.value.split("~~~\$\$\$~~~");
+			var arSDURL = window.parent.getupdates.SDURL.value.split("~~~\$\$\$~~~");
+			var arDownloadType = window.parent.getupdates.DownloadType.value.split("~~~\$\$\$~~~");
+			var arElevReq = window.parent.getupdates.ElevReq.value.split("~~~\$\$\$~~~");
+
+			var nUpdates = arMSGID.length;
+
+			var ether, errorloading=false;
+			var downloading=false;
+			var m_allowclose=true;
+			var m_UsingWebAgent=false;
+			var t=null;
+            var totalsize = new Number();
+			var i;
+            for (i=0;i < nUpdates;i++)  {
+				totalsize = totalsize + arDOWNLOADSIZE[i];
+            }
+        
+			var m_allowclose=true;
+			function myclose()
+			{
+			}
+
+			function mybeforeclose()
+			{
+				if (m_allowclose == false)
+					return "Warning: closing window" ;
+			}
+
+			function perform(bInstall)
+			{
+				window.onbeforeunload=mybeforeclose;
+				window.onunload=myclose;
+				var strDUrl;
+				var strMsgTitle;
+				var strCmdLine;
+				var strPC;
+				var lMsgID;
+				var b;
+				var downloadpath="";
+				var strSDURL="";
+				var mediatype;
+
+				Basket.Iam(4660);
+				Basket.InitializeEx(unescape("Software Manager"), unescape("Updates"), totalsize, "", window.parent._UILangID);
+
+				for (i=0; i < nUpdates; i++)
+				{
+					if (arDOWNLOADURL[i].length == 0)
+						break;
+
+					var x=eval(arBasketable[i]);
+					if (x == 1 && nUpdates > 1)
+					 	b=true;
+					else
+						b=false;
+							
+					strSDURL=new String(arSDURL[i]);
+					strDUrl=new String(arDOWNLOADURL[i]);
+					strMsgTitle=new String(arMSGNAME[i]);
+					strCmdLine=unescape(new String(arCommandLine[i]));
+					strPC=new String(arprid[i]);
+					lMsgID=eval(new String(arMSGID[i]));
+					var re=/\\\"/g;
+					strCmdLine=unescape(strCmdLine);
+					strCmdLine=strCmdLine.replace(re, "\"");
+					var re1=/\\\\/g;
+					strDUrl=unescape(strDUrl);
+					strDUrl=strDUrl.replace(re1, "\\");
+					strCmdLine=strCmdLine.replace(re1, "\\");
+
+					var strCallout = new String(arCalloutURL[i]);
+					strCallout=unescape(strCallout);
+					strCallout=strCallout.replace(re1, "\\");
+
+					var strElevReq = new String(arElevReq[i]);
+					
+					mediatype=eval(arMediaType[i]);
+					Basket.AddMessageInfo(lMsgID,strPC,strDUrl,strCallout);
+					var strTemp = new String(ardispver[i]);
+					Basket.SetMessageInfo(lMsgID,0,strMsgTitle);
+					Basket.SetMessageInfo(lMsgID,3,strTemp);
+					strTemp = new String(arPRODUCTNAME[i]);
+					Basket.SetMessageInfo(lMsgID,5,strTemp);
+					strTemp = new String(arDOWNLOADSIZE[i]);
+					Basket.SetMessageInfo(lMsgID,6,strTemp);
+					Basket.SetMessageInfo(lMsgID,7,strCmdLine);
+					strTemp = new String(arTargetDir[i]);
+					Basket.SetMessageInfo(lMsgID,8,strTemp);
+					strTemp = new String(arDETAILSURL[i]);
+					Basket.SetMessageInfo(lMsgID,9,strTemp);
+					strTemp = new String(arMSGTYPE[i]);
+					Basket.SetMessageInfo(lMsgID,11,strTemp);
+					Basket.SetMessageInfo(lMsgID,13,strCmdLine);
+					strTemp = new String(arVersionID[i]);
+					Basket.SetMessageInfo(lMsgID,17,strTemp);
+					strTemp = new String(arSecurityType[i]);
+					Basket.SetMessageInfo(lMsgID,18,strTemp);
+					strTemp = new String(arSecuritySignature[i]);
+					Basket.SetMessageInfo(lMsgID,19,strTemp);
+					Basket.SetMessageInfo(lMsgID,29,strSDURL);
+					Basket.SetMessageInfo(lMsgID,15,mediatype);
+					Basket.SetMessageInfo(lMsgID,30,strElevReq);
+                    if (bInstall)
+                        Basket.SetMessageInfo(lMsgID,35,"1");
+                    else
+                        Basket.SetMessageInfo(lMsgID,35,"0");
+					if (arDownloadType[i]==0)
+					{
+					    if (bInstall)
+						    Basket.AddFileEx (unescape(strMsgTitle), unescape(strDUrl), strPC, lMsgID, strCmdLine, eval(unescape(arBasketPriority[i])), b);
+					    else
+					    {
+						    downloadpath = Basket.AddFileEx2 (unescape(strMsgTitle), unescape(strDUrl), strPC, lMsgID, strCmdLine, eval(unescape(arBasketPriority[i])), b, top.window.document.title + " - Microsoft Internet Explorer", downloadpath);
+						    if (mediatype != 10)
+						        if (downloadpath == "")
+						        {
+							        location.href="updates.htm";
+							        return;
+						        }
+					    }
+			        }
+			        downloadpath="";
+				}
+				if (arDownloadType[0]==0)
+				{
+				    if (bInstall)
+					    Basket.DownloadAndInstall(b);
+				    else
+					    Basket.DownloadAll(b);
+				}
+				else
+					Basket.DownloadAndExecute(arUPDATETITLE[0], arprid[0], arMSGID[0], arDOWNLOADURL[0], strCmdLine);
+
+				m_allowclose=false;
+			}
+
+        function callback()
+        {
+//			var srch=new String(document.location.search);
+//			srch=srch.replace("?", "&");
+
+			if (m_UsingWebAgent == true)
+			{
+				var ret;
+				ret = Basket.isComplete();
+				if (ret == 3 || ret == 4 || ret == 6 || ret == -1 || ret == -7 || ret == 50)
+				{
+					if (t)
+						window.clearInterval(t);
+					t=null;
+					m_allowclose=true;
+					var Status = "";
+					if (ret == 50) // user cancelled
+					{
+						location.href="updates.htm";
+						return;
+					}
+					else
+					{
+						if (ret == 6 || ret == 7 || ret == -1)
+							Status = ar[IDS_COMPLETE];
+						else
+							Status = ar[IDS_UNSUCCESSFUL];
+					}
+					window.parent.ShowUpdateComplete(Status);
+				}
+			}
+			else
+			{
+				if (!ether.IsPlaying())
+				{
+					var Status = "";
+					if (t)
+						window.clearInterval(t);
+		            
+					if (ether.IsInstalled())
+						Status = ar[IDS_COMPLETE];
+					else 
+						Status = ar[IDS_UNSUCCESSFUL];
+					window.parent.ShowUpdateComplete(Status);
+				}
+			}
+        }
+
+
+		function doit()
+		{        
+			var error="";
+			downloading=false;
+			t=null;
+
+			document.getElementById("msgtitle").innerHTML = "<strong>" + ar[IDS_STATUS] + "</strong>";
+			if (arinstalltype[0] == "DOWNLOAD")
+			{
+				downloading=true;
+				document.getElementById("titlemsg").innerHTML = "<strong>" + ar[IDS_ISDOWNLOADING] + "</strong><br>";
+			}
+			else
+			{
+				document.getElementById("titlemsg").innerHTML = "<strong>" + ar[IDS_ISDOWNLOADING2] + "</strong><br>";
+			}
+
+			if ((arMediaType[0] == "2") || (arMediaType[0] == "4"))
+			{
+				var srch=new String(document.location.search);
+				srch=srch.replace("?", "&");
+
+				// Catch player initialize error
+				if ((!isetup) || (typeof(isetup.LastError) != "number"))
+				{
+					errorloading=true;
+
+					if (confirm(ar[IDS_GENERAL_INSTALLERROR])==true)
+						window.parent.ShowUpdateComplete(ar[IDS_GENERAL_INSTALLERROR]);
+					else
+						window.parent.ShowUpdateComplete("UnKnown");
+					return;
+				}
+				else if (isetup.LastError != 0)
+				{
+					if (confirm(ar[IDS_GENERAL_INSTALLERROR])==true)
+						window.parent.ShowUpdateComplete(ar[IDS_GENERAL_INSTALLERROR]);
+					else
+						window.parent.ShowUpdateComplete("UnKnown");
+					return;
+				} else  {
+						var s = new String(arDOWNLOADURL[0]);
+						s=s.replace("\\", "/");
+						ether = isetup.Open(unescape(unescape(unescape(s))));
+
+						if (isetup.LastError!=0)
+						{
+								errorloading=true;
+								error="Unable to Open URL at "+unescape(unescape(unescape(s)));
+						}
+						else
+						{
+		                    
+							if (arMediaType[0] == 4)
+							{
+								if (s.lastIndexOf("/") != -1)
+								{
+									var path;
+									var filename;
+									if (s.indexOf("file") == 0)
+									{
+										pth=unescape(s);
+										path=unescape(pth.substring (0, pth.lastIndexOf("\\")+1));
+										filename=unescape(pth.substring (pth.lastIndexOf("\\")+1));
+										ether.CommandLine=" /your_launcher" + filename+ " /installfromweb:\"" + path + "\" ";
+									}
+									else
+									{
+										path=unescape(s.substring (0, s.lastIndexOf("/")+1));
+										filename=unescape(s.substring (s.lastIndexOf("/")+1));
+										ether.CommandLine=" /your_launcher" + filename+ " /installfromweb:\"" + path + "\" ";                     
+									}
+								}
+							}
+							if (arCommandLine[0] != "")
+								var re=/\\\"/g;
+								strCmdLine=unescape(unescape(unescape(arCommandLine[0])));
+								strCmdLine=strCmdLine.replace(re, "\"");
+								ether.CommandLine+=" " + strCmdLine;
+								if (arMediaType[0] == 2)
+								{
+									if (!ether.IsInstalled())
+									{
+										ether.SetSetupType("Typical");
+										if (arTargetDir[0] != "")
+										{
+											var etarget=exptarget(ether,unescape(arTargetDir[0]));
+											if (etarget != "")
+												ether.SetTargetDir(etarget);
+										}
+									}
+
+//								if (arLegacyMode[0] != "")
+//										ether.LegacyMode=document.installproduct.LegacyMode.value;
+								}
+
+								if (downloading == true)
+									ether.Download();
+								else
+									ether.Play();
+		                                
+								if (t==null)
+									t=window.setInterval("callback()", 500);
+						}
+					}
+				if (errorloading==true)
+				{
+					window.parent.ShowUpdateComplete("Unsuccessful");
+				}
+			}
+			else
+			{
+				if (downloading == true)
+					perform(false);
+				else
+					perform(true);
+		            
+				m_UsingWebAgent=true;
+		        
+				if (t==null)
+					t=window.setInterval("callback()", 500);
+			}
+		}
+        
+		function exptarget(ether, t)
+		{
+			var r1=new RegExp("\[(.*)\](.*)");
+			var r2=new RegExp("<(.*)>(.*)");
+			var istr=new String (t);
+
+			rc=r1.exec(istr);
+		    
+			if (rc == null)
+				rc=r2.exec(istr);
+		        
+			if (rc == null)
+				return  istr;
+
+			if (!checkmacros(RegExp.$1))
+			{
+				alert("UnRecoganized Macro defined - "+RegExp.$1+". Please consult InstallShield Update Service admintstrator.");
+				return  "";
+			}
+			var macrovalue=new String (ether.GetTextSub(RegExp.$1));
+			var righthand=new String (RegExp.$2);
+		    
+			if (righthand.charAt(0) == "\\" && macrovalue.charAt(macrovalue.length-1) == "\\")
+				righthand=new String(righthand.substr(1));
+		    
+			var ostr=new String(macrovalue+righthand);
+			return ostr;
+		}
+
+		function checkmacros(m)
+		{
+			var validmacros =new Array("PROGRAMFILES", "COMMONFILES", "WINSYSDIR", "WINDISK", "SRCDIR", "SRCDISK", "TARGETDIR", "TARGETDISK", "WINDIR", "WINSYSDISK");
+		    
+			for (i=0;i < validmacros.length;i++)
+				if (m==validmacros[i])
+					return  true;
+			return  false;
+		}
+
+        
+        </script>
+	</head>
+	
+	<body topmargin="0" bottommargin="0" leftmargin="0" rightmargin="0" scroll="no"	onload="onpageload()">
+		<!-- TOP NAVIGATION AND LOGO -->
+		<div id="mainNavHeader">
+			<div id="mainNavLogo">
+			</div>
+			<div id="mainNavIconUpdatesS">
+				<div class="theNavS">
+					<a href="updates.htm" href="updates.htm"><img src="images/icon_update.gif" width="32" height="32" border="0"></a><br>
+					<a href="updates.htm" class="theNavS" id="ids_updates">Updates</a>
+				</div>
+			</div>
+			<div id="mainNavIconSettings">
+				<div class="theNav">
+					<a href="settings.htm"><img src="images/icon_settings.gif" width="32" height="32" border="0"></a><br>
+					<a href="settings.htm" id="ids_settings">Settings</a>
+				</div>
+			</div>
+			<div id="mainNavIconAbout">
+				<div class="theNav">
+					<a href="about.htm"><img src="images/icon_about.gif" width="32" height="32" border="0"></a><br>
+					<a href="about.htm" id="ids_about">About</a>
+				</div>
+			</div>
+		</div>
+		<!-- SECONDARY NAVIGATION -->
+		<div id="secNavHeader">
+			<div id="secNavLogo"><img src="images/update_header.jpg" width="261" height="61" border="0"></div>
+			<div id="secNavTitle">Updates</div>
+			<div id="secNavSeparator"></div>
+			<div id="secNavLinks">
+				<a href="updates.htm" id="ids_new_updates2">New updates &amp; messages</a><br>
+				<a href="updates.htm?archive=1" id="ids_restore_hidden">Restore hidden updates</a><br>
+				<!--a href="history.htm">View your history</a-->
+			</div>
+		</div>
+		<div id="mainContentUpdate">
+			<!-- LEFT HAND PANEL -->
+			<div id="leftPanel">
+			<span id="leftpanelmsg">The Software Manager keeps your programs up-to-date with the latest security patches, improvements, and bug fixes. \nWhen an update is available, you can: </span>
+				<ul><li>
+						<span id="leftpanelmsgpt1">View the updates for your system </span>
+					</li><li>
+						<span id="leftpanelmsgpt2">View update descriptions </span>
+					</li><li>
+						<span id="leftpanelmsgpt3">Download and install updates </span>
+					</li>
+				</ul>
+				<DIV class="shortHorizSeparator"></DIV>
+			</div>
+			<!-- RIGHT HAND PANEL -->
+			<div id="rightPanel">
+				<div class="contentHeader" id="downloadingtitle">Downloading Updates</div>
+				<p></p>
+				<table cellpadding="5" cellspacing="0" border="0" width="490">
+					<tr valign="top">
+						<td width="25%">
+						<div name="msgtitle" id="msgtitle">
+						</div>
+						</td>
+						<td><div name="titlemsg" id="titlemsg">
+						</div>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							&nbsp;<br>
+							<!--div id="fred" style="position:absolute;top:45;left:0;background-color:white;layer-background-color:white"><img src="images/empty_progress.gif" width="159" height="26"></div-->
+						</td>
+					</tr>
+				</table>
+			</div>
+			<!-- BOTTOM PANEL -->
+		<div id="bottom">
+			<table cellpadding=0 cellspacing=0>
+			<tr>
+			<td>
+			<div id="copyright"><span id="ids_copyright">Copyright (c) 1997-2011 Flexera Software LLC.  All Rights Reserved.</span>| <a id="Aterms" href="http://www.flexerasoftware.com/company/terms_of_use.htm" target="_blank"><span id="ids_terms">Terms of Use</span></a>  | <a id="Aprivacy" href="http://www.flexerasoftware.com/company/legal.htm" target="_blank"><span id="ids_privacy">Privacy Statement</span></a></div></td>
+			<td width="18"><a href="help.htm" target="_blank"><img src="images/icon_help.gif" width="14" height="14" border="0" align="left"></a></td>
+			<td><a href="help.htm" target="_blank"><span id="ids_help">Help</span></a></td>
+			</tr>
+			</table>
+		</div>
+	</body>
+	<SCRIPT defer>
+		function onpageload()
+		{	
+			var dynHTML="";
+			if ((window.parent.getupdates.MediaType.value == "2") || (window.parent.getupdates.MediaType.value == "4"))
+				dynHTML = "<OBJECT  ID='isetup' align='baseline' height='1' width='1' classid='CLSID:885BB46A-3F1E-44C3-A01B-A7D9260CC98B' codebase='http:CAB/dwusplay.cab#Version=1,20,100,1203' VIEWASTEXT></OBJECT>";
+			else
+				dynHTML = "<object ID='Basket' align='baseline' height='1' width='1' classid='CLSID:451FFA0D-F091-45E8-B294-8CEDFAFB0554' VIEWASTEXT></OBJECT>";
+			document.getElementById("objecttag").insertAdjacentHTML("afterBegin", dynHTML);
+
+			loadStrings();
+			doit();
+		}
+		function loadStrings()
+		{
+			document.charset = window.parent._UIcharset;
+
+			if (_CustomStrings.length > 0)
+				document.getElementById("strings").src = _CustomStrings + "/strings" + window.parent._UILangID + ".js";
+			else
+				document.getElementById("strings").src = "lang/strings" + window.parent._UILangID + ".js";
+			if (typeof(ar) == "undefined")
+				document.getElementById("strings").src = "lang/strings" + ((window.parent._UILangID & 0xff) + 1024) + ".js";
+			if (typeof(ar) == "undefined")
+				document.getElementById("strings").src = "lang/strings1033.js";
+
+			document.getElementById("ids_settings").innerText = ar[IDS_SETTINGS];
+			document.getElementById("ids_about").innerText = ar[IDS_ABOUT];
+			document.getElementById("ids_updates").innerText = ar[IDS_UPDATES];
+			document.getElementById("ids_new_updates2").innerText = ar[IDS_NEW_UPDATES];
+			document.getElementById("ids_restore_hidden").innerText = ar[IDS_RESTORE_HIDDEN];
+			document.getElementById("secNavTitle").innerText = ar[IDS_UPDATES];
+			document.getElementById("leftpanelmsg").innerText = ar[IDS_LEFTPANEL_MSG];
+			document.getElementById("leftpanelmsgpt1").innerText = ar[IDS_LEFTPANEL_PT1];
+			document.getElementById("leftpanelmsgpt2").innerText = ar[IDS_LEFTPANEL_PT2];
+			document.getElementById("leftpanelmsgpt3").innerText = ar[IDS_LEFTPANEL_PT3];
+			document.getElementById("downloadingtitle").innerText = ar[IDS_DOWNLOADING];
+			document.getElementById("ids_copyright").innerText = ar[IDS_COPYRIGHT];
+			document.getElementById("ids_terms").innerText = ar[IDS_TERMS];
+			document.getElementById("ids_privacy").innerText = ar[IDS_PRIVACY];
+			document.getElementById("ids_help").innerText = ar[IDS_HELP];
+		}
+	  -->
+	</SCRIPT>
+	<script id="strings">
+	</script>
+</html>
+
+

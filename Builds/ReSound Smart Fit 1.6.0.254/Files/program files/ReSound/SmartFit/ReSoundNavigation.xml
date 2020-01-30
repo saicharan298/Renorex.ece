@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<NavigationConfiguration>
+	<ReSoundNavigationItem id="StandAloneNavigation" stringId="" automationId="NavigationAutomationIds.StandAlone">
+		<ReSoundNavigationItem id="StandAlonePatient" stringId="3243" automationId="NavigationAutomationIds.StandAloneAutomationIds.Patient">
+			<ReSoundNavigationItem id="All" stringId="3002" automationId="NavigationAutomationIds.StandAloneAutomationIds.PatientAutomationIds.All"/>
+			<ReSoundNavigationItem id="Recent" stringId="9522" automationId="NavigationAutomationIds.StandAloneAutomationIds.PatientAutomationIds.Recent"/>
+		  <ReSoundNavigationItem id="Manage" stringId="9523" automationId="NavigationAutomationIds.StandAloneAutomationIds.PatientAutomationIds.Manage">
+				  <ReSoundNavigationItem id="Export" stringId="8882" automationId="NavigationAutomationIds.StandAloneAutomationIds.PatientAutomationIds.ManageAutomationIds.Export"/>
+				  <ReSoundNavigationItem id="Import" stringId="9285" automationId="NavigationAutomationIds.StandAloneAutomationIds.PatientAutomationIds.ManageAutomationIds.Import"/>
+			  </ReSoundNavigationItem>
+		  </ReSoundNavigationItem>
+	</ReSoundNavigationItem>
+	<ReSoundNavigationItem id="MainScreenNavigation" stringId="" automationId="NavigationAutomationIds.Main">
+		<ReSoundNavigationItem id="Patient" stringId="3243" automationId="NavigationAutomationIds.MainAutomationIds.Patient">
+			<ReSoundNavigationItem id="Profile" stringId="3244" automationId="NavigationAutomationIds.MainAutomationIds.PatientAutomationIds.Profile"/>
+			<ReSoundNavigationItem id="Assist" stringId="9650" automationId="NavigationAutomationIds.MainAutomationIds.PatientAutomationIds.Assist"/>
+			<ReSoundNavigationItem id="DataLogging" stringId="1989" automationId="NavigationAutomationIds.MainAutomationIds.PatientAutomationIds.DataLogging"/>
+			<ReSoundNavigationItem id="Education" stringId="9178" automationId="NavigationAutomationIds.MainAutomationIds.PatientAutomationIds.Education"/>
+			<ReSoundNavigationItem id="HearingLossSimulator" stringId="9664" automationId="NavigationAutomationIds.MainAutomationIds.PatientAutomationIds.HearingLossSimulator"/>
+		</ReSoundNavigationItem>
+		<ReSoundNavigationItem id="Instruments" stringId="3628" automationId="NavigationAutomationIds.MainAutomationIds.Instruments">
+			<ReSoundNavigationItem id="InstrumentDetails" stringId="9109" automationId="NavigationAutomationIds.MainAutomationIds.InstrumentsAutomationIds.InstrumentDetails"/>
+			<ReSoundNavigationItem id="PhysicalProperties" stringId="1987" automationId="NavigationAutomationIds.MainAutomationIds.InstrumentsAutomationIds.PhysicalProperties"/>
+			<ReSoundNavigationItem id="Accessories" stringId="3758" automationId="NavigationAutomationIds.MainAutomationIds.InstrumentsAutomationIds.Accessories"/>
+		</ReSoundNavigationItem>
+		<ReSoundNavigationItem id="Fitting" stringId="2960" automationId="NavigationAutomationIds.MainAutomationIds.Fitting">
+			<ReSoundNavigationItem id="GainAdustments" stringId="1985" automationId="NavigationAutomationIds.MainAutomationIds.FittingAutomationIds.GainAdustments"/>
+			<ReSoundNavigationItem id="AdvancedFeatures" stringId="1986" automationId="NavigationAutomationIds.MainAutomationIds.FittingAutomationIds.AdvancedFeatures"/>
+			<ReSoundNavigationItem id="EnvironmentalOptimizer" stringId="3062" automationId="NavigationAutomationIds.MainAutomationIds.FittingAutomationIds.EnvironmentalOptimizer"/>
+			<ReSoundNavigationItem id="DeviceControls" stringId="9260" automationId="NavigationAutomationIds.MainAutomationIds.FittingAutomationIds.DeviceControls"/>
+		</ReSoundNavigationItem>
+		<ReSoundNavigationItem id="Summary" stringId="1993" automationId="NavigationAutomationIds.MainAutomationIds.Summary">
+			<ReSoundNavigationItem id="FittingSummary" stringId="9567" automationId="NavigationAutomationIds.MainAutomationIds.SummaryAutomationIds.FittingSummary"/>
+			<ReSoundNavigationItem id="ClinicianReport" stringId="9568" automationId="NavigationAutomationIds.MainAutomationIds.SummaryAutomationIds.ClinicianReport"/>
+			<ReSoundNavigationItem id="PatientReport" stringId="9569" automationId="NavigationAutomationIds.MainAutomationIds.SummaryAutomationIds.PatientReport"/>
+		</ReSoundNavigationItem>
+	</ReSoundNavigationItem>
+	<ReSoundNavigationItem id="ExpressFitNavigation" stringId="" automationId="NavigationAutomationIds.ExpressFit">
+		<ReSoundNavigationItem id="ExpressFitConnect" stringId="2162" automationId="NavigationAutomationIds.ExpressFitAutomationIds.Connect"/>
+		<ReSoundNavigationItem id="ExpressFitInsitu" stringId="5831" automationId="NavigationAutomationIds.ExpressFitAutomationIds.Insitu"/>
+		<ReSoundNavigationItem id="ExpressFitReconfiguration" stringId="7817" automationId="NavigationAutomationIds.ExpressFitAutomationIds.Reconfiguration"/>
+		<ReSoundNavigationItem id="ExpressFitPhysicalProperties" stringId="1987" automationId="NavigationAutomationIds.ExpressFitAutomationIds.PhysicalProperties"/>
+		<ReSoundNavigationItem id="ExpressFitInitialFit" stringId="9860" automationId="NavigationAutomationIds.ExpressFitAutomationIds.InitialFit"/>
+		<ReSoundNavigationItem id="ExpressFitCalibrate" stringId="2957" automationId="NavigationAutomationIds.ExpressFitAutomationIds.Calibrate"/>
+		<ReSoundNavigationItem id="ExpressFitSave" stringId="2184" automationId="NavigationAutomationIds.ExpressFitAutomationIds.Save"/>
+	</ReSoundNavigationItem>
+	<ReSoundNavigationItem id="Theming" stringId="" automationId="NavigationAutomationIds.Theming">
+		<ReSoundNavigationItem id="Font" stringId="9851" automationId="NavigationAutomationIds.ThemingAutomationIds.Font">
+			<ReSoundNavigationItem id="FontSelection" stringId="9852" automationId="NavigationAutomationIds.ThemingAutomationIds.FontAutomationIds.Selection"/>
+			<ReSoundNavigationItem id="FontSize" stringId="9853" automationId="NavigationAutomationIds.ThemingAutomationIds.FontAutomationIds.Size"/>
+		</ReSoundNavigationItem>
+		<ReSoundNavigationItem id="Color" stringId="9854" automationId="NavigationAutomationIds.ThemingAutomationIds.Color">
+			<ReSoundNavigationItem id="ColorSelection" stringId="9855" automationId="NavigationAutomationIds.ThemingAutomationIds.ColorAutomationIds.Selection"/>
+		</ReSoundNavigationItem>
+		<ReSoundNavigationItem id="Style" stringId="9856" automationId="NavigationAutomationIds.ThemingAutomationIds.Style">
+			<ReSoundNavigationItem id="CornerRadius" stringId="9857" automationId="NavigationAutomationIds.ThemingAutomationIds.StyleAutomationIds.CornerRadius"/>
+		</ReSoundNavigationItem>
+		<ReSoundNavigationItem id="Image" stringId="9858" automationId="NavigationAutomationIds.ThemingAutomationIds.Image">
+			<ReSoundNavigationItem id="ImageIcon" stringId="9859" automationId="NavigationAutomationIds.ThemingAutomationIds.ImageAutomationIds.Icon"/>
+			<ReSoundNavigationItem id="ImageInstall" stringId="9859" automationId="NavigationAutomationIds.ThemingAutomationIds.ImageAutomationIds.Install"/>
+			<ReSoundNavigationItem id="ImageBrand" stringId="9859" automationId="NavigationAutomationIds.ThemingAutomationIds.ImageAutomationIds.Brand"/>
+		</ReSoundNavigationItem>
+	</ReSoundNavigationItem>
+	<ReSoundNavigationItem id="Sandbox" stringId="" automationId="NavigationAutomationIds.Sandbox">
+		<ReSoundNavigationItem id="Panels" stringId="Panels" automationId="NavigationAutomationIds.SandboxAutomationIds.Panels">
+			<ReSoundNavigationItem id="MaterialGrid" stringId="MaterialGrid" automationId="NavigationAutomationIds.SandboxAutomationIds.PanelsAutomationIds.MaterialGrid"/>
+		</ReSoundNavigationItem>
+		<ReSoundNavigationItem id="Charts" stringId="Charts" automationId="NavigationAutomationIds.SandboxAutomationIds.Charts">
+			<ReSoundNavigationItem id="Audiogram" stringId="Audiogram" automationId="NavigationAutomationIds.SandboxAutomationIds.ChartsAutomationIds.Audiogram"/>
+		</ReSoundNavigationItem>
+	</ReSoundNavigationItem>
+	<ReSoundNavigationItem id="AutoREM" stringId="6079" automationId="NavigationAutomationIds.AutoREM">
+		<ReSoundNavigationItem id="AutoREMPreparation" stringId="7828" automationId="NavigationAutomationIds.AutoREMAutomationIds.Preparation"/>
+		<ReSoundNavigationItem id="AutoREMTubeCalibration" stringId="7829" automationId="NavigationAutomationIds.AutoREMAutomationIds.TubeCalibration"/>
+		<ReSoundNavigationItem id="AutoREMUnaidedGain" stringId="7830" automationId="NavigationAutomationIds.AutoREMAutomationIds.UnaidedGain"/>
+		<ReSoundNavigationItem id="AutoREMInsertionGain" stringId="7831" automationId="NavigationAutomationIds.AutoREMAutomationIds.InsertionGain"/>
+		<ReSoundNavigationItem id="AutoREMAdjustGain" stringId="7832" automationId="NavigationAutomationIds.AutoREMAutomationIds.AdjustGain"/>
+	</ReSoundNavigationItem>
+</NavigationConfiguration>

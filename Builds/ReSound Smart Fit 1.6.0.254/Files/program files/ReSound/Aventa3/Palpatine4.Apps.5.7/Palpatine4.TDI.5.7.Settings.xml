@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Settings>
+  <PropertyCategory Name="Algorithm Settings" Program="SoundProcessing">
+    <PropertyGroup Name="Compressor">
+      <Property DisplayName="Number Of Gain Handles" TargetProperty="GainCurveConfiguration" 
+                TargetName="ReSound.Algorithm.Palpatine4.WarpGlobals" TargetType="BlackboardComponent" Description="Defines the number of gain handles for the HI. The numbers in parentes describes the levels for the gain handles."/>
+      <Property DisplayName="Compression Ratio Extender" TargetProperty="CompressionRatioExtender" 
+                TargetName="ReSound.Algorithm.Palpatine4.GainCoordination" TargetType="BlackboardComponent" Description="If set to 1, the Compression Ratio can be set to 5. Otherwise to 3."/>
+    </PropertyGroup>
+    <PropertyGroup Name="AFXDFS">
+      <Property DisplayName="AFXDFS Filter Order" TargetProperty="Afxdfs.Feedback.FilterOrder" 
+                TargetName="ReSound.Algorithm.Palpatine4.Afxdfs" TargetType="BlackboardComponent" Description="Defines the filter order for AFXDFS. For normal BTE device, the feedback path complexity can be handled by 16 order filter, for some other form factor such as Reno, higher order filter need to be used to handle feedback path, therefore 20 order filter is used."/>
+      <Property DisplayName="Adaptive Reference" TargetProperty="Afxdfs.AdaptiveReference.Enable" 
+                TargetName="ReSound.Algorithm.Palpatine4.Decorr" TargetType="BlackboardComponent" Description="Defines the adaptive reference filter for AFXDFS. For Reno form factor, we should set it to 'On' and for other form factor it should be 'Off'."/>
+      <Property DisplayName="High Frequency Shift" TargetProperty="Afxdfs.HighFrequencyShift.Mode" 
+                TargetName="ReSound.Algorithm.Palpatine4.Decorr" TargetType="BlackboardComponent" Description="Defines the High Frequency Shift setting for AFXDFS. It is a setting specific for Reno(or other form factor which has complex in feedback path) form factor. For normal form factor, it should be set to 'Off'."/>
+      <Property DisplayName="Interleave Enable Rules" TargetProperty="Afxdfs.Interleave.EnableRules" 
+                TargetName="ReSound.Algorithm.Palpatine4.Afxdfs" TargetType="BlackboardComponent" Description="Define the Interleave Enable Rules for different AFXDFS modes. This is an MIPS optimization. It should be set to On for all AFXDFS mode."/>
+    </PropertyGroup>
+    <PropertyGroup Name="Platform Related Settings">
+      <Property DisplayName="Mechanical Form Factor" TargetProperty="MechanicalPlatform" 
+                TargetName="ReSound.Algorithm.Palpatine4.PlatformSettings" TargetType="BlackboardComponent" Description="Defines the mechanical form factor of device. The option is used to configure different AFXDFS behavior to adapt to different form factors."/>
+    </PropertyGroup>
+    <PropertyGroup Name="Telecoil Related Settings">
+      <Property DisplayName="Telecoil Noise Reduction" TargetProperty="DesiredTelecoilNoiseReduction.Enabled" 
+                TargetName="ReSound.Algorithm.Palpatine4.TeleCoilNoiseReduction" TargetType="BlackboardComponent" Description="Controls the telecoil noise reduction algorithm. The option is used for some form factor which has frame rate noise."/>
+      <Property DisplayName="Telecoil Noise Reduction Overflow level" TargetProperty="TeleCoilNoiseReduction.OverflowLevel" 
+                TargetName="ReSound.Algorithm.Palpatine4.TeleCoilNoiseReduction" TargetType="BlackboardComponent" Description="Controls the overflow level for the TCNR algorithm. Some form factor may need a different parameter."/>
+    </PropertyGroup>
+    <PropertyGroup Name="DAI Related Settings">
+      <Property DisplayName="Telecoil Noise Reduction for DAI" TargetProperty="DesiredTelecoilNoiseReductionInDAI.Enabled" 
+                TargetName="ReSound.Algorithm.Palpatine4.TeleCoilNoiseReduction" TargetType="BlackboardComponent" Description="Controls the DAI noise reduction algorithm. The option is used for some form factor which has frame rate noise."/>
+    </PropertyGroup>
+    <PropertyGroup Name="Synchronization Related Settings">
+      <Property DisplayName="Latency Smooth Time Constant" TargetProperty="Synchronization.LatencySmoothTimeConstant" 
+                TargetName="ReSound.Algorithm.Palpatine4.Synchronization" TargetType="BlackboardComponent" Description="Setting this property will affect judgement of link break. Higher value means more conservative behaviour and small value will be more active. Use default value in most case only for form factor which has bad wireless performance. Consult Algo before making adjustment."/>
+      <Property DisplayName="Fading Speed" TargetProperty="Synchronization.SyncAlphaTimeConstant" 
+                TargetName="ReSound.Algorithm.Palpatine4.Synchronization" TargetType="BlackboardComponent" Description="Setting this property will affect the speed of fade in/out other side data. Use default value in most case only for form factor which has bad wireless performance. Consult Algo before making adjustment."/>
+      <Property DisplayName="Maximum Allowable Packet Loss Interval" TargetProperty="Synchronization.LatencyThreshold" 
+                TargetName="ReSound.Algorithm.Palpatine4.Synchronization" TargetType="BlackboardComponent" Description="Setting this property will affect the judgement of the link status, longer time interval means more tolerant and shorter means critical behavior. Use default value in most case only for form factor which has very bad wireless performance. Consult Algo before making adjustment."/>
+    </PropertyGroup>
+    <PropertyGroup Name="Frequency Lowering Related Settings">
+      <Property DisplayName="Frequency Lowering Levels Definition" TargetProperty="FreqLow.Levels"
+                TargetName="ReSound.Algorithm.Palpatine4.Freqlow" TargetType="BlackboardComponent" Description="This property defines which Frequency Lowering Levels will be available in the Fitting Software to select and for each Level which Frequency Compression Kneepoint and Frequency Compression Ratio will be used. Make sure the Levels are increasing integers, the Kneepoints are chosen from the possible Kneepoints and the Compression Ratios are chosen from the possible Compression Ratios."/>
+    </PropertyGroup>
+  </PropertyCategory>
+  <PropertyCategory Name="InSitu Settings" Program="InSituAudiometry">
+    <PropertyGroup Name="InSitu Related Settings">
+      <Property DisplayName="InSitu SPL To HLoss Level" TargetProperty="InSitu.SoundPressureToHearingLossLevel" 
+                TargetName="ReSound.Algorithm.Palpatine4.InSitu" TargetType="BlackboardComponent" Description="Controls the telecoil noise reduction algorithm. The option is used for some form factor which has frame rate noise."/>
+    </PropertyGroup>
+  </PropertyCategory>
+  <PropertyCategory Name="Vent" Program="UIInformation"/>
+  <PropertyCategory Name="DFS Initialization Settings" Program="DfsInitialization">
+    <PropertyGroup Name="DFSInit">
+      <Property DisplayName="Antialiasing Filter" TargetProperty="DfsInitialization.AntiAliasingFilter" 
+                TargetName="ReSound.Algorithm.Palpatine4.DfsInitialization" TargetType="BlackboardComponent" Description="Define if the Antialiasing filter is applied during DFS initialization"/>
+    </PropertyGroup>
+    <PropertyGroup Name="Telecoil Related Settings">
+      <Property DisplayName="Use dedicated modeller settings for Telecoil" TargetProperty="UseModellerSettingsTeleCoil" 
+                TargetName="ReSound.Algorithm.Palpatine4.ModellerSettings" TargetType="BlackboardComponent" Description="Controls if the default modeller settings should be replaced with the settings below for Telecoil only. Only use if the default settings do not result in a successful TCDFS calibration."/>
+      <Property DisplayName="Low frequency cosine window minimum frequency for Telecoil" TargetProperty="LFCosineWindowFMinTeleCoil" 
+                TargetName="ReSound.Algorithm.Palpatine4.ModellerSettings" TargetType="BlackboardComponent" Description="This property defines the low frequency cosine window minimum frequency for Telecoil only. A value is needed for each audio bandwidth."/>
+      <Property DisplayName="Low frequency cosine window maximum frequency for Telecoil" TargetProperty="LFCosineWindowFMaxTeleCoil" 
+                TargetName="ReSound.Algorithm.Palpatine4.ModellerSettings" TargetType="BlackboardComponent" Description="This property defines the low frequency cosine window maximum frequency for Telecoil only. A value is needed for each audio bandwidth."/>
+      <Property DisplayName="High frequency cosine window minimum frequency for Telecoil" TargetProperty="HFCosineWindowFMinTeleCoil" 
+                TargetName="ReSound.Algorithm.Palpatine4.ModellerSettings" TargetType="BlackboardComponent" Description="This property defines the high frequency cosine window minimum frequency for Telecoil only. A value is needed for each audio bandwidth."/>
+      <Property DisplayName="High frequency cosine window maximum frequency for Telecoil" TargetProperty="HFCosineWindowFMaxTeleCoil" 
+                TargetName="ReSound.Algorithm.Palpatine4.ModellerSettings" TargetType="BlackboardComponent" Description="This property defines the high frequency cosine window maximum frequency for Telecoil only. A value is needed for each audio bandwidth."/>
+    </PropertyGroup>
+  </PropertyCategory>
+</Settings>

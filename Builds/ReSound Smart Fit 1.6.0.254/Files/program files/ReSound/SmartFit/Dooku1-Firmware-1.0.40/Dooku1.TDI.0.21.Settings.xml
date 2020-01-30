@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Settings>
+  <PropertyCategory Name="Algorithm Settings" Program="SoundProcessing">
+    <PropertyGroup Name="Compressor">
+      <Property DisplayName="Number Of Gain Handles" TargetProperty="GainCurveConfiguration" 
+                TargetName="ReSound.Algorithm.Dooku1.WarpGlobals" TargetType="BlackboardComponent" Description="Defines the number of gain handles for the HI. The numbers in parentes describes the levels for the gain handles."/>
+      <Property DisplayName="Compression Ratio Extender (1: Extended CR to max 5, 0: Normal CR of max 3/4)" TargetProperty="CompressionRatioExtender" 
+                TargetName="ReSound.Algorithm.Dooku1.GainCoordination" TargetType="BlackboardComponent" Description="If set to 1, the Compression Ratio can be set to 5. Otherwise to 3."/>
+    </PropertyGroup>
+    
+    <PropertyGroup Name="Adaptive AGCO">
+                <Property DisplayName="Reduction Limit per Band" TargetProperty="AdaptiveAGCOReductionLimit" 
+                TargetName="ReSound.Algorithm.Dooku1.AdaptiveAgco" TargetType="BlackboardComponent" Description="Defines the maximum gain reduction in dB which can be applied by the Adaptive AGCO when a low battery condition is detected."/>
+                <Property DisplayName="Max Reduction relative to AGCO max (CBAS = True) or current AGCO setting (GN = False)." TargetProperty="AdaptiveAGCOUseMaxLimit" 
+                TargetName="ReSound.Algorithm.Dooku1.AdaptiveAgco" TargetType="BlackboardComponent" Description="Defines whether the max reduction is relative to max AGCO (CBAS) or relative to current AGCO setting (GN)"/>
+    </PropertyGroup>
+    
+  </PropertyCategory>
+
+  <PropertyCategory Name="Vent" Program="UIInformation"/>
+</Settings>

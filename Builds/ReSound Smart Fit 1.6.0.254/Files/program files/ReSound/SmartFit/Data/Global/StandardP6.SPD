@@ -1,0 +1,2299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SPDProductData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <!--
+	THIS FILE DOES NOT DEFINE ACTUAL PRODUCTS.
+	This file establishes a base set of properties, settings, features, and feature values
+	as used by "standard" form factors and "standard" price point de-featuring.
+
+	Each brand and algo release may override any value in this file using Brand.SPD files,
+	BUT DO NOT CHANGE THIS FILE - EVER.
+	- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+	THIS FILE IS USED FOR PALPATINE 6 ONLY. - Based on StandardConfig_P6 0.0.1
+	- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+	These files work on a search and replace basis. Nodes with xml:id attributes can be replaced (which includes their child nodes as a set).
+	UICategories/Strings/DefaultValues should be replaced from the parent level to ensure all value combinations are accounted for.
+-->
+  <Version MajorVersion="1" MinorVersion="0" DataVersion="10"/>
+  <!-- These values here are for MonkeyButler1 tool support - the FSW uses the BLE enums -->
+  <BR T="E">
+    <RS T="C">2</RS>
+  </BR>
+  <PP T="E">
+    <Top T="C">1</Top>
+    <!-- <Prp>2</Prp> -->
+    <Pls T="C">4</Pls>
+    <Bas T="C">8</Bas>
+    <Prm>16</Prm>
+    <Bdt T="C">32</Bdt>
+    <Bdp T="C">64</Bdp>
+    <Bdb T="C">128</Bdb>
+  </PP>
+  <FF T="E">
+    <LoBTE675DW T="C">1</LoBTE675DW>
+    <BeHBTE13DW T="C">2</BeHBTE13DW>
+    <BePBTE13DW T="C">4</BePBTE13DW>
+    <BeBTE13DW T="C">8</BeBTE13DW>
+    <BeMBTE312DW T="C">16</BeMBTE312DW>
+    <BeRIE13DW T="C">32</BeRIE13DW>
+    <LxRIE312DW T="C">64</LxRIE312DW>
+    <DaITE13DWNC T="C">256</DaITE13DWNC>
+    <DaITE13DWHC T="C">512</DaITE13DWHC>
+    <DaITE13DWHO T="C">1024</DaITE13DWHO>
+    <DaITE13DNNC T="C">2048</DaITE13DNNC>
+    <DaITE13DNHC T="C">4096</DaITE13DNHC>
+    <DaITE13DNHO T="C">8192</DaITE13DNHO>
+    <DaITE13SWNC T="C">16384</DaITE13SWNC>
+    <DaITE13SWHC T="C">32768</DaITE13SWHC>
+    <DaITE13SWHO T="C">65536</DaITE13SWHO>
+    <DaITE13SNNC T="C">131072</DaITE13SNNC>
+    <DaITE13SNHC T="C">262144</DaITE13SNHC>
+    <DaITE13SNHO T="C">524288</DaITE13SNHO>
+    <DaITC13DWNC T="C">1048576</DaITC13DWNC>
+    <DaITC13DWHC T="C">2097152</DaITC13DWHC>
+    <DaITC13DWHO T="C">4194304</DaITC13DWHO>
+    <DaITC13DWLC T="C">8388608</DaITC13DWLC>
+    <DaITC13DNNC T="C">16777216</DaITC13DNNC>
+    <DaITC13DNHC T="C">33554432</DaITC13DNHC>
+    <DaITC13DNHO T="C">67108864</DaITC13DNHO>
+    <DaITC13DNLC T="C">134217728</DaITC13DNLC>
+    <DaITC13SWNC T="C">268435456</DaITC13SWNC>
+    <DaITC13SWHC T="C">536870912</DaITC13SWHC>
+    <DaITC13SWHO T="C">1073741824</DaITC13SWHO>
+    <DaITC13SWLC T="C">2147483648</DaITC13SWLC>
+    <DaITC13SNNC T="C">4294967296</DaITC13SNNC>
+    <DaITC13SNHC T="C">8589934592</DaITC13SNHC>
+    <DaITC13SNHO T="C">17179869184</DaITC13SNHO>
+    <DaITC13SNLC T="C">34359738368</DaITC13SNLC>
+    <DaMITC13SWNC T="C">68719476736</DaMITC13SWNC>
+    <DaMITC13SWHC T="C">137438953472</DaMITC13SWHC>
+    <DaMITC13SWHO T="C">274877906944</DaMITC13SWHO>
+    <DaMITC13SWLC T="C">549755813888</DaMITC13SWLC>
+    <DaMITC13SNNC T="C">1099511627776</DaMITC13SNNC>
+    <DaMITC13SNHC T="C">2199023255552</DaMITC13SNHC>
+    <DaMITC13SNHO T="C">4398046511104</DaMITC13SNHO>
+    <DaMITC13SNLC T="C">8796093022208</DaMITC13SNLC>
+    <DaCIC10ASNNC T="C">17592186044416</DaCIC10ASNNC>
+    <DaCIC10ASNHC T="C">35184372088832</DaCIC10ASNHC>
+    <DaCIC10ASNHO T="C">70368744177664</DaCIC10ASNHO>
+    <DaCIC10ASNLC T="C">140737488355328</DaCIC10ASNLC>
+    <DaMCIC10ASNNC T="C">281474976710656</DaMCIC10ASNNC>
+    <DaMCIC10ASNHC T="C">562949953421312</DaMCIC10ASNHC>
+    <DaMCIC10ASNHO T="C">1125899906842624</DaMCIC10ASNHO>
+    <DaMCIC10ASNLC T="C">2251799813685248</DaMCIC10ASNLC>
+    <DaIIC10ASNLC T="C">4503599627370496</DaIIC10ASNLC>
+  </FF>
+  <EV T="E">
+    <Basic T="C">1</Basic>
+    <Restaurant T="C">2</Restaurant>
+    <Music T="C">4</Music>
+    <Outdoor T="C">8</Outdoor>
+    <AcousticTelephone T="C">16</AcousticTelephone>
+    <Telecoil T="C">32</Telecoil>
+    <TelecoilLoop T="C">64</TelecoilLoop>
+    <REMTest T="C">128</REMTest>
+    <DAIPlusM T="C">256</DAIPlusM>
+    <StreamerTVRadioPCPlusM T="C">512</StreamerTVRadioPCPlusM>
+    <BTBSpeechPlusM T="C">1024</BTBSpeechPlusM>
+    <Lecture T="C">2048</Lecture>
+    <Demo T="C">4096</Demo>
+  </EV>
+  <!-- END - These values here are for MonkeyButler1 tool support - the FSW uses the BLE enums -->
+  <PricePoints>
+    <PricePoint xml:id="PTO" PricePoint="Top">
+      <Accessories>
+        <Accessory xml:id="PTORC" AccessoryType="RemoteControl" IsSupported="true"/>
+        <Accessory xml:id="PTOBT" AccessoryType="BTB" IsSupported="true"/>
+        <Accessory xml:id="PTOS1" AccessoryType="SAS" IsSupported="true"/>
+        <Accessory xml:id="PTOS2" AccessoryType="SAS" IsSupported="true"/>
+        <Accessory xml:id="PTOS3" AccessoryType="SAS" IsSupported="true"/>
+        <Accessory xml:id="PTOL1" AccessoryType="BLE" IsSupported="true"/>
+        <Accessory xml:id="PTOL2" AccessoryType="BLE" IsSupported="true"/>
+        <Accessory xml:id="PTOL3" AccessoryType="BLE" IsSupported="true"/>
+        <Accessory xml:id="PTOL4" AccessoryType="BLE" IsSupported="true"/>
+        <Accessory xml:id="PTOL5" AccessoryType="BLE" IsSupported="true"/>
+		<Accessory xml:id="PTOM1" AccessoryType="SpouseMicrophone" IsSupported="true" />
+		<Accessory xml:id="PTOM2" AccessoryType="SpouseMicrophone2" IsSupported="true" />
+		<Accessory xml:id="PTOM2P" AccessoryType="SpouseMicrophone2Pro" IsSupported="true" />
+		<Accessory xml:id="PTOM2M" AccessoryType="SpouseMicrophone2Micro" IsSupported="true" />
+      </Accessories>
+    </PricePoint>
+    <PricePoint xml:id="PPL" PricePoint="Plus">
+      <Accessories>
+        <Accessory xml:id="PPLRC" AccessoryType="RemoteControl" IsSupported="true"/>
+        <Accessory xml:id="PPLBT" AccessoryType="BTB" IsSupported="true"/>
+        <Accessory xml:id="PPLS1" AccessoryType="SAS" IsSupported="true"/>
+        <Accessory xml:id="PPLS2" AccessoryType="SAS" IsSupported="true"/>
+        <Accessory xml:id="PPLS3" AccessoryType="SAS" IsSupported="true"/>
+        <Accessory xml:id="PPLL1" AccessoryType="BLE" IsSupported="true"/>
+        <Accessory xml:id="PPLL2" AccessoryType="BLE" IsSupported="true"/>
+        <Accessory xml:id="PPLL3" AccessoryType="BLE" IsSupported="true"/>
+        <Accessory xml:id="PPLL4" AccessoryType="BLE" IsSupported="true"/>
+        <Accessory xml:id="PPLL5" AccessoryType="BLE" IsSupported="true"/>
+		<Accessory xml:id="PPLM1" AccessoryType="SpouseMicrophone" IsSupported="true" />
+		<Accessory xml:id="PPLM2" AccessoryType="SpouseMicrophone2" IsSupported="true" />
+		<Accessory xml:id="PPLM2P" AccessoryType="SpouseMicrophone2Pro" IsSupported="true" />
+		<Accessory xml:id="PPLM2M" AccessoryType="SpouseMicrophone2Micro" IsSupported="true" />
+      </Accessories>
+    </PricePoint>
+    <PricePoint xml:id="PBA" PricePoint="Basic">
+      <Accessories>
+        <Accessory xml:id="PBARC" AccessoryType="RemoteControl" IsSupported="true"/>
+        <Accessory xml:id="PBABT" AccessoryType="BTB" IsSupported="true"/>
+        <Accessory xml:id="PBAS1" AccessoryType="SAS" IsSupported="true"/>
+        <Accessory xml:id="PBAS2" AccessoryType="SAS" IsSupported="true"/>
+        <Accessory xml:id="PBAS3" AccessoryType="SAS" IsSupported="true"/>
+        <Accessory xml:id="PBAL1" AccessoryType="BLE" IsSupported="true"/>
+        <Accessory xml:id="PBAL2" AccessoryType="BLE" IsSupported="true"/>
+        <Accessory xml:id="PBAL3" AccessoryType="BLE" IsSupported="true"/>
+        <Accessory xml:id="PBAL4" AccessoryType="BLE" IsSupported="true"/>
+        <Accessory xml:id="PBAL5" AccessoryType="BLE" IsSupported="true"/>
+		<Accessory xml:id="PBAM1" AccessoryType="SpouseMicrophone" IsSupported="true" />
+		<Accessory xml:id="PBAM2" AccessoryType="SpouseMicrophone2" IsSupported="true" />
+		<Accessory xml:id="PBAM2P" AccessoryType="SpouseMicrophone2Pro" IsSupported="true" />
+		<Accessory xml:id="PBAM2M" AccessoryType="SpouseMicrophone2Micro" IsSupported="true" />
+      </Accessories>
+    </PricePoint>
+    <PricePoint xml:id="PPRM" PricePoint="Prime">
+      <Accessories>
+        <Accessory xml:id="PPRMRC" AccessoryType="RemoteControl" IsSupported="true"/>
+        <Accessory xml:id="PPRMBT" AccessoryType="BTB" IsSupported="true"/>
+        <Accessory xml:id="PPRMS1" AccessoryType="SAS" IsSupported="true"/>
+        <Accessory xml:id="PPRMS2" AccessoryType="SAS" IsSupported="true"/>
+        <Accessory xml:id="PPRMS3" AccessoryType="SAS" IsSupported="true"/>
+        <Accessory xml:id="PPRML1" AccessoryType="BLE" IsSupported="true"/>
+        <Accessory xml:id="PPRML2" AccessoryType="BLE" IsSupported="true"/>
+        <Accessory xml:id="PPRML3" AccessoryType="BLE" IsSupported="true"/>
+        <Accessory xml:id="PPRML4" AccessoryType="BLE" IsSupported="true"/>
+        <Accessory xml:id="PPRML5" AccessoryType="BLE" IsSupported="true"/>
+		<Accessory xml:id="PPRMM1" AccessoryType="SpouseMicrophone" IsSupported="true" />
+		<Accessory xml:id="PPRMM2" AccessoryType="SpouseMicrophone2" IsSupported="true" />
+		<Accessory xml:id="PPRMM2P" AccessoryType="SpouseMicrophone2Pro" IsSupported="true" />
+		<Accessory xml:id="PPRMM2M" AccessoryType="SpouseMicrophone2Micro" IsSupported="true" />
+      </Accessories>
+    </PricePoint>
+    <PricePoint xml:id="PBT" PricePoint="BudgetTop">
+      <Accessories>
+        <Accessory xml:id="PBTRC" AccessoryType="RemoteControl" IsSupported="true"/>
+        <Accessory xml:id="PBTBT" AccessoryType="BTB" IsSupported="true"/>
+        <Accessory xml:id="PBTS1" AccessoryType="SAS" IsSupported="true"/>
+        <Accessory xml:id="PBTS2" AccessoryType="SAS" IsSupported="true"/>
+        <Accessory xml:id="PBTS3" AccessoryType="SAS" IsSupported="true"/>
+        <Accessory xml:id="PBTL1" AccessoryType="BLE" IsSupported="true"/>
+        <Accessory xml:id="PBTL2" AccessoryType="BLE" IsSupported="true"/>
+        <Accessory xml:id="PBTL3" AccessoryType="BLE" IsSupported="true"/>
+        <Accessory xml:id="PBTL4" AccessoryType="BLE" IsSupported="true"/>
+        <Accessory xml:id="PBTL5" AccessoryType="BLE" IsSupported="true"/>
+		<Accessory xml:id="PBTM1" AccessoryType="SpouseMicrophone" IsSupported="true" />
+		<Accessory xml:id="PBTM2" AccessoryType="SpouseMicrophone2" IsSupported="true" />
+		<Accessory xml:id="PBTM2P" AccessoryType="SpouseMicrophone2Pro" IsSupported="true" />
+		<Accessory xml:id="PBTM2M" AccessoryType="SpouseMicrophone2Micro" IsSupported="true" />
+      </Accessories>
+    </PricePoint>
+    <PricePoint xml:id="PBP" PricePoint="BudgetPlus">
+      <Accessories>
+        <Accessory xml:id="PBPRC" AccessoryType="RemoteControl" IsSupported="true"/>
+        <Accessory xml:id="PBPBT" AccessoryType="BTB" IsSupported="true"/>
+        <Accessory xml:id="PBPS1" AccessoryType="SAS" IsSupported="true"/>
+        <Accessory xml:id="PBPS2" AccessoryType="SAS" IsSupported="true"/>
+        <Accessory xml:id="PBPS3" AccessoryType="SAS" IsSupported="true"/>
+        <Accessory xml:id="PBPL1" AccessoryType="BLE" IsSupported="true"/>
+        <Accessory xml:id="PBPL2" AccessoryType="BLE" IsSupported="true"/>
+        <Accessory xml:id="PBPL3" AccessoryType="BLE" IsSupported="true"/>
+        <Accessory xml:id="PBPL4" AccessoryType="BLE" IsSupported="true"/>
+        <Accessory xml:id="PBPL5" AccessoryType="BLE" IsSupported="true"/>
+		<Accessory xml:id="PBPM1" AccessoryType="SpouseMicrophone" IsSupported="true" />
+		<Accessory xml:id="PBPM2" AccessoryType="SpouseMicrophone2" IsSupported="true" />
+		<Accessory xml:id="PBPM2P" AccessoryType="SpouseMicrophone2Pro" IsSupported="true" />
+		<Accessory xml:id="PBPM2M" AccessoryType="SpouseMicrophone2Micro" IsSupported="true" />
+      </Accessories>
+    </PricePoint>
+    <PricePoint xml:id="PBB" PricePoint="BudgetBasic">
+      <Accessories>
+        <Accessory xml:id="PBPRC" AccessoryType="RemoteControl" IsSupported="true"/>
+        <Accessory xml:id="PBPBT" AccessoryType="BTB" IsSupported="false"/>
+        <Accessory xml:id="PBPS1" AccessoryType="SAS" IsSupported="false"/>
+        <Accessory xml:id="PBPS2" AccessoryType="SAS" IsSupported="false"/>
+        <Accessory xml:id="PBPS3" AccessoryType="SAS" IsSupported="false"/>
+        <Accessory xml:id="PBPL1" AccessoryType="BLE" IsSupported="false"/>
+        <Accessory xml:id="PBPL2" AccessoryType="BLE" IsSupported="false"/>
+        <Accessory xml:id="PBPL3" AccessoryType="BLE" IsSupported="false"/>
+        <Accessory xml:id="PBPL4" AccessoryType="BLE" IsSupported="false"/>
+        <Accessory xml:id="PBPL5" AccessoryType="BLE" IsSupported="false"/>
+		<Accessory xml:id="PBBM1" AccessoryType="SpouseMicrophone" IsSupported="false" />
+		<Accessory xml:id="PBBM2" AccessoryType="SpouseMicrophone2" IsSupported="false" />
+		<Accessory xml:id="PBBM2P" AccessoryType="SpouseMicrophone2Pro" IsSupported="false" />
+		<Accessory xml:id="PBBM2M" AccessoryType="SpouseMicrophone2Micro" IsSupported="false" />
+      </Accessories>
+    </PricePoint>
+  </PricePoints>
+  <FormFactors xml:id="FormFactors" Type="Standard">
+    <!-- Do Not Define Extended Products Here - This is for Standard Product Definitions -->
+    <!-- The Specific Release SPD files should replace this node entirely - making sure they match the FF values to the new products -->
+    <FormFactor HWPlatform="London" Type="BehindTheEar" BatterySize="Size675" MicroPhone="Dual" IsWireless="true" DeviceConfiguration="NormalPowerClosed" FormFactorName="LoBTE675DW" FF="1"/>
+    <FormFactor HWPlatform="Berlin" Type="HighPowerBehindTheEar" BatterySize="Size13" MicroPhone="Dual" IsWireless="true" DeviceConfiguration="HighPowerOpen" FormFactorName="BeHBTE13DW" FF="2"/>
+    <FormFactor HWPlatform="Berlin" Type="PowerBehindTheEar" BatterySize="Size13" MicroPhone="Dual" IsWireless="true" DeviceConfiguration="NormalPowerClosed" FormFactorName="BePBTE13DW" FF="4"/>
+    <FormFactor HWPlatform="Berlin" Type="BehindTheEar" BatterySize="Size13" MicroPhone="Dual" IsWireless="true" DeviceConfiguration="NormalPowerClosed" FormFactorName="BeBTE13DW" FF="8"/>
+    <FormFactor HWPlatform="Berlin" Type="MiniBehindTheEar" BatterySize="Size312" MicroPhone="Dual" IsWireless="true" DeviceConfiguration="NormalPowerClosed" FormFactorName="BeMBTE312DW" FF="16"/>
+    <FormFactor HWPlatform="Berlin" Type="RecieverInTheEar" BatterySize="Size13" MicroPhone="Dual" IsWireless="true" DeviceConfiguration="NormalPowerClosed" FormFactorName="BeRIE13DW" FF="32"/>
+    <FormFactor HWPlatform="Luxor_Lima" Type="RecieverInTheEar" BatterySize="Size312" MicroPhone="Dual" IsWireless="true" DeviceConfiguration="NormalPowerClosed" FormFactorName="LxRIE312DW" FF="64"/>
+    <FormFactor HWPlatform="Dallas" Type="InTheEar" BatterySize="Size13" MicroPhone="Dual" IsWireless="true" DeviceConfiguration="NormalPowerClosed" FormFactorName="DaITE13DWNC" FF="256"/>
+    <FormFactor HWPlatform="Dallas" Type="InTheEar" BatterySize="Size13" MicroPhone="Dual" IsWireless="true" DeviceConfiguration="HighPowerClosed" FormFactorName="DaITE13DWHC" FF="512"/>
+    <FormFactor HWPlatform="Dallas" Type="InTheEar" BatterySize="Size13" MicroPhone="Dual" IsWireless="true" DeviceConfiguration="HighPowerOpen" FormFactorName="DaITE13DWHO" FF="1024"/>
+    <FormFactor HWPlatform="Dallas" Type="InTheEar" BatterySize="Size13" MicroPhone="Dual" IsWireless="false" DeviceConfiguration="NormalPowerClosed" FormFactorName="DaITE13DNNC" FF="2048"/>
+    <FormFactor HWPlatform="Dallas" Type="InTheEar" BatterySize="Size13" MicroPhone="Dual" IsWireless="false" DeviceConfiguration="HighPowerClosed" FormFactorName="DaITE13DNHC" FF="4096"/>
+    <FormFactor HWPlatform="Dallas" Type="InTheEar" BatterySize="Size13" MicroPhone="Dual" IsWireless="false" DeviceConfiguration="HighPowerOpen" FormFactorName="DaITE13DNHO" FF="8192"/>
+    <FormFactor HWPlatform="Dallas" Type="InTheEar" BatterySize="Size13" MicroPhone="Single" IsWireless="true" DeviceConfiguration="NormalPowerClosed" FormFactorName="DaITE13SWNC" FF="16384"/>
+    <FormFactor HWPlatform="Dallas" Type="InTheEar" BatterySize="Size13" MicroPhone="Single" IsWireless="true" DeviceConfiguration="HighPowerClosed" FormFactorName="DaITE13SWHC" FF="32768"/>
+    <FormFactor HWPlatform="Dallas" Type="InTheEar" BatterySize="Size13" MicroPhone="Single" IsWireless="true" DeviceConfiguration="HighPowerOpen" FormFactorName="DaITE13SWHO" FF="65536"/>
+    <FormFactor HWPlatform="Dallas" Type="InTheEar" BatterySize="Size13" MicroPhone="Single" IsWireless="false" DeviceConfiguration="NormalPowerClosed" FormFactorName="DaITE13SNNC" FF="131072"/>
+    <FormFactor HWPlatform="Dallas" Type="InTheEar" BatterySize="Size13" MicroPhone="Single" IsWireless="false" DeviceConfiguration="HighPowerClosed" FormFactorName="DaITE13SNHC" FF="262144"/>
+    <FormFactor HWPlatform="Dallas" Type="InTheEar" BatterySize="Size13" MicroPhone="Single" IsWireless="false" DeviceConfiguration="HighPowerOpen" FormFactorName="DaITE13SNHO" FF="524288"/>
+    <FormFactor HWPlatform="Dallas" Type="InTheCanal" BatterySize="Size312" MicroPhone="Dual" IsWireless="true" DeviceConfiguration="NormalPowerClosed" FormFactorName="DaITC13DWNC" FF="1048576"/>
+    <FormFactor HWPlatform="Dallas" Type="InTheCanal" BatterySize="Size312" MicroPhone="Dual" IsWireless="true" DeviceConfiguration="HighPowerClosed" FormFactorName="DaITC13DWHC" FF="2097152"/>
+    <FormFactor HWPlatform="Dallas" Type="InTheCanal" BatterySize="Size312" MicroPhone="Dual" IsWireless="true" DeviceConfiguration="HighPowerOpen" FormFactorName="DaITC13DWHO" FF="4194304"/>
+    <FormFactor HWPlatform="Dallas" Type="InTheCanal" BatterySize="Size312" MicroPhone="Dual" IsWireless="true" DeviceConfiguration="LowPowerLowNoiseClosed" FormFactorName="DaITC13DWLC" FF="8388608"/>
+    <FormFactor HWPlatform="Dallas" Type="InTheCanal" BatterySize="Size312" MicroPhone="Dual" IsWireless="false" DeviceConfiguration="NormalPowerClosed" FormFactorName="DaITC13DNNC" FF="16777216"/>
+    <FormFactor HWPlatform="Dallas" Type="InTheCanal" BatterySize="Size312" MicroPhone="Dual" IsWireless="false" DeviceConfiguration="HighPowerClosed" FormFactorName="DaITC13DNHC" FF="33554432"/>
+    <FormFactor HWPlatform="Dallas" Type="InTheCanal" BatterySize="Size312" MicroPhone="Dual" IsWireless="false" DeviceConfiguration="HighPowerOpen" FormFactorName="DaITC13DNHO" FF="67108864"/>
+    <FormFactor HWPlatform="Dallas" Type="InTheCanal" BatterySize="Size312" MicroPhone="Dual" IsWireless="false" DeviceConfiguration="LowPowerLowNoiseClosed" FormFactorName="DaITC13DNLC" FF="134217728"/>
+    <FormFactor HWPlatform="Dallas" Type="InTheCanal" BatterySize="Size312" MicroPhone="Single" IsWireless="true" DeviceConfiguration="NormalPowerClosed" FormFactorName="DaITC13SWNC" FF="268435456"/>
+    <FormFactor HWPlatform="Dallas" Type="InTheCanal" BatterySize="Size312" MicroPhone="Single" IsWireless="true" DeviceConfiguration="HighPowerClosed" FormFactorName="DaITC13SWHC" FF="536870912"/>
+    <FormFactor HWPlatform="Dallas" Type="InTheCanal" BatterySize="Size312" MicroPhone="Single" IsWireless="true" DeviceConfiguration="HighPowerOpen" FormFactorName="DaITC13SWHO" FF="1073741824"/>
+    <FormFactor HWPlatform="Dallas" Type="InTheCanal" BatterySize="Size312" MicroPhone="Single" IsWireless="true" DeviceConfiguration="LowPowerLowNoiseClosed" FormFactorName="DaITC13SWLC" FF="2147483648"/>
+    <FormFactor HWPlatform="Dallas" Type="InTheCanal" BatterySize="Size312" MicroPhone="Single" IsWireless="false" DeviceConfiguration="NormalPowerClosed" FormFactorName="DaITC13SNNC" FF="4294967296"/>
+    <FormFactor HWPlatform="Dallas" Type="InTheCanal" BatterySize="Size312" MicroPhone="Single" IsWireless="false" DeviceConfiguration="HighPowerClosed" FormFactorName="DaITC13SNHC" FF="8589934592"/>
+    <FormFactor HWPlatform="Dallas" Type="InTheCanal" BatterySize="Size312" MicroPhone="Single" IsWireless="false" DeviceConfiguration="HighPowerOpen" FormFactorName="DaITC13SNHO" FF="17179869184"/>
+    <FormFactor HWPlatform="Dallas" Type="InTheCanal" BatterySize="Size312" MicroPhone="Single" IsWireless="false" DeviceConfiguration="LowPowerLowNoiseClosed" FormFactorName="DaITC13SNLC" FF="34359738368"/>
+    <FormFactor HWPlatform="Dallas" Type="MicrophoneInTheCanal" BatterySize="Size312" MicroPhone="Single" IsWireless="true" DeviceConfiguration="NormalPowerClosed" FormFactorName="DaMITC13SWNC" FF="68719476736"/>
+    <FormFactor HWPlatform="Dallas" Type="MicrophoneInTheCanal" BatterySize="Size312" MicroPhone="Single" IsWireless="true" DeviceConfiguration="HighPowerClosed" FormFactorName="DaMITC13SWHC" FF="137438953472"/>
+    <FormFactor HWPlatform="Dallas" Type="MicrophoneInTheCanal" BatterySize="Size312" MicroPhone="Single" IsWireless="true" DeviceConfiguration="HighPowerOpen" FormFactorName="DaMITC13SWHO" FF="274877906944"/>
+    <FormFactor HWPlatform="Dallas" Type="MicrophoneInTheCanal" BatterySize="Size312" MicroPhone="Single" IsWireless="true" DeviceConfiguration="LowPowerLowNoiseClosed" FormFactorName="DaMITC13SWLC" FF="549755813888"/>
+    <FormFactor HWPlatform="Dallas" Type="MicrophoneInTheCanal" BatterySize="Size312" MicroPhone="Single" IsWireless="false" DeviceConfiguration="NormalPowerClosed" FormFactorName="DaMITC13SNNC" FF="1099511627776"/>
+    <FormFactor HWPlatform="Dallas" Type="MicrophoneInTheCanal" BatterySize="Size312" MicroPhone="Single" IsWireless="false" DeviceConfiguration="HighPowerClosed" FormFactorName="DaMITC13SNHC" FF="2199023255552"/>
+    <FormFactor HWPlatform="Dallas" Type="MicrophoneInTheCanal" BatterySize="Size312" MicroPhone="Single" IsWireless="false" DeviceConfiguration="HighPowerOpen" FormFactorName="DaMITC13SNHO" FF="4398046511104"/>
+    <FormFactor HWPlatform="Dallas" Type="MicrophoneInTheCanal" BatterySize="Size312" MicroPhone="Single" IsWireless="false" DeviceConfiguration="LowPowerLowNoiseClosed" FormFactorName="DaMITC13SNLC" FF="8796093022208"/>
+    <FormFactor HWPlatform="Dallas" Type="CompletelyInTheCanal" BatterySize="Size10A" MicroPhone="Single" IsWireless="false" DeviceConfiguration="NormalPowerClosed" FormFactorName="DaCIC10ASNNC" FF="17592186044416"/>
+    <FormFactor HWPlatform="Dallas" Type="CompletelyInTheCanal" BatterySize="Size10A" MicroPhone="Single" IsWireless="false" DeviceConfiguration="HighPowerClosed" FormFactorName="DaCIC10ASNHC" FF="35184372088832"/>
+    <FormFactor HWPlatform="Dallas" Type="CompletelyInTheCanal" BatterySize="Size10A" MicroPhone="Single" IsWireless="false" DeviceConfiguration="HighPowerOpen" FormFactorName="DaCIC10ASNHO" FF="70368744177664"/>
+    <FormFactor HWPlatform="Dallas" Type="CompletelyInTheCanal" BatterySize="Size10A" MicroPhone="Single" IsWireless="false" DeviceConfiguration="LowPowerLowNoiseClosed" FormFactorName="DaCIC10ASNLC" FF="140737488355328"/>
+    <FormFactor HWPlatform="Dallas" Type="MicrophoneCompletelyInTheCanal" BatterySize="Size10A" MicroPhone="Single" IsWireless="false" DeviceConfiguration="NormalPowerClosed" FormFactorName="DaMCIC10ASNNC" FF="281474976710656"/>
+    <FormFactor HWPlatform="Dallas" Type="MicrophoneCompletelyInTheCanal" BatterySize="Size10A" MicroPhone="Single" IsWireless="false" DeviceConfiguration="HighPowerClosed" FormFactorName="DaMCIC10ASNHC" FF="562949953421312"/>
+    <FormFactor HWPlatform="Dallas" Type="MicrophoneCompletelyInTheCanal" BatterySize="Size10A" MicroPhone="Single" IsWireless="false" DeviceConfiguration="HighPowerOpen" FormFactorName="DaMCIC10ASNHO" FF="1125899906842624"/>
+    <FormFactor HWPlatform="Dallas" Type="MicrophoneCompletelyInTheCanal" BatterySize="Size10A" MicroPhone="Single" IsWireless="false" DeviceConfiguration="LowPowerLowNoiseClosed" FormFactorName="DaMCIC10ASNLC" FF="2251799813685248"/>
+    <FormFactor HWPlatform="Dallas" Type="InvisibleInTheCanal" BatterySize="Size10A" MicroPhone="Single" IsWireless="false" DeviceConfiguration="LowPowerLowNoiseClosed" FormFactorName="DaIIC10ASNLC" FF="4503599627370496"/>
+  </FormFactors>
+  <ProductData T="O">
+    <ProgramFeatures T="O">
+      <SupportsSomething T="O" FF="1034834528127" DT="Boolean">
+        <V T="V" FF="-1">True</V>
+      </SupportsSomething>
+    </ProgramFeatures>
+  </ProductData>
+  <ProductFeatures>
+    <HandleProperties>
+      <HandleProperty xml:id="GHMax" HandleID="Max">
+        <DefaultValues xml:id="DFTVALS">
+          <DefaultValue PP="1" Value="Standard17"/>
+          <DefaultValue PP="4" Value="Standard14"/>
+          <DefaultValue PP="8" Value="Standard12"/>
+          <DefaultValue PP="16" Value="Standard10"/>
+          <DefaultValue PP="32" Value="Standard8"/>
+          <DefaultValue PP="192" Value="Standard6"/>
+        </DefaultValues>
+      </HandleProperty>
+      <HandleProperty xml:id="GHMid" HandleID="Mid">
+        <DefaultValues xml:id="DFTVALS">
+          <DefaultValue PP="1" Value="Standard9"/>
+          <DefaultValue PP="4" Value="Standard7"/>
+          <DefaultValue PP="56" Value="Standard6"/>
+          <DefaultValue PP="192" Value="Standard4"/>
+        </DefaultValues>
+      </HandleProperty>
+      <HandleProperty xml:id="GHMin" HandleID="Min">
+        <DefaultValues xml:id="DFTVALS">
+          <DefaultValue PP="1" Value="Standard6"/>
+          <DefaultValue PP="4" Value="Standard4"/>
+          <DefaultValue PP="56" Value="Standard3"/>
+          <DefaultValue PP="64" Value="Standard2"/>
+          <DefaultValue PP="128" Value="Undefined"/>
+        </DefaultValues>
+      </HandleProperty>
+      <HandleProperty xml:id="CHS" HandleID="ClassifierHandles">
+        <DefaultValues xml:id="DFTVALS">
+          <DefaultValue Value="ClassifierHandle77"/>
+        </DefaultValues>
+      </HandleProperty>
+    </HandleProperties>
+    <ProductProperties>
+      <!-- Defined on Form Factor Tab -->
+      <ProductProperty xml:id="PRMFI" Property="SupportsMFI">
+        <DefaultValues xml:id="DFTVALS">
+          <DefaultValue PP="15" FF="1034834528127" Value="true"/>
+        </DefaultValues>
+      </ProductProperty>
+      <ProductProperty xml:id="PRIS" Property="SupportsInsitu">
+        <DefaultValues xml:id="DFTVALS">
+          <DefaultValue FF="127" Value="true"/>
+        </DefaultValues>
+      </ProductProperty>
+      <ProductProperty xml:id="PREE" Property="SupportsEar2Ear">
+        <DefaultValues xml:id="DFTVALS">
+          <DefaultValue PP="63" FF="1030792267647" Value="true"/>
+        </DefaultValues>
+      </ProductProperty>
+      <ProductProperty xml:id="PRSAT" Property="SupportsSatisfy">
+        <DefaultValues xml:id="DFTVALS">
+          <DefaultValue PP="15" Value="true"/>
+        </DefaultValues>
+      </ProductProperty>
+      <ProductProperty xml:id="PREVFT" Property="SupportsEVFT">
+        <DefaultValues xml:id="DFTVALS">
+          <DefaultValue PP="7" Value="true"/>
+        </DefaultValues>
+      </ProductProperty>
+      <ProductProperty xml:id="PRTSG" Property="SupportsTSGOnly">
+        <DefaultValues xml:id="DFTVALS">
+          <DefaultValue Value="true"/>
+        </DefaultValues>
+      </ProductProperty>
+      <ProductProperty xml:id="PRTSGNS" Property="SupportsTSGNaturalSounds">
+        <DefaultValues xml:id="DFTVALS">
+          <DefaultValue PP="31" Value="true"/>
+        </DefaultValues>
+      </ProductProperty>
+      <ProductProperty xml:id="PRAP" Property="SupportsAutoPhone">
+        <DefaultValues xml:id="DFTVALS">
+          <DefaultValue FF="4503599627370367" Value="true"/>
+        </DefaultValues>
+      </ProductProperty>
+      <!-- ************************************************************************ -->
+      <!-- "Supports DAI" is part of the Properties SPD file Device Options value -->
+      <!-- ************************************************************************ -->
+      <ProductProperty xml:id="PRDDAI" Property="SupportsDisableDAIJump">
+        <DefaultValues xml:id="DFTVALS">
+          <DefaultValue FF="1" Value="true"/>
+        </DefaultValues>
+      </ProductProperty>
+      <!-- "Supports RFT" defined by both FormFactor and Price Point tabs -->
+      <ProductProperty xml:id="PRRFT" Property="SupportsRFT">
+        <DefaultValues xml:id="DFTVALS">
+          <DefaultValue PP="31" FF="1034834528127" Value="true"/>
+        </DefaultValues>
+      </ProductProperty>
+      <!-- "Supports RFU" defined by both FormFactor and Price Point tabs -->
+      <ProductProperty xml:id="PRRFU" Property="SupportsRFU">
+        <DefaultValues xml:id="DFTVALS">
+          <DefaultValue PP="31" FF="1034834528127" Value="true"/>
+        </DefaultValues>
+      </ProductProperty>
+      <!-- ***************************************************************************** -->
+      <!-- "Supports Telecoil" is part of the Properties SPD file Device Options value -->
+      <!-- ***************************************************************************** -->
+      <!-- *********************************************** -->
+      <!-- "UP Receivers" defined in Properties.SPD files -->
+      <!-- *********************************************** -->
+      <!-- END OF FORM FACTOR TAB -->
+      <!--   -->
+      <!-- Defined on Device Controls Tab -->
+      <ProductProperty xml:id="PRMTB" Property="SupportsMultiButton">
+        <DefaultValues xml:id="DFTVALS">
+          <DefaultValue FF="32" Value="true"/>
+        </DefaultValues>
+      </ProductProperty>
+      <ProductProperty xml:id="PRPBMB" Property="SupportsPBVCASMultiButton">
+        <DefaultValues xml:id="DFTVALS">
+          <DefaultValue FF="1030792267600" Value="true"/>
+        </DefaultValues>
+      </ProductProperty>
+      <ProductProperty xml:id="PRLPE" Property="SupportsLongPushEvents">
+        <DefaultValues xml:id="DFTVALS">
+          <DefaultValue FF="7" Value="true"/>
+        </DefaultValues>
+      </ProductProperty>
+      <!-- END OF DEVICE CONTROLS TAB -->
+      <!-- Misc - Not Yet Defined or deprecated -->
+      <ProductProperty xml:id="PRPEDS" Property="SupportsPediatrics">
+        <DefaultValues xml:id="DFTVALS">
+          <DefaultValue Value="false"/>
+        </DefaultValues>
+      </ProductProperty>
+      <ProductProperty xml:id="PRLED" Property="SupportsLED">
+        <DefaultValues xml:id="DFTVALS">
+          <DefaultValue Value="false"/>
+        </DefaultValues>
+      </ProductProperty>
+      <!-- END OF MISC -->
+    </ProductProperties>
+    <MelodyFeatures/>
+    <SatisfyFeatures>
+      <SatisfyFeature xml:id="SFSSE" PP="15" FeatureID="Satisfy.SyncEnabled" RatatoskID="Satisfy.SyncEnabled" DataType="Boolean" FeatureRestriction="NeedsSatisfy" FeatureType="Instrument" SupportsSurround="false" NeedsBinaural="true" OffValue="false" RftRestricted="false">
+        <UICategories xml:id="UICATS">
+          <UICategory Category="Satisfy"/>
+        </UICategories>
+        <Strings xml:id="STRNGS">
+          <String StringID="7885"/>
+        </Strings>
+        <FeatureValues/>
+        <DefaultValues xml:id="DFTVALS">
+          <DefaultValue Value="false"/>
+        </DefaultValues>
+      </SatisfyFeature>
+    </SatisfyFeatures>
+    <ButtonEventFeatures>
+      <ButtonEventFeature xml:id="BEOSWL" FeatureID="Os.WirelessMode" RatatoskID="Os.WirelessMode" DataType="Enum" FeatureRestriction="NeedsRechargeable" FeatureType="Instrument" SupportsSurround="false" NeedsBinaural="false" OffValue="Disabled" RftRestricted="false">
+        <UICategories xml:id="UICATS">
+          <UICategory Category="ToggleButton"/>
+        </UICategories>
+        <Strings xml:id="STRNGS">
+          <String StringID="3663"/>
+        </Strings>
+        <FeatureValues>
+          <FeatureValue xml:id="FMOFF" FeatureValueId="Off" RatatoskID="FlightModeDisabled" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="237"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="FMON" FeatureValueId="On" RatatoskID="FlightModeButtonInitiated" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="257"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+        </FeatureValues>
+        <DefaultValues/>
+        <ImageResources/>
+      </ButtonEventFeature>
+    </ButtonEventFeatures>
+    <RangeFeatures/>
+  </ProductFeatures>
+  <ProgramFeatures>
+    <DirectionalFeatures>
+      <!-- Mic Input Mode used by Single Mic Customs - Non DAI/TC/BTB/SAS Environments -->
+      <Feature xml:id="DFMIC" EV="6303" FF="9006164168540160" FeatureID="Mic" RatatoskID="InputMode" DataType="Enum" FeatureRestriction="NoRestriction" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="Omni" RftRestricted="false">
+        <UICategories xml:id="UICATS">
+          <UICategory Category="None"/>
+        </UICategories>
+        <Strings xml:id="STRNGS">
+          <String StringID="927" ToolTipId="9796"/>
+        </Strings>
+        <FeatureValues>
+          <FeatureValue xml:id="DFMICONLY" FeatureValueId="MicOnly" RatatoskID="Omni" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="286"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+        </FeatureValues>
+        <DefaultValues/>
+      </Feature>
+      <!-- Stream Input Mode - Uses Feature Restriction instead of FF filter -->
+      <Feature xml:id="DFESTR" EV="1536" FeatureID="ExternalStreaming" RatatoskID="InputMode" DataType="Enum" FeatureRestriction="NeedsWireless" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="Omni" RftRestricted="false">
+        <UICategories xml:id="UICATS">
+          <UICategory Category="None"/>
+        </UICategories>
+        <Strings xml:id="STRNGS">
+          <String StringID="3439" ToolTipId="9797"/>
+        </Strings>
+        <FeatureValues>
+          <FeatureValue xml:id="DFESTRMIC" FeatureValueId="ExternalStreamingMic" RatatoskID="ExternalStreamingMic1" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="3440"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+        </FeatureValues>
+        <DefaultValues/>
+      </Feature>
+      <!-- Telecoil Input Mode - Uses Feature Restriction instead of FF filter -->
+      <Feature xml:id="DFTC" EV="96" FeatureID="Tel" RatatoskID="InputMode" DataType="Enum" FeatureRestriction="NeedsTelcoil" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="Omni" RftRestricted="false">
+        <UICategories xml:id="UICATS">
+          <UICategory Category="None"/>
+        </UICategories>
+        <Strings xml:id="STRNGS">
+          <String StringID="283" ToolTipId="9798"/>
+        </Strings>
+        <FeatureValues>
+          <FeatureValue xml:id="DFTCMIC" FeatureValueId="MicPlusTel" RatatoskID="TelecoilMic1" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="285"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+        </FeatureValues>
+        <DefaultValues/>
+      </Feature>
+      <!-- DAI Input Mode - Uses Feature Restriction instead of FF filter -->
+      <Feature xml:id="DFDAI" EV="256" FeatureID="DAI" RatatoskID="InputMode" DataType="Enum" FeatureRestriction="NeedsDAI" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="Omni" RftRestricted="false">
+        <UICategories xml:id="UICATS">
+          <UICategory Category="None"/>
+        </UICategories>
+        <Strings xml:id="STRNGS">
+          <String StringID="253" ToolTipId="9799"/>
+        </Strings>
+        <FeatureValues>
+          <FeatureValue xml:id="DFDAIMIC" FeatureValueId="MicPlusDai" RatatoskID="DAIMic1" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="255"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+        </FeatureValues>
+        <DefaultValues/>
+      </Feature>
+      <Feature xml:id="DFDIRECT" EV="6303" FeatureID="Directionality" RatatoskID="InputMode" DataType="Enum" FeatureRestriction="NeedsDualMicrophone" FeatureType="Program" SupportsSurround="false" NeedsBinaural="true" OffValue="Omni" RftRestricted="false">
+        <UICategories xml:id="UICATS">
+          <UICategory Category="AdvancedFeature"/>
+        </UICategories>
+        <Strings xml:id="STRNGS">
+          <String StringID="3652" ToolTipId="8696"/>
+        </Strings>
+        <FeatureValues>
+          <!-- OMNI -->
+          <FeatureValue xml:id="DFDIRECTOMNI" FeatureValueId="Omni" RatatoskID="Omni" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="262"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue PP="63" EV="4252" Value="true"/>
+              <DefaultValue PP="192" EV="4253" Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <!-- FIXED DIRECTIONALITY -->
+          <FeatureValue xml:id="DFDIRECTFIXED" EV="6302" FeatureValueId="Fixed" RatatoskID="Bass2FocusHyperCardioid" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="265"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <!-- SOFT SWITCHING -->
+          <FeatureValue xml:id="DFDIRECTSOFT" PP="63" FeatureValueId="SoftSwitching" RatatoskID="AdaptiveDirectionalitySoftSwitching" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="264"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <!-- Set as Default for All-Around - Bass Calculator will use for monaural -->
+              <DefaultValue EV="1" Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <!-- ADAPTIVE DIRECTIONALITY -->
+          <FeatureValue xml:id="DFDIRECTADAPT" EV="6302" FeatureValueId="AdaptiveDirectionality" RatatoskID="AdaptiveDirectionality" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String PP="1" StringID="5281"/>
+              <String PP="6" StringID="5284"/>
+              <String PP="248" StringID="5465"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue EV="2050" Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <!-- BASS (all levels) -->
+          <!-- BASS 2 aka Natural Directionality -->
+          <FeatureValue xml:id="DFDIRECTB2F" PP="15" EV="1" FeatureValueId="FocusEar" RatatoskID="Bass2FocusHyperCardioid" NeedsBinaural="true" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="8658"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="DFDIRECTB2M" PP="15" EV="1" FeatureValueId="MonitorEar" RatatoskID="Bass2Monitor" NeedsBinaural="true" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="8659"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <!-- BASS 3 aka Binaural Directionality -->
+          <FeatureValue xml:id="DFDIRECTB3F" PP="4" EV="1" FeatureValueId="FocusEar3" RatatoskID="Bass3Focus" NeedsBinaural="true" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="8660"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="DFDIRECTB3M" PP="4" EV="1" FeatureValueId="MonitorEar3" RatatoskID="Bass3Monitor" NeedsBinaural="true" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="8660"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <!-- BASS 4 aka Binaural DirectionalityII (Deprecated to Bass 4.5) -->
+          <!-- BASS 4.5 aka Binaural DirectionalityIII -->
+          <FeatureValue xml:id="DFDIRECTB45F" PP="1" EV="1" FeatureValueId="FocusEar45" RatatoskID="Bass45Focus" NeedsBinaural="true" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="9321"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="DFDIRECTB45M" PP="1" EV="1" FeatureValueId="MonitorEar45" RatatoskID="Bass45Monitor" NeedsBinaural="true" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="9321"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <!-- Spatial Hearing (SHL) -->
+          <FeatureValue xml:id="DFDIRECTSHL" EV="1" PP="1" FeatureValueId="SpatialHearingLite" RatatoskID="SpatialHearingLite" NeedsBinaural="true" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="8578"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+        </FeatureValues>
+        <DefaultValues/>
+      </Feature>
+      <Feature xml:id="BMW" EV="6303" FeatureID="BeamWidthLevel" RatatoskID="Directionality.BeamwidthLevel" DataType="Enum" FeatureRestriction="NeedsDualMicrophone" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="ABWA Narrow" RftRestricted="false">
+        <UICategories xml:id="UICATS">
+          <UICategory PP="7" Category="AdvancedFeature"/>
+          <UICategory PP="248" Category="None"/>
+        </UICategories>
+        <Strings xml:id="STRNGS">
+          <String PP="1" StringID="3660" ToolTipId="8383"/>
+          <String PP="254" StringID="287" ToolTipId="8383"/>
+        </Strings>
+        <FeatureValues>
+          <FeatureValue xml:id="BMWN" PP="7" FeatureValueId="Narrow" RatatoskID="ABWA Narrow" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="288"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue PP="1" EV="4252" Value="true"/>
+              <DefaultValue PP="6" Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="BMWM" PP="7" FeatureValueId="Medium" RatatoskID="ABWA Medium" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="290"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="BMWW" FeatureValueId="Wide" RatatoskID="ABWA Wide" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="289"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue PP="248" Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="BMWA" PP="1" FeatureValueId="Automatic" RatatoskID="ABWA Dynamic" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="3662"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue EV="2051" Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+        </FeatureValues>
+        <DefaultValues/>
+      </Feature>
+      <Feature xml:id="BSL" EV="6303" FeatureID="BandsplitLevel" RatatoskID="Directionality.BandsplitLevel" DataType="Enum" FeatureRestriction="NeedsDualMicrophone" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="Low" RftRestricted="false">
+        <UICategories xml:id="UICATS">
+          <UICategory PP="1" Category="AdvancedFeature"/>
+          <UICategory PP="254" Category="None"/>
+        </UICategories>
+        <Strings xml:id="STRNGS">
+          <String StringID="3455" ToolTipId="8556"/>
+        </Strings>
+        <FeatureValues>
+          <FeatureValue xml:id="BSLL" FeatureValueId="Low" RatatoskID="Low" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="3459"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="BSLMI" FeatureValueId="Mild" RatatoskID="Mild" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="3458"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="BSLME" FeatureValueId="Medium" RatatoskID="Medium" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="3457"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="BSLH" FeatureValueId="High" RatatoskID="High" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="3456"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+        </FeatureValues>
+        <DefaultValues/>
+      </Feature>
+      <Feature xml:id="BBSL" EV="6303" FeatureID="BandsplitBassLevel" RatatoskID="Directionality.BassboostLevel" DataType="Enum" FeatureRestriction="NeedsDualMicrophone" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="Low" RftRestricted="false">
+        <UICategories xml:id="UICATS">
+          <UICategory Category="None"/>
+        </UICategories>
+        <Strings xml:id="STRNGS">
+          <String StringID="8651" ToolTipId="9800"/>
+        </Strings>
+        <FeatureValues>
+          <FeatureValue xml:id="BBSLL" FeatureValueId="Low" RatatoskID="Low" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="3459"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="BBSLMI" FeatureValueId="Mild" RatatoskID="Mild" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="3458"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="BBSLME" FeatureValueId="Medium" RatatoskID="Medium" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="3457"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="BBSLH" FeatureValueId="High" RatatoskID="High" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="3456"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+        </FeatureValues>
+        <DefaultValues/>
+      </Feature>
+      <!-- EVFT Sync -->
+      <Feature xml:id="EESYEVFT" xsi:type="ProductEVFTFeature" PP="1" FeatureID="E2E.EVFT.Synchronized" RatatoskID="FineTuner.Synchronized" DataType="Boolean" FeatureRestriction="NeedsEar2EarSupport" FeatureType="Program" SupportsSurround="false" NeedsBinaural="true" OffValue="false" RftRestricted="false">
+        <UICategories xml:id="UICATS">
+          <UICategory Category="None"/>
+        </UICategories>
+        <Strings xml:id="STRNGS">
+          <String StringID="3468"/>
+        </Strings>
+        <FeatureValues/>
+        <DefaultValues xml:id="DFTVALS">
+          <DefaultValue Value="true"/>
+        </DefaultValues>
+      </Feature>
+      <!-- BASS Sync Directionality -->
+      <Feature xml:id="EESYAS" EV="6303" PP="7" FeatureID="E2E.SynchronizedAutosteering" RatatoskID="AutoSteering.Synchronized" DataType="Boolean" FeatureRestriction="NeedsEar2EarSupport" FeatureType="Program" SupportsSurround="false" NeedsBinaural="true" OffValue="false" RftRestricted="false">
+        <UICategories xml:id="UICATS">
+          <UICategory Category="None"/>
+        </UICategories>
+        <Strings xml:id="STRNGS">
+          <String PP="1" StringID="7847"/>
+          <String PP="62" StringID="9862"/>
+        </Strings>
+        <FeatureValues/>
+        <DefaultValues xml:id="DFTVALS">
+          <DefaultValue Value="false"/>
+        </DefaultValues>
+      </Feature>
+    </DirectionalFeatures>
+    <AudiologicalFeatures>
+      <Feature xml:id="AGCI" FeatureID="AGCI" RatatoskID="AgciTimeConstantsMode" DataType="Enum" FeatureRestriction="NoRestriction" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="Syllabic" RftRestricted="false">
+        <UICategories xml:id="UICATS">
+          <UICategory PP="7" Category="AdvancedFeature"/>
+          <UICategory PP="248" Category="None"/>
+        </UICategories>
+        <Strings xml:id="STRNGS">
+          <String StringID="3665" ToolTipId="9801"/>
+        </Strings>
+        <FeatureValues>
+          <FeatureValue xml:id="AGCISYL" FeatureValueId="Syllabic" RatatoskID="Syllabic" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="3666"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue EV="6139" Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="AGCIFST" FeatureValueId="Fast" RatatoskID="Fast" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="3667"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="AGCIMOD" FeatureValueId="Moderate" RatatoskID="Moderate" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="3668"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="AGCISLW" FeatureValueId="Slow" RatatoskID="Slow" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="3669"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue EV="2052" Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+        </FeatureValues>
+        <DefaultValues/>
+      </Feature>
+      <Feature xml:id="DFS" FeatureID="DFS" RatatoskID="Afxdfs.Mode" DataType="Enum" FeatureRestriction="NoRestriction" FeatureType="Program" SupportsSurround="true" NeedsBinaural="false" OffValue="" RftRestricted="true">
+        <UICategories xml:id="UICATS">
+          <UICategory Category="AdvancedFeature"/>
+        </UICategories>
+        <Strings xml:id="STRNGS">
+          <String StringID="6971" ToolTipId="8387"/>
+        </Strings>
+        <FeatureValues>
+          <FeatureValue xml:id="DFSOFF" FeatureValueId="Off" RatatoskID="Off" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="237"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="DFSON" PP="0" FeatureValueId="On" RatatoskID="AFX-DFS" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="257"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="DFSMLD" FeatureValueId="Mild" RatatoskID="AFX-DFS and AFGC mild" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="296"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue PP="31" EV="8171" Value="true"/>
+              <DefaultValue PP="224" EV="8175" Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="DFSMOD" PP="127" FeatureValueId="Moderate" RatatoskID="AFX-DFS and AFGC moderate" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="297"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="DFSSTG" PP="127" FeatureValueId="Strong" RatatoskID="AFX-DFS and AFGC strong" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="299"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue EV="16" Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="DFSMUS" PP="31" FeatureValueId="Music" RatatoskID="AFX-DFS music mode and AFGC mild" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="1256"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue EV="4" Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+        </FeatureValues>
+        <DefaultValues/>
+      </Feature>
+      <Feature xml:id="DFSINITFREE" FeatureID="AfxdfsInitFree" RatatoskID="AfxdfsInitFree" DataType="Boolean" FeatureRestriction="NoRestriction" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="false" RftRestricted="false">
+        <UICategories xml:id="UICATS">
+          <UICategory Category="AdvancedFeature"/>
+        </UICategories>
+        <Strings xml:id="STRNGS">
+          <String StringID="6281" ToolTipId="9802"/>
+        </Strings>
+        <FeatureValues/>
+        <DefaultValues xml:id="DFTVALS">
+          <DefaultValue Value="true"/>
+        </DefaultValues>
+      </Feature>
+      <Feature xml:id="NTKR" FeatureID="NoiseTracker" RatatoskID="Pnr.Mode" DataType="Enum" FeatureRestriction="NoRestriction" FeatureType="Program" SupportsSurround="true" NeedsBinaural="false" OffValue="Off" RftRestricted="false">
+        <UICategories xml:id="UICATS">
+          <UICategory Category="AdvancedFeature"/>
+        </UICategories>
+        <Strings xml:id="STRNGS">
+          <String StringID="294" ToolTipId="8813"/>
+        </Strings>
+        <FeatureValues>
+          <FeatureValue xml:id="NTKROFF" FeatureValueId="Off" RatatoskID="Off" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="295"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue EV="132" Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="NTKRMLD" FeatureValueId="Mild" RatatoskID="Mild" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String PP="15" StringID="296"/>
+              <String PP="240" StringID="257"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue PP="1" EV="7936" Value="true"/>
+              <DefaultValue PP="14" EV="7937" Value="true"/>
+              <DefaultValue PP="240" EV="8059" Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="NTKRMED" PP="15" FeatureValueId="Medium" RatatoskID="Medium" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="297"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue PP="1" EV="106" Value="true"/>
+              <DefaultValue PP="14" EV="122" Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="NTKRSTG" PP="7" FeatureValueId="Strong" RatatoskID="Strong" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="298"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="NTKRVSG" PP="1" FeatureValueId="VeryStrong" RatatoskID="Very Strong" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="299"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="NTKRPER" PP="1" EV="6303" FeatureValueId="PerEnv" RatatoskID="Off - PerEnvironment" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="3855"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue EV="17" Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+        </FeatureValues>
+        <DefaultValues/>
+      </Feature>
+      <Feature xml:id="WNR" PP="63" EV="6303" FeatureID="WindNoiseReduction.Mode" RatatoskID="WindNoiseReduction.ReductionMode" DataType="Enum" FeatureRestriction="NeedsDualMicrophone" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="Off" RftRestricted="false">
+        <UICategories xml:id="UICATS">
+          <UICategory Category="AdvancedFeature"/>
+        </UICategories>
+        <Strings xml:id="STRNGS">
+          <String StringID="5704" ToolTipId="8385"/>
+        </Strings>
+        <FeatureValues>
+          <FeatureValue xml:id="WNROFF" FeatureValueId="Off" RatatoskID="Off" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="5705"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue EV="6295" Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="WNRMLD" FeatureValueId="Mild" RatatoskID="Mild" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String PP="7" StringID="5706"/>
+              <String PP="56" StringID="257"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue EV="8" Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="WNRMED" PP="7" FeatureValueId="Medium" RatatoskID="Medium" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="5707"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="WNRSTG" PP="1" FeatureValueId="Strong" RatatoskID="Strong" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="5708"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+        </FeatureValues>
+        <DefaultValues/>
+      </Feature>
+      <Feature xml:id="EXP" FeatureID="Expansion" RatatoskID="Expansion" DataType="Enum" FeatureRestriction="NoRestriction" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="Off" RftRestricted="false">
+        <UICategories xml:id="UICATS">
+          <UICategory Category="AdvancedFeature"/>
+        </UICategories>
+        <Strings xml:id="STRNGS">
+          <String StringID="236" ToolTipId="8386"/>
+        </Strings>
+        <FeatureValues>
+          <FeatureValue xml:id="EXPMLD" EV="8095" FeatureValueId="Mild" RatatoskID="Mild" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="237"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue PP="31" EV="132" Value="true"/>
+              <DefaultValue PP="224" Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="EXPMED" EV="8095" FeatureValueId="Medium" RatatoskID="Medium" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String PP="7" StringID="817"/>
+              <String PP="248" StringID="257"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue PP="31" EV="7963" Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="EXPMOD" EV="8095" PP="7" FeatureValueId="Moderate" RatatoskID="Moderate" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="4998"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="EXPSTG" EV="8095" PP="1" FeatureValueId="Strong" RatatoskID="Strong" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="1786"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="EXPTCOFF" EV="96" FeatureValueId="Off" RatatoskID="Off" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="237"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue PP="224" Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="EXPTCMLD" EV="96" FeatureValueId="TeleCoilMild" RatatoskID="TelecoilMild" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String PP="7" StringID="817"/>
+              <String PP="248" StringID="257"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue PP="31" Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="EXPTCMOD" EV="96" PP="7" FeatureValueId="TeleCoilModerate" RatatoskID="TelecoilMedium" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="4998"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="EXPTCSTG" EV="96" PP="1" FeatureValueId="TeleCoilStrong" RatatoskID="TelecoilModerate" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="1786"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+        </FeatureValues>
+        <DefaultValues/>
+      </Feature>
+      <Feature xml:id="CODECBB" EV="1536" FeatureID="CodecBassBoost" RatatoskID="Codec.BassBoost" DataType="Enum" FeatureRestriction="NeedsStreaming" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="Off" RftRestricted="false">
+        <UICategories xml:id="UICATS">
+          <UICategory Category="AdvancedFeature"/>
+        </UICategories>
+        <Strings xml:id="STRNGS">
+          <String StringID="5543" ToolTipId="8553"/>
+        </Strings>
+        <FeatureValues>
+          <FeatureValue xml:id="BBOFF" FeatureValueId="Off" RatatoskID="Off" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="237"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="BBMLD" FeatureValueId="Mild" RatatoskID="Mild" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String PP="7" StringID="296"/>
+              <String PP="248" StringID="257"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="BBMOD" PP="7" FeatureValueId="Moderate" RatatoskID="Moderate" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="297"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="BBSTG" PP="1" FeatureValueId="Strong" RatatoskID="Strong" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="299"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+        </FeatureValues>
+        <DefaultValues/>
+      </Feature>
+      <!--  -->
+      <!-- Need to investigate if we need autophone anymore -->
+      <Feature xml:id="APLEVEL" FeatureID="AutoPhoneLevel" RatatoskID="AutoPhoneLevel" DataType="Int32" FeatureRestriction="NeedsAutoPhoneSupport" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="0" RftRestricted="false">
+        <UICategories xml:id="UICATS">
+          <UICategory Category="None"/>
+        </UICategories>
+        <Strings xml:id="STRNGS">
+          <String StringID="0" ToolTipId="9803"/>
+        </Strings>
+        <FeatureValues/>
+        <DefaultValues xml:id="DFTVALS">
+          <DefaultValue Value="6"/>
+        </DefaultValues>
+      </Feature>
+      <!-- Need to investigate if we need autophone anymore -->
+      <!--  -->
+      <Feature xml:id="FREQLOWLEV" FeatureID="FreqLow.Level" RatatoskID="FreqLow.Level" DataType="Enum" FeatureRestriction="NoRestriction" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="Off" RftRestricted="false">
+        <UICategories xml:id="UICATS">
+          <UICategory PP="15" Category="AdvancedFeature"/>
+          <UICategory PP="240" Category="None"/>
+        </UICategories>
+        <Strings xml:id="STRNGS">
+          <String StringID="7905" ToolTipId="8388"/>
+        </Strings>
+        <FeatureValues>
+          <FeatureValue xml:id="FREQLOWOFF" FeatureValueId="LevelOff" RatatoskID="Off" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="7906"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="FREQLOWLEV2" PP="15" FeatureValueId="Level2" RatatoskID="2" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="7907"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="FREQLOWLEV4" PP="15" FeatureValueId="Level4" RatatoskID="4" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="7908"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="FREQLOWLEV6" PP="15" FeatureValueId="Level6" RatatoskID="6" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="7909"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+        </FeatureValues>
+        <DefaultValues/>
+      </Feature>
+    </AudiologicalFeatures>
+    <BalanceFeatures>
+      <Feature xml:id="TTELBAL" xsi:type="ProductRangeFeature" PP="63" EV="352" FeatureID="Tel.TelBalance" RatatoskID="TelBalance" DataType="Enum" FeatureRestriction="NeedsTelcoil" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="" MinValue="-6" MaxValue="0" StepSize="1">
+        <UICategories xml:id="UICATS">
+          <UICategory Category="None"/>
+        </UICategories>
+        <Strings xml:id="STRNGS">
+          <String EV="96" StringID="6283" ToolTipId="9643"/>
+          <String EV="256" StringID="6976" ToolTipId="9643"/>
+        </Strings>
+        <FeatureValues>
+          <FeatureValue xml:id="TTELBALFLL" FeatureValueId="Full" RatatoskID="0" NeedsBinaural="false">
+            <Strings xml:id="STRNGS">
+              <String StringID="9501"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="true"/>
+            </DefaultValues>
+          </FeatureValue>
+          <FeatureValue xml:id="TTELBAL3" FeatureValueId="Value3" RatatoskID="-3" NeedsBinaural="false">
+            <Strings xml:id="STRNGS">
+              <String StringID="9497"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+          </FeatureValue>
+          <FeatureValue xml:id="TTELBAL6" FeatureValueId="Value6" RatatoskID="-6" NeedsBinaural="false">
+            <Strings xml:id="STRNGS">
+              <String StringID="9498"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+          </FeatureValue>
+          <FeatureValue xml:id="TTELBAL9" FeatureValueId="Value9" RatatoskID="-9" NeedsBinaural="false">
+            <Strings xml:id="STRNGS">
+              <String StringID="9499"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+          </FeatureValue>
+          <FeatureValue xml:id="TTELBAL12" FeatureValueId="Value12" RatatoskID="-12" NeedsBinaural="false">
+            <Strings xml:id="STRNGS">
+              <String StringID="9500"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+          </FeatureValue>
+        </FeatureValues>
+        <DefaultValues xml:id="DFTVALS">
+          <DefaultValue Value="0"/>
+        </DefaultValues>
+      </Feature>
+      <Feature xml:id="TMICTELBAL" xsi:type="ProductRangeFeature" PP="63" EV="352" FeatureID="Tel.MicTelDAIBalance" RatatoskID="MicTelBalance" DataType="Enum" FeatureRestriction="NeedsTelorDai" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="" MinValue="-12" MaxValue="0" StepSize="3">
+        <UICategories xml:id="UICATS">
+          <UICategory Category="AdvancedFeature"/>
+        </UICategories>
+        <Strings xml:id="STRNGS">
+          <String EV="256" StringID="6978" ToolTipId="9799"/>
+          <String EV="96" StringID="6977" ToolTipId="9798"/>
+        </Strings>
+        <FeatureValues>
+          <FeatureValue xml:id="TMICTELBALFLL" FeatureValueId="Full" RatatoskID="0" NeedsBinaural="false">
+            <Strings xml:id="STRNGS">
+              <String EV="256" StringID="5566"/>
+              <String EV="96" StringID="5567"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+          </FeatureValue>
+          <FeatureValue xml:id="TMICTELBAL3" FeatureValueId="Value3" RatatoskID="-3" NeedsBinaural="false">
+            <Strings xml:id="STRNGS">
+              <String StringID="9497"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="true"/>
+            </DefaultValues>
+          </FeatureValue>
+          <FeatureValue xml:id="TMICTELBAL6" FeatureValueId="Value6" RatatoskID="-6" NeedsBinaural="false">
+            <Strings xml:id="STRNGS">
+              <String StringID="9498"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+          </FeatureValue>
+          <FeatureValue xml:id="TMICTELBAL9" FeatureValueId="Value9" RatatoskID="-9" NeedsBinaural="false">
+            <Strings xml:id="STRNGS">
+              <String StringID="9499"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+          </FeatureValue>
+          <FeatureValue xml:id="TMICTELBAL12" FeatureValueId="Value12" RatatoskID="-12" NeedsBinaural="false">
+            <Strings xml:id="STRNGS">
+              <String StringID="9500"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+          </FeatureValue>
+        </FeatureValues>
+        <DefaultValues xml:id="DFTVALS">
+          <DefaultValue Value="-3"/>
+        </DefaultValues>
+      </Feature>
+      <Feature xml:id="TELRCM" FeatureID="Tel.RemoteControlMute.Master" PP="63" EV="352" RatatoskID="RemoteControlMute.Master" DataType="Boolean" FeatureRestriction="NeedsTelorDai" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="false">
+        <UICategories xml:id="UICATS">
+          <UICategory Category="AdvancedFeature"/>
+        </UICategories>
+        <Strings xml:id="STRNGS">
+          <String EV="256" StringID="9577"/>
+          <String EV="96" StringID="9576"/>
+        </Strings>
+        <FeatureValues/>
+        <DefaultValues xml:id="DFTVALS">
+          <DefaultValue Value="false"/>
+        </DefaultValues>
+      </Feature>
+      <Feature xml:id="SASBAL" xsi:type="ProductRangeFeature" PP="63" EV="512" FeatureID="SAS.StreamingBalance" RatatoskID="StreamingBalance" DataType="Enum" FeatureRestriction="NeedsStreaming" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="" RftRestricted="false" MinValue="-6" MaxValue="0" StepSize="1">
+        <UICategories xml:id="UICATS">
+          <UICategory Category="AdvancedFeature"/>
+        </UICategories>
+        <Strings xml:id="STRNGS">
+          <String StringID="9503" ToolTipId="9643"/>
+        </Strings>
+        <FeatureValues>
+          <FeatureValue xml:id="SASBALFLL" FeatureValueId="Full" RatatoskID="0" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="9501"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="SASBAL3" FeatureValueId="Value3" RatatoskID="-3" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="9497"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="SASBAL6" FeatureValueId="Value6" RatatoskID="-6" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="9498"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="SASBAL9" FeatureValueId="Value9" RatatoskID="-9" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="9499"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="SASBAL12" FeatureValueId="Value12" RatatoskID="-12" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="9500"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+        </FeatureValues>
+        <DefaultValues/>
+      </Feature>
+      <Feature xml:id="SASMICBAL" xsi:type="ProductRangeFeature" PP="63" EV="512" FeatureID="SAS.MicStreamingBalance" RatatoskID="MicStreamingBalance" DataType="Enum" FeatureRestriction="NeedsStreaming" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="-12" RftRestricted="false" MinValue="-12" MaxValue="0" StepSize="1">
+        <UICategories xml:id="UICATS">
+          <UICategory Category="AdvancedFeature"/>
+        </UICategories>
+        <Strings xml:id="STRNGS">
+          <String StringID="9503" ToolTipId="9643"/>
+        </Strings>
+        <FeatureValues>
+          <FeatureValue xml:id="SASMICBALFLL" FeatureValueId="Full" RatatoskID="0" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="9501"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="SASMICBAL3" FeatureValueId="Value3" RatatoskID="-3" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="9497"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="SASMICBAL6" FeatureValueId="Value6" RatatoskID="-6" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="9498"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="SASMICBAL9" FeatureValueId="Value9" RatatoskID="-9" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="9499"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="SASMICBAL12" FeatureValueId="Value12" RatatoskID="-12" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="9500"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+        </FeatureValues>
+        <DefaultValues xml:id="DFTVALS">
+          <DefaultValue Value="-3"/>
+        </DefaultValues>
+      </Feature>
+      <Feature xml:id="SASRCM" PP="63" EV="512" FeatureID="SAS.RemoteControlMute.Sas" RatatoskID="RemoteControlMute.Sas" DataType="Boolean" FeatureRestriction="NeedsStreaming" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="false" RftRestricted="false">
+        <UICategories xml:id="UICATS">
+          <UICategory EV="512" Category="AdvancedFeature"/>
+        </UICategories>
+        <Strings xml:id="STRNGS">
+          <String StringID="9502"/>
+        </Strings>
+        <FeatureValues/>
+        <DefaultValues xml:id="DFTVALS">
+          <DefaultValue Value="false"/>
+        </DefaultValues>
+      </Feature>
+      <Feature xml:id="SMBAL" xsi:type="ProductRangeFeature" PP="63" EV="512" FeatureID="SM.StreamingSMMicBalance" RatatoskID="StreamingSMBalance" DataType="Enum" FeatureRestriction="NeedsStreaming" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="" RftRestricted="false" MinValue="-6" MaxValue="0" StepSize="1">
+        <UICategories xml:id="UICATS">
+          <UICategory Category="AdvancedFeature"/>
+        </UICategories>
+        <Strings xml:id="STRNGS">
+          <String StringID="9507" ToolTipId="9796"/>
+        </Strings>
+        <FeatureValues>
+          <FeatureValue xml:id="SMBALFLL" FeatureValueId="Full" RatatoskID="0" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="9501"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="SMBAL3" FeatureValueId="Value3" RatatoskID="-3" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="9497"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="SMBAL6" FeatureValueId="Value6" RatatoskID="-6" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="9498"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="SMBAL9" FeatureValueId="Value9" RatatoskID="-9" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="9499"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="SMBAL12" FeatureValueId="Value12" RatatoskID="-12" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="9500"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+        </FeatureValues>
+        <DefaultValues xml:id="DFTVALS">
+          <DefaultValue Value="0"/>
+        </DefaultValues>
+      </Feature>
+      <Feature xml:id="SMMICBAL" xsi:type="ProductRangeFeature" PP="63" EV="512" FeatureID="SM.MicStreamingSMMicBalance" RatatoskID="MicStreamingSMBalance" DataType="Enum" FeatureRestriction="NeedsStreaming" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="-12" RftRestricted="false" MinValue="-12" MaxValue="0" StepSize="1">
+        <UICategories xml:id="UICATS">
+          <UICategory Category="AdvancedFeature"/>
+        </UICategories>
+        <Strings xml:id="STRNGS">
+          <String StringID="9507" ToolTipId="9796"/>
+        </Strings>
+        <FeatureValues>
+          <FeatureValue xml:id="SMMICBALFLL" FeatureValueId="Full" RatatoskID="0" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="9501"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="SMMICBAL3" FeatureValueId="Value3" RatatoskID="-3" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="9497"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="SMMICBAL6" FeatureValueId="Value6" RatatoskID="-6" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="9498"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="SMMICBAL9" FeatureValueId="Value9" RatatoskID="-9" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="9499"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="SMMICBAL12" FeatureValueId="Value12" RatatoskID="-12" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="9500"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+        </FeatureValues>
+        <DefaultValues xml:id="DFTVALS">
+          <DefaultValue Value="-6"/>
+        </DefaultValues>
+      </Feature>
+      <Feature xml:id="SMRCM" PP="63" EV="512" FeatureID="SM.RemoteControlMute.Sm.Mic" RatatoskID="RemoteControlMute.Sm" DataType="Boolean" FeatureRestriction="NeedsStreaming" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="false" RftRestricted="false">
+        <UICategories xml:id="UICATS">
+          <UICategory Category="AdvancedFeature"/>
+        </UICategories>
+        <Strings xml:id="STRNGS">
+          <String StringID="9502"/>
+        </Strings>
+        <FeatureValues/>
+        <DefaultValues xml:id="DFTVALS">
+          <DefaultValue Value="false"/>
+        </DefaultValues>
+      </Feature>
+      <Feature xml:id="IPHNSASBAL" PP="63" EV="1024" xsi:type="ProductRangeFeature" FeatureID="iPhone.MicBalance" RatatoskID="MicStreamingIPHONEBalance" DataType="Enum" FeatureRestriction="NeedsBLEStreaming" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="" MinValue="0" MaxValue="0" StepSize="0">
+        <UICategories xml:id="UICATS">
+          <UICategory Category="AdvancedFeature"/>
+        </UICategories>
+        <Strings xml:id="STRNGS">
+          <String StringID="9508" ToolTipId="9797"/>
+        </Strings>
+        <FeatureValues>
+          <FeatureValue xml:id="IPHNSASBALFLL" FeatureValueId="Full" RatatoskID="0" NeedsBinaural="false">
+            <Strings xml:id="STRNGS">
+              <String StringID="9501"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+          </FeatureValue>
+          <FeatureValue xml:id="IPHNSASBAL3" FeatureValueId="Value3" RatatoskID="-3" NeedsBinaural="false">
+            <Strings xml:id="STRNGS">
+              <String StringID="9497"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="true"/>
+            </DefaultValues>
+          </FeatureValue>
+          <FeatureValue xml:id="IPHNSASBAL6" FeatureValueId="Value6" RatatoskID="-6" NeedsBinaural="false">
+            <Strings xml:id="STRNGS">
+              <String StringID="9498"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+          </FeatureValue>
+          <FeatureValue xml:id="IPHNSASBAL9" FeatureValueId="Value9" RatatoskID="-9" NeedsBinaural="false">
+            <Strings xml:id="STRNGS">
+              <String StringID="9499"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+          </FeatureValue>
+          <FeatureValue xml:id="IPHNSASBAL12" FeatureValueId="Value12" RatatoskID="-12" NeedsBinaural="false">
+            <Strings xml:id="STRNGS">
+              <String StringID="9500"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+          </FeatureValue>
+        </FeatureValues>
+        <DefaultValues/>
+      </Feature>
+      <Feature xml:id="IPHNRCM" PP="63" EV="1024" FeatureID="iPhone.RemoteControlMute" RatatoskID="RemoteControlMute.Iphone" DataType="Boolean" FeatureRestriction="NeedsBLEStreaming" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="false">
+        <UICategories xml:id="UICATS">
+          <UICategory Category="AdvancedFeature"/>
+        </UICategories>
+        <Strings xml:id="STRNGS">
+          <String StringID="9502"/>
+        </Strings>
+        <FeatureValues/>
+        <DefaultValues xml:id="DFTVALS">
+          <DefaultValue Value="false"/>
+        </DefaultValues>
+      </Feature>
+      <Feature xml:id="SASBTBBAL" PP="63" EV="1024" xsi:type="ProductRangeFeature" FeatureID="BTB.StreamingBTBPhoneBalance" RatatoskID="StreamingBTBBalance" DataType="Enum" FeatureRestriction="NeedsBlueToothBridge" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="" RftRestricted="false" MinValue="-6" MaxValue="0" StepSize="1">
+        <UICategories xml:id="UICATS">
+          <UICategory Category="AdvancedFeature"/>
+        </UICategories>
+        <Strings xml:id="STRNGS">
+          <String StringID="8587" ToolTipId="9643"/>
+        </Strings>
+        <FeatureValues>
+          <FeatureValue xml:id="SASBTBBALFLL" FeatureValueId="Full" RatatoskID="0" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="9501"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="SASBTBBAL3" FeatureValueId="Value3" RatatoskID="-3" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="9497"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="SASBTBBAL6" FeatureValueId="Value6" RatatoskID="-6" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="9498"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="SASBTBBAL9" FeatureValueId="Value9" RatatoskID="-9" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="9499"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="SASBTBBAL12" FeatureValueId="Value12" RatatoskID="-12" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="9500"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+        </FeatureValues>
+        <DefaultValues/>
+      </Feature>
+      <Feature xml:id="SASMICBTBBAL" PP="63" EV="1024" xsi:type="ProductRangeFeature" FeatureID="BTB.MicStreamingBTBPhoneBalance" RatatoskID="MicStreamingBTBBalance" DataType="Enum" FeatureRestriction="NeedsBlueToothBridge" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="-12" RftRestricted="false" MinValue="-12" MaxValue="0" StepSize="1">
+        <UICategories xml:id="UICATS">
+          <UICategory Category="AdvancedFeature"/>
+        </UICategories>
+        <Strings xml:id="STRNGS">
+          <String StringID="8587 " ToolTipId="9643"/>
+        </Strings>
+        <FeatureValues>
+          <FeatureValue xml:id="SASMICBTBBALFLL" FeatureValueId="Full" RatatoskID="0" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="9501"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="SASMICBTBBAL3" FeatureValueId="Value3" RatatoskID="-3" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="9497"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="SASMICBTBBAL6" FeatureValueId="Value6" RatatoskID="-6" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="9498"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="SASMICBTBBAL9" FeatureValueId="Value9" RatatoskID="-9" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="9499"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="SASMICBTBBAL12" FeatureValueId="Value12" RatatoskID="-12" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="9500"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+        </FeatureValues>
+        <DefaultValues xml:id="DFTVALS">
+          <DefaultValue Value="-3"/>
+        </DefaultValues>
+      </Feature>
+      <Feature xml:id="BTBRCM" PP="63" EV="1024" FeatureID="BTB.RemoteControlMute.Btb.Phone" RatatoskID="RemoteControlMute.Btb.Phone" DataType="Boolean" FeatureRestriction="NeedsBlueToothBridge" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="false" RftRestricted="false">
+        <UICategories xml:id="UICATS">
+          <UICategory Category="AdvancedFeature"/>
+        </UICategories>
+        <Strings xml:id="STRNGS">
+          <String StringID="9502"/>
+        </Strings>
+        <FeatureValues/>
+        <DefaultValues xml:id="DFTVALS">
+          <DefaultValue Value="false"/>
+        </DefaultValues>
+      </Feature>
+    </BalanceFeatures>
+    <EVFTFeatures>
+      <Feature xml:id="EVFTGDMXV" EV="6303" FeatureID="EVFT.GainDepthMaximumValue" RatatoskID="FineTuner.GainDepthsMaximumValue" DataType="Int32" FeatureRestriction="NeedsEVFTSupport" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="0" RftRestricted="false">
+        <UICategories xml:id="UICATS">
+          <UICategory Category="EVFT"/>
+        </UICategories>
+        <Strings xml:id="STRNGS">
+          <String StringID="3461"/>
+        </Strings>
+        <FeatureValues/>
+        <DefaultValues xml:id="DFTVALS">
+          <DefaultValue Value="0"/>
+        </DefaultValues>
+      </Feature>
+      <Feature xml:id="EVFTGDMNV" EV="6303" FeatureID="EVFT.GainDepthMinimumValue" RatatoskID="FineTuner.GainDepthsMinimumValue" DataType="Int32" FeatureRestriction="NeedsEVFTSupport" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="0" RftRestricted="false">
+        <UICategories xml:id="UICATS">
+          <UICategory Category="EVFT"/>
+        </UICategories>
+        <Strings xml:id="STRNGS">
+          <String StringID="3462"/>
+        </Strings>
+        <FeatureValues/>
+        <DefaultValues xml:id="DFTVALS">
+          <DefaultValue Value="-10"/>
+        </DefaultValues>
+      </Feature>
+      <Feature xml:id="EVFTMD" EV="6303" FeatureID="EVFT.Mode" RatatoskID="FineTuner.Mode" DataType="Enum" FeatureRestriction="NeedsEVFTSupport" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="Off" RftRestricted="false">
+        <UICategories xml:id="UICATS">
+          <UICategory Category="EVFT"/>
+        </UICategories>
+        <Strings xml:id="STRNGS">
+          <String StringID="3463"/>
+        </Strings>
+        <FeatureValues>
+          <FeatureValue xml:id="EVFTMDOFF" xsi:type="ProductEVFTFeatureValue" FeatureValueId="Off" RatatoskID="Off" NeedsBinaural="false" AlgoValue="0" ArrayIndex="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="3464"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue EV="132" Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="EVFTMDVOL" xsi:type="ProductEVFTFeatureValue" FeatureValueId="Volume" RatatoskID="Volume" NeedsBinaural="false" AlgoValue="0" ArrayIndex="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="3465"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue EV="6154" PP="1" Value="true"/>
+              <DefaultValue EV="6171" PP="4" Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="EVFTMDPNR" xsi:type="ProductEVFTFeatureValue" FeatureValueId="PNR" RatatoskID="PNR" NeedsBinaural="false" AlgoValue="0" ArrayIndex="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="3466"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="EVFTMDVOLPNR" xsi:type="ProductEVFTFeatureValue" PP="1" FeatureValueId="VolumeAndPNR" RatatoskID="VolumeAndPNR" NeedsBinaural="false" AlgoValue="0" ArrayIndex="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="3467"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue EV="17" Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+        </FeatureValues>
+        <DefaultValues/>
+      </Feature>
+      <Feature xml:id="EVFTVOLMX" EV="6303" FeatureID="EVFT.VolumesMaximumValue" RatatoskID="FineTuner.VolumesMaximumValue" DataType="Int32" FeatureRestriction="NeedsEVFTSupport" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="0" RftRestricted="false">
+        <UICategories xml:id="UICATS">
+          <UICategory Category="EVFT"/>
+        </UICategories>
+        <Strings xml:id="STRNGS">
+          <String StringID="3470"/>
+        </Strings>
+        <FeatureValues/>
+        <DefaultValues xml:id="DFTVALS">
+          <DefaultValue Value="6"/>
+        </DefaultValues>
+      </Feature>
+      <Feature xml:id="EVFTVOLMN" EV="6303" FeatureID="EVFT.VolumesMinimumValue" RatatoskID="FineTuner.VolumesMinimumValue" DataType="Int32" FeatureRestriction="NeedsEVFTSupport" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="0" RftRestricted="false">
+        <UICategories xml:id="UICATS">
+          <UICategory Category="EVFT"/>
+        </UICategories>
+        <Strings xml:id="STRNGS">
+          <String StringID="3471"/>
+        </Strings>
+        <FeatureValues/>
+        <DefaultValues xml:id="DFTVALS">
+          <DefaultValue Value="-6"/>
+        </DefaultValues>
+      </Feature>
+      <Feature xml:id="EVFTPNRGD" EV="6303" FeatureID="EVFT.PNR.GainDepths" RatatoskID="FineTuner.GainDepths" DataType="EVFT" FeatureRestriction="NeedsEVFTSupport" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="" RftRestricted="false">
+        <UICategories xml:id="UICATS">
+          <UICategory Category="EVFT"/>
+        </UICategories>
+        <Strings xml:id="STRNGS">
+          <String StringID="3460"/>
+        </Strings>
+        <FeatureValues>
+          <FeatureValue xml:id="PNRQT" xsi:type="ProductEVFTFeatureValue" FeatureValueId="PNR.Quiet" RatatoskID="" NeedsBinaural="false" AlgoValue="0" ArrayIndex="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="3472"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="-3"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="PNRSS" xsi:type="ProductEVFTFeatureValue" FeatureValueId="PNR.SpeechSoft" RatatoskID="" NeedsBinaural="false" AlgoValue="0" ArrayIndex="1">
+            <Strings xml:id="STRNGS">
+              <String StringID="3473"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="-3"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="PNRSL" xsi:type="ProductEVFTFeatureValue" FeatureValueId="PNR.SpeechLoud" RatatoskID="" NeedsBinaural="false" AlgoValue="0" ArrayIndex="2">
+            <Strings xml:id="STRNGS">
+              <String StringID="3474"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="-4"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="PNRSNM" xsi:type="ProductEVFTFeatureValue" FeatureValueId="PNR.SpeechNoiseModerate" RatatoskID="" NeedsBinaural="false" AlgoValue="0" ArrayIndex="3">
+            <Strings xml:id="STRNGS">
+              <String StringID="3475"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="-6"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="PNRSNL" xsi:type="ProductEVFTFeatureValue" FeatureValueId="PNR.SpeechNoiseLoud" RatatoskID="" NeedsBinaural="false" AlgoValue="0" ArrayIndex="4">
+            <Strings xml:id="STRNGS">
+              <String StringID="3476"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="-6"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="PNRNM" xsi:type="ProductEVFTFeatureValue" FeatureValueId="PNR.NoiseModerate" RatatoskID="" NeedsBinaural="false" AlgoValue="0" ArrayIndex="5">
+            <Strings xml:id="STRNGS">
+              <String StringID="3477"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="-8"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="PNRNL" xsi:type="ProductEVFTFeatureValue" FeatureValueId="PNR.NoiseLoud" RatatoskID="" NeedsBinaural="false" AlgoValue="0" ArrayIndex="6">
+            <Strings xml:id="STRNGS">
+              <String StringID="3478"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="-9"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+        </FeatureValues>
+        <DefaultValues xml:id="DFTVALS">
+          <DefaultValue Value="0"/>
+        </DefaultValues>
+      </Feature>
+      <Feature xml:id="EVFTVOLGD" EV="6303" FeatureID="EVFT.Volume.GainDepths" RatatoskID="FineTuner.Volumes" DataType="EVFT" FeatureRestriction="NeedsEVFTSupport" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="" RftRestricted="false">
+        <UICategories xml:id="UICATS">
+          <UICategory Category="EVFT"/>
+        </UICategories>
+        <Strings xml:id="STRNGS">
+          <String StringID="3460"/>
+        </Strings>
+        <FeatureValues>
+          <FeatureValue xml:id="VOLQT" xsi:type="ProductEVFTFeatureValue" FeatureValueId="Vol.Quiet" RatatoskID="" NeedsBinaural="false" AlgoValue="0" ArrayIndex="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="3472"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="2"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="VOLSS" xsi:type="ProductEVFTFeatureValue" FeatureValueId="Vol.SpeechSoft" RatatoskID="" NeedsBinaural="false" AlgoValue="0" ArrayIndex="1">
+            <Strings xml:id="STRNGS">
+              <String StringID="3473"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="2"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="VOLSL" xsi:type="ProductEVFTFeatureValue" FeatureValueId="Vol.SpeechLoud" RatatoskID="" NeedsBinaural="false" AlgoValue="0" ArrayIndex="2">
+            <Strings xml:id="STRNGS">
+              <String StringID="3474"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="2"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="VOLSNM" xsi:type="ProductEVFTFeatureValue" FeatureValueId="Vol.SpeechNoiseModerate" RatatoskID="" NeedsBinaural="false" AlgoValue="0" ArrayIndex="3">
+            <Strings xml:id="STRNGS">
+              <String StringID="3475"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="1"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="VOLSNL" xsi:type="ProductEVFTFeatureValue" FeatureValueId="Vol.SpeechNoiseLoud" RatatoskID="" NeedsBinaural="false" AlgoValue="0" ArrayIndex="4">
+            <Strings xml:id="STRNGS">
+              <String StringID="3476"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="0"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="VOLNM" xsi:type="ProductEVFTFeatureValue" FeatureValueId="Vol.NoiseModerate" RatatoskID="" NeedsBinaural="false" AlgoValue="0" ArrayIndex="5">
+            <Strings xml:id="STRNGS">
+              <String StringID="3477"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="-2"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="VOLNL" xsi:type="ProductEVFTFeatureValue" FeatureValueId="Vol.NoiseLoud" RatatoskID="" NeedsBinaural="false" AlgoValue="0" ArrayIndex="6">
+            <Strings xml:id="STRNGS">
+              <String StringID="3478"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="-3"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+        </FeatureValues>
+        <DefaultValues xml:id="DFTVALS">
+          <DefaultValue Value="0"/>
+        </DefaultValues>
+      </Feature>
+    </EVFTFeatures>
+    <SynchronizationFeatures>
+      <!-- ************************************************************* -->
+      <!-- E2E Features - In Standard PE Order                                      -->
+      <!-- Moved Here From FSWGlobalData to allow product filtering -->
+      <!-- ************************************************************* -->
+      <!-- -->
+      <!-- Program Sync -->
+      <Feature xml:id="SFOSWPS" FeatureID="OS.WirelessProgramSync" RatatoskID="Os.IsMirrorServiceEnabled" DataType="Boolean" FeatureRestriction="NeedsEar2EarSupport" FeatureType="Instrument" SupportsSurround="false" NeedsBinaural="false" OffValue="false" RftRestricted="false">
+        <UICategories xml:id="UICATS">
+          <UICategory Category="None"/>
+        </UICategories>
+        <Strings/>
+        <FeatureValues/>
+        <DefaultValues xml:id="DFTVALS">
+          <DefaultValue Value="false"/>
+        </DefaultValues>
+      </Feature>
+      <!-- ******************************************************************************************* -->
+      <!-- EVFT Sync  - This File under Directional Features - FeatureID="E2E.EVFT.Synchronized" -->
+      <!-- ******************************************************************************************* -->
+      <!-- ********************************************************************************************************* -->
+      <!-- BASS Sync  - This File under Directional Features - FeatureID="E2E.EVFT.SynchronizedAutosteering" -->
+      <!-- ********************************************************************************************************* -->
+      <!-- *********************************************************** -->
+      <!-- Sync Spatial Sense -Controlled only be feature existence -->
+      <!-- *********************************************************** -->
+      <!-- Volume Sync -->
+      <Feature xml:id="SFEIME" PP="63" FeatureID="E2E.IsMSVCEnabled" RatatoskID="MirrorServicePresetBasedVC.Enable" DataType="Boolean" FeatureRestriction="NeedsEar2EarSupport" FeatureType="Program" SupportsSurround="false" NeedsBinaural="true" OffValue="false" RftRestricted="false">
+        <UICategories xml:id="UICATS">
+          <UICategory Category="None"/>
+        </UICategories>
+        <Strings xml:id="STRNGS">
+          <String StringID="6441"/>
+        </Strings>
+        <FeatureValues/>
+        <DefaultValues xml:id="DFTVALS">
+          <DefaultValue Value="true"/>
+        </DefaultValues>
+      </Feature>
+      <!-- Main TSG Sync -->
+      <Feature xml:id="SFETES" PP="63" FeatureID="E2E.TSG.EnvironmentalSynchronized" RatatoskID="Tsg.EnvironmentalSynchronized" DataType="Boolean" FeatureRestriction="NeedsTSG" FeatureType="Program" SupportsSurround="false" NeedsBinaural="true" OffValue="false" RftRestricted="false">
+        <UICategories xml:id="UICATS">
+          <UICategory Category="TSG"/>
+        </UICategories>
+        <Strings xml:id="STRNGS">
+          <String StringID="0"/>
+        </Strings>
+        <FeatureValues/>
+        <DefaultValues xml:id="DFTVALS">
+          <DefaultValue Value="true"/>
+        </DefaultValues>
+      </Feature>
+      <!-- Secondary TSG Sync Feature -->
+      <Feature xml:id="SFETAS" FeatureID="E2E.TSG.AmplitudeSynchronized" RatatoskID="Tsg.AmplitudeModulationSynchronized" DataType="Boolean" FeatureRestriction="NeedsTSG" FeatureType="Program" SupportsSurround="false" NeedsBinaural="true" OffValue="false" RftRestricted="false">
+        <UICategories xml:id="UICATS">
+          <UICategory Category="TSG"/>
+        </UICategories>
+        <Strings xml:id="STRNGS">
+          <String StringID="0"/>
+        </Strings>
+        <FeatureValues/>
+        <DefaultValues xml:id="DFTVALS">
+          <DefaultValue Value="true"/>
+        </DefaultValues>
+      </Feature>
+      <!-- Secondary TSG Sync Feature -->
+      <Feature xml:id="SFETNSS" FeatureID="E2E.TSG.NaturalSoundSynchronized" RatatoskID="Tsg.NaturalSoundSynchronized" DataType="Boolean" FeatureRestriction="NeedsTSG" FeatureType="Program" SupportsSurround="false" NeedsBinaural="true" OffValue="false" RftRestricted="false">
+        <UICategories xml:id="UICATS">
+          <UICategory Category="TSG"/>
+        </UICategories>
+        <Strings xml:id="STRNGS">
+          <String StringID="0"/>
+        </Strings>
+        <FeatureValues/>
+        <DefaultValues xml:id="DFTVALS">
+          <DefaultValue Value="true"/>
+        </DefaultValues>
+      </Feature>
+      <!-- ****************************************************************************** -->
+      <!-- Sync Softswitch - Requires SyncAutoSterring and Softswitch directionality -->
+      <!-- ****************************************************************************** -->
+      <!-- ***************************************************************** -->
+      <!-- Sync AutoPhone - Requires AutoPhone program on both sides -->
+      <!-- ***************************************************************** -->
+      <!-- *********************************************************** -->
+      <!-- Satisfy Sync - See SatisfyFeatures in this file -->
+      <!-- *********************************************************** -->
+      <!-- ********************** -->
+      <!-- END OF E2E Features -->
+      <!-- ********************** -->
+    </SynchronizationFeatures>
+    <FSWFeatures>
+      <Feature xml:id="CLM" FeatureID="CompressionLimitMode" RatatoskID="AgcoTimeConstantsMode" DataType="Enum" FeatureRestriction="NeedsUPReciever" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="CompressionLimiting" RftRestricted="false">
+        <UICategories xml:id="UICATS">
+          <UICategory PP="7" Category="AdvancedFeature"/>
+          <UICategory PP="248" Category="None"/>
+        </UICategories>
+        <Strings xml:id="STRNGS">
+          <String StringID="7920" ToolTipId="9804"/>
+        </Strings>
+        <FeatureValues>
+          <FeatureValue xml:id="CLMSOFT" FeatureValueId="SoftPeakClipping" RatatoskID="SoftPeakClipping" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="7921"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="CLMSEMI" PP="7" FeatureValueId="SemiHardClipping" RatatoskID="HardPeakClipping" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="7922"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+        </FeatureValues>
+        <DefaultValues/>
+      </Feature>
+      <Feature xml:id="COMPMD" FeatureID="FSW.CompressionMode" RatatoskID="FittingSoftwareData.CompressionMode" DataType="Enum" FeatureRestriction="NeedsUPReciever" FeatureType="ProgramInfoSpace" SupportsSurround="false" NeedsBinaural="false" OffValue="" RftRestricted="false">
+        <UICategories xml:id="UICATS">
+          <UICategory Category="None"/>
+        </UICategories>
+        <Strings xml:id="STRNGS">
+          <String StringID="7933" ToolTipId="9805"/>
+        </Strings>
+        <FeatureValues>
+          <FeatureValue xml:id="COMPMDLIN" FeatureValueId="Linear" RatatoskID="2" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="7934" ToolTipId="9643"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="COMPMDSEMI" PP="7" FeatureValueId="SemiLinear" RatatoskID="1" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="7935"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="COMPMDWDRC" FeatureValueId="WDRC" RatatoskID="0" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="7936"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+        </FeatureValues>
+        <DefaultValues/>
+      </Feature>
+      <Feature xml:id="LOWFBB">
+        <!-- MUST BE SET IN BRANDED.SPD FILE DUE TO INPUT LEVELS -->
+      </Feature>
+      <Feature xml:id="EVFTFTR" xsi:type="ProductEVFTFeature" EV="6303" FeatureID="FSW.EVFT.Enabled" RatatoskID="FittingSoftwareData.EvftEnabled" DataType="Boolean" FeatureRestriction="NeedsEVFTSupport" FeatureType="ProgramInfoSpace" SupportsSurround="true" NeedsBinaural="false" OffValue="false" RftRestricted="false">
+        <UICategories xml:id="UICATS">
+          <UICategory Category="EVFT"/>
+        </UICategories>
+        <Strings xml:id="STRNGS">
+          <String PP="1" StringID="3734 "/>
+          <String PP="254" StringID="3062"/>
+        </Strings>
+        <FeatureValues/>
+        <DefaultValues xml:id="DFTVALS">
+          <DefaultValue EV="6171" Value="true"/>
+        </DefaultValues>
+      </Feature>
+    </FSWFeatures>
+  </ProgramFeatures>
+</SPDProductData>

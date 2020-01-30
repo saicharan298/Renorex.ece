@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<FirmwareUpdatePackage >
+  <FirmwareUpdate ProcessorType="MicroController" FirmwareFileName="BlueToothBridge2.3.2.hex" Version="3.2"/>
+  <FirmwareUpdate ProcessorType="Dsp" FirmwareFileName="BlueToothBridge2.1.18.fdi" Version="1.18"/>
+  <FirmwareUpdate ProcessorType="BlueCore" FirmwareFileName="BlueToothBridge2.0.27.0.dfu" Version="0.27.0"/>
+</FirmwareUpdatePackage>

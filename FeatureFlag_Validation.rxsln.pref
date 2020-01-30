@@ -1,0 +1,15 @@
+﻿<Properties>
+  <Array name="active" />
+  <ActiveConfiguration value="Debug" />
+  <ActivePlatform value="x86" />
+  <Array name="bookmarks" />
+  <Array name="files" />
+  <SerializedValue name="ModuleBrowserState">
+    <ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <string>{DD0BBBB0-99BE-42C3-92B5-0B0473667005}</string>
+      <string>60513a05-eab7-41e7-8c10-e51c735edc2e</string>
+    </ArrayOfString>
+  </SerializedValue>
+  <ProjectBrowserState value="[Solution FeatureFlag_Validation[FeatureFlag_Validation[References[]ValidatingXML_And_Excel.rxrec[]]]]&#xD;&#xA;Solution FeatureFlag_Validation\FeatureFlag_Validation\ReportToPDF_6.X.cs&#xD;&#xA;Solution FeatureFlag_Validation\FeatureFlag_Validation\References\Ranorex.Plugin.Sap" />
+  <StartupProject value="{DD0BBBB0-99BE-42C3-92B5-0B0473667005}" />
+</Properties>

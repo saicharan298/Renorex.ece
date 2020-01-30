@@ -1,0 +1,180 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script id="strings">
+</script>
+<script src="avlupdates.js"></script>
+<script src="lang/resource.js"></script>
+<link id="uistyles" href="UpdaterStyle.css" rel="stylesheet" type="text/css"/>
+<script>
+function loadStrings()
+{
+	document.charset = window.parent._UIcharset;
+
+	if (_CustomStrings.length > 0)
+		document.getElementById("strings").src = _CustomStrings + "/strings" + window.parent._UILangID + ".js";
+	else
+		document.getElementById("strings").src = "lang/strings" + window.parent._UILangID + ".js";
+	if (typeof(ar) == "undefined")
+		document.getElementById("strings").src = "lang/strings" + ((window.parent._UILangID & 0xff) + 1024) + ".js";
+	if (typeof(ar) == "undefined")
+		document.getElementById("strings").src = "lang/strings1033.js";
+
+	document.getElementById("ids_settings").innerText = ar[IDS_SETTINGS];
+	document.getElementById("ids_about").innerText = ar[IDS_ABOUT];
+	document.getElementById("ids_updates").innerText = ar[IDS_UPDATES];
+	document.getElementById("secNavTitle").innerText = ar[IDS_UPDATES];
+	document.getElementById("ids_new_updates2").innerText=ar[IDS_NEW_UPDATES];
+	document.getElementById("ids_restore_hidden").innerText = ar[IDS_RESTORE_HIDDEN];
+	document.getElementById("ids_view_your_history").innerText = ar[IDS_VIEW_YOUR_HISTORY];
+	document.getElementById("ids_view_your_history2").innerText = ar[IDS_VIEW_YOUR_HISTORY];
+	document.getElementById("ids_copyright").innerText = ar[IDS_COPYRIGHT];
+	document.getElementById("ids_terms").innerText = ar[IDS_TERMS];
+	document.getElementById("ids_privacy").innerText = ar[IDS_PRIVACY];
+	document.getElementById("historyProductHeaderCell").innerText = ar[IDS_PRODUCT];
+	document.getElementById("historyDateHeaderCell").innerText = ar[IDS_DATE];
+	document.getElementById("historyUpdateHeaderCell").innerText = ar[IDS_UPDATES];
+	document.getElementById("ids_help").innerText = ar[IDS_HELP];
+}
+var twdl = unescape(top.window.document.location);
+var twdls = twdl.substr(twdl.indexOf("?"));
+var attribs = twdls.split("&");
+var _CustomCSS="";
+var _CustomStrings="";
+for (ii = 0; ii < attribs.length; ii++)
+{
+	var attrib = attribs[ii].split("=");
+	if (attrib[0].indexOf("CSS") != -1)
+		_CustomCSS = unescape(attrib[1]);
+	if (attrib[0].indexOf("Strings") != -1)
+		_CustomStrings = unescape(attrib[1]);
+}
+if (_CustomCSS.length > 0)
+	document.getElementById("uistyles").href=_CustomCSS;
+</script>
+<script>
+ function getProducts()
+ {
+   return Agent.EnumProducts(1);
+ }
+ function getHistory(p)
+ {
+    return Agent.EnumHistory(p);
+ }
+function displayHistory()
+{
+    loadStrings();
+
+    var products = Agent.EnumProducts(-1);
+    var i, j;
+    var k=1;
+    var dynHTML=new String();
+
+    for (i = 1; i <= products.Count; i++)
+    {
+	    var product = products.Item(i);
+
+	    if (product.UpdateAble == true)
+	    {
+	        var updates=getHistory(product.ProductCode.toLowerCase());
+		    if (updates.Count > 0) dynHTML+=addProduct(k, product, updates);
+	    }
+	    k++;
+    }
+    document.getElementById("contents").innerHTML=dynHTML;
+}
+
+function addProduct(i, product, updates)
+{
+    var dynHTML=new String("<div class=\"historyProductRow\">");
+    dynHTML+="<a href=\"#pop1"+i+"\" onClick=\"shoh('pop1"+i+"');\" class=\"anchorColorNone\"><img src=\"images/u.gif\" name=\"imgpop1"+i+"\" width=\"9\" height=\"9\" border=\"0\" >" + updates.item(1).QueryValue(5) + "</a></div>";
+    dynHTML+="<div style=\"display: none;\" id=\"pop1"+i+"\">";
+    
+    for (j=1;j<=updates.Count;j++)
+    {
+	    dynHTML+="<div class=\"historyUpdateCell\"><img src=\"images/u.gif\" width=\"9\" height=\"9\" border=\"0\" >"+updates.item(j).QueryValue(0)+"</div>";
+        dynHTML+="<div nowrap class=\"historyDateCell\">"+updates.item(j).QueryValue(25)+"</div>";
+    }
+	return dynHTML;
+}
+</script>
+</head>
+
+<body scroll="no" topmargin="0" bottommargin="0" leftmargin="0" rightmargin="0" onload="displayHistory()">
+	<OBJECT ID="Agent" align="baseline" height="1" width="1" classid="CLSID:548E275F-0290-40E7-B454-738B0C61DE60" VIEWASTEXT></OBJECT>
+
+<!-- TOP NAVIGATION AND LOGO -->
+<div id="mainNavHeader">
+	<div id="mainNavLogo"></div>
+	<div id="mainNavIconUpdatesS">
+		<div class="theNavS">
+		<a href="updates.htm"><img src="images/icon_update.gif" width="32" height="32" border="0"></a><br>
+		<a href="updates.htm" id="ids_updates">Updates</a>
+		</div>
+	</div>
+	<div id="mainNavIconSettings">
+		<div class="theNav">
+		<a href="settings.htm"><img src="images/icon_settings.gif" width="32" height="32" border="0"></a><br>
+		<a href="settings.htm" id="ids_settings">Settings</a>
+		</div>
+	</div>
+	<div id="mainNavIconAbout">
+		<div class="theNav">
+		<a href="about.htm"><img src="images/icon_about.gif" width="32" height="32" border="0"></a><br>
+		<a href="about.htm" id="ids_about">About</a>
+		</div>
+	</div>
+</div>
+
+<!-- SECONDARY NAVIGATION -->
+<div id="secNavHeader">
+	<div id="secNavTitle">Updates</div>
+	<div id="secNavSeparator"></div>
+	<div id="secNavLinks">
+	<a href="updates.htm" id="ids_new_updates2">New updates &amp; messages</a><br>
+	<a href="updates.htm?archive=1" id="ids_restore_hidden">Restore hidden updates</a><br>
+	<strong><a href="history.htm" id="ids_view_your_history">View your history</a></strong>
+	</div>
+
+</div>
+
+<div id="mainContent">
+
+<!-- MAIN PANEL -->
+	<div id="mainPanel">
+		<div class="contentHeader" id="ids_view_your_history2">View Your History</div>
+<!-- BEGIN INTERIOR SCROLLER -->
+		<div id="historyColumnContainer">
+			<div id="historyProductHeaderCell">Product</div>
+			<div id="historyUpdateHeaderCell">Update</div>
+			<div id="historyDateHeaderCell">Date</div>
+		</div>
+		
+		<div class="scrollerHistory">
+		<table cellpadding="0" cellspacing="0" border="0">
+		<tr>
+		<td id="contents" name="contents">
+		</td>
+		</tr>
+		</table>
+		</div>
+	</div>
+</div>
+
+<!-- END INTERIOR SCROLLER -->
+
+<!-- COPYRIGHT/HELP BOTTOM -->
+<div id="bottom">
+	<table cellpadding=0 cellspacing=0>
+	<tr>
+	<td>
+	<div id="copyright"><span id="ids_copyright">Copyright (c) 1997-2011 Flexera Software LLC.  All Rights Reserved.</span>| <a id="Aterms" href="http://www.flexerasoftware.com/company/terms_of_use.htm" target="_blank"><span id="ids_terms">Terms of Use</span></a>  | <a id="Aprivacy" href="http://www.flexerasoftware.com/company/legal.htm" target="_blank"><span id="ids_privacy">Privacy Statement</span></a></div></td>
+	<td width="18"><a href="help.htm" target="_blank"><img src="images/icon_help.gif" width="14" height="14" border="0" align="left"></a></td>
+	<td><a href="help.htm" target="_blank" id="ids_help">Help</a></td>
+	</tr>
+	</table>
+</div>
+</body>
+</html>

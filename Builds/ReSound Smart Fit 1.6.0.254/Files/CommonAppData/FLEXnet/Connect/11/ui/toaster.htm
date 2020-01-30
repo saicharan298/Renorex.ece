@@ -1,0 +1,212 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link id="uistyles" href="ToasterStyle.css" rel="stylesheet" type="text/css"/>
+<script>
+var twdl = unescape(top.window.document.location);
+var twdls = twdl.substr(twdl.indexOf("?"));
+var attribs = twdls.split("&");
+var _CustomCSS="";
+var _CustomStrings="";
+for (ii = 0; ii < attribs.length; ii++)
+{
+	var attrib = attribs[ii].split("=");
+	if (attrib[0].indexOf("ToasterCSS") != -1)
+		_CustomCSS = unescape(attrib[1]);
+	if (attrib[0].indexOf("Strings") != -1)
+		_CustomStrings = unescape(attrib[1]);
+}
+if (_CustomCSS.length > 0)
+	document.getElementById("uistyles").href=_CustomCSS;
+</script>
+
+</head>
+
+<body topmargin="0" leftmargin="0" rightmargin="0" bottommargin="0" bgcolor="666666" OnLoad="UpdateDescription()" scroll="no">
+<table cellpadding="0" cellspacing="0" border="0" width="310">
+<tr>
+<td background="images/top_background.jpg" height="24"><div id="exit"><a href="#close"><img src="images/icon_close.gif"></a></div>
+</td>
+</tr>
+</table>
+<table cellpadding="0" cellspacing="0" border="0" width="310" height="51" background="images/header_background.jpg">
+<tr>
+<td width="52"><img src="images/important_icon.gif">
+</td>
+<td><div id="updateType">Update Available</div>
+<div id="product"></div></td>
+</tr>
+</table>
+<table cellpadding="6" cellspacing="0" border="0" width="310" height="189" background="images/content_background.gif">
+<tr valign="top">
+<td>
+<div id="desc" name="desc"></div>
+<a href="#MoreInfo" id="Adetails">more details...</a>
+</td>
+</tr>
+<tr valign="top">
+<td align="center">
+	<table cellpadding="0" cellspacing="0" border="0" id="installButton" width="139" height="37">
+	<tr valign="top">
+	<td><a href="#InstallNow"><span id="buttontext">Install Now</span></a></td>
+	</tr>
+	</table>
+</td>
+</tr>
+<tr valign="top">
+<td>
+	<table cellpadding="0" cellspacing="0" border="0">
+	<tr valign="top">
+	<td><div id="textBlock"><span id="remind"> remind me in </span><select name="time"><option value="1d" id="op1d">1 day</option><option value="3d" id="op3d">3 days</option></select></td>
+	<td width="25" align="right"><a href="#Submit"><img src="images/round_submit_button.gif"></a></td>
+	</tr>
+	</table>
+<div id="textBlock"><a href="#DonotRemind"><span id="noremind">don't remind me again</span></a></div>
+<div id="textBlock"><a href="#ShowAll"><span id="showallmsgs">show all my updates and messages</span></a></div>
+</td>
+</tr>
+</table>
+</body>
+
+<script src="lang/resource.js"></script>
+<script id="strings">
+</script>
+<SCRIPT language="JavaScript" defer>
+var sSearch = new String(unescape(document.location.search));
+var arrParameters = sSearch.split("&");
+var sLocale = new String(arrParameters[5]).split("=");
+
+var _UILangID = sLocale[1];
+var _UIcharset = "windows-1252";
+
+switch(_UILangID & 0xff)
+{
+case 0x02:// bulgarian
+	_UIcharset = "windows-1251";
+	break;
+case 0x05:// czech
+	_UIcharset = "windows-1250";
+	break;
+case 0x08:// greek
+	_UIcharset = "windows-1253";
+	break;
+case 0x0E:// hungarian
+	_UIcharset = "windows-1250";
+	break;
+case 0x11:// japanese
+	_UIcharset = "shift-jis";
+	break;
+case 0x12:// korean
+	_UIcharset = "ks_c_5601";
+	break;
+case 0x15:// polish
+	_UIcharset = "windows-1250";
+	break;
+case 0x18:// romanian
+	_UIcharset = "windows-1250";
+	break;
+case 0x19:// russian
+	_UIcharset = "windows-1251";
+	break;
+case 0x1A:
+    {
+    if (_UILangID == 2074) //serbian
+        _UIcharset = "windows-1251";
+    else // croatian
+        _UIcharset = "windows-1250";
+    }
+    break;
+case 0x1B:// slovak
+	_UIcharset = "windows-1250";
+	break;
+case 0x1E:// thai
+	_UIcharset = "windows-874";
+	break;
+case 0x1F:// turkish
+	_UIcharset = "windows-1254";
+	break;
+case 0x24:// slovenian
+	_UIcharset = "windows-1250";
+	break;
+default: _UIcharset = "windows-1252";
+}
+if (_UILangID == 0x804)
+	_UIcharset = "gb2312";
+if (_UILangID == 0x404)
+	_UIcharset = "big5";
+
+document.charset = _UIcharset;
+
+if (_CustomStrings.length > 0)
+	document.getElementById("strings").src = _CustomStrings + "/strings" + _UILangID + ".js";
+else
+	document.getElementById("strings").src = "lang/strings" + _UILangID + ".js";
+if (typeof(ar) == "undefined")
+	document.getElementById("strings").src = "lang/strings" + ((_UILangID & 0xff) + 1024) + ".js";
+if (typeof(ar) == "undefined")
+	document.getElementById("strings").src = "lang/strings1033.js";
+
+document.getElementById("Adetails").innerText = ar[IDS_MORE_DETAILS];
+document.getElementById("remind").innerText = ar[IDS_REMIND_IN];
+document.getElementById("noremind").innerText = ar[IDS_NO_REMIND];
+document.getElementById("showallmsgs").innerText = ar[IDS_SHOW_ALL];
+document.getElementById("op1d").innerText = ar[IDS_1_DAY];
+document.getElementById("op3d").innerText = ar[IDS_3_DAYS];
+
+
+</script>
+
+<script DEFER>
+	function UpdateDescription()
+	{
+		var srch=new String(unescape(document.location.search));
+		var arr=srch.split("&");
+		var desc=new String(arr[0]).split("=");
+		var pr=new String(arr[1]).split("=");
+		var sev=new String(arr[2]).split("=");
+		var type=new String(arr[3]).split("=");		
+		
+		document.all("desc").innerHTML=desc[1];
+				
+		if (sev!="undefined")
+		{
+		  if (sev[1].indexOf("C") != -1)
+		  {
+			if (type[1].indexOf("U") != -1)
+			{
+				document.all("updateType").innerText = ar[IDS_CU_AVAIL];
+				if (document.getElementById("strings").src.indexOf("lang/strings1033.js") != -1)
+					document.getElementById("buttontext").innerText = "Install Now";
+				else
+					document.getElementById("buttontext").innerText = ar[IDS_INSTALL];
+			}
+			else
+			{
+				document.all("updateType").innerText = ar[IDS_CM_AVAIL];
+				document.getElementById("buttontext").innerText = ar[IDS_READ_MORE];
+			}			
+		  }
+		  else
+		  {
+			if (type[1].indexOf("U") != -1)
+			{
+				document.all("updateType").innerText = ar[IDS_IU_AVAIL];
+				if (document.getElementById("strings").src.indexOf("lang/strings1033.js") != -1)
+					document.getElementById("buttontext").innerText = "Install Now";
+				else
+					document.getElementById("buttontext").innerText = ar[IDS_INSTALL];
+			}
+			else
+			{
+				document.all("updateType").innerText = ar[IDS_IM_AVAIL];
+				document.getElementById("buttontext").innerText = ar[IDS_READ_MORE];
+			}
+		  }
+		}
+	}
+</script>
+
+</html>

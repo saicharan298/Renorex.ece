@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Market xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="JP.mkt">
+  <Version Major="3" Minor="8" DataVersion="1"/>
+  <Preferences>
+    <Pref ID="AutorelateSaveOption" Type="Enum" DefaultValue="No"/>
+    <Pref ID="BASS" Type="Enum" DefaultValue="P1AsBasic"/>
+    <Pref ID="BASS3" Type="Enum" DefaultValue="P1AsBasic"/>
+    <Pref ID="CableGuideWebSite" Type="String" DefaultValue="http://www.resoundfiles.com/redirect/r.php?id=flHLnOT"/>
+    <Pref ID="CommDevices" Type="Enum" DefaultValue="Hipro"/>
+    <Pref ID="CouplerType" Type="Enum" DefaultValue="InsertionGain"/>
+    <Pref ID="DFSGainClampingEnabled" Type="Boolean" DefaultValue="1"/>
+    <Pref ID="EcademyWebSite" Type="String" DefaultValue="http://www.resoundfiles.com/redirect/r.php?id=1Du6Em2"/>
+    <Pref ID="ECommerceWebSite" Type="String" DefaultValue=""/>
+    <Pref ID="ExperienceLevel" Type="Enum" DefaultValue="FirstTimeUser"/>
+    <Pref ID="Language" Type="Enum" DefaultValue="ja-JP"/>
+    <Pref ID="MuteHIWhenFitting" Type="Boolean" DefaultValue="0"/>
+    <Pref ID="NavigatingToFitting" Type="Enum" DefaultValue="PromptEachTime"/>
+    <Pref ID="PediatricTargetRule" Type="Enum" DefaultValue="7"/>
+    <Pref ID="PinCode" Type="Int" DefaultValue="0"/>
+    <Pref ID="PLCode" Type="Int" DefaultValue="13"/>
+    <Pref ID="ShowADLAfterRead" Type="Boolean" DefaultValue="0"/>
+    <Pref ID="ShoweCommerceMenu" Type="Boolean" DefaultValue="0"/>
+    <Pref ID="SpecType" Type="Enum" DefaultValue="JIS"/>
+    <Pref ID="StartScrn_FineTune" Type="Enum" DefaultValue="Fit"/>
+    <Pref ID="StartScrn_NewFitting" Type="Enum" DefaultValue="Start"/>
+    <Pref ID="TargetRule" Type="Enum" DefaultValue="0"/>
+    <Pref ID="UpdatesCheckOnSchedule" Type="Boolean" DefaultValue="0"/>
+    <Pref ID="UpdatesDownloadAutomatically" Type="Boolean" DefaultValue="0"/>
+    <Pref ID="UpdatesFrequency" Type="Enum" DefaultValue="FourWeeks"/>
+    <Pref ID="UsePLCode" Type="Boolean" DefaultValue="1"/>
+    <Pref ID="UseUCL" Type="Boolean" DefaultValue="1"/>
+    <Pref ID="UseBoneConduction" Type="Boolean" DefaultValue="1"/>
+    <Pref ID="WebLaunchSite" Type="String" DefaultValue="http://www.gnresound.jp/"/>
+    <Pref ID="FrequentEnvironments2" Type="Enum" DefaultValue="None"/>
+  </Preferences>
+</Market>

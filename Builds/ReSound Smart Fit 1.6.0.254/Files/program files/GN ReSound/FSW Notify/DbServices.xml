@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <Version Major="1" Minor="0" />
+  <Services>
+    <!-- Usage:
+    <Service Name="database user friendly app name" RegistryKey="database associated HKLM registry key"/>
+    -->
+    <Service Name="AuditBase" RegistryKey="Software\Auditdata"/>
+  </Services>
+</Root>

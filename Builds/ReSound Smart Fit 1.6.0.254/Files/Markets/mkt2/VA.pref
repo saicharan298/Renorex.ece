@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Market xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="US.mkt">
+  <Version Major="1" Minor="1" DataVersion="0"/>
+  <Preferences>
+    <Pref ID="Language" Type="Enum" DefaultValue="en-US"/>
+    <Pref ID="DFSGainClampingEnabled" Type="Boolean" DefaultValue="0"/>
+    <Pref ID="CheckVentCorrection" Type="Boolean" DefaultValue="0"/>
+    <Pref ID="FrequentEnvironments3" Type="Enum" DefaultValue="TelecoilPhone"/>
+    <Pref ID="PatientFineTuneInitialStatus" Type="Boolean" DefaultValue="0"/>
+    <Pref ID="PatientFirmwareUpdateInitialStatus" Type="Boolean" DefaultValue="1"/>
+    <Pref ID="P2" Type="Enum" DefaultValue="None"/>
+    <Pref ID="EnableWebUpdates" Type="Boolean" DefaultValue="0"/>
+    <Pref ID="UpdatesCheckOnSchedule" Type="Boolean" DefaultValue="0"/>
+    <Pref ID="UpdatesDownloadAutomatically" Type="Boolean" DefaultValue="0"/>
+    <Pref ID="WebLaunchSite" Type="String" DefaultValue="http://govserv.gnresound.com/" />
+    <Pref ID="ShoweCommerceMenu" Type="Boolean" DefaultValue="1"/>
+    <Pref ID="ECommerceWebSite" Type="String" DefaultValue="https://online.gnresound.com"/>
+    <Pref ID="EcademyWebSite" Type="String" DefaultValue="http://www.audiologyonline.com/audiology-ceus/search/cp:resound/"/>
+    <Pref ID="DisableTSGOnProgram" Type="Boolean" DefaultValue="1"/>
+    <Pref ID="EnableUpdates" Type="Boolean" DefaultValue="0"/>
+    <Pref ID="ReadOnConnect" Type="Boolean" DefaultValue="1"/>
+    <Pref ID="CableGuidesAsPDF" Type="Boolean" DefaultValue="1"/>
+    <Pref ID="UserGuidesAsPDF" Type="Boolean" DefaultValue="1"/>>
+    <Pref ID="PinCode" Type="Int" DefaultValue="0"/>
+    <Pref ID="SupportThreeGainHandles" Type="Boolean" DefaultValue="0"/>
+    <Pref ID="DisableNLWUpdate" Type="Boolean" DefaultValue="1"/>
+    <Pref ID="ShowTeleaudiologyConsent" Type="Boolean" DefaultValue="0"/>
+    <Pref ID="AllowTeleaudiologyWithRFU" Type="Boolean" DefaultValue="1"/>
+  </Preferences>
+</Market>

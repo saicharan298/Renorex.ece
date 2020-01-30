@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="1b1304d43cb631d9"
+		totalerrorcount="0"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="i-ray"
+		rxversion="9.1.2.0"
+		host="FSWIRAY23"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-GB"
+		dtnlanguage="en-IN"
+		screenresolution="1600x900"
+		timestamp="14-01-2020 00:01:25"
+		timestampiso="2020-01-14T06:01:25"
+		endtime="14-01-2020 00:01:31"
+		timeoutfactor="1">
+		<detail>
+			Ranorex Testscript
+		</detail>
+		<item
+			timeRelativeToTestSuiteStartTime="00:06.126"
+			timeRelativeToTestModuleStartTime="00:06.126"
+			timeWallClock="00:01:31"
+			time="00:06.126"
+			level="Failure"
+			category="Licensing">
+			<message>
+				The License Manager '10.8.1.104' could not be contacted. Please check your network connection and make sure the Ranorex License Manager is running.
+			</message>
+			<metainfo
+				loglvl="Failure">
+			</metainfo>
+		</item>
+	</activity>
+</report>

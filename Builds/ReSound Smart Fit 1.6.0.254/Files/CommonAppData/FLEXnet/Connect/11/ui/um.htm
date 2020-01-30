@@ -1,0 +1,368 @@
+<HTML>
+	<HEAD>
+		<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+		<TITLE>Update Manager</TITLE>
+		<OBJECT ID="Agent" align="baseline" height="1" width="1" classid="CLSID:548E275F-0290-40E7-B454-738B0C61DE60" VIEWASTEXT></OBJECT>
+		<OBJECT ID="AgentEx" align="baseline" height="1" width="1" classid="CLSID:ded72938-4b76-40a5-be13-845f4af4b983" VIEWASTEXT></OBJECT>
+		<OBJECT ID="USUM" align="baseline" height="1" width="1" classid="CLSID:965d9025-6c41-4488-b781-f1b7acf7b4c3" VIEWASTEXT></OBJECT>
+
+		<SCRIPT language="VBScript"> 
+		         sub AgentEx_OnUpdateNotification (us)
+				gotit us
+         		end sub 
+      		</SCRIPT>
+
+		<SCRIPT Language="javascript">
+			function gotit(us)
+			{
+			   usUpdates=us;
+		 	   document.all.mainframe.src = docloc + "updates.htm"; 
+			}
+		</SCRIPT>
+		<SCRIPT language="VBScript">
+			Public usAuthenticationParameters
+			Public usAuthenticationMSG
+			function ToVBArray_ (arr)
+				Dim a
+				a = Split(arr, ",", -1, 1)
+				ToVBArray_ = a
+			end function
+			function DoAuthenticationImpl(pc, msg)
+				Dim nUpdatesCount 
+				nUpdatesCount = usUpdates.Count
+				for each usAuthenticationMSG in usUpdates
+					if usAuthenticationMSG.QueryValue(2) = pc then
+						if usAuthenticationMSG.QueryValue(4) = msg then
+							exit for
+						end if
+					end if
+				next
+				usAuthenticationParameters = usAuthenticationMSG.GetAuthenticationParameters()
+				usAuthInfoURL = usAuthenticationMSG.QueryValue(21)
+				DoAuthenticationImpl = 1
+			end function
+			function DoAuthenticate(values)
+				dim response
+				dim result
+				dim usAuthenticationValues()
+				redim usAuthenticationValues(UBound(usAuthenticationParameters),2)
+				for x = LBound(usAuthenticationParameters) to UBound(usAuthenticationParameters)
+					usAuthenticationValues(x,0) = usAuthenticationParameters(x,0)
+					usAuthenticationValues(x,1) = values(x)
+				next
+				usAuthResult = usAuthenticationMSG.Authenticate(usAuthenticationValues, response)
+				usAuthSvrResponse = response
+				DoAuthenticate = response
+			end function
+		</SCRIPT>
+		<SCRIPT language="JavaScript">
+			var usUpdates;
+			var _ProductsName = new Array();
+			var _ProductsGUID = new Array();
+			var _TimeOutID;
+			var _UpdateCompleteStatus;
+			var _AuthFailedResult;
+			var usAuthInfoURL;
+			var usAuthResult;
+			var usAuthSvrResponse;
+			var docloc;
+               var checkTimer;
+			function CheckForUpdates()
+			{
+				document.all.mainframe.src = docloc + "checking.htm";
+				_TimeOutID = setTimeout("DoCheckForUpdates()", 1000);
+			}
+			function BackgroundCheckForUpdates()
+			{
+                    if(USUM.IsCacheLoaded())
+                    {
+                         clearInterval(checkTimer);
+                         var temp = USUM.GetCachedProducts(ToVBArray_(_ProductsGUID));
+                         gotit(temp);
+                    }
+			}
+			function DoCheckForUpdates()
+			{
+				clearTimeout(_TimeOutID);
+				if (USUM.IsConnected() == 0)
+				{
+					document.all.mainframe.src = docloc + "notconnected.htm";
+					return;
+				}
+				if (_ProductsGUID.sort)
+				{
+				     if(typeof(USUM.IsCacheLoaded) != "undefined" && typeof(USUM.AsyncLoadCache) != "undefined")
+                         {
+                              if(USUM.IsCacheLoaded())
+                              {
+                                   var temp = USUM.GetCachedProducts(ToVBArray_(_ProductsGUID));
+                                   gotit(temp);
+                              }
+                              else
+                              {
+                                   USUM.AsyncLoadCache();
+                                   // Use new technique to retrieve cached updates
+                                   checkTimer = setInterval("BackgroundCheckForUpdates()", 5000);
+                              }
+                         }
+                         else
+                         {
+                              AgentEx.IntializeEx(0, "ISUS");
+                              AgentEx.EnumUpdatesBatch(ToVBArray_(_ProductsGUID), false);
+					}
+				}
+				//document.all.mainframe.src = "updates.htm";
+			}
+			function ToVariant (x) 
+			{
+				if (x == null);
+				else if (typeof(x) == "object") 
+					return x.valueOf();
+				else
+					return x;
+			}
+			// GetVariantAt is slower than Array.prototype.getVariantAt,
+			// but enables "cross-frame calling"
+			function GetVariantAt (arr, i) 
+			{
+				return ToVariant(arr[i]);
+			}
+			function DoGetUpdates()
+			{
+				document.all.mainframe.src = docloc + "getall.htm";
+			}
+			function ShowUpdateComplete(Status)
+			{
+				_UpdateCompleteStatus = Status;
+				document.all.mainframe.src = docloc + "updatecomplete.htm";
+			}
+			function RefreshProductCache()
+			{
+				if(USUM.IsCacheLoaded())
+				{
+					var arprid = getupdates.prid.value.split("~~~\$\$\$~~~");
+					arprid.sort;
+ 					var nUpdates = arprid.length;
+					for (i=0;i < nUpdates;i++) 
+					{
+						if (i == 0 || arprid[i] != aprid[i - 1])
+						{
+							USUM.RefreshProductCache(arprid[i]);
+						}                                  
+					}
+				}
+			}
+			function DoAuthentication(pc, msg)
+			{			
+				DoAuthenticationImpl(pc, msg);
+				_TimeOutID = setTimeout("GoAuthenticationPage()", 5000);
+			}
+			function GoAuthenticationPage()
+			{
+				clearTimeout(_TimeOutID);
+				document.all.mainframe.src = docloc + "security.htm";
+			}
+			function DoAuthFailed(str)
+			{
+				_AuthFailedResult = str;
+				document.all.mainframe.src = docloc + "authFailed.htm";
+			}
+			function gotoStart()
+			{
+				document.all.mainframe.src = docloc + "checkfor.htm";
+			}
+			function startChecking()
+			{
+				var dlh = unescape(document.location.href);
+				var z = dlh.lastIndexOf("?");
+				var zz;
+				if (z == -1)
+					zz = dlh.lastIndexOf("/");
+				else
+					zz = dlh.lastIndexOf("/", z);
+				zz = zz + 1;
+				docloc = dlh.substr(0, zz);
+				var saHidden = VBArray(USUM.GetHiddenProducts()).toArray();
+
+				var twdl = unescape(top.window.document.location);
+				var twdls = twdl.substr(twdl.indexOf("?"));
+				var attribs = twdls.split("&");
+				var prods;
+				for (ii = 0; ii < attribs.length; ii++)
+				{
+					var attrib = attribs[ii].split("=");
+					if (attrib[0].indexOf("prods") != -1)
+						prods = unescape(attrib[1]);
+				}
+				
+				var customprods = "";
+				if (typeof(prods) != "undefined")
+				{
+					if (prods.length > 0)
+						customprods = prods.split(";");
+				}
+				var	products = Agent.EnumProducts(0);
+
+				if (customprods.length > 0)
+				{
+					var i, j;
+					var k=0;
+					for (i = 1; i <= products.Count; i++)
+					{
+						var product = products.Item(i);
+						if (product.UpdateAble == true)
+						{
+							var add = false;
+							
+							for (j = 0; j < customprods.length; j++)
+							{
+								if (product.ProductCode.toLowerCase().indexOf(customprods[j].toLowerCase()) != -1)
+									add = true;
+							}
+							if (add == true)
+							{
+								for (j = 0; j < saHidden.length; j++)
+								{
+									if (product.ProductCode.toLowerCase().indexOf(saHidden[j].toLowerCase()) != -1)
+										add = false;
+								}
+							}
+							if (add == true)
+							{
+								_ProductsGUID[k] = product.ProductCode;
+								_ProductsName[k] = product.Name;
+								k++;
+							}
+						}
+					}
+				}
+				else
+				{
+					var i, j;
+					var k=0;
+					for (i = 1; i <= products.Count; i++)
+					{
+						var product = products.Item(i);
+						if (product.UpdateAble == true)
+						{
+							var found = false;
+							for (j = 0; j < saHidden.length; j++)
+							{
+								if (product.ProductCode.toLowerCase().indexOf(saHidden[j].toLowerCase()) != -1)
+									found = true;
+							}
+							if (found == false)
+							{
+								_ProductsGUID[k] = product.ProductCode;
+								_ProductsName[k] = product.Name;
+								k++;
+							}
+						}
+					}
+				}
+				
+				CheckForUpdates();
+			}
+		</SCRIPT>
+		<SCRIPT language="JavaScript">
+			var _UILangID = USUM.GetLanguageID();
+			var _UIcharset = "windows-1252";
+			switch(_UILangID & 0xff)
+			{
+			case 0x02:// bulgarian
+				_UIcharset = "windows-1251";
+				break;
+			case 0x05:// czech
+				_UIcharset = "windows-1250";
+				break;
+			case 0x08:// greek
+				_UIcharset = "windows-1253";
+				break;
+			case 0x0E:// hungarian
+				_UIcharset = "windows-1250";
+				break;
+			case 0x11:// japanese
+				_UIcharset = "shift-jis";
+				break;
+			case 0x12:// korean
+				_UIcharset = "ks_c_5601";
+				break;
+			case 0x15:// polish
+				_UIcharset = "windows-1250";
+				break;
+			case 0x18:// romanian
+				_UIcharset = "windows-1250";
+				break;
+			case 0x19:// russian
+				_UIcharset = "windows-1251";
+				break;
+			case 0x1A:
+				{
+				if (_UILangID == 2074) //serbian
+					_UIcharset = "windows-1251";
+				else // croatian
+					_UIcharset = "windows-1250";
+				}
+				break;
+			case 0x1B:// slovak
+				_UIcharset = "windows-1250";
+				break;
+			case 0x1E:// thai
+				_UIcharset = "windows-874";
+				break;
+			case 0x1F:// turkish
+				_UIcharset = "windows-1254";
+				break;
+			case 0x24:// slovenian
+				_UIcharset = "windows-1250";
+				break;
+			default: _UIcharset = "windows-1252";
+			}
+			if (_UILangID == 0x804)
+				_UIcharset = "gb2312";
+			if (_UILangID == 0x404)
+				_UIcharset = "big5";
+		</SCRIPT>
+	</HEAD>
+	<BODY scroll="no" onload="startChecking()" bottomMargin="0" rightMargin="0" topMargin="0" leftMargin="0" style="paddingTop:0">
+		<IFRAME name="mainframe" id="mainframe" width="100%" height="100%" border="0" src="" border=0 frameborder=0 hspace=0 vspace=0 framespacing=0>
+		</IFRAME>
+	</BODY>
+		<FORM name="getupdates" id="getupdates" method="post" action="getall.htm" style="display:none">
+			<input value="" name="prid" id="prid" type="hidden">
+			<input value="" name="rlsid" id="rlsid" type="hidden">
+			<input value="" name="PRODUCTNAME" id="PRODUCTNAME" type="hidden">
+			<input value="" name="RELEASENAME" id="RELEASENAME" type="hidden">
+			<input value="" name="dispver" id="dispver" type="hidden">
+			<input value="" name="MSGID" id="MSGID" type="hidden">
+			<input value="" name="MSGTYPE" id="MSGTYPE" type="hidden">
+			<input value="" name="MSGNAME" id="MSGNAME" type="hidden">
+			<input value="" name="UPDATETITLE" id="UPDATETITLE" type="hidden">
+			<input value="" name="DOWNLOADSIZE" id="DOWNLOADSIZE" type="hidden">
+			<input value="" name="DESCRIPTION" id="DESCRIPTION" type="hidden">
+			<input value="" name="DETAILSURL" id="DETAILSURL" type="hidden">
+			<input value="" name="DOWNLOADURL" id="DOWNLOADURL" type="hidden">
+			<!--input value="" name="CompanyLogo" id="CompanyLogo" type="hidden"-->
+			<input value="" name="CommandLine" id="CommandLine" type="hidden">
+			<input value="" name="MediaType" id="MediaType" type="hidden">
+			<input value="" name="TargetDir" id="TargetDir" type="hidden">
+			<!--input value="" name="LegacyMode" id="LegacyMode" type="hidden"-->
+			<input value="" name="Basketable" id="Basketable" type="hidden">
+			<input value="" name="BasketPriority" id="BasketPriority" type="hidden">
+			<!--input value="" name="SDOption" id="SDOption" type="hidden"-->
+			<input value="" name="SDURL" id="SDURL" type="hidden">
+			<input value="" name="AuthID" id="AuthID" type="hidden">
+			<input value="" name="AuthMsgDisplay" id="AuthMsgDisplay" type="hidden">
+			<input value="" name="AuthMsgFailed" id="AuthMsgFailed" type="hidden">
+			<input value="" name="AuthInfoURL" id="AuthInfoURL" type="hidden">
+			<input value="" name="Details" id="Details" type="hidden">
+			<!--input value="" name="WebCommandLine" id="WebCommandLine" type="hidden"-->
+			<input value="" name="CalloutURL" id="CalloutURL" type="hidden">
+			<input value="" name="VersionID" id="VersionID" type="hidden">
+			<input value="" name="SecurityType" id="SecurityType" type="hidden">
+			<input value="" name="SecuritySignature" id="SecuritySignature" type="hidden">
+			<input value="" name="DownloadType" id="DownloadType" type="hidden">
+			<input value="" name="ElevReq" id="ElevReq" type="hidden">
+			<input value="INSTALL" name="installtype" id="installtype" type="hidden">
+		</FORM>
+</HTML>

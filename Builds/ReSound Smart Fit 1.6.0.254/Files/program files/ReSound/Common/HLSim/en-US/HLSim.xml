@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <Version Major="1" Minor="0" />
+  <SoundAssets>
+      <SoundAsset Name="2249" SoundName="HL_Sim_AdultsBistro.wav"/>
+      <SoundAsset Name="2250" SoundName="HL_Sim_AdultsBeach.wav"/>
+      <SoundAsset Name="2251" SoundName="HL_Sim_AdultsStockTip.wav"/>
+      <SoundAsset Name="2252" SoundName="HL_Sim_AdultsSummer.wav"/>
+      <SoundAsset Name="2253" SoundName="HL_Sim_Ambulance.wav"/>
+      <SoundAsset Name="2254" SoundName="HL_Sim_ChildPet.wav"/>
+      <SoundAsset Name="2255" SoundName="HL_Sim_ChildSchool.wav"/>
+      <SoundAsset Name="2256" SoundName="HL_Sim_ChildSoccer.wav"/>
+      <SoundAsset Name="2257" SoundName="HL_Sim_ChildZoo.wav"/>
+      <SoundAsset Name="2258" SoundName="HL_Sim_ChildAstronaut.wav"/>
+  </SoundAssets>
+</Root>

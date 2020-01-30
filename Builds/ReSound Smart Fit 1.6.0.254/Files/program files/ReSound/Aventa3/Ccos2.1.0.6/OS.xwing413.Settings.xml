@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- For version 2.0 of ccos
+-->
+<Settings>
+  <PropertyCategory Name="Operating System" >
+    <PropertyGroup Name="Wireless">
+      <Property DisplayName="Wireless Enabled" TargetProperty="HardwareConfiguration[HardwareConfiguration]"
+                TargetName="HardwareInitData" TargetType="LayoutItem" PossibleValues="0,1"
+                Notification="Set to 1 for enabled, 0 for disabled"/>
+      <Property DisplayName="Wireless Enabled (Clock)" TargetProperty="HardwareConfiguration[ClockEnable]"
+                TargetName="HardwareInitData" TargetType="LayoutItem" PossibleValues="44,60"
+                Notification="Set to 60 for enabled, 44 for disabled"/>
+      <Property DisplayName="Input modes disabling radio" TargetProperty="HardwareConfiguration[InputModeDisablingRadio]"
+                TargetName="HardwareInitData" TargetType="LayoutItem" PossibleValues="0,240"
+                Notification="Set to 240 for normal op, 0 for disabled"/>
+                                
+      <Property DisplayName="Wireless Mode" TargetProperty="Os.WirelessMode"
+                Notification="Controls the behaviour of Flight Mode"
+                TargetName="WirelessConfiguration" TargetType="BlackboardComponent"/>
+    </PropertyGroup>
+    <PropertyGroup Name="Button Thresholds">
+      <Property DisplayName="Short Threshold" TargetProperty="Os.ButtonShortThreshold"
+                TargetName="PushButton2" TargetType="BlackboardComponent"
+                Notification=""
+                />
+      <Property DisplayName="Long Threshold" TargetProperty="Os.ButtonLongThreshold"
+                TargetName="PushButton2" TargetType="BlackboardComponent"
+                Notification=""
+                />
+      <Property DisplayName="Long UpDown Threshold" TargetProperty="Os.VolumeUpDownLongThreshold"
+                TargetName="PushButton2" TargetType="BlackboardComponent"
+                Notification=""
+                />
+      <Property DisplayName="Short UpDown Threshold" TargetProperty="Os.VolumeUpDownShortThreshold"
+                TargetName="PushButton2" TargetType="BlackboardComponent"
+                Notification=""
+                />
+    </PropertyGroup>
+    <PropertyGroup Name="Sense Port Assignments">
+      <Property DisplayName="Button Port Assignment" TargetProperty="Os.ButtonAssignment"
+                TargetName="PushButton2" TargetType="BlackboardComponent"
+                Notification=""/>
+      <Property DisplayName="Volume Up Port Assignment" TargetProperty="Os.VolumeUpButtonAssignment"
+                TargetName="PushButton2" TargetType="BlackboardComponent"
+                Notification=""/>
+      <Property DisplayName="Volume Down Port Assignment" TargetProperty="Os.VolumeDownButtonAssignment"
+                TargetName="PushButton2" TargetType="BlackboardComponent"
+                Notification=""/>
+      <Property DisplayName="Gmr Sensor Port Assignment" TargetProperty="Os.GmrSensorAssignment"
+                TargetName="PushButton2" TargetType="BlackboardComponent"
+                Notification=""/>
+    </PropertyGroup>
+    <PropertyGroup Name="Event Assignments">
+      <Property DisplayName="Gmr Sensor Long Event" TargetProperty="Os.GmrSensorLongEvent"
+                TargetName="PushButton2" TargetType="BlackboardComponent"
+                Notification=""/>
+      <Property DisplayName="Gmr Sensor Short Event" TargetProperty="Os.GmrSensorShortEvent"
+                TargetName="PushButton2" TargetType="BlackboardComponent"
+                Notification=""/>
+      <Property DisplayName="Button Long Event" TargetProperty="Os.ButtonLongEvent"
+                TargetName="PushButton2" TargetType="BlackboardComponent"
+                Notification=""/>
+      <Property DisplayName="Button Short Event" TargetProperty="Os.ButtonShortEvent"
+                TargetName="PushButton2" TargetType="BlackboardComponent"
+                Notification=""/>
+      <Property DisplayName="VolumeDown Long Event" TargetProperty="Os.VolumeDownLongEvent"
+                TargetName="PushButton2" TargetType="BlackboardComponent"
+                Notification=""/>
+      <Property DisplayName="VolumeDown Short Event" TargetProperty="Os.VolumeDownShortEvent"
+                TargetName="PushButton2" TargetType="BlackboardComponent"
+                Notification=""/>
+      <Property DisplayName="VolumeUp Long Event" TargetProperty="Os.VolumeUpLongEvent"
+                TargetName="PushButton2" TargetType="BlackboardComponent"
+                Notification=""/>
+      <Property DisplayName="VolumeUp Short Event" TargetProperty="Os.VolumeUpShortEvent"
+                TargetName="PushButton2" TargetType="BlackboardComponent"
+                Notification=""/>
+    </PropertyGroup>
+    <PropertyGroup Name="Sas Volume">
+      <Property DisplayName="Sas Default Volume" TargetProperty="Os.SasDefaultVolume"
+                TargetName="VolumeControl" TargetType="BlackboardComponent"/>
+      <Property DisplayName="Sas Maximum Volume" TargetProperty="Os.SasMaximumVolume"
+                TargetName="VolumeControl" TargetType="BlackboardComponent"/>
+      <Property DisplayName="Sas Minimum Volume" TargetProperty="Os.SasMinimumVolume"
+                TargetName="VolumeControl" TargetType="BlackboardComponent"/>
+      <Property DisplayName="Sas Volume Control Step Size" TargetProperty="Os.SasVolumeControlStepSize"
+                TargetName="VolumeControl" TargetType="BlackboardComponent"/>
+    </PropertyGroup>
+  </PropertyCategory>
+</Settings> 

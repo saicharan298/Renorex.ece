@@ -1,0 +1,1247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextBasedWizardCategories xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Version MajorVersion="1" MinorVersion="0" DataVersion="1" />
+  <Categories>
+      <!--  Loudness -->
+    <Category BR="-1" EV="-1" FF="-1" PP="-1" ID="15">
+      <Problems>
+        <Problem BR="-1" EV="-1" FF="-1" PP="-1" ID="21" RunTimeFilter="Exclusions_None">
+          <Solutions>
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="24" RunTimeFilter="Exclusions_None">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50"> (250 -3) (500 -3) (1000 -3) (2000 -3) (4000 -3) (6000 -3) (8000 -3)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65"> (250 -3) (500 -3) (1000 -3) (2000 -3) (4000 -3) (6000 -3) (8000 -3)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80"> (250 -3) (500 -3) (1000 -3) (2000 -3) (4000 -3) (6000 -3) (8000 -3)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+ <!--
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6475" RunTimeFilter="ExcludeFromLinearMode">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50"> (250 -3) (500 -3) (1000 -3) (2000 -3) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65"> (250 -3) (500 -3) (1000 -3) (2000 -3) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80"> (250 -3) (500 -3) (1000 -3) (2000 -3) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+ -->
+          </Solutions>
+        </Problem>
+        <!--  Soft sounds are too loud. (conversation at another table is louder than conversation at my own table.)  -->  <!--
+        <Problem BR="-1" EV="-1" FF="-1" PP="-1" ID="6476" RunTimeFilter="Exclusions_None">
+          <Solutions>
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6477" RunTimeFilter="ExcludeFromLinearMode">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50"> (250 -2) (500 -2) (1000 -2) (2000 -2) (4000 -2) (6000 -2) (8000 -2)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65"> (250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80"> (250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+          </Solutions>
+        </Problem>
+ -->
+        <Problem BR="-1" EV="-1" FF="-1" PP="-1" ID="6478" RunTimeFilter="Exclusions_None">
+          <Solutions>
+<!--
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6479" RunTimeFilter="ExcludeFromLinearMode">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 -2) (500 -2) (1000 -2) (2000 -2) (4000 -2) (6000 -2) (8000 -2)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+-->
+            <Solution BR="-1" EV="-1" FF="-1" PP="3" ID="6480" RunTimeFilter="Exclusions_None">
+              <FeatureChanges>
+                <FeatureChange BR="-1" EV="-1" FF="-1" PP="3" ID="EVFT.Volume.GainDepths" Indexes="6,5" Type="FEATURE_CHANGE_RELATIVE" Value="-1" RunTimeFilter="Exclusions_None" />
+              </FeatureChanges>
+            </Solution>
+          </Solutions>
+        </Problem>
+        <!--   Speech is too loud (speaker is too loud)  -->
+        <Problem BR="-1" EV="-1" FF="-1" PP="-1" ID="6481" RunTimeFilter="Exclusions_None">
+          <Solutions>
+<!--
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6482" RunTimeFilter="ExcludeFromLinearMode">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65">(250 -2) (500 -2) (1000 -2) (2000 -2) (4000 -2) (6000 -2) (8000 -2)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+           
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6483" RunTimeFilter="ExcludeFromLinearMode">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65">(250 -2) (500 -2) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+ -->           
+            <Solution BR="-1" EV="-1" FF="-1" PP="3" ID="6484" RunTimeFilter="Exclusions_None">
+              <FeatureChanges>
+                <FeatureChange BR="-1" EV="-1" FF="-1" PP="3" ID="EVFT.Volume.GainDepths" Indexes="2,1" Type="FEATURE_CHANGE_RELATIVE" Value="-3" RunTimeFilter="Exclusions_None" />
+              </FeatureChanges>
+            </Solution>
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6485" RunTimeFilter="Exclusions_None">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50">(250 0) (500 0) (1000 -3) (2000 -3) (4000 -2) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65">(250 0) (500 0) (1000 -3) (2000 -3) (4000 -2) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 0) (500 0) (1000 -3) (2000 -3) (4000 -2) (6000 0) (8000 0)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+          </Solutions>
+        </Problem>
+       <!--   High frequency sounds are too loud (dishes rattling, paper rustling, water running).  -->
+        <Problem BR="-1" EV="-1" FF="-1" PP="-1" ID="6486" RunTimeFilter="Exclusions_None">
+          <Solutions>
+            <!--  Decrease mid and high frequency gains for loud sounds. -->
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6487" RunTimeFilter="ExcludeFromLinearMode">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 0) (500 0) (1000 0) (2000 -2) (4000 -2) (6000 -2) (8000 -2)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+<!--            
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6488" RunTimeFilter="Exclusions_None">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50">(250 0) (500 0) (1000 -3) (2000 -3) (4000 -3) (6000 -3) (8000 -3)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65">(250 0) (500 0) (1000 -3) (2000 -3) (4000 -3) (6000 -3) (8000 -3)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 0) (500 0) (1000 -3) (2000 -3) (4000 -3) (6000 -3) (8000 -3)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6489" RunTimeFilter="ExcludeFromLinearMode">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50">(250 0) (500 0) (1000 -2) (2000 -2) (4000 -2) (6000 -2) (8000 -2)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65">(250 0) (500 0) (1000 -3) (2000 -3) (4000 -3) (6000 -3) (8000 -3)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+   -->         
+          </Solutions>
+        </Problem>
+        <Problem BR="-1" EV="-1" FF="-1" PP="-1" ID="6490" RunTimeFilter="Exclusions_None">
+          <Solutions>
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6491" RunTimeFilter="Exclusions_None">
+              <FeatureChanges>
+                <FeatureChange BR="-1" EV="-1" FF="-1" PP="-1" ID="NoiseTracker" Type="FEATURE_CHANGE_RELATIVE" Value="1" RunTimeFilter="Exclusions_None" />
+              </FeatureChanges>
+            </Solution>
+<!--            
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6492" RunTimeFilter="ExcludeFromLinearMode">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 -3) (500 -3) (1000 -2) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+-->            
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6493" RunTimeFilter="Exclusions_None">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50">(250 -3) (500 -3) (1000 -3) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65">(250 -3) (500 -3) (1000 -3) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 -3) (500 -3) (1000 -3) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="8095" RunTimeFilter="Exclusions_None">
+              <FeatureChanges>
+                <FeatureChange BR="-1" EV="-1" FF="-1" PP="-1" ID="FSW.LFBassboost" Type="FEATURE_CHANGE_RELATIVE" Value="-1" RunTimeFilter="Exclusions_None" />
+              </FeatureChanges>
+            </Solution>
+          </Solutions>
+        </Problem>
+        <Problem BR="-1" EV="-1" FF="-1" PP="-1" ID="6494" RunTimeFilter="Exclusions_None">
+          <Solutions>
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6495" RunTimeFilter="Exclusions_None">
+              <FeatureChanges>
+                <FeatureChange BR="-1" EV="-1" FF="-1" PP="-1" ID="NoiseTracker" Type="FEATURE_CHANGE_RELATIVE" Value="1" RunTimeFilter="Exclusions_None" />
+              </FeatureChanges>
+            </Solution>
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6496" RunTimeFilter="Exclusions_None">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 -3) (500 -3) (1000 -2) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+<!--            
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6497" RunTimeFilter="ExcludeFromLinearMode">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50">(250 -3) (500 -3) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65">(250 -3) (500 -3) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 -3) (500 -3) (1000 -2) (2000 -3) (4000 -3) (6000 -3) (8000 -3)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+ -->       
+          </Solutions>
+        </Problem>
+        <Problem BR="-1" EV="-1" FF="-1" PP="-1" ID="6498" RunTimeFilter="Exclusions_None">
+          <Solutions>
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6499" RunTimeFilter="Exclusions_None" />
+<!--            
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6500" RunTimeFilter="ExcludeFromLinearMode">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 0) (500 0) (1000 -2) (2000 -3) (4000 -3) (6000 -3) (8000 -3)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+  -->            
+          </Solutions>
+        </Problem>
+        <Problem BR="-1" EV="-1" FF="-1" PP="-1" ID="6501" RunTimeFilter="Exclusions_None">
+          <Solutions>
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6502" RunTimeFilter="Exclusions_None">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50">(250 3) (500 3) (1000 3) (2000 3) (4000 3) (6000 -2) (8000 -2)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65">(250 3) (500 3) (1000 3) (2000 3) (4000 3) (6000 3) (8000 3)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 3) (500 3) (1000 3) (2000 3) (4000 3) (6000 3) (8000 3)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6503" RunTimeFilter="Exclusions_None">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50">(250 3) (500 3) (1000 3) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65">(250 3) (500 3) (1000 3) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 3) (500 3) (1000 3) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+          </Solutions>
+        </Problem>
+        <!--  Soft sounds are too soft (whisper, birds outside, trees rustling, etc....) -->   <!--
+        <Problem BR="-1" EV="-1" FF="-1" PP="-1" ID="6504" RunTimeFilter="ExcludeFromLinearMode">
+          <Solutions>
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6505" RunTimeFilter="ExcludeFromLinearMode">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50">(250 3) (500 3) (1000 3) (2000 3) (4000 3) (6000 3) (8000 3)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6506" RunTimeFilter="ExcludeFromLinearMode">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50">(250 0) (500 0) (1000 2) (2000 3) (4000 3) (6000 3) (8000 3)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65">(250 0) (500 0) (1000 2) (2000 3) (4000 3) (6000 3) (8000 3)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+            <Solution BR="-1" EV="-1" FF="-1" PP="3" ID="8184" RunTimeFilter="Exclusions_None">
+              <FeatureChanges>
+                <FeatureChange BR="-1" EV="-1" FF="-1" PP="3" ID="EVFT.Volume.GainDepths" Indexes="1" Type="FEATURE_CHANGE_RELATIVE" Value="2" RunTimeFilter="Exclusions_None" />
+              </FeatureChanges>
+            </Solution>
+          </Solutions>
+        </Problem>
+  -->        
+        <Problem BR="-1" EV="-1" FF="-1" PP="-1" ID="6507" RunTimeFilter="Exclusions_None">
+          <Solutions>
+ <!--           
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6508" RunTimeFilter="ExcludeFromLinearMode">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50">(250 3) (500 3) (1000 3) (2000 3) (4000 3) (6000 3) (8000 3)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65">(250 3) (500 3) (1000 3) (2000 3) (4000 3) (6000 3) (8000 3)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+            
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6509" RunTimeFilter="ExcludeFromLinearMode">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65">(250 3) (500 3) (1000 2) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+-->           
+            <Solution BR="-1" EV="-1" FF="-1" PP="3" ID="6510" RunTimeFilter="Exclusions_None">
+              <FeatureChanges>
+                <FeatureChange BR="-1" EV="-1" FF="-1" PP="3" ID="EVFT.Volume.GainDepths" Indexes="1,2,3" Type="FEATURE_CHANGE_RELATIVE" Value="1" RunTimeFilter="Exclusions_None" />
+              </FeatureChanges>
+            </Solution>
+          </Solutions>
+        </Problem>
+<!--  High frequency sounds are too loud (birdsong, doorbell, telephone ring) -->
+       
+        
+        <Problem BR="-1" EV="-1" FF="-1" PP="-1" ID="6511" RunTimeFilter="Exclusions_None">
+          <Solutions>
+<!--            
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6512" RunTimeFilter="ExcludeFromLinearMode">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50">(250 0) (500 0) (1000 0) (2000 2) (4000 3) (6000 3)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6513" RunTimeFilter="ExcludeFromLinearMode">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50">(250 0) (500 0) (1000 2) (2000 3) (4000 3) (6000 3)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+  -->      
+            <!--  Increase level of Sound Shaper  -->
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="8058" RunTimeFilter="Exclusions_None">
+              <FeatureChanges>
+                <FeatureChange BR="-1" EV="-1" FF="-1" PP="-1" ID="FreqLow.Level" Type="FEATURE_CHANGE_RELATIVE" Value="1" RunTimeFilter="Exclusions_None" />
+              </FeatureChanges>
+            </Solution>
+          </Solutions>
+        </Problem>
+  -->      
+        <Problem BR="-1" EV="-1" FF="-1" PP="-1" ID="6514" RunTimeFilter="Exclusions_None">
+          <Solutions>
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6515" RunTimeFilter="Exclusions_None">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50">(250 2) (500 2) (1000 2) (2000 2) (4000 2) (6000 2) (8000 2)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65">(250 2) (500 2) (1000 2) (2000 2) (4000 2) (6000 2) (8000 2)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 2) (500 2) (1000 2) (2000 2) (4000 2) (6000 2) (8000 2)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6516" RunTimeFilter="Exclusions_None">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50">(250 -2) (500 -2) (1000 -2) (2000 -2) (4000 -2) (6000 -2) (8000 -2)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65">(250 -2) (500 -2) (1000 -2) (2000 -2) (4000 -2) (6000 -2) (8000 -2)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 -2) (500 -2) (1000 -2) (2000 -2) (4000 -2) (6000 -2) (8000 -2)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+            <Solution BR="-1" EV="-1" FF="-1" PP="3" ID="6517" RunTimeFilter="Exclusions_None" />
+          </Solutions>
+        </Problem>
+        <Problem BR="-1" EV="-1" FF="-1" PP="-1" ID="6518" RunTimeFilter="Exclusions_None">
+          <Solutions>
+            <Solution BR="-1" EV="-1" FF="-1" PP="3" ID="6519" RunTimeFilter="Exclusions_None" />
+            <Solution BR="-1" EV="-1" FF="-1" PP="3" ID="6520" RunTimeFilter="Exclusions_None">
+              <FeatureChanges>
+                <FeatureChange BR="-1" EV="-1" FF="-1" PP="3" ID="EVFT.Volume.GainDepths" Indexes="0,2,4,6,5,3,1" Type="FEATURE_CHANGE_ABSOLUTE" Value="0" RunTimeFilter="Exclusions_None" />
+              </FeatureChanges>
+            </Solution>
+          </Solutions>
+        </Problem>
+        <Problem BR="-1" EV="-1" FF="-1" PP="-1" ID="6521" RunTimeFilter="Exclusions_None">
+          <Solutions>
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6522" RunTimeFilter="Exclusions_None">
+              <FeatureChanges>
+                <FeatureChange BR="-1" EV="-1" FF="-1" PP="-1" ID="WindNoiseReduction.Mode" Type="FEATURE_CHANGE_RELATIVE" Value="1" RunTimeFilter="Exclusions_None" />
+              </FeatureChanges>
+            </Solution>
+<!--            
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6523" RunTimeFilter="ExcludeFromLinearMode">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65">(250 -3) (500 -3) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 -3) (500 -3) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+  -->            
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6764" RunTimeFilter="Exclusions_None">
+              <FeatureChanges>
+                <FeatureChange BR="-1" EV="-1" FF="-1" PP="-1" ID="WindNoiseReduction.Mode" Type="FEATURE_CHANGE_RELATIVE" Value="1" RunTimeFilter="Exclusions_None" />
+              </FeatureChanges>
+            </Solution>
+          </Solutions>
+        </Problem>
+        <Problem BR="-1" EV="-1" FF="-1" PP="-1" ID="8059" RunTimeFilter="ExcludeFromPediatricMode">
+          <Solutions>
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="8060" RunTimeFilter="ExcludeFromPediatricMode">
+              <FeatureChanges>
+                <FeatureChange BR="-1" EV="-1" FF="-1" PP="-1" ID="FSW.CompressionMode" Type="FEATURE_CHANGE_ABSOLUTE" Value="WDRC" RunTimeFilter="ExcludeFromPediatricMode" />
+              </FeatureChanges>
+            </Solution>
+          </Solutions>
+        </Problem>
+        <Problem BR="-1" EV="-1" FF="-1" PP="-1" ID="8061" RunTimeFilter="ExcludeFromPediatricMode">
+          <Solutions>
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="8062" RunTimeFilter="ExcludeFromPediatricMode">
+              <FeatureChanges>
+                <FeatureChange BR="-1" EV="-1" FF="-1" PP="-1" ID="FSW.CompressionMode" Type="FEATURE_CHANGE_ABSOLUTE" Value="WDRC" RunTimeFilter="ExcludeFromPediatricMode" />
+              </FeatureChanges>
+            </Solution>
+          </Solutions>
+        </Problem>
+      </Problems>
+    </Category>      <!--  Loudness -->
+    
+    <Category BR="-1" EV="-1" FF="-1" PP="-1" ID="62">
+      <Problems>
+        <Problem BR="-1" EV="-1" FF="-1" PP="-1" ID="63" RunTimeFilter="Exclusions_None">
+          <Solutions>
+<!--            
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6524" RunTimeFilter="ExcludeFromLinearMode">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65">(250 -3) (500 -3) (1000 -3) (2000 -3) (4000 -3) (6000 -3) (8000 -3)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+           
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6525" RunTimeFilter="ExcludeFromLinearMode">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 -3) (500 -3) (1000 -3) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+    
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6526" RunTimeFilter="ExcludeFromLinearMode">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50">(250 0) (500 0) (1000 0) (2000 -3) (4000 -3) (6000 -3) (8000 -3)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+     -->        
+            <Solution BR="-1" EV="-1" FF="-1" PP="3" ID="6765" RunTimeFilter="Exclusions_None">
+              <FeatureChanges>
+                <FeatureChange BR="-1" EV="-1" FF="-1" PP="3" ID="EVFT.Volume.GainDepths" Indexes="2,1,3" Type="FEATURE_CHANGE_RELATIVE" Value="-1" RunTimeFilter="Exclusions_None" />
+              </FeatureChanges>
+            </Solution>
+          </Solutions>
+        </Problem>
+        <Problem BR="-1" EV="-1" FF="-1" PP="-1" ID="67" RunTimeFilter="Exclusions_None">
+          <Solutions>
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6527" RunTimeFilter="Exclusions_None">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50">(250 -3) (500 -3) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65">(250 -3) (500 -3) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 -3) (500 -3) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6528" RunTimeFilter="Exclusions_None">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50">(250 -3) (500 -3) (1000 0) (2000 0) (4000 3) (6000 3) (8000 3)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65">(250 -3) (500 -3) (1000 0) (2000 0) (4000 3) (6000 3) (8000 3)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 -3) (500 -3) (1000 0) (2000 0) (4000 3) (6000 3) (8000 3)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+<!--            
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6529" RunTimeFilter="ExcludeFromLinearMode">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50">(250 0) (500 0) (1000 0) (2000 0) (4000 3) (6000 3) (8000 3)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65">(250 0) (500 0) (1000 0) (2000 0) (4000 3) (6000 3) (8000 3)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+            
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6530" RunTimeFilter="ExcludeFromLinearMode" />            
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6531" RunTimeFilter="ExcludeFromLinearMode" />
+  -->            
+          </Solutions>
+        </Problem>
+        <Problem BR="-1" EV="-1" FF="-1" PP="-1" ID="75" RunTimeFilter="Exclusions_None">
+          <Solutions>
+<!--             
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6532" RunTimeFilter="ExcludeFromLinearMode">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50">(250 0) (500 0) (1000 3) (2000 3) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+            
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6533" RunTimeFilter="ExcludeFromLinearMode">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50">(250 3) (500 3) (1000 3) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65">(250 3) (500 3) (1000 3) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+            
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6534" RunTimeFilter="ExcludeFromLinearMode">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50">(250 0) (500 0) (1000 0) (2000 0) (4000 3) (6000 3) (8000 3)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+   -->           
+            <Solution BR="-1" EV="-1" FF="-1" PP="3" ID="6766" RunTimeFilter="Exclusions_None">
+              <FeatureChanges>
+                <FeatureChange BR="-1" EV="-1" FF="-1" PP="3" ID="EVFT.Volume.GainDepths" Indexes="2,4,1,3" Type="FEATURE_CHANGE_RELATIVE" Value="1" RunTimeFilter="Exclusions_None" />
+              </FeatureChanges>
+            </Solution>
+          </Solutions>
+        </Problem>
+        <Problem BR="-1" EV="-1" FF="-1" PP="-1" ID="83" RunTimeFilter="Exclusions_None">
+          <Solutions>
+<!--            
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6535" RunTimeFilter="ExcludeFromLinearMode">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 0) (500 0) (1000 0) (2000 0) (4000 -3) (6000 -3) (8000 -3)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+     -->       
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6536" RunTimeFilter="Exclusions_None">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50">(250 0) (500 0) (1000 0) (2000 0) (4000 -3) (6000 -3) (8000 -3)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65">(250 0) (500 0) (1000 0) (2000 0) (4000 -3) (6000 -3) (8000 -3)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 0) (500 0) (1000 0) (2000 0) (4000 -3) (6000 -3) (8000 -3)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+<!--            
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6537" RunTimeFilter="ExcludeFromLinearMode">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50">(250 3) (500 3) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+  -->            
+          </Solutions>
+        </Problem>
+        <Problem BR="-1" EV="-1" FF="-1" PP="-1" ID="95" RunTimeFilter="Exclusions_None">
+          <Solutions>
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6538" RunTimeFilter="Exclusions_None">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50">(250 0) (500 3) (1000 3) (2000 3) (4000 3) (6000 3) (8000 3)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65">(250 0) (500 3) (1000 3) (2000 3) (4000 3) (6000 3) (8000 3)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 0) (500 3) (1000 3) (2000 3) (4000 3) (6000 3) (8000 3)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6539" RunTimeFilter="Exclusions_None">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50">(250 0) (500 0) (1000 0) (2000 0) (4000 3) (6000 3) (8000 3)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65">(250 0) (500 0) (1000 0) (2000 0) (4000 3) (6000 3) (8000 3)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 0) (500 0) (1000 0) (2000 0) (4000 3) (6000 3) (8000 3)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+<!--            
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6540" RunTimeFilter="ExcludeFromLinearMode">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50">(250 0) (500 0) (1000 0) (2000 0) (4000 3) (6000 3) (8000 3)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65">(250 0) (500 0) (1000 0) (2000 0) (4000 3) (6000 3) (8000 3)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+  -->            
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6541" RunTimeFilter="Exclusions_None">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50">(250 0) (500 -3) (1000 -3) (2000 -3) (4000 -3) (6000 -3) (8000 -3)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65">(250 0) (500 -3) (1000 -3) (2000 -3) (4000 -3) (6000 -3) (8000 -3)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 0) (500 -3) (1000 -3) (2000 -3) (4000 -3) (6000 -3) (8000 -3)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6542" RunTimeFilter="Exclusions_None">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50">(250 -3) (500 -3) (1000 -3) (2000 -3) (4000 3) (6000 3) (8000 3)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65">(250 -3) (500 -3) (1000 -3) (2000 -3) (4000 3) (6000 3) (8000 3)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 -3) (500 -3) (1000 -3) (2000 -3) (4000 3) (6000 3) (8000 3)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+          </Solutions>
+        </Problem>
+        <Problem BR="-1" EV="-1" FF="-1" PP="-1" ID="103" RunTimeFilter="Exclusions_None">
+          <Solutions>
+<!--            
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6543" RunTimeFilter="ExcludeFromLinearMode">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50">(250 0) (500 0) (1000 0) (2000 0) (4000 -3) (6000 -3) (8000 -3)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6544" RunTimeFilter="ExcludeFromLinearMode">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 3) (500 3) (1000 3) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6545" RunTimeFilter="ExcludeFromLinearMode">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50">(250 0) (500 0) (1000 0) (2000 0) (4000 -3) (6000 -3) (8000 -3)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65">(250 0) (500 0) (1000 0) (2000 0) (4000 -3) (6000 -3) (8000 -3)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 3) (500 3) (1000 3) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+  -->            
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6546" RunTimeFilter="Exclusions_None">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50">(250 -3) (500 -3) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65">(250 -3) (500 -3) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 -3) (500 -3) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+          </Solutions>
+        </Problem>
+        <Problem BR="-1" EV="-1" FF="-1" PP="-1" ID="112" RunTimeFilter="Exclusions_None">
+          <Solutions>
+            <!-- Decrease gain for high frequency sounds -->
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6547" RunTimeFilter="Exclusions_None">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50">(250 0) (500 0) (1000 0) (2000 0) (4000 -3) (6000 -3) (8000 -3)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65">(250 0) (500 0) (1000 0) (2000 0) (4000 -3) (6000 -3) (8000 -3)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 0) (500 0) (1000 0) (2000 0) (4000 -3) (6000 -3) (8000 -3)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+<!--            
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6548" RunTimeFilter="ExcludeFromLinearMode">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 0) (500 0) (1000 0) (2000 -2) (4000 -3) (6000 -3) (8000 -3)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6549" RunTimeFilter="ExcludeFromLinearMode">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50">(250 0) (500 0) (1000 -3) (2000 -3) (4000 -3) (6000 -3) (8000 -3)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+   -->
+            <!-- Increase gain for low frequency sounds -->
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6550" RunTimeFilter="Exclusions_None">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50">(250 3) (500 3) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65">(250 3) (500 3) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 3) (500 3) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+          </Solutions>
+        </Problem>
+        <!--  Own voice sounds hollow  -->   <!--
+        <Problem BR="-1" EV="-1" FF="-1" PP="-1" ID="115" RunTimeFilter="ExcludeFromLinearMode">
+          <Solutions>
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6551" RunTimeFilter="ExcludeFromLinearMode">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 -3) (500 -3) (1000 -3) (2000 -3) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6552" RunTimeFilter="ExcludeFromLinearMode">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50">(250 -3) (500 -3) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6553" RunTimeFilter="ExcludeFromLinearMode" />
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6767" RunTimeFilter="ExcludeFromLinearMode" />
+          </Solutions>
+        </Problem>
+   -->        
+        <!--  Female voices sound boomy  -->  <!--
+        <Problem BR="-1" EV="-1" FF="-1" PP="-1" ID="119" RunTimeFilter="ExcludeFromLinearMode">
+          <Solutions>
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6554" RunTimeFilter="ExcludeFromLinearMode">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 -3) (500 -3) (1000 -3) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6555" RunTimeFilter="ExcludeFromLinearMode">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50">(250 -3) (500 -3) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65">(250 -3) (500 -3) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6556" RunTimeFilter="ExcludeFromLinearMode">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50">(250 0) (500 0) (1000 0) (2000 0) (4000 3) (6000 3) (8000 3)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+          </Solutions>
+        </Problem>
+   -->        
+        <Problem BR="-1" EV="-1" FF="-1" PP="-1" ID="123" RunTimeFilter="Exclusions_None">
+          <Solutions>
+<!--            
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="124" RunTimeFilter="ExcludeFromLinearMode">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50"> (250 0) (500 0) (1000 0) (2000 0) (4000 -3) (6000 -3) (8000 -3)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80"> (250 0) (500 0) (1000 0) (2000 0) (4000 -6) (6000 -6) (8000 -6)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="125" RunTimeFilter="ExcludeFromLinearMode">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50"> (250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80"> (250 0) (500 0) (1000 -3) (2000 -3) (4000 -3) (6000 -3) (8000 -3)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+  -->            
+            <!-- Decrease high frequency gain -->
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="126" RunTimeFilter="Exclusions_None">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50"> (250 0) (500 0) (1000 0) (2000 0) (4000 -3) (6000 -3) (8000 -3)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80"> (250 0) (500 0) (1000 0) (2000 0) (4000 -3) (6000 -3) (8000 -3)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+          </Solutions>
+        </Problem>
+        <Problem BR="-1" EV="-1" FF="-1" PP="-1" ID="127" RunTimeFilter="Exclusions_None">
+          <Solutions>
+<!--            
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6557" RunTimeFilter="ExcludeFromLinearMode">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50">(250 3) (500 3) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+  -->            
+            <!--  Increase for low and mid frequencies -->
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6558" RunTimeFilter="Exclusions_None">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50">(250 3) (500 3) (1000 3) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65">(250 3) (500 3) (1000 3) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 3) (500 3) (1000 3) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+<!--            
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6559" RunTimeFilter="ExcludeFromLinearMode">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50">(250 3) (500 3) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+  -->            
+          </Solutions>
+        </Problem>
+        <Problem BR="-1" EV="-1" FF="-1" PP="-1" ID="135" RunTimeFilter="Exclusions_None">
+          <Solutions>
+            <!--  Increase overall gain for mid and high frequencies  -->
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6560" RunTimeFilter="Exclusions_None">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50">(250 0) (500 0) (1000 3) (2000 3) (4000 3) (6000 3) (8000 3)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65">(250 0) (500 0) (1000 3) (2000 3) (4000 3) (6000 3) (8000 3)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 0) (500 0) (1000 3) (2000 3) (4000 3) (6000 3) (8000 3)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+ <!--           
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6561" RunTimeFilter="ExcludeFromLinearMode">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50">(250 0) (500 0) (1000 0) (2000 0) (4000 3) (6000 3) (8000 3)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65">(250 -3) (500 -3) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 -3) (500 -3) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+  -->            
+          </Solutions>
+        </Problem>
+        <Problem BR="-1" EV="-1" FF="-1" PP="-1" ID="139" RunTimeFilter="Exclusions_None">
+          <Solutions>
+            <!--  Decrease low frequency gain  -->
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="141" RunTimeFilter="Exclusions_None">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50"> (250 -3) (500 -3) (1000 -3) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65"> (250 -3) (500 -3) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 -3) (500 -3) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+ <!--           
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="142" RunTimeFilter="ExcludeFromLinearMode">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50"> (250 0) (500 0) (1000 0) (2000 0) (4000 -3) (6000 -3) (8000 -3)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65">(250 0) (500 0) (1000 0) (2000 0) (4000 -3) (6000 -3) (8000 -3)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 3) (500 3) (1000 3) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6562" RunTimeFilter="ExcludeFromLinearMode">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 0) (500 0) (1000 -3) (2000 -3) (4000 -3) (6000 -3) (8000 -3)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6563" RunTimeFilter="ExcludeFromLinearMode" />
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6768" RunTimeFilter="ExcludeFromLinearMode" />
+    -->            
+          </Solutions>          
+        </Problem>
+        <!--   Music sounds boomy  -->
+        <Problem BR="-1" EV="-1" FF="-1" PP="-1" ID="146" RunTimeFilter="Exclusions_None">
+          <Solutions>
+            <!--  Decrease low frequency gain by 6 dB, increase high frequency gain  -->
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="147" RunTimeFilter="Exclusions_None">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50"> (250 -6) (500 -6) (1000 0) (2000 0) (4000 3) (6000 3) (8000 3)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65"> (250 -6) (500 -6) (1000 0) (2000 0) (4000 3) (6000 3) (8000 3)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 -6) (500 -6) (1000 0) (2000 0) (4000 3) (6000 3) (8000 3)</SoundInputLevel>
+              </Offsets>
+            </Solution>       
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="148" RunTimeFilter="Exclusions_None">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50"> (250 -3) (500 -3) (1000 0) (2000 0) (4000 3) (6000 3) (8000 3)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65"> (250 -3) (500 -3) (1000 0) (2000 0) (4000 3) (6000 3) (8000 3)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 -3) (500 -3) (1000 0) (2000 0) (4000 3) (6000 3) (8000 3)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+<!--            
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="149" RunTimeFilter="ExcludeFromLinearMode">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65"> (250 -3) (500 -3) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 -3) (500 -3) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+  -->            
+          </Solutions>
+        </Problem>
+        <Problem BR="-1" EV="-1" FF="-1" PP="-1" ID="150" RunTimeFilter="Exclusions_None">
+          <Solutions>
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="153" RunTimeFilter="Exclusions_None">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50"> (250 0) (500 0) (1000 -3) (2000 -3) (4000 -3) (6000 -3) (8000 -3)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65"> (250 0) (500 0) (1000 -3) (2000 -3) (4000 -3) (6000 -3) (8000 -3)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 0) (500 0) (1000 -3) (2000 -3) (4000 -3) (6000 -3) (8000 -3)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+<!-- Decrease high frequency gain for loud sounds -->  <!--            
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6566" RunTimeFilter="ExcludeFromLinearMode">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 0) (500 0) (1000 0) (2000 0) (4000 -3) (6000 -3) (8000 -3)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+  -->            
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6567" RunTimeFilter="Exclusions_None">
+              <FeatureChanges>
+                <FeatureChange BR="-1" EV="-1" FF="-1" PP="-1" ID="NoiseTracker" Type="FEATURE_CHANGE_RELATIVE" Value="-1" RunTimeFilter="Exclusions_None" />
+              </FeatureChanges>
+            </Solution>
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="8063" RunTimeFilter="Exclusions_None">
+              <FeatureChanges>
+                <FeatureChange BR="-1" EV="-1" FF="-1" PP="-1" ID="DFS" Type="FEATURE_CHANGE_ABSOLUTE" Value="Music" RunTimeFilter="Exclusions_None" />
+              </FeatureChanges>
+            </Solution>
+          </Solutions>
+        </Problem>
+        <Problem BR="-1" EV="-1" FF="-1" PP="-1" ID="154" RunTimeFilter="Exclusions_None">
+          <Solutions>
+            <!--  Decrease G50 for low frequencies, increase mid and high frequency gain  -->  <!--
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="156" RunTimeFilter="ExcludeFromLinearMode">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50">(250 -3) (500 -3) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+   -->         
+            <!-- Decrease low frequency gain for soft sounds -->  <!--
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6568" RunTimeFilter="ExcludeFromLinearMode">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50">(250 -3) (500 -3) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+  -->            
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6569" RunTimeFilter="Exclusions_None">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50">(250 -3) (500 -3) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65">(250 -3) (500 -3) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 -3) (500 -3) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6570" RunTimeFilter="Exclusions_None">
+              <FeatureChanges>
+                <FeatureChange BR="-1" EV="-1" FF="-1" PP="-1" ID="NoiseTracker" Type="FEATURE_CHANGE_RELATIVE" Value="1" RunTimeFilter="Exclusions_None" />
+              </FeatureChanges>
+            </Solution>
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="8064" RunTimeFilter="Exclusions_None">
+              <FeatureChanges>
+                <FeatureChange BR="-1" EV="-1" FF="-1" PP="-1" ID="FreqLow.Level" Type="FEATURE_CHANGE_ABSOLUTE" Value="LevelOff" RunTimeFilter="Exclusions_None" />
+              </FeatureChanges>
+            </Solution>
+          </Solutions>
+        </Problem>
+        <Problem BR="-1" EV="-1" FF="-1" PP="-1" ID="157" RunTimeFilter="Exclusions_None">
+          <Solutions>
+            <!--  Increase low and mid frequency gain.  -->
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6571" RunTimeFilter="Exclusions_None">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50">(250 3) (500 3) (1000 3) (2000 3) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65">(250 3) (500 3) (1000 3) (2000 3) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 3) (500 3) (1000 3) (2000 3) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+<!--            
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6572" RunTimeFilter="ExcludeFromLinearMode">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 0) (500 0) (1000 -3) (2000 -3) (4000 -3) (6000 -3) (8000 -3)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+  -->            
+            <!--  Ensure microphone setting is omni directional -->
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6573" RunTimeFilter="Exclusions_None" />
+<!--            
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6574" RunTimeFilter="ExcludeFromLinearMode">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 0) (500 0) (1000 0) (2000 0) (4000 -3) (6000 -3) (8000 -3)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6575" RunTimeFilter="ExcludeFromLinearMode">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65">(250 0) (500 0) (1000 -3) (2000 -3) (4000 -3) (6000 -3) (8000 -3)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 0) (500 0) (1000 -3) (2000 -3) (4000 -3) (6000 -3) (8000 -3)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+  -->            
+          </Solutions>
+        </Problem>
+        <Problem BR="-1" EV="-1" FF="-1" PP="-1" ID="161" RunTimeFilter="Exclusions_None">
+          <Solutions>
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6576" RunTimeFilter="Exclusions_None">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50">(250 3) (500 3) (1000 -3) (2000 -3) (4000 -3) (6000 -3) (8000 -3)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65">(250 3) (500 3) (1000 -3) (2000 -3) (4000 -3) (6000 -3) (8000 -3)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 3) (500 3) (1000 -3) (2000 -3) (4000 -3) (6000 -3)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+          </Solutions>
+        </Problem>
+        <!--  >Loud sounds are restricted  -->  <!--
+        <Problem BR="-1" EV="-1" FF="-1" PP="-1" ID="8065" RunTimeFilter="ExcludeFromPediatricAndLienar">
+          <Solutions>
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="8066" RunTimeFilter="ExcludeFromPediatricMode">
+              <FeatureChanges>
+                <FeatureChange BR="-1" EV="-1" FF="-1" PP="-1" ID="FSW.CompressionMode" Type="FEATURE_CHANGE_ABSOLUTE" Value="Linear" RunTimeFilter="ExcludeFromPediatricAndLienar" />
+              </FeatureChanges>
+            </Solution>
+          </Solutions>
+        </Problem>
+  -->        
+        <Problem BR="-1" EV="-1" FF="-1" PP="-1" ID="8067" RunTimeFilter="Exclusions_None">
+          <Solutions>
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="8068" RunTimeFilter="Exclusions_None">
+              <FeatureChanges>
+                <FeatureChange BR="-1" EV="-1" FF="-1" PP="-1" ID="FreqLow.Level" Type="FEATURE_CHANGE_RELATIVE" Value="-1" RunTimeFilter="Exclusions_None" />
+              </FeatureChanges>
+            </Solution>
+          </Solutions>
+        </Problem>
+      </Problems>
+    </Category>
+    <Category BR="-1" EV="-1" FF="-1" PP="-1" ID="185">
+      <Problems>
+        <Problem BR="-1" EV="-1" FF="-1" PP="-1" ID="202" RunTimeFilter="Exclusions_None">
+          <Solutions>
+            <!--  Decrease low frequency gain for loud sounds -->  <!--
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6577" RunTimeFilter="ExcludeFromLinearMode">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 -3) (500 -3) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+  -->            
+            <!-- Increase high frequency gain for soft and moderate sounds  -->  <!--
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6578" RunTimeFilter="ExcludeFromLinearMode">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50">(250 0) (500 0) (1000 0) (2000 0) (4000 3) (6000 3) (8000 3)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65">(250 0) (500 0) (1000 0) (2000 0) (4000 3) (6000 3) (8000 3)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+  -->            
+            <!-- Increase noise reduction setting -->
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6579" RunTimeFilter="Exclusions_None">
+              <FeatureChanges>
+                <FeatureChange BR="-1" EV="-1" FF="-1" PP="-1" ID="NoiseTracker" Type="FEATURE_CHANGE_RELATIVE" Value="1" RunTimeFilter="Exclusions_None" />
+              </FeatureChanges>
+            </Solution>
+            <!--  When possible consider the use of the Micro Mic or Multi Mic  -->
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6580" RunTimeFilter="Exclusions_None" />
+          </Solutions>
+        </Problem>
+        <Problem BR="-1" EV="-1" FF="-1" PP="-1" ID="205" RunTimeFilter="Exclusions_None">
+          <Solutions>
+            <!--  Increase mid and high frequency gain for soft sounds -->  <!--
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6581" RunTimeFilter="ExcludeFromLinearMode">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50">(250 0) (500 0) (1000 3) (2000 3) (4000 3) (6000 3) (8000 3)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+   -->            
+            <!--  Increase mid frequency gain for soft and moderate sounds -->  <!--
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6582" RunTimeFilter="ExcludeFromLinearMode">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50">(250 0) (500 0) (1000 3) (2000 3) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65">(250 0) (500 0) (1000 3) (2000 3) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+  -->            
+            <!--  Increase mid and high frequency gain  -->
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6583" RunTimeFilter="Exclusions_None">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50">(250 0) (500 0) (1000 3) (2000 3) (4000 3) (6000 3) (8000 3)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65">(250 0) (500 0) (1000 3) (2000 3) (4000 3) (6000 3) (8000 3)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 0) (500 0) (1000 3) (2000 3) (4000 3) (6000 3) (8000 3)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+            <!--  When possible consider the use of the Micro Mic or Multi Mic  -->
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6584" RunTimeFilter="Exclusions_None" />
+          </Solutions>
+        </Problem>
+        <Problem BR="-1" EV="-1" FF="-1" PP="-1" ID="6585" RunTimeFilter="Exclusions_None">
+          <Solutions>
+<!--            
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6586" RunTimeFilter="ExcludeFromLinearMode">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50">(250 -3) (500 -3) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6587" RunTimeFilter="ExcludeFromLinearMode">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65">(250 0) (500 0) (1000 0) (2000 0) (4000 3) (6000 3) (8000 3)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+   -->            
+            <!--  When possible consider the use of the Micro Mic or Multi Mic  -->
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6588" RunTimeFilter="Exclusions_None" />
+          </Solutions>
+        </Problem>
+        <Problem BR="-1" EV="-1" FF="-1" PP="-1" ID="6589" RunTimeFilter="Exclusions_None">
+          <Solutions>
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6590" RunTimeFilter="Exclusions_None">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50">(250 3) (500 3) (1000 3) (2000 3) (4000 3) (6000 3) (8000 3)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6592" RunTimeFilter="Exclusions_None" />
+            <Solution BR="-1" EV="-1" FF="-1" PP="1" ID="8775" RunTimeFilter="Exclusions_None" >
+		  <FeatureChanges>
+		    <FeatureChange BR="-1" EV="-1" FF="-1" PP="-1" ID="Directionality" Type="FEATURE_CHANGE_ABSOLUTE" Value="FocusEar45" RunTimeFilter="Exclusions_None" />
+		  </FeatureChanges>
+            </Solution>
+          </Solutions>
+        </Problem>
+      </Problems>
+    </Category>
+    <Category BR="-1" EV="-1" FF="-1" PP="-1" ID="6593">
+      <Problems>
+        <Problem BR="-1" EV="-1" FF="-1" PP="-1" ID="16" RunTimeFilter="Exclusions_None">
+          <Solutions>
+            <!--  Decrease vent size. Change earmold tubing. Remake earmold/shell  -->   <!--
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="17" RunTimeFilter="ExcludeFromLinearMode" />
+   -->            
+            <!--  Re-calibrate DFS -->
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6594" RunTimeFilter="Exclusions_None" />
+            <!--  Enable Safe Fitting  -->
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6595" RunTimeFilter="Exclusions_None" />
+            <!--  >Decrease high frequency gain for soft sounds -->   <!--
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6596" RunTimeFilter="ExcludeFromLinearMode">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50">(250 0) (500 0) (1000 0) (2000 0) (4000 -2) (6000 -2) (8000 -2)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+  -->            
+            <!--  Decrease high frequency gain for soft and loud sounds  -->   <!--
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6597" RunTimeFilter="ExcludeFromLinearMode">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50">(250 0) (500 0) (1000 0) (2000 0) (4000 -2) (6000 -2) (8000 -2)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 0) (500 0) (1000 0) (2000 0) (4000 -2) (6000 -2) (8000 -2)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+   -->            
+            <!--  Turn on or increase the level of expansion  -->
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6598" RunTimeFilter="Exclusions_None">
+              <FeatureChanges>
+                <FeatureChange BR="-1" EV="-1" FF="-1" PP="-1" ID="Expansion" Type="FEATURE_CHANGE_RELATIVE" Value="1" RunTimeFilter="Exclusions_None" />
+              </FeatureChanges>
+            </Solution>
+            <!--  >Choose a double dome  -->   <!--
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6769" RunTimeFilter="ExcludeFromLinearMode" />
+  -->            
+            <!--  Change to semi-linear compression mode  -->
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="8069" RunTimeFilter="Exclusions_None">
+              <FeatureChanges>
+                <FeatureChange BR="-1" EV="-1" FF="-1" PP="-1" ID="FSW.CompressionMode" Type="FEATURE_CHANGE_ABSOLUTE" Value="SemiLinear" RunTimeFilter="Exclusions_None" />
+              </FeatureChanges>
+            </Solution>
+          </Solutions>
+        </Problem>
+        <Problem BR="-1" EV="-1" FF="-1" PP="-1" ID="6599" RunTimeFilter="Exclusions_None">
+          <Solutions>
+            <!--  Re-calibrate DFS  -->
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6600" RunTimeFilter="Exclusions_None" />
+            <!--  Increase the degree of DFS Ultra  -->
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6601" RunTimeFilter="Exclusions_None">
+              <FeatureChanges>
+                <FeatureChange BR="-1" EV="-1" FF="-1" PP="-1" ID="DFS" Type="FEATURE_CHANGE_RELATIVE" Value="1" RunTimeFilter="Exclusions_None" />
+              </FeatureChanges>
+            </Solution>
+<!--            
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6602" RunTimeFilter="ExcludeFromLinearMode">
+              <Offsets>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB50">(250 0) (500 0) (1000 0) (2000 0) (4000 -2) (6000 -2) (8000 -2)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB65">(250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0)</SoundInputLevel>
+                <SoundInputLevel BR="-1" EV="-1" FF="-1" PP="-1" InputLevel="DB80">(250 0) (500 0) (1000 0) (2000 0) (4000 2) (6000 2) (8000 2)</SoundInputLevel>
+              </Offsets>
+            </Solution>
+   -->            
+          </Solutions>
+        </Problem>
+      </Problems>
+    </Category>
+    <Category BR="-1" EV="-1" FF="-1" PP="-1" ID="6603">
+      <Problems>
+        <Problem BR="-1" EV="-1" FF="-1" PP="-1" ID="6604" RunTimeFilter="Exclusions_None">
+          <Solutions>
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6605" RunTimeFilter="Exclusions_None" />
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6606" RunTimeFilter="Exclusions_None" />
+          </Solutions>
+        </Problem>
+        <Problem BR="-1" EV="-1" FF="-1" PP="-1" ID="6607" RunTimeFilter="Exclusions_None">
+          <Solutions>
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6608" RunTimeFilter="Exclusions_None" />
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6609" RunTimeFilter="Exclusions_None" />
+          </Solutions>
+        </Problem>
+        <Problem BR="-1" EV="-1" FF="-1" PP="-1" ID="6610" RunTimeFilter="Exclusions_None">
+          <Solutions>
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6611" RunTimeFilter="Exclusions_None" />
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6612" RunTimeFilter="Exclusions_None" />
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="8776" RunTimeFilter="Exclusions_None">
+              <FeatureChanges>
+                <FeatureChange BR="-1" EV="-1" FF="-1" PP="-1" ID="TSG.ModulationLevel" Type="FEATURE_CHANGE_RELATIVE" Value="1" RunTimeFilter="Exclusions_None" />
+              </FeatureChanges>
+            </Solution>
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="8777" RunTimeFilter="Exclusions_None" />
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="8778" RunTimeFilter="Exclusions_None" />
+          </Solutions>
+        </Problem>
+        <Problem BR="-1" EV="-1" FF="-1" PP="-1" ID="6613" RunTimeFilter="Exclusions_None">
+          <Solutions>
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6614" RunTimeFilter="Exclusions_None" />
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="8779" RunTimeFilter="Exclusions_None" />
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="8780" RunTimeFilter="Exclusions_None" />
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="8781" RunTimeFilter="Exclusions_None">
+              <FeatureChanges>
+                <FeatureChange BR="-1" EV="-1" FF="-1" PP="-1" ID="TSG.ModulationLevel" Type="FEATURE_CHANGE_RELATIVE" Value="1" RunTimeFilter="Exclusions_None" />
+              </FeatureChanges>
+            </Solution>
+          </Solutions>
+        </Problem>
+        <Problem BR="-1" EV="-1" FF="-1" PP="-1" ID="6615" RunTimeFilter="Exclusions_None">
+          <Solutions>
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="8782" RunTimeFilter="Exclusions_None">
+              <FeatureChanges>
+                <FeatureChange BR="-1" EV="-1" FF="-1" PP="-1" ID="TSG.ModulationLevel" Type="FEATURE_CHANGE_RELATIVE" Value="1" RunTimeFilter="Exclusions_None" />
+              </FeatureChanges>
+            </Solution>
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="8783" RunTimeFilter="Exclusions_None" />
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="8784" RunTimeFilter="Exclusions_None" />
+          </Solutions>
+        </Problem>
+        <Problem BR="-1" EV="-1" FF="-1" PP="-1" ID="6617" RunTimeFilter="Exclusions_None">
+          <Solutions>
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6618" RunTimeFilter="Exclusions_None" />
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="8785" RunTimeFilter="Exclusions_None" />
+          </Solutions>
+        </Problem>
+        <Problem BR="-1" EV="-1" FF="-1" PP="-1" ID="6619" RunTimeFilter="Exclusions_None">
+          <Solutions>
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6621" RunTimeFilter="Exclusions_None" />
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="8786" RunTimeFilter="Exclusions_None" />
+          </Solutions>
+        </Problem>
+        <Problem BR="-1" EV="-1" FF="-1" PP="-1" ID="6622" RunTimeFilter="Exclusions_None">
+          <Solutions>
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6623" RunTimeFilter="Exclusions_None" />
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6624" RunTimeFilter="Exclusions_None" />
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6625" RunTimeFilter="Exclusions_None" />
+          </Solutions>
+        </Problem>
+        <Problem BR="-1" EV="-1" FF="-1" PP="-1" ID="6626" RunTimeFilter="Exclusions_None">
+          <Solutions>
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6627" RunTimeFilter="Exclusions_None" />
+          </Solutions>
+        </Problem>
+        <Problem BR="-1" EV="-1" FF="-1" PP="-1" ID="6628" RunTimeFilter="Exclusions_None">
+          <Solutions>
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6629" RunTimeFilter="Exclusions_None" />
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6630" RunTimeFilter="Exclusions_None" />
+          </Solutions>
+        </Problem>
+        <Problem BR="-1" EV="-1" FF="-1" PP="-1" ID="6631" RunTimeFilter="Exclusions_None">
+          <Solutions>
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6632" RunTimeFilter="Exclusions_None" />
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6633" RunTimeFilter="Exclusions_None" />
+          </Solutions>
+        </Problem>
+      </Problems>
+    </Category>
+    <!--  Wireless Accessories  -->
+    <Category BR="-1" EV="-1" FF="36749389516695699071" PP="-1" ID="6634">
+      <Problems>
+        <!-- Remote Control is not working with the hearing instrument (s).  -->  <!--
+        <Problem BR="-1" EV="-1" FF="-1" PP="-1" ID="6635" RunTimeFilter="Exclusions_None">
+          <Solutions>
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6636" RunTimeFilter="Exclusions_None" />
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6637" RunTimeFilter="Exclusions_None" />
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6638" RunTimeFilter="Exclusions_None" />
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6639" RunTimeFilter="Exclusions_None" />
+          </Solutions>
+        </Problem>
+  -->        
+        <!--  TV streamer is not functioning: The user does not hear sound from the TV streamer, 
+              or only hears sound out of one ear -->  <!--
+        <Problem BR="-1" EV="-1" FF="-1" PP="-1" ID="6640" RunTimeFilter="Exclusions_None">
+          <Solutions>
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6641" RunTimeFilter="Exclusions_None" />
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6642" RunTimeFilter="Exclusions_None" />
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6643" RunTimeFilter="Exclusions_None" />
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6644" RunTimeFilter="Exclusions_None" />
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6879" RunTimeFilter="Exclusions_None" />
+          </Solutions>
+        </Problem>
+   -->        
+        <Problem BR="-1" EV="-1" FF="-1" PP="-1" ID="6645" RunTimeFilter="Exclusions_None">
+          <Solutions>
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6646" RunTimeFilter="Exclusions_None" />
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6647" RunTimeFilter="Exclusions_None" />
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6648" RunTimeFilter="Exclusions_None" />
+          </Solutions>
+        </Problem>
+        <Problem BR="-1" EV="-1" FF="-1" PP="-1" ID="6649" RunTimeFilter="Exclusions_None">
+          <Solutions>
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6650" RunTimeFilter="Exclusions_None" />
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6651" RunTimeFilter="Exclusions_None" />
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6652" RunTimeFilter="Exclusions_None" />
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6880" RunTimeFilter="Exclusions_None" />
+          </Solutions>
+        </Problem>
+      </Problems>
+    </Category>
+    <Category BR="-1" EV="-1" FF="-1" PP="-1" ID="6653">
+      <Problems>
+        <Problem BR="-1" EV="-1" FF="-1" PP="-1" ID="6654" RunTimeFilter="Exclusions_None">
+          <Solutions>
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="6655" RunTimeFilter="Exclusions_None" />
+          </Solutions>
+        </Problem>
+        <Problem BR="-1" EV="-1" FF="-1" PP="-1" ID="8787" RunTimeFilter="Exclusions_None">
+          <Solutions>
+            <Solution BR="-1" EV="-1" FF="-1" PP="-1" ID="8788" RunTimeFilter="Exclusions_None" />
+          </Solutions>
+        </Problem>
+      </Problems>
+    </Category>
+  </Categories>
+</TextBasedWizardCategories>

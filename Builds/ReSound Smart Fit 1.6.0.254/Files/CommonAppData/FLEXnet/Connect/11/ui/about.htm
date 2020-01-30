@@ -1,0 +1,131 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Update Manager</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<script src="avlupdates.js" language="javascript"></script>
+		<script src="lang/resource.js"></script>
+		<link id="uistyles" type="text/css" rel="stylesheet" href="UpdaterStyle.css">
+<script>
+var twdl = unescape(top.window.document.location);
+var twdls = twdl.substr(twdl.indexOf("?"));
+var attribs = twdls.split("&");
+var _CustomCSS="";
+var _CustomStrings="";
+for (ii = 0; ii < attribs.length; ii++)
+{
+	var attrib = attribs[ii].split("=");
+	if (attrib[0].indexOf("CSS") != -1)
+		_CustomCSS = unescape(attrib[1]);
+	if (attrib[0].indexOf("Strings") != -1)
+		_CustomStrings = unescape(attrib[1]);
+}
+if (_CustomCSS.length > 0)
+	document.getElementById("uistyles").href=_CustomCSS;
+</script>
+</head>
+<body topmargin="0" bottommargin="0" leftmargin="0" rightmargin="0" onload="onpageload()" scroll="no">
+<!-- TOP NAVIGATION AND LOGO -->
+		<DIV id="mainNavHeader">
+			<DIV id="mainNavLogo"></DIV>
+			<DIV id="mainNavIconUpdatesS">
+				<DIV class="theNav">
+				<a href="updates.htm"><img src="images/icon_update.gif" width="32" height="32" border="0"></a><br>
+				<a href="updates.htm" id="ids_updates">Updates</a>
+				</DIV>
+			</DIV>
+			<div id="mainNavIconSettings">
+				<div class="theNav">
+				<a href="settings.htm"><img src="images/icon_settings.gif" width="32" height="32" border="0"></a><br>
+				<a href="settings.htm" id="ids_settings">Settings</a>
+				</div>
+			</div>
+			<div id="mainNavIconAbout">
+				<div class="theNavS">
+				<img src="images/icon_about.gif" width="32" height="32" border="0"><br>
+				<a class="theNavS" id="ids_about">About</a>
+				</div>
+			</div>
+		</DIV>
+
+<!-- SECONDARY NAVIGATION -->
+<div id="secNavHeader">
+	<div id="secNavTitle">About</div>
+	<div id="secNavSeparator"></div>
+        	<div id="secNavLink">
+		<strong>About the FLEXnet Connect Update Manager</strong>
+	</div>
+</div>
+
+<div id="mainContent">
+	<div id="mainPanel">
+		<div class="contentHeader" id="contentHeader1">About</div>
+		<div class="shortSpacerVert"></div>
+		<div class="aboutCell">
+		<div class="subSubContentHeader" id="subSubContentHeader1">About The FLEXnet Connect Update Manager</div><br>
+			<span id="leftpanelmsg">The FLEXnet Connect Update Manager keeps your programs up-to-date with the latest security patches, improvements, and bug fixes. \nWhen an update is available, you can: </span>
+				<ul><li>
+						<span id="leftpanelmsgpt1">View the updates for your system </span>
+					</li><li>
+						<span id="leftpanelmsgpt2">View update descriptions </span>
+					</li><li>
+						<span id="leftpanelmsgpt3">Download and install updates </span>
+					</li>
+				</ul>
+		<div class="subSubContentHeader" id="subSubContentHeader2">How does it work?</div><br>
+		<span id="subSubContentHeader2msg">Click Check for Updates on the New Updates & Messages page to view a list of the updates that are available for the program that you are using. The update notices include the size of the update, and a description of the update. From this list, choose the updates you wish to install. Clicking on an update listing allows you to learn more about the update, or to remove the update notice. </span>
+		</div>
+	</div>
+</div>
+		<div id="bottom">
+			<table cellpadding=0 cellspacing=0>
+			<tr>
+			<td>
+			<div id="copyright"><span id="ids_copyright">Copyright (c) 1997-2011 Flexera Software LLC.  All Rights Reserved.</span>| <a id="Aterms" href="http://www.flexerasoftware.com/company/terms_of_use.htm" target="_blank"><span id="ids_terms">Terms of Use</span></a>  | <a id="Aprivacy" href="http://www.flexerasoftware.com/company/legal.htm" target="_blank"><span id="ids_privacy">Privacy Statement</span></a></div></td>
+			<td width="18"><a href="help.htm" target="_blank"><img src="images/icon_help.gif" width="14" height="14" border="0" align="left"></a></td>
+			<td><a href="help.htm" target="_blank"><span id="ids_help">Help</span></a></td>
+			</tr>
+			</table>
+		</div>
+
+</body>
+<script>
+	function onpageload()
+	{
+		loadStrings();
+	}
+	function loadStrings()
+	{
+		document.charset = window.parent._UIcharset;
+
+		if (_CustomStrings.length > 0)
+			document.getElementById("strings").src = _CustomStrings + "/strings" + window.parent._UILangID + ".js";
+		else
+			document.getElementById("strings").src = "lang/strings" + window.parent._UILangID + ".js";
+		if (typeof(ar) == "undefined")
+			document.getElementById("strings").src = "lang/strings" + ((window.parent._UILangID & 0xff) + 1024) + ".js";
+		if (typeof(ar) == "undefined")
+			document.getElementById("strings").src = "lang/strings1033.js";
+
+		document.getElementById("ids_settings").innerText = ar[IDS_SETTINGS];
+		document.getElementById("ids_about").innerText = ar[IDS_ABOUT];
+		document.getElementById("ids_updates").innerText = ar[IDS_UPDATES];
+		document.getElementById("secNavTitle").innerText = ar[IDS_ABOUT];
+		document.getElementById("subSubContentHeader1").innerText = ar[IDS_ABOUT_FNUM];
+		document.getElementById("contentHeader1").innerText = ar[IDS_ABOUT];
+		document.getElementById("secNavLink").innerText = ar[IDS_ABOUT_FNUM];
+		document.getElementById("leftpanelmsg").innerText = ar[IDS_LEFTPANEL_MSG];
+		document.getElementById("leftpanelmsgpt1").innerText = ar[IDS_LEFTPANEL_PT1];
+		document.getElementById("leftpanelmsgpt2").innerText = ar[IDS_LEFTPANEL_PT2];
+		document.getElementById("leftpanelmsgpt3").innerText = ar[IDS_LEFTPANEL_PT3];
+		document.getElementById("subSubContentHeader2").innerText = ar[IDS_HOW_DOES_IT_WORKS];
+		document.getElementById("subSubContentHeader2msg").innerText = ar[IDS_HOW_IT_WORKS];
+		document.getElementById("ids_copyright").innerText = ar[IDS_COPYRIGHT];
+		document.getElementById("ids_terms").innerText = ar[IDS_TERMS];
+		document.getElementById("ids_privacy").innerText = ar[IDS_PRIVACY];
+		document.getElementById("ids_help").innerText = ar[IDS_HELP];
+	}
+</script>
+<script id="strings">
+</script>
+</html>

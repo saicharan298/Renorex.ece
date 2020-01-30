@@ -1,0 +1,107 @@
+; MINICOM.INF
+; Copyright (c) 2013 GN Hearing A/S
+
+[Version]
+Signature="$Windows NT$"
+Class = DeviceClass
+ClassGuid={fcc9e9de-fb0f-4c24-a2de-4cf6edcf3613}
+Provider=%ProviderName%
+CatalogFile=miniCom.cat
+DriverVer=06/11/2013,3.00.22
+
+[SourceDisksNames]
+1=%DriversDisk%,,,
+
+[SourceDisksFiles]
+miniCom.sys = 1,i386
+
+[SourceDisksFiles.amd64]
+miniCom.sys = 1,amd64
+
+[DestinationDirs]
+miniCom.NT.Copy = 12
+miniCom.NTamd64.Copy = 12
+
+[ClassInstall32]
+Addreg=DeviceClassReg
+
+[DeviceClassReg]
+HKR,,,0,%ClassName%
+HKR,,Icon,,-1
+
+[Manufacturer]
+%ProviderName%=miniCom,NTamd64
+
+[miniCom]
+%USB\miniCom.DeviceDesc%=miniCom.dev.NT, USB\VID_16F0&PID_0001
+
+[miniCom.NTamd64]
+%USB\miniCom.DeviceDesc%=miniCom.dev.NTamd64, USB\VID_16F0&PID_0001
+
+[miniCom.dev.NT]
+CopyFiles=miniCom.NT.Copy
+
+[miniCom.dev.NTamd64]
+CopyFiles=miniCom.NTamd64.Copy
+
+[miniCom.dev.NT.Services]
+AddService = miniCom, 0x00000002, miniCom.NT.AddService
+
+[miniCom.dev.NTamd64.Services]
+AddService = miniCom, 0x00000002, miniCom.NT.AddService
+
+[miniCom.NT.AddService]
+DisplayName = %SvcDesc%
+ServiceType = 1 ; SERVICE_KERNEL_DRIVER
+StartType = 3 ; SERVICE_DEMAND_START
+ErrorControl = 1 ; SERVICE_ERROR_NORMAL
+ServiceBinary = %10%\system32\drivers\miniCom.sys
+
+[miniCom.NT.Copy]
+miniCom.sys
+
+[miniCom.NTamd64.Copy]
+miniCom.sys
+
+;-------------- WDF Coinstaller installation
+
+[DestinationDirs]
+CoInstaller_CopyFiles = 11
+
+[miniCom.Dev.NT.CoInstallers]
+AddReg=CoInstaller_AddReg
+CopyFiles=CoInstaller_CopyFiles
+
+[miniCom.Dev.NTamd64.CoInstallers]
+AddReg=CoInstaller_AddReg
+CopyFiles=CoInstaller_CopyFiles
+
+[CoInstaller_CopyFiles]
+WdfCoInstaller01009.dll
+
+[SourceDisksFiles]
+WdfCoInstaller01009.dll=1, i386
+
+[SourceDisksFiles.amd64]
+WdfCoInstaller01009.dll=1, amd64
+
+[CoInstaller_AddReg]
+HKR,,CoInstallers32,0x00010000, "WdfCoInstaller01009.dll,WdfCoInstaller"
+
+[miniCom.Dev.NT.Wdf]
+KmdfService = miniCom, miniCom_wdfsect
+
+[miniCom.Dev.NTamd64.Wdf]
+KmdfService = miniCom, miniCom_wdfsect
+
+[miniCom_wdfsect]
+KmdfLibraryVersion = 1.9
+
+;---------------------------------------------
+
+[Strings]
+ProviderName="GN Hearing A/S"
+DriversDisk="SpeedLink drivers disc"
+USB\miniCom.DeviceDesc="SpeedLink Hearing Instrument Interface"
+SvcDesc="SpeedLink Hearing Instrument Interface (miniCom.sys)"
+ClassName="GN Hearing Devices"

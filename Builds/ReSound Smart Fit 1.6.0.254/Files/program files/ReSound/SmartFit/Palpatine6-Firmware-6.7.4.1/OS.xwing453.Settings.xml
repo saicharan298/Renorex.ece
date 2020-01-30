@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Settings>
+  <PropertyCategory Name="Operating System">
+	  <PropertyGroup Name="General OS Configuration">
+		  <Property DisplayName="Clock source" TargetProperty="HardwareConfiguration[HardwareConfiguration]" TargetName="HardwareInitData" TargetType="LayoutItem" PossibleValues="0,1" Notification="0 = RC Clock, 1 = Crystal clock (To use HI as wireless this must be one)"/>
+		  <Property DisplayName="Sub system Enable" TargetProperty="HardwareConfiguration[ClockEnable]" TargetName="HardwareInitData" TargetType="LayoutItem" PossibleValues="236,237,252,253" Notification="236 Wireless disabled/LED disabled, 237 Wireless disabled/LED enabled,252 Wireless enabled/LED disabled, 253 Wireless enabled/LED enabled"/>
+		  <Property DisplayName="Led Driver enabled" TargetProperty="Os.IsLedPlayerEnabled" TargetName="LedSequencer" TargetType="BlackboardComponent" Notification="Enables visual notification of status change must also enable sub Led subsystem"/>
+		  <Property DisplayName="Led Status enabled" TargetProperty="Os.IsLedPlayerStatusEnabled" TargetName="LedSequencer" TargetType="BlackboardComponent" Notification="Enables visual continues status reporting of status note led driver must also be enabled"/>
+		  <Property DisplayName="Boost Mode Enable" TargetProperty="HardwareConfiguration[BoostModeEnable]" TargetName="HardwareInitData" TargetType="LayoutItem" PossibleValues="0,1,4,5" Notification="In Boost mode output is +1 db higher : 0 Boost mode disabled, 1 Boost mode enabled, 4 Receiver voltage max, 5 Receiver voltage max and output + 1 db"/>
+		  <Property DisplayName="Microphone reassignment" TargetProperty="HardwareConfiguration[FrontRearMicSwap]" TargetName="HardwareInitData" TargetType="LayoutItem" PossibleValues="0,1,2" Notification="Enables swapping of front and rear mic 0: Normal 1: Front/Rear mic swapped on right HI 2: Front/Rear mic swapped on left HI"/>
+		  <Property DisplayName="RF tune" TargetProperty="HardwareConfiguration[XtalCload]" TargetName="HardwareInitData" TargetType="LayoutItem" PossibleValues="0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15" Notification="On various formfactors the RF Frequency needs tunning (default value is 5)"/>
+      <Property DisplayName="Clock Amp" TargetProperty="HardwareConfiguration[NPOuputClkAmplitude]" TargetName="HardwareInitData" TargetType="LayoutItem" PossibleValues="3822,4095" Notification="On CIC (Non WL set this to 4095 (default value is 3822)"/>
+      <Property DisplayName="Low battery warning voltage level" TargetProperty="HardwareConfiguration[BatmonLowBattNotificationV]" TargetName="HardwareInitData" TargetType="LayoutItem" Notification="Low battery warning threshold of the average battery voltage level. Default: 0x26."/>
+      <Property DisplayName="AGCO attack battery voltage level" TargetProperty="HardwareConfiguration[BatmonLowBattAGCOAttack]" TargetName="HardwareInitData" TargetType="LayoutItem" Notification="AGCO attack related battery voltage level. Default: 0x28."/>
+    </PropertyGroup>
+
+	  <PropertyGroup Name="Wireless">
+      <Property DisplayName="Flight mode Control" TargetProperty="Os.WirelessMode" Notification="Configures how Flight Mode is entered" TargetName="WirelessConfiguration" TargetType="BlackboardComponent"/>
+	    <Property DisplayName="E2E Main Switch" TargetProperty="Os.IsMirrorServiceEnabled" TargetName="WirelessConfiguration" TargetType="BlackboardComponent" Notification="This is the main switch for the e2e mirror. If it is disabled no other e2e features will work."/>
+		  <Property DisplayName="E2E Volume Sync" TargetProperty="Os.IsWirelessVolumeSyncEnabled" TargetName="WirelessConfiguration" TargetType="BlackboardComponent" Notification="Changes in volume (and balance) are send to the opposite HI."/>
+      <Property DisplayName="Bluetooth low energy protocol" TargetProperty="Os.IsBleEnabled" TargetName="WirelessConfiguration" TargetType="BlackboardComponent" Notification="Enable/Disable BTLE protocol"/>
+      <Property DisplayName="E2E running Mode" TargetProperty="Os.IsE2EBLEModeEnabled" TargetName="WirelessConfiguration" TargetType="BlackboardComponent" Notification="1: E2E runs on BLE mode; 0: E2E runs on Proximity mode. ONLY custom device shall run BLE mode!!"/>
+    </PropertyGroup>
+
+   <!-- Awaiting Flowtools update
+      <PropertyGroup Name="Gatt">
+      <Property DisplayName="HW Revision" TargetProperty="this[DevInfoHWRevision]" TargetName="GattDatabase" TargetType="LayoutItem"/>
+     </PropertyGroup>
+    -->
+    <PropertyGroup Name="Device Info">
+      <Property DisplayName="Options For Device" TargetProperty="OptionsForDevice" TargetName="ProductIdentification" TargetType="LayoutItem"/>
+   </PropertyGroup>
+  
+    <PropertyGroup Name="Input Configuration">
+      <Property DisplayName="Telecoil Amplification and Microphone coupling" TargetProperty="HardwareConfiguration[AD4InputsCfg]" TargetName="HardwareInitData" TargetType="LayoutItem" Notification="This setting controls AD4 Inputs config register, which controls telecoil amplification and bias for the microphones" />
+      <Property DisplayName="Microphone Preamp (SW) selector" TargetProperty="HardwareConfiguration[osMicrophonePreAmp]" TargetName="HardwareInitData" TargetType="LayoutItem" PossibleValues="0,1,2,3,4" Notification="Mic SW preamp setting"/>
+    </PropertyGroup>
+   
+   <PropertyGroup Name="Button Thresholds">
+     <Property DisplayName="Short Threshold" TargetProperty="HardwareConfiguration32[osButtonShortThreshold]" TargetName="HardwareInitData" TargetType="LayoutItem" Notification="Program button short press time threshold in micro seconds"/>
+     <Property DisplayName="Long Threshold" TargetProperty="HardwareConfiguration32[osButtonLongThreshold]" TargetName="HardwareInitData" TargetType="LayoutItem" Notification="Program button long press time threshold in micro seconds"/>
+     <Property DisplayName="Short UpDown Threshold" TargetProperty="HardwareConfiguration32[osButtonVolumeShortThreshold]" TargetName="HardwareInitData" TargetType="LayoutItem" Notification="Volume button short press time threshold in micro seconds"/>
+     <Property DisplayName="Long UpDown Threshold" TargetProperty="HardwareConfiguration32[osButtonVolumeLongThreshold]" TargetName="HardwareInitData" TargetType="LayoutItem" Notification="Volume button long press time threshold in micro seconds"/>
+     <Property DisplayName="AutoPhone release Threshold" TargetProperty="HardwareConfiguration32[osEventAutophoneTimeOut]" TargetName="HardwareInitData" TargetType="LayoutItem" Notification="Autophone release time threshold in micro seconds"/>
+   </PropertyGroup>
+    
+    <PropertyGroup Name="Sense Port Assignments">
+      <Property DisplayName="Button Port Assignment" TargetProperty="HardwareConfiguration[osButtonPresetMask]" TargetName="HardwareInitData" TargetType="LayoutItem" Notification="Program button sense port assignment:1->Port0; 2->Port1; 4->Port2; 8->Port3"/>
+      <Property DisplayName="Volume Up Port Assignment" TargetProperty="HardwareConfiguration[osButtonVolUpMask]" TargetName="HardwareInitData" TargetType="LayoutItem" Notification="Volume up button sense port assignment:1->Port0; 2->Port1; 4->Port2; 8->Port3"/>
+      <Property DisplayName="Volume Down Port Assigment" TargetProperty="HardwareConfiguration[osButtonVolDownMask]" TargetName="HardwareInitData" TargetType="LayoutItem" Notification="Volume down button sense port assignment:1->Port0; 2->Port1; 4->Port2; 8->Port3"/>
+      <Property DisplayName="Gmr Sensor Port Assignment" TargetProperty="HardwareConfiguration[osButtonGMRMask]" TargetName="HardwareInitData" TargetType="LayoutItem" Notification="GMR sense port assignment:1->Port0; 2->Port1; 4->Port2; 8->Port3"/>
+    </PropertyGroup>
+
+    <PropertyGroup Name="Event Assignments">
+      <Property DisplayName="Gmr Sensor Long Event" TargetProperty="Os.GmrSensorLongEvent" TargetName="PushButton" TargetType="BlackboardComponent"/>
+      <Property DisplayName="Gmr Sensor Short Event" TargetProperty="Os.GmrSensorShortEvent" TargetName="PushButton" TargetType="BlackboardComponent"/>
+      <Property DisplayName="Button Long Event" TargetProperty="Os.ButtonLongEvent" TargetName="PushButton" TargetType="BlackboardComponent"/>
+      <Property DisplayName="Button Short Event" TargetProperty="Os.ButtonShortEvent" TargetName="PushButton" TargetType="BlackboardComponent"/>
+      <Property DisplayName="VolumeDown Long Event" TargetProperty="Os.VolumeDownLongEvent" TargetName="PushButton" TargetType="BlackboardComponent"/>
+      <Property DisplayName="VolumeDown Short Event" TargetProperty="Os.VolumeDownShortEvent" TargetName="PushButton" TargetType="BlackboardComponent"/>
+      <Property DisplayName="VolumeUp Long Event" TargetProperty="Os.VolumeUpLongEvent" TargetName="PushButton" TargetType="BlackboardComponent"/>
+      <Property DisplayName="VolumeUp Short Event" TargetProperty="Os.VolumeUpShortEvent" TargetName="PushButton" TargetType="BlackboardComponent"/>
+    </PropertyGroup>
+  </PropertyCategory>
+  <!--aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa-->
+</Settings>

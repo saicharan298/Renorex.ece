@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Market xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="JP.mkt">
+  <Version Major="3" Minor="12" DataVersion="0"/>
+  <Preferences>
+    <Pref ID="BASS" Type="Enum" DefaultValue="P1AsBasic"/>
+    <Pref ID="BASS3" Type="Enum" DefaultValue="P1AsBasic"/>
+    <Pref ID="CommDevices" Type="Enum" DefaultValue="FittingDongle:0"/>
+    <Pref ID="Language" Type="Enum" DefaultValue="ja-JP"/>
+    <Pref ID="PinCode" Type="Int" DefaultValue="0"/>
+    <Pref ID="SpecType" Type="Enum" DefaultValue="JIS"/>
+    <Pref ID="UpdatesCheckOnSchedule" Type="Boolean" DefaultValue="0"/>
+    <Pref ID="UpdatesDownloadAutomatically" Type="Boolean" DefaultValue="0"/>
+    <Pref ID="FrequentEnvironments2" Type="Enum" DefaultValue="None"/>
+    <Pref ID="P3" Type="Enum" DefaultValue="TFOG"/>
+  </Preferences>
+</Market>

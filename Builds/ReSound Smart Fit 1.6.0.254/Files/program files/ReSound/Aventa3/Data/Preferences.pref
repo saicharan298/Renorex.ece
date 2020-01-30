@@ -1,0 +1,678 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <Version Major="1" Minor="0"/>
+  <Preferences>
+    <Pref ID="RightGainToggle" Type="Enum" DefaultValue="MidNumber">
+       <Name ID="0"  />  
+-       <Values>
+-         <Value ID="MaxNumber">
+            <Name ID="0"  /> 
+            </Value>
+-          <Value ID="MidNumber">
+             <Name ID="0"  /> 
+           </Value>
+-           <Value ID="MinNumber">
+              <Name ID="0"  />  
+            </Value>
+        </Values>
+    </Pref>
+    <Pref ID="LeftGainToggle" Type="Enum" DefaultValue="MidNumber">
+       <Name ID="0"  />  
+-       <Values>
+-         <Value ID="MaxNumber">
+            <Name ID="0"  /> 
+            </Value>
+-          <Value ID="MidNumber">
+             <Name ID="0"  /> 
+           </Value>
+-           <Value ID="MinNumber">
+              <Name ID="0"  />  
+            </Value>
+        </Values>
+   </Pref>
+    <Pref ID="GainToggleIncrementInDB" Type="Int" DefaultValue="1">
+      <Name ID="0"/>
+    </Pref>
+    <Pref ID="P1" Type="Enum" DefaultValue="FOG">
+      <Name ID="8257"/>
+      <Values>
+        <Value ID="FOG">
+          <Name ID="8250"/>
+        </Value>
+        <Value ID="RefANSI">
+          <Name ID="8251"/>
+        </Value>
+        <Value ID="RefIEC">
+          <Name ID="8252"/>
+        </Value>
+        <Value ID="TFOG">
+          <Name ID="8253"/>
+        </Value>
+        <Value ID="TRefANSI">
+          <Name ID="8254"/>
+        </Value>
+        <Value ID="TRefIEC">
+          <Name ID="8255"/>
+        </Value>
+      </Values>
+    </Pref>
+    <Pref ID="P2" Type="Enum" DefaultValue="RefANSI">
+      <Name ID="8258"/>
+      <Values>
+        <Value ID="FOG">
+          <Name ID="8250"/>
+        </Value>
+        <Value ID="RefANSI">
+          <Name ID="8251"/>
+        </Value>
+        <Value ID="RefIEC">
+          <Name ID="8252"/>
+        </Value>
+        <Value ID="TFOG">
+          <Name ID="8253"/>
+        </Value>
+        <Value ID="TRefANSI">
+          <Name ID="8254"/>
+        </Value>
+        <Value ID="TRefIEC">
+          <Name ID="8255"/>
+        </Value>
+        <Value ID="None">
+          <Name ID="8256"/>
+        </Value>
+      </Values>
+    </Pref>
+    <Pref ID="P3" Type="Enum" DefaultValue="None">
+      <Name ID="8259"/>
+      <Values>
+        <Value ID="FOG">
+          <Name ID="8250"/>
+        </Value>
+        <Value ID="RefANSI">
+          <Name ID="8251"/>
+        </Value>
+        <Value ID="RefIEC">
+          <Name ID="8252"/>
+        </Value>
+        <Value ID="TFOG">
+          <Name ID="8253"/>
+        </Value>
+        <Value ID="TRefANSI">
+          <Name ID="8254"/>
+        </Value>
+        <Value ID="TRefIEC">
+          <Name ID="8255"/>
+        </Value>
+        <Value ID="None">
+          <Name ID="8256"/>
+        </Value>
+      </Values>
+    </Pref>
+    <Pref ID="P4" Type="Enum" DefaultValue="None">
+      <Name ID="8260"/>
+      <Values>
+        <Value ID="FOG">
+          <Name ID="8250"/>
+        </Value>
+        <Value ID="RefANSI">
+          <Name ID="8251"/>
+        </Value>
+        <Value ID="RefIEC">
+          <Name ID="8252"/>
+        </Value>
+        <Value ID="TFOG">
+          <Name ID="8253"/>
+        </Value>
+        <Value ID="TRefANSI">
+          <Name ID="8254"/>
+        </Value>
+        <Value ID="TRefIEC">
+          <Name ID="8255"/>
+        </Value>
+        <Value ID="None">
+          <Name ID="8256"/>
+        </Value>
+      </Values>
+    </Pref>
+    <Pref ID="Language" Type="Enum" DefaultValue="en-US">
+      <Name ID="820"/>
+      <Values>
+        <Value ID="en-US">
+          <Name ID="821"/>
+        </Value>
+      </Values>
+    </Pref>
+    <Pref ID="SpecType" Type="Enum" DefaultValue="ANSI">
+      <Name ID="822"/>
+      <Values>
+        <Value ID="ANSI">
+          <Name ID="823"/>
+        </Value>
+        <Value ID="IEC118_7">
+          <Name ID="824"/>
+        </Value>
+        <Value ID="IEC118_0">
+          <Name ID="825"/>
+        </Value>
+        <Value ID="JIS">
+          <Name ID="826"/>
+        </Value>
+      </Values>
+    </Pref>
+    <Pref ID="CommDevices" Type="Enum" DefaultValue="SpeedLink:0">
+      <Name ID="827"/>
+      <Values>
+        <Value ID="Hipro">
+          <Name ID="828"/>
+        </Value>
+        <Value ID="NoahLink">
+          <Name ID="829"/>
+        </Value>
+        <Value ID="SpeedLink:0">
+          <Name ID="830"/>
+        </Value>
+        <Value ID="FittingDongle:0">
+          <Name ID="3443"/>
+        </Value>
+      </Values>
+    </Pref>
+    <Pref ID="CouplerType" Type="Enum" DefaultValue="InsertionGain">
+      <Name ID="831"/>
+      <Values>
+        <Value ID="InsertionGain">
+          <Name ID="832"/>
+        </Value>
+        <Value ID="TwoCCGain">
+          <Name ID="833"/>
+        </Value>
+        <Value ID="Coupler_OES">
+          <Name ID="834"/>
+        </Value>
+      </Values>
+    </Pref>
+    <Pref ID="StimulusType" Type="Enum" DefaultValue="Speech">
+      <Name ID="308"/>
+      <Values>
+        <Value ID="Speech">
+          <Name ID="310"/>
+        </Value>
+        <Value ID="PureTone">
+          <Name ID="309"/>
+        </Value>
+      </Values>
+    </Pref>
+    <Pref ID="TargetRule" Type="Enum" DefaultValue="2">
+      <Name ID="835"/>
+      <Values>
+        <Value ID="1" Type="RulePreference" BaseType="DSL">
+          <Name ID="836"/>
+        </Value>
+        <Value ID="2" Type="RulePreference" BaseType="NAL">
+          <Name ID="838"/>
+        </Value>
+        <Value ID="3" Type="RulePreference" BaseType="NAL_RP">
+          <Name ID="1955"/>
+        </Value>
+        <Value ID="5" Type="RulePreference" BaseType="NAL_NL2">
+          <Name ID="5805"/>
+        </Value>
+        <Value ID="6" Type="RulePreference" BaseType="DSLV5_Adult">
+          <Name ID="6409"/>
+        </Value>
+        <Value ID="7" Type="RulePreference" BaseType="DSLV5_Pediatric">
+          <Name ID="6299"/>
+        </Value>
+        <Value ID="8" Type="RulePreference" BaseType="NAL_NL2_Pediatric">
+          <Name ID="6839"/>
+        </Value>
+      </Values>
+    </Pref>
+    <Pref ID="UseUCL" Type="Boolean" DefaultValue="1">
+      <Name ID="839"/>
+    </Pref>
+    <Pref ID="CheckVentCorrection" Type="Boolean" DefaultValue="1">
+      <Name ID="8863"/>
+    </Pref>
+    <Pref ID="UseBoneConduction" Type="Boolean" DefaultValue="1">
+      <Name ID="2995"/>
+    </Pref>
+    <Pref ID="CheckHIOnStart" Type="Boolean" DefaultValue="0">
+      <Name ID="842"/>
+    </Pref>
+    <Pref ID="ExperienceLevel" Type="Enum" DefaultValue="FirstTimeUser">
+      <Name ID="845"/>
+      <Values>
+        <Value ID="ComfortUser">
+          <Name ID="846"/>
+        </Value>
+        <Value ID="FirstTimeUser">
+          <Name ID="847"/>
+        </Value>
+        <Value ID="ExperienceLinear">
+          <Name ID="848"/>
+        </Value>
+        <Value ID="ExperienceNonLinear">
+          <Name ID="849"/>
+        </Value>
+      </Values>
+    </Pref>
+    <Pref ID="SpeechTestPreference" Type="Enum" DefaultValue="SNR">
+      <Name ID="845"/>
+      <Values>
+        <Value ID="SNR">
+          <Name ID="1893"/>
+        </Value>
+        <Value ID="WRN">
+          <Name ID="1894"/>
+        </Value>
+      </Values>
+    </Pref>
+    <Pref ID="WebLaunchSite" Type="String" DefaultValue="www.GNResound-group.com">
+      <Name ID="850"/>
+    </Pref>
+    <Pref ID="RemDriverType" Type="Enum" DefaultValue="FreeFitAurical">
+      <Name ID="6089"/>
+      <Values>
+        <Value ID="FreeFitAurical">
+          <Name ID="6092"/>
+        </Value>
+      </Values>
+    </Pref>
+    <Pref ID="UsePLCode" Type="Boolean" DefaultValue="0">
+      <Name ID="855"/>
+    </Pref>
+    <Pref ID="PLCode" Type="Int" DefaultValue="0">
+      <Name ID="858"/>
+    </Pref>
+    <Pref ID="UsePinCode" Type="Boolean" DefaultValue="0">
+      <Name ID="851"/>
+    </Pref>
+    <Pref ID="PinCodePeriod" Type="Enum" DefaultValue="Trail">
+      <Name ID="8839"/>
+      <Values>
+        <Value ID="Trail">
+          <Name ID="8840"/>
+        </Value>
+        <Value ID="Permanent">
+          <Name ID="8841"/>
+        </Value>
+      </Values>
+    </Pref>
+    <Pref ID="AudiometerHeadPhone" Type="Enum" DefaultValue="TDH4950">
+      <Name ID="1964"/>
+      <Values>
+        <Value ID="TDH4950">
+          <Name ID="1965"/>
+        </Value>
+        <Value ID="InsertPhones">
+          <Name ID="1966"/>
+        </Value>
+      </Values>
+    </Pref>
+    <Pref ID="DiscoveryTime" Type="Int" DefaultValue="30">
+      <Name ID="3444"/>
+    </Pref>
+    <Pref ID="PairingTime" Type="Int" DefaultValue="180">
+      <Name ID="4234"/>
+    </Pref>
+    <Pref ID="PairingCompletedWaitTime" Type="Int" DefaultValue="3">
+      <Name ID="0"/>
+    </Pref>
+    <Pref ID="IsMaxGainHandle" Type="Boolean" DefaultValue="1">
+      <Name ID="3504"/>
+    </Pref>
+    <Pref ID="EnableWebUpdates" Type="Boolean" DefaultValue="1">
+      <Name ID="8440"/>
+    </Pref>
+    <Pref ID="UpdatesCheckOnSchedule" Type="Boolean" DefaultValue="1">
+      <Name ID="3574"/>
+    </Pref>
+    <Pref ID="UpdatesDownloadAutomatically" Type="Boolean" DefaultValue="1">
+      <Name ID="3575"/>
+    </Pref>
+    <Pref ID="UpdatesFrequency" Type="Enum" DefaultValue="FourWeeks">
+      <Name ID="3576"/>
+      <Values>
+        <Value ID="OneWeek">
+          <Name ID="3577"/>
+        </Value>
+        <Value ID="TwoWeeks">
+          <Name ID="3578"/>
+        </Value>
+        <Value ID="ThreeWeeks">
+          <Name ID="3579"/>
+        </Value>
+        <Value ID="FourWeeks">
+          <Name ID="3580"/>
+        </Value>
+      </Values>
+    </Pref>
+    <Pref ID="UpdatesReminderDate" Type="String" DefaultValue="">
+      <Name ID="3581"/>
+    </Pref>
+    <Pref ID="UpdatesNextCheckDate" Type="String" DefaultValue="">
+      <Name ID="3582"/>
+    </Pref>
+    <Pref ID="DFSGainClampingEnabled" Type="Boolean" DefaultValue="1">
+      <Name ID="3784"/>
+    </Pref>
+    <Pref ID="ShowADLAfterRead" Type="Boolean" DefaultValue="0">
+      <Name ID="3111"/>
+    </Pref>
+    <Pref ID="ShowADLObservations" Type="Boolean" DefaultValue="0">
+      <Name ID="3113"/>
+    </Pref>
+    <Pref ID="ShowADLDemoData" Type="Boolean" DefaultValue="0">
+      <Name ID="4036"/>
+    </Pref>
+    <Pref ID="ReadOnConnect" Type="Boolean" DefaultValue="0">
+      <Name ID="4125"/>
+    </Pref>
+    <Pref ID="AutorelateSaveOption" Type="Enum" DefaultValue="No">
+      <Name ID="2911"/>
+      <Values>
+        <Value ID="Prompt">
+          <Name ID="872"/>
+        </Value>
+        <Value ID="Yes">
+          <Name ID="840"/>
+        </Value>
+        <Value ID="No">
+          <Name ID="841"/>
+        </Value>
+      </Values>
+    </Pref>
+    <Pref ID="PinCode" Type="Int" DefaultValue="0">
+      <Name ID="4095"/>
+    </Pref>
+    <Pref ID="ApplyEnvOffsetsToTarget" Type="Boolean" DefaultValue="0">
+      <Name ID="4984"/>
+    </Pref>
+    <Pref ID="Channels" Type="Enum" DefaultValue="4">
+      <Name ID="5532"/>
+      <Values>
+        <Value ID="1"></Value>
+        <Value ID="2"></Value>
+        <Value ID="3"></Value>
+        <Value ID="4"></Value>
+      </Values>
+    </Pref>
+    <Pref ID="Tubing" Type="Enum" DefaultValue="Libby4">
+      <Name ID="5524"/>
+      <Values>
+        <Value ID="Libby4">
+          <Name ID="5517"/>
+        </Value>
+        <Value ID="Libby3">
+          <Name ID="5518"/>
+        </Value>
+        <Value ID="CFA2Horn">
+          <Name ID="5519"/>
+        </Value>
+        <Value ID="CFA3SteppedBore">
+          <Name ID="5520"/>
+        </Value>
+        <Value ID="_13">
+          <Name ID="5521"/>
+        </Value>
+        <Value ID="_6C5">
+          <Name ID="5522"/>
+        </Value>
+        <Value ID="_6C10">
+          <Name ID="5523"/>
+        </Value>
+      </Values>
+    </Pref>
+    <Pref ID="Vent" Type="Enum" DefaultValue="Tight">
+      <Name ID="5530"/>
+      <Values>
+        <Value ID="Tight">
+          <Name ID="5525"/>
+        </Value>
+        <Value ID="Occluded">
+          <Name ID="5526"/>
+        </Value>
+        <Value ID="_1MM">
+          <Name ID="5527"/>
+        </Value>
+        <Value ID="_2MM">
+          <Name ID="5528"/>
+        </Value>
+        <Value ID="_3MM">
+          <Name ID="5529"/>
+        </Value>
+        <Value ID="Open">
+          <Name ID="3389"/>
+        </Value>
+      </Values>
+    </Pref>
+    <Pref ID="CalculateCRUsingCompGains" Type="Boolean" DefaultValue="1"></Pref>
+    <Pref ID="ShowInSituKeyboardShortCuts" Type="Boolean" DefaultValue="0"></Pref>
+    <Pref ID="Gender" Type="Enum" DefaultValue="Unknown">
+      <Name ID="5813"/>
+      <Values>
+        <Value ID="Male">
+          <Name ID="5810"/>
+        </Value>
+        <Value ID="Female">
+          <Name ID="5811"/>
+        </Value>
+        <Value ID="Unknown">
+          <Name ID="5812"/>
+        </Value>
+      </Values>
+    </Pref>
+    <Pref ID="ClientType" Type="Enum" DefaultValue="Adult">
+      <Name ID="5824"/>
+      <Values>
+        <Value ID="Adult">
+          <Name ID="5807"/>
+        </Value>
+        <Value ID="Child">
+          <Name ID="5808"/>
+        </Value>
+      </Values>
+    </Pref>
+    <Pref ID="Depth" Type="Enum" DefaultValue="Standard">
+      <Name ID="5814"/>
+      <Values>
+        <Value ID="Shallow">
+          <Name ID="5815"/>
+        </Value>
+        <Value ID="Standard">
+          <Name ID="5816"/>
+        </Value>
+        <Value ID="Deep">
+          <Name ID="5817"/>
+        </Value>
+      </Values>
+    </Pref>
+    <Pref ID="AidQuantities" Type="Enum" DefaultValue="Bilateral">
+      <Name ID="5818"/>
+      <Values>
+        <Value ID="Unilateral">
+          <Name ID="5819"/>
+        </Value>
+        <Value ID="Bilateral">
+          <Name ID="5820"/>
+        </Value>
+      </Values>
+    </Pref>
+    <Pref ID="Limiting" Type="Enum" DefaultValue="WideBand">
+      <Name ID="5508"/>
+      <Values>
+        <Value ID="Off">
+          <Name ID="2882"/>
+        </Value>
+        <Value ID="WideBand">
+          <Name ID="5509"/>
+        </Value>
+        <Value ID="MultiChannel">
+          <Name ID="5510"/>
+        </Value>
+      </Values>
+    </Pref>
+    <Pref ID="MicPosition" Type="Enum" DefaultValue="HeadSurface">
+      <Name ID="5512"/>
+      <Values>
+        <Value ID="UndisturbedField">
+          <Name ID="5514"/>
+        </Value>
+        <Value ID="HeadSurface">
+          <Name ID="5513"/>
+        </Value>
+      </Values>
+    </Pref>
+    <Pref ID="Orientation" Type="Enum" DefaultValue="_0">
+      <Name ID="5511"/>
+      <Values>
+        <Value ID="_0">
+          <Name ID="5515"/>
+        </Value>
+        <Value ID="_45">
+          <Name ID="5516"/>
+        </Value>
+      </Values>
+    </Pref>
+    <Pref ID="ForceInstrumentUpdates" Type="Boolean" DefaultValue="0"></Pref>
+    <Pref ID="WPFSoftwareRender" Type="Boolean" DefaultValue="1"></Pref>
+    <Pref ID="MeasurementMethod" Type="Enum" DefaultValue="PureToneAudiometry">
+      <Name ID="6303"/>
+      <Values>
+        <Value ID="PureToneAudiometry">
+          <Name ID="6306"/>
+        </Value>
+        <Value ID="ABRToneBurst">
+          <Name ID="6307"/>
+        </Value>
+        <Value ID="Other">
+          <Name ID="6308"/>
+        </Value>
+      </Values>
+    </Pref>
+    <Pref ID="Transducer" Type="Enum" DefaultValue="TDH_HEADPHONE">
+      <Name ID="6304"/>
+      <Values>
+        <Value ID="INSERT_TIP">
+          <Name ID="6311"/>
+        </Value>
+        <Value ID="INSERT_EARMOLD">
+          <Name ID="6310"/>
+        </Value>
+        <Value ID="ABR_TIP">
+          <Name ID="6311"/>
+        </Value>
+        <Value ID="ABR_EARMOLD">
+          <Name ID="6310"/>
+        </Value>
+        <Value ID="TDH_HEADPHONE">
+          <Name ID="6309"/>
+        </Value>
+        <Value ID="LOUDSPEAKERZERODEGREE">
+          <Name ID="6389"/>
+        </Value>
+        <Value ID="LOUDSPEAKER45DEGREE">
+          <Name ID="6390"/>
+        </Value>
+        <Value ID="LOUDSPEAKER90DEGREE">
+          <Name ID="6391"/>
+        </Value>
+      </Values>
+    </Pref>
+    <Pref ID="RecdTransducer" Type="Enum" DefaultValue="HA2_MOLD">
+      <Name ID="6663"/>
+      <Values>
+        <Value ID="HA2_TIP">
+          <Name ID="6659"/>
+        </Value>
+        <Value ID="HA2_MOLD">
+          <Name ID="6660"/>
+        </Value>
+        <Value ID="HA1_TIP">
+          <Name ID="6661"/>
+        </Value>
+        <Value ID="HA1_MOLD">
+          <Name ID="6662"/>
+        </Value>
+      </Values>
+    </Pref>
+    <Pref ID="ReugTransducer" Type="Enum" DefaultValue="SF0">
+      <Name ID="6664"/>
+      <Values>
+        <Value ID="SF0">
+          <Name ID="6389"/>
+        </Value>
+        <Value ID="SF45">
+          <Name ID="6390"/>
+        </Value>
+        <Value ID="SF90">
+          <Name ID="6391"/>
+        </Value>
+      </Values>
+    </Pref>
+    <Pref ID="AudiometricMeasurement" Type="Enum" DefaultValue="dbHL">
+      <Name ID="6303"/>
+      <Values>
+        <Value ID="dbHL">
+          <Name ID="6386"/>
+        </Value>
+        <Value ID="dbeHL">
+          <Name ID="6388"/>
+        </Value>
+        <Value ID="dbnHL">
+          <Name ID="6387"/>
+        </Value>
+      </Values>
+    </Pref>
+    <Pref ID="NL2Language" Type="Enum" DefaultValue="NonTonal">
+      <Name ID="6838"/>
+      <Values>
+        <Value ID="Tonal">
+          <Name ID="6836"/>
+        </Value>
+        <Value ID="NonTonal">
+          <Name ID="6837"/>
+        </Value>
+      </Values>
+    </Pref>
+    <Pref ID="ClientFittingMode" Type="Enum" DefaultValue="Adult">
+      <Name ID="6869"/>
+      <Values>
+        <Value ID="Adult">
+          <Name ID="5807"/>
+        </Value>
+        <Value ID="Baby">
+          <Name ID="6866"/>
+        </Value>
+        <Value ID="School">
+          <Name ID="6867"/>
+        </Value>
+        <Value ID="Teen">
+          <Name ID="6868"/>
+        </Value>
+      </Values>
+    </Pref>
+    <Pref ID="RecommendPediatricFitting" Type="Boolean" DefaultValue="0">
+      <Name ID="6888"/>
+    </Pref>
+    <Pref ID="IsPediatricFittingEnabled" Type="Boolean" DefaultValue="0"/>
+    <Pref ID="PediatricTargetRule" Type="Enum" DefaultValue="7">
+      <Name ID="835"/>
+      <Values>
+        <Value ID="7" Type="RulePreference" BaseType="DSLV5_Pediatric">
+          <Name ID="6299"/>
+        </Value>
+        <Value ID="8" Type="RulePreference" BaseType="NAL_NL2_Pediatric">
+          <Name ID="6839"/>
+        </Value>
+      </Values>
+    </Pref>
+    <Pref ID="DefaultDelayAnimation" Type="Int" DefaultValue="3"/>
+    <Pref ID="SuperPowerLoudTargetCurvePercent" Type="Int" DefaultValue="40"/>
+    <Pref ID="DefaultTimeConstant" Type="String" DefaultValue="Fast"/>
+    <Pref ID="SuperPowerSoftTargetCurvePercent" Type="Int" DefaultValue="50"/>
+    <Pref ID="UseFactorySettings" Type="Boolean" DefaultValue="0"/>
+    <Pref ID="SupportThreeGainHandles" Type="Boolean" DefaultValue="1"/>
+    <Pref ID="DisableTSGOnProgram" Type="Boolean" DefaultValue="1"/>
+  </Preferences>
+</Root>

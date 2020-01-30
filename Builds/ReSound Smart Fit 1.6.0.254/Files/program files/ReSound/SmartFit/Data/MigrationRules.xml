@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Rules xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="1.0.0.0" Brand="New brand name goes here">
+  <Modules>
+    <!-- Add products to be migrated to the new moduleId here -->
+    <!--<Module Id="5177347" NewId="5177350" NewName="CostcoFit">
+      <Names>
+        <Name>SmartFit</Name>
+      </Names>
+      <Products>
+        <Product Name="LT988-DW" />
+        <Product Name="LT977-DW" />
+      </Products>
+    </Module>-->
+  </Modules>
+</Rules>

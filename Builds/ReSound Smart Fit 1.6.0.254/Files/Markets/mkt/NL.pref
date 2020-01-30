@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Market xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="NL.mkt">
+  <Version Major="3" Minor="12" DataVersion="0"/>
+  <Preferences>
+    <Pref ID="AutorelateSaveOption" Type="Enum" DefaultValue="Prompt"/>
+    <Pref ID="BASS" Type="Enum" DefaultValue="P1AsBasic"/>
+    <Pref ID="BASS3" Type="Enum" DefaultValue="P1AsNaturalDirectionality"/>
+    <Pref ID="CommDevices" Type="Enum" DefaultValue="FittingDongle:0"/>
+    <Pref ID="DFSGainClampingEnabled" Type="Boolean" DefaultValue="0"/>
+    <Pref ID="EcademyWebSite" Type="String" DefaultValue="http://www.resoundpro.com/nl-NL/e-cademy"/>
+    <Pref ID="Language" Type="Enum" DefaultValue="nl-NL"/>
+    <Pref ID="PinCode" Type="Int" DefaultValue="0"/>
+    <Pref ID="PreferFitting" Type="Enum" DefaultValue="TwoPowerBands_5080"/>
+    <Pref ID="ShowADLAfterRead" Type="Boolean" DefaultValue="1"/>
+    <Pref ID="SpecType" Type="Enum" DefaultValue="IEC118_0"/>
+    <Pref ID="UpdatesCheckOnSchedule" Type="Boolean" DefaultValue="1"/>
+    <Pref ID="UpdatesFrequency" Type="Enum" DefaultValue="OneWeek"/>
+    <Pref ID="WebLaunchSite" Type="String" DefaultValue="www.resoundpro.com"/>
+    <Pref ID="FrequentEnvironments2" Type="Enum" DefaultValue="None"/>
+    <Pref ID="P3" Type="Enum" DefaultValue="TFOG"/>
+  </Preferences>
+</Market>

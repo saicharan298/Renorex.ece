@@ -1,0 +1,27 @@
+﻿<Properties>
+  <Array name="active">
+    <Element value="UserCodeCollection1.cs" />
+  </Array>
+  <Array name="bookmarks" />
+  <Array name="files">
+    <Element value="UserCodeCollection1.cs" />
+    <Element value="ValidatingXML_And_Excel.rxrec" />
+    <Element value="ValidatingXML_And_Excel.cs" />
+    <Element value="ReportToPDF_6.X.cs" />
+    <Element value="FeatureFlag_Validation.rxtst" />
+    <Element value="Installation.rxrec" />
+  </Array>
+  <Properties name="projectSavedData">
+    <Properties name="customTool">
+      <runOnBuild value="False" />
+    </Properties>
+    <Array name="recentusercodeselections">
+      <Element value="FeatureFlag_Validation.UserCodeCollection1.XMl_FlagKey_Method2(String BildnameKey, String MarketnameKey)" />
+      <Element value="FeatureFlag_Validation.UserCodeCollection1.Excel_FlagKeyMethod2(String Marketname, String Buildname_ExcelValues)" />
+      <Element value="FeatureFlag_Validation.UserCodeCollection1.Excel_FlagKeyMethod2()" />
+      <Element value="FeatureFlag_Validation.UserCodeCollection1.Uninstall(String UninstallBuildname)" />
+      <Element value="FeatureFlag_Validation.UserCodeCollection1.DeleteFiles(String DeleteBuildname)" />
+      <Element value="FeatureFlag_Validation.UserCodeCollection1.Compare_Xml_And_Excel_Methods(String MarketName)" />
+    </Array>
+  </Properties>
+</Properties>

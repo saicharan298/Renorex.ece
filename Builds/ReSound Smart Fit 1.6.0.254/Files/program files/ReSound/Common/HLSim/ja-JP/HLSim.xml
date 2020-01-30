@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <Version Major="1" Minor="0" />
+  <SoundAssets>
+      <SoundAsset Name="1272" SoundName="ambulancepassing_hls.ave"/>
+      <SoundAsset Name="2256" SoundName="JPSoccer.ave"/>
+      <SoundAsset Name="2251" SoundName="JPStockTip.ave"/>
+      <SoundAsset Name="5553" SoundName="JPCDFemale.ave"/>
+      <SoundAsset Name="5554" SoundName="JPCDMale.ave"/>
+      <SoundAsset Name="5555" SoundName="JPColdSeason.ave"/>
+  </SoundAssets>
+</Root>

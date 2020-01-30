@@ -1,0 +1,230 @@
+	<html>
+		<head>
+			<title>Update Manager security</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+			<meta http-equiv="MSThemeCompatible" content="yes"/>
+			<link id="uistyles" href="UpdaterStyle.css" rel="stylesheet" type="text/css"/>
+<script>
+var twdl = unescape(top.window.document.location);
+var twdls = twdl.substr(twdl.indexOf("?"));
+var attribs = twdls.split("&");
+var _CustomCSS="";
+var _CustomStrings="";
+for (ii = 0; ii < attribs.length; ii++)
+{
+	var attrib = attribs[ii].split("=");
+	if (attrib[0].indexOf("CSS") != -1)
+		_CustomCSS = unescape(attrib[1]);
+	if (attrib[0].indexOf("Strings") != -1)
+		_CustomStrings = unescape(attrib[1]);
+}
+if (_CustomCSS.length > 0)
+	document.getElementById("uistyles").href=_CustomCSS;
+</script>
+			<script src="lang/resource.js"></script>
+		</head>
+
+		<script language="javascript" defer>
+			var arprid = window.parent.getupdates.prid.value.split("~~~\$\$\$~~~");
+			var arrlsid = window.parent.getupdates.rlsid.value.split("~~~\$\$\$~~~");
+			var arPRODUCTNAME = window.parent.getupdates.PRODUCTNAME.value.split("~~~\$\$\$~~~");
+			var arRELEASENAME = window.parent.getupdates.RELEASENAME.value.split("~~~\$\$\$~~~");
+			var ardispver = window.parent.getupdates.dispver.value.split("~~~\$\$\$~~~");
+			var arMSGID = window.parent.getupdates.MSGID.value.split("~~~\$\$\$~~~");
+			var arMSGTYPE = window.parent.getupdates.MSGTYPE.value.split("~~~\$\$\$~~~");
+			var arMSGNAME = window.parent.getupdates.MSGNAME.value.split("~~~\$\$\$~~~");
+			var arUPDATETITLE = window.parent.getupdates.UPDATETITLE.value.split("~~~\$\$\$~~~");
+			var arDOWNLOADSIZE = window.parent.getupdates.DOWNLOADSIZE.value.split("~~~\$\$\$~~~");
+			var arDESCRIPTION = window.parent.getupdates.DESCRIPTION.value.split("~~~\$\$\$~~~");
+			var arDETAILSURL = window.parent.getupdates.DETAILSURL.value.split("~~~\$\$\$~~~");
+			var arDOWNLOADURL = window.parent.getupdates.DOWNLOADURL.value.split("~~~\$\$\$~~~");
+			var arCommandLine = window.parent.getupdates.CommandLine.value.split("~~~\$\$\$~~~");
+			var arMediaType = window.parent.getupdates.MediaType.value.split("~~~\$\$\$~~~");
+			var arTargetDir = window.parent.getupdates.TargetDir.value.split("~~~\$\$\$~~~");
+			var arBasketable = window.parent.getupdates.Basketable.value.split("~~~\$\$\$~~~");
+			var arBasketPriority = window.parent.getupdates.BasketPriority.value.split("~~~\$\$\$~~~");
+			var arAuthID = window.parent.getupdates.AuthID.value.split("~~~\$\$\$~~~");
+			var arAuthMsgDisplay = window.parent.getupdates.AuthMsgDisplay.value.split("~~~\$\$\$~~~");
+			var arAuthMsgFailed = window.parent.getupdates.AuthMsgFailed.value.split("~~~\$\$\$~~~");
+			var arAuthInfoURL = window.parent.getupdates.AuthInfoURL.value.split("~~~\$\$\$~~~");
+			var arDetails = window.parent.getupdates.Details.value.split("~~~\$\$\$~~~");
+			var arCalloutURL = window.parent.getupdates.CalloutURL.value.split("~~~\$\$\$~~~");
+			var arVersionID = window.parent.getupdates.VersionID.value.split("~~~\$\$\$~~~");
+			var arSecurityType = window.parent.getupdates.SecurityType.value.split("~~~\$\$\$~~~");
+			var arSecuritySignature = window.parent.getupdates.SecuritySignature.value.split("~~~\$\$\$~~~");
+			var arinstalltype = window.parent.getupdates.installtype.value.split("~~~\$\$\$~~~");
+		</script>
+
+	<body topmargin="0" bottommargin="0" leftmargin="0" rightmargin="0" scroll="no" >
+
+	<!-- TOP NAVIGATION AND LOGO -->
+	<div id="mainNavHeader">
+		<div id="mainNavLogo"></div>
+		<div id="mainNavIconUpdatesS">
+			<div class="theNavS">
+			<a href="updates.htm"><img src="images/icon_update.gif" width="32" height="32" border="0"></a><br>
+			<a href="updates.htm" id="ids_updates">Updates</a>
+			</div>
+		</div>
+		<div id="mainNavIconSettings">
+			<div class="theNav">
+			<a href="settings.htm"><img src="images/icon_settings.gif" width="32" height="32" border="0"></a><br>
+			<a href="settings.htm" id="ids_settings">Settings</a>
+			</div>
+		</div>
+		<div id="mainNavIconAbout">
+			<div class="theNav">
+			<a href="about.htm"><img src="images/icon_about.gif" width="32" height="32" border="0"></a><br>
+			<a href="about.htm" id="ids_about">About</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- SECONDARY NAVIGATION -->
+	<div id="secNavHeader">
+		<div id="secNavLogo"><img src="images/update_header.jpg" width="261" height="61" border="0"/></div>
+		<div id="secNavTitle">Updates</div>
+		<div id="secNavSeparator"></div>
+		<div id="secNavLinks">
+		<strong><a href="updates.htm" id="ids_new_updates2">New updates &amp; messages</a></strong><br/>
+		<a href="updates.htm?archive=1" id="ids_restore_hidden">Restore hidden updates</a><br/>
+		<!--a href="history.htm">View your history</a-->
+		</div>
+	</div>
+
+	<div id="mainContentUpdate">
+
+	<!-- LEFT HAND PANEL -->
+	<DIV id="leftPanel">
+	<span id="leftpanelmsg">The FLEXnet Connect Update Manager keeps your programs up-to-date with the latest security patches, improvements, and bug fixes. \nWhen an update is available, you can: </span>
+		<ul><li>
+				<span id="leftpanelmsgpt1">View the updates for your system </span>
+			</li><li>
+				<span id="leftpanelmsgpt2">View update descriptions </span>
+			</li><li>
+				<span id="leftpanelmsgpt3">Download and install updates </span>
+			</li>
+		</ul>
+		<DIV class="shortHorizSeparator"></DIV>
+		<DIV class="indentLeftPanel">
+			<span id='note'></span>
+		</DIV>
+	</DIV>
+	<div id="rightPanel">
+	</div>
+		<div id="bottom">
+			<table cellpadding=0 cellspacing=0>
+			<tr>
+			<td>
+			<div id="copyright"><span id="ids_copyright">Copyright (c) 1997-2011 Flexera Software LLC.  All Rights Reserved.</span>| <a id="Aterms" href="http://www.flexerasoftware.com/company/terms_of_use.htm" target="_blank"><span id="ids_terms">Terms of Use</span></a>  | <a id="Aprivacy" href="http://www.flexerasoftware.com/company/legal.htm" target="_blank"><span id="ids_privacy">Privacy Statement</span></a></div></td>
+			<td width="18"><a href="help.htm" target="_blank"><img src="images/icon_help.gif" width="14" height="14" border="0" align="left"></a></td>
+			<td><a href="help.htm" target="_blank"><span id="ids_help">Help</span></a></td>
+			</tr>
+			</table>
+		</div>
+	</div>
+	</body>
+	<script defer language="vbscript">
+		public dynHTML
+		dynHTML = "<div class='contentHeader' id='ids_security_title'></div><p></p><div class='scrollerAuth'><table cellpadding='5' cellspacing='0' border='0'><TR><TD>" + arAuthMsgDisplay
+		for x = LBound(window.parent.usAuthenticationParameters) to UBound(window.parent.usAuthenticationParameters)
+			dynHTML = dynHTML + "<p></p>" + window.parent.usAuthenticationParameters(x,1) + ":<br>"
+			dynHTML = dynHTML + "<input type='" + window.parent.usAuthenticationParameters(x,2) + "' name='f" + CStr(x) + "'></input>"
+		next
+		dynHTML = dynHTML + "<p></p></TD></TR></table></div>"
+		dynHTML = dynHTML + "<div id='saveCheck'><table><tr><td><input name='RememberMe' id='RememberMe' type='checkbox' checked='true'></input></td><td><span id='savetext' name='savetext'></span></td></tr></table></div>"
+		dynHTML = dynHTML + "<div id='submitButton'><input type='submit' name='submit' id='submit' onclick='verify()' style='width: 80px' value='Submit'></input></div>"
+		document.getElementById("rightPanel").insertadjacentHTML "afterBegin", dynHTML 
+
+		for x = LBound(window.parent.usAuthenticationParameters) to UBound(window.parent.usAuthenticationParameters)
+			document.getElementById("f" + CStr(x)).value = Unescape(GetCookieValue(arprid + "_" + Replace(window.parent.usAuthenticationParameters(x,1), " ", "_", 1, -1, 1)))
+		next
+		
+		loadStrings
+
+		sub verify
+			if document.getElementById("RememberMe").checked = true then
+				for x = LBound(window.parent.usAuthenticationParameters) to UBound(window.parent.usAuthenticationParameters)
+					document.cookie = arprid + "_" + Replace(window.parent.usAuthenticationParameters(x,1), " ", "_", 1, -1, 1) + "=" + Escape(document.getElementById("f" + CStr(x)).value) + ";expires=Tuesday, 05-Apr-2010 05:00:00 GMT"
+				next
+			else
+				for x = LBound(window.parent.usAuthenticationParameters) to UBound(window.parent.usAuthenticationParameters)
+					document.cookie = arprid + "_" + Replace(window.parent.usAuthenticationParameters(x,1), " ", "_", 1, -1, 1) + "= ;expires=Tuesday, 05-Apr-2010 05:00:00 GMT"
+				next
+			end if
+						
+			dim result
+			redim v(UBound(window.parent.usAuthenticationParameters))
+			for x = 0 to UBound(window.parent.usAuthenticationParameters)
+				v(x) = document.getElementById("f" + CStr(x)).value
+			next
+			result = window.parent.DoAuthenticate(v)
+			if window.parent.usAuthResult = 1 then
+				window.parent.DoGetUpdates
+			else
+				if window.parent.usAuthResult = 0 then
+					window.parent.DoAuthFailed arAuthMsgFailed
+				else
+					window.parent.DoAuthFailed ""
+				end if
+			end if
+		end sub
+	</script>
+	<script language="javascript">
+	function loadStrings()
+	{
+		document.charset = window.parent._UIcharset;
+
+		if (_CustomStrings.length > 0)
+			document.getElementById("strings").src = _CustomStrings + "/strings" + window.parent._UILangID + ".js";
+		else
+			document.getElementById("strings").src = "lang/strings" + window.parent._UILangID + ".js";
+		if (typeof(ar) == "undefined")
+			document.getElementById("strings").src = "lang/strings" + ((window.parent._UILangID & 0xff) + 1024) + ".js";
+		if (typeof(ar) == "undefined")
+			document.getElementById("strings").src = "lang/strings1033.js";
+
+		document.getElementById("ids_restore_hidden").style.fontWeight="normal";
+		document.getElementById("ids_settings").innerText = ar[IDS_SETTINGS];
+		document.getElementById("ids_about").innerText = ar[IDS_ABOUT];
+		document.getElementById("ids_updates").innerText = ar[IDS_UPDATES];
+		document.getElementById("secNavTitle").innerText = ar[IDS_UPDATES];
+		document.getElementById("ids_new_updates2").innerText = ar[IDS_NEW_UPDATES];
+		document.getElementById("leftpanelmsg").innerText = ar[IDS_LEFTPANEL_MSG];
+		document.getElementById("leftpanelmsgpt1").innerText = ar[IDS_LEFTPANEL_PT1];
+		document.getElementById("leftpanelmsgpt2").innerText = ar[IDS_LEFTPANEL_PT2];
+		document.getElementById("leftpanelmsgpt3").innerText = ar[IDS_LEFTPANEL_PT3];
+		document.getElementById("ids_security_title").innerText = ar[IDS_USER_SECURITY];
+		document.getElementById("submit").value = ar[IDS_SUBMIT];
+		document.getElementById("note").innerText = ar[IDS_AUTHENTICATION_NOTE];
+		document.getElementById("ids_copyright").innerText = ar[IDS_COPYRIGHT];
+		document.getElementById("ids_terms").innerText = ar[IDS_TERMS];
+		document.getElementById("ids_privacy").innerText = ar[IDS_PRIVACY];
+		document.getElementById("ids_help").innerText = ar[IDS_HELP];
+		document.getElementById("savetext").innerText = " " + ar[IDS_SAVE_VALUES];
+	}
+	function GetCookieValue(c)
+	{
+		var   cset=new String(document.cookie);
+		var   cs=cset.split(";");
+		for (i=0;i!=cs.length;i++)
+		{
+			var   vpair=cs[i].split("=");
+			if (vpair.length > 1){
+			if (vpair[0].indexOf(c) != -1)
+			{
+					if (vpair[1].length!=-1)
+					{
+						document.getElementById("RememberMe").checked=true;
+						return  vpair[1];
+					}
+				}
+		}
+		}
+		return  "";
+	}
+	
+</script>
+	<script id="strings">
+	</script>
+	</html>

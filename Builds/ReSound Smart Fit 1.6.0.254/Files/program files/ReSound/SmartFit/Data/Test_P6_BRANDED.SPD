@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<SPDProductData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" AlgoPackageName="P6" AlgoPackage="Palpatine6">
+  <Version MajorVersion="1" MinorVersion="0" DataVersion="1"/>
+  <StandardSPDFiles GlobalFileName="StandardP6.SPD" BrandFileName="BrandedP6.SPD"/>
+  <FormFactors xml:id="FormFactors" Type="BrandedTest">
+    <FormFactor HWPlatform="London" Type="BehindTheEar" BatterySize="Size675" MicroPhone="Dual" IsWireless="true" DeviceConfiguration="NormalPowerClosed" FormFactorName="LoBTE675DWJ" FF="1"/>
+    <FormFactor HWPlatform="Berlin" Type="HighPowerBehindTheEar" BatterySize="Size13" MicroPhone="Dual" IsWireless="true" DeviceConfiguration="HighPowerOpen" FormFactorName="BeHBTE13DWJ" FF="2"/>
+    <FormFactor HWPlatform="Berlin" Type="PowerBehindTheEar" BatterySize="Size13" MicroPhone="Dual" IsWireless="true" DeviceConfiguration="NormalPowerClosed" FormFactorName="BePBTE13DWJ" FF="4"/>
+    <FormFactor HWPlatform="Berlin" Type="BehindTheEar" BatterySize="Size13" MicroPhone="Dual" IsWireless="true" DeviceConfiguration="NormalPowerClosed" FormFactorName="BeBTE13DWJ" FF="8"/>
+    <FormFactor HWPlatform="Berlin" Type="MiniBehindTheEar" BatterySize="Size312" MicroPhone="Dual" IsWireless="true" DeviceConfiguration="NormalPowerClosed" FormFactorName="BeMBTE312DWJ" FF="16"/>
+    <FormFactor HWPlatform="Berlin" Type="RecieverInTheEar" BatterySize="Size13" MicroPhone="Dual" IsWireless="true" DeviceConfiguration="NormalPowerClosed" FormFactorName="BeRIE13DWJ" FF="32"/>
+    <FormFactor HWPlatform="Luxor_Lima" Type="RecieverInTheEar" BatterySize="Size312" MicroPhone="Dual" IsWireless="true" DeviceConfiguration="NormalPowerClosed" FormFactorName="LxRIE312DWJ" FF="64"/>
+    <FormFactor HWPlatform="Dallas" Type="InTheEar" BatterySize="Size13" MicroPhone="Dual" IsWireless="true" DeviceConfiguration="NormalPowerClosed" FormFactorName="DaITE13DWJNC" FF="256"/>
+    <FormFactor HWPlatform="Dallas" Type="InTheEar" BatterySize="Size13" MicroPhone="Dual" IsWireless="true" DeviceConfiguration="HighPowerClosed" FormFactorName="DaITE13DWJHC" FF="512"/>
+    <FormFactor HWPlatform="Dallas" Type="InTheEar" BatterySize="Size13" MicroPhone="Dual" IsWireless="true" DeviceConfiguration="HighPowerOpen" FormFactorName="DaITE13DWJHO" FF="1024"/>
+    <FormFactor HWPlatform="Dallas" Type="InTheEar" BatterySize="Size13" MicroPhone="Dual" IsWireless="false" DeviceConfiguration="NormalPowerClosed" FormFactorName="DaITE13DNJNC" FF="2048"/>
+    <FormFactor HWPlatform="Dallas" Type="InTheEar" BatterySize="Size13" MicroPhone="Dual" IsWireless="false" DeviceConfiguration="HighPowerClosed" FormFactorName="DaITE13DNJHC" FF="4096"/>
+    <FormFactor HWPlatform="Dallas" Type="InTheEar" BatterySize="Size13" MicroPhone="Dual" IsWireless="false" DeviceConfiguration="HighPowerOpen" FormFactorName="DaITE13DNJHO" FF="8192"/>
+    <FormFactor HWPlatform="Dallas" Type="InTheEar" BatterySize="Size13" MicroPhone="Single" IsWireless="true" DeviceConfiguration="NormalPowerClosed" FormFactorName="DaITE13SWJNC" FF="16384"/>
+    <FormFactor HWPlatform="Dallas" Type="InTheEar" BatterySize="Size13" MicroPhone="Single" IsWireless="true" DeviceConfiguration="HighPowerClosed" FormFactorName="DaITE13SWJHC" FF="32768"/>
+    <FormFactor HWPlatform="Dallas" Type="InTheEar" BatterySize="Size13" MicroPhone="Single" IsWireless="true" DeviceConfiguration="HighPowerOpen" FormFactorName="DaITE13SWJHO" FF="65536"/>
+    <FormFactor HWPlatform="Dallas" Type="InTheEar" BatterySize="Size13" MicroPhone="Single" IsWireless="false" DeviceConfiguration="NormalPowerClosed" FormFactorName="DaITE13SNJNC" FF="131072"/>
+    <FormFactor HWPlatform="Dallas" Type="InTheEar" BatterySize="Size13" MicroPhone="Single" IsWireless="false" DeviceConfiguration="HighPowerClosed" FormFactorName="DaITE13SNJHC" FF="262144"/>
+    <FormFactor HWPlatform="Dallas" Type="InTheEar" BatterySize="Size13" MicroPhone="Single" IsWireless="false" DeviceConfiguration="HighPowerOpen" FormFactorName="DaITE13SNJHO" FF="524288"/>
+    <FormFactor HWPlatform="Dallas" Type="InTheCanal" BatterySize="Size312" MicroPhone="Dual" IsWireless="true" DeviceConfiguration="NormalPowerClosed" FormFactorName="DaITC13DWJNC" FF="1048576"/>
+    <FormFactor HWPlatform="Dallas" Type="InTheCanal" BatterySize="Size312" MicroPhone="Dual" IsWireless="true" DeviceConfiguration="HighPowerClosed" FormFactorName="DaITC13DWJHC" FF="2097152"/>
+    <FormFactor HWPlatform="Dallas" Type="InTheCanal" BatterySize="Size312" MicroPhone="Dual" IsWireless="true" DeviceConfiguration="HighPowerOpen" FormFactorName="DaITC13DWJHO" FF="4194304"/>
+    <FormFactor HWPlatform="Dallas" Type="InTheCanal" BatterySize="Size312" MicroPhone="Dual" IsWireless="true" DeviceConfiguration="LowPowerLowNoiseClosed" FormFactorName="DaITC13DWJLC" FF="8388608"/>
+    <FormFactor HWPlatform="Dallas" Type="InTheCanal" BatterySize="Size312" MicroPhone="Dual" IsWireless="false" DeviceConfiguration="NormalPowerClosed" FormFactorName="DaITC13DNJNC" FF="16777216"/>
+    <FormFactor HWPlatform="Dallas" Type="InTheCanal" BatterySize="Size312" MicroPhone="Dual" IsWireless="false" DeviceConfiguration="HighPowerClosed" FormFactorName="DaITC13DNJHC" FF="33554432"/>
+    <FormFactor HWPlatform="Dallas" Type="InTheCanal" BatterySize="Size312" MicroPhone="Dual" IsWireless="false" DeviceConfiguration="HighPowerOpen" FormFactorName="DaITC13DNJHO" FF="67108864"/>
+    <FormFactor HWPlatform="Dallas" Type="InTheCanal" BatterySize="Size312" MicroPhone="Dual" IsWireless="false" DeviceConfiguration="LowPowerLowNoiseClosed" FormFactorName="DaITC13DNJLC" FF="134217728"/>
+    <FormFactor HWPlatform="Dallas" Type="InTheCanal" BatterySize="Size312" MicroPhone="Single" IsWireless="true" DeviceConfiguration="NormalPowerClosed" FormFactorName="DaITC13SWJNC" FF="268435456"/>
+    <FormFactor HWPlatform="Dallas" Type="InTheCanal" BatterySize="Size312" MicroPhone="Single" IsWireless="true" DeviceConfiguration="HighPowerClosed" FormFactorName="DaITC13SWJHC" FF="536870912"/>
+    <FormFactor HWPlatform="Dallas" Type="InTheCanal" BatterySize="Size312" MicroPhone="Single" IsWireless="true" DeviceConfiguration="HighPowerOpen" FormFactorName="DaITC13SWJHO" FF="1073741824"/>
+    <FormFactor HWPlatform="Dallas" Type="InTheCanal" BatterySize="Size312" MicroPhone="Single" IsWireless="true" DeviceConfiguration="LowPowerLowNoiseClosed" FormFactorName="DaITC13SWJLC" FF="2147483648"/>
+    <FormFactor HWPlatform="Dallas" Type="InTheCanal" BatterySize="Size312" MicroPhone="Single" IsWireless="false" DeviceConfiguration="NormalPowerClosed" FormFactorName="DaITC13SNJNC" FF="4294967296"/>
+    <FormFactor HWPlatform="Dallas" Type="InTheCanal" BatterySize="Size312" MicroPhone="Single" IsWireless="false" DeviceConfiguration="HighPowerClosed" FormFactorName="DaITC13SNJHC" FF="8589934592"/>
+    <FormFactor HWPlatform="Dallas" Type="InTheCanal" BatterySize="Size312" MicroPhone="Single" IsWireless="false" DeviceConfiguration="HighPowerOpen" FormFactorName="DaITC13SNJHO" FF="17179869184"/>
+    <FormFactor HWPlatform="Dallas" Type="InTheCanal" BatterySize="Size312" MicroPhone="Single" IsWireless="false" DeviceConfiguration="LowPowerLowNoiseClosed" FormFactorName="DaITC13SNJLC" FF="34359738368"/>
+    <FormFactor HWPlatform="Dallas" Type="MicrophoneInTheCanal" BatterySize="Size312" MicroPhone="Single" IsWireless="true" DeviceConfiguration="NormalPowerClosed" FormFactorName="DaMITC13SWJNC" FF="68719476736"/>
+    <FormFactor HWPlatform="Dallas" Type="MicrophoneInTheCanal" BatterySize="Size312" MicroPhone="Single" IsWireless="true" DeviceConfiguration="HighPowerClosed" FormFactorName="DaMITC13SWJHC" FF="137438953472"/>
+    <FormFactor HWPlatform="Dallas" Type="MicrophoneInTheCanal" BatterySize="Size312" MicroPhone="Single" IsWireless="true" DeviceConfiguration="HighPowerOpen" FormFactorName="DaMITC13SWJHO" FF="274877906944"/>
+    <FormFactor HWPlatform="Dallas" Type="MicrophoneInTheCanal" BatterySize="Size312" MicroPhone="Single" IsWireless="true" DeviceConfiguration="LowPowerLowNoiseClosed" FormFactorName="DaMITC13SWJLC" FF="549755813888"/>
+    <FormFactor HWPlatform="Dallas" Type="MicrophoneInTheCanal" BatterySize="Size312" MicroPhone="Single" IsWireless="false" DeviceConfiguration="NormalPowerClosed" FormFactorName="DaMITC13SNJNC" FF="1099511627776"/>
+    <FormFactor HWPlatform="Dallas" Type="MicrophoneInTheCanal" BatterySize="Size312" MicroPhone="Single" IsWireless="false" DeviceConfiguration="HighPowerClosed" FormFactorName="DaMITC13SNJHC" FF="2199023255552"/>
+    <FormFactor HWPlatform="Dallas" Type="MicrophoneInTheCanal" BatterySize="Size312" MicroPhone="Single" IsWireless="false" DeviceConfiguration="HighPowerOpen" FormFactorName="DaMITC13SNJHO" FF="4398046511104"/>
+    <FormFactor HWPlatform="Dallas" Type="MicrophoneInTheCanal" BatterySize="Size312" MicroPhone="Single" IsWireless="false" DeviceConfiguration="LowPowerLowNoiseClosed" FormFactorName="DaMITC13SNJLC" FF="8796093022208"/>
+    <FormFactor HWPlatform="Dallas" Type="CompletelyInTheCanal" BatterySize="Size10A" MicroPhone="Single" IsWireless="false" DeviceConfiguration="NormalPowerClosed" FormFactorName="DaCIC10ASNJNC" FF="17592186044416"/>
+    <FormFactor HWPlatform="Dallas" Type="CompletelyInTheCanal" BatterySize="Size10A" MicroPhone="Single" IsWireless="false" DeviceConfiguration="HighPowerClosed" FormFactorName="DaCIC10ASNJHC" FF="35184372088832"/>
+    <FormFactor HWPlatform="Dallas" Type="CompletelyInTheCanal" BatterySize="Size10A" MicroPhone="Single" IsWireless="false" DeviceConfiguration="HighPowerOpen" FormFactorName="DaCIC10ASNJHO" FF="70368744177664"/>
+    <FormFactor HWPlatform="Dallas" Type="CompletelyInTheCanal" BatterySize="Size10A" MicroPhone="Single" IsWireless="false" DeviceConfiguration="LowPowerLowNoiseClosed" FormFactorName="DaCIC10ASNJLC" FF="140737488355328"/>
+    <FormFactor HWPlatform="Dallas" Type="MicrophoneCompletelyInTheCanal" BatterySize="Size10A" MicroPhone="Single" IsWireless="false" DeviceConfiguration="NormalPowerClosed" FormFactorName="DaMCIC10ASNJNC" FF="281474976710656"/>
+    <FormFactor HWPlatform="Dallas" Type="MicrophoneCompletelyInTheCanal" BatterySize="Size10A" MicroPhone="Single" IsWireless="false" DeviceConfiguration="HighPowerClosed" FormFactorName="DaMCIC10ASNJHC" FF="562949953421312"/>
+    <FormFactor HWPlatform="Dallas" Type="MicrophoneCompletelyInTheCanal" BatterySize="Size10A" MicroPhone="Single" IsWireless="false" DeviceConfiguration="HighPowerOpen" FormFactorName="DaMCIC10ASNJHO" FF="1125899906842624"/>
+    <FormFactor HWPlatform="Dallas" Type="MicrophoneCompletelyInTheCanal" BatterySize="Size10A" MicroPhone="Single" IsWireless="false" DeviceConfiguration="LowPowerLowNoiseClosed" FormFactorName="DaMCIC10ASNJLC" FF="2251799813685248"/>
+    <FormFactor HWPlatform="Dallas" Type="InvisibleInTheCanal" BatterySize="Size10A" MicroPhone="Single" IsWireless="false" DeviceConfiguration="LowPowerLowNoiseClosed" FormFactorName="DaIIC10ASNJLC" FF="4503599627370496"/>
+  </FormFactors>
+  <ProductFeatures/>
+</SPDProductData>

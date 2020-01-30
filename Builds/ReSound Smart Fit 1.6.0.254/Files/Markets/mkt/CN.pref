@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Market xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="CN.mkt" InternalName="China">
+  <Version Major="3" Minor="8" DataVersion="1"/>
+  <Preferences>
+    <Pref ID="AutorelateSaveOption" Type="Enum" DefaultValue="Yes"/>
+    <Pref ID="CommDevices" Type="Enum" DefaultValue="FittingDongle:0"/>
+    <Pref ID="BASS" Type="Enum" DefaultValue="P1AsBasic"/>
+    <Pref ID="BASS3" Type="Enum" DefaultValue="P1AsBasic"/>
+    <Pref ID="CouplerType" Type="Enum" DefaultValue="TwoCCGain"/>
+    <Pref ID="DFSGainClampingEnabled" Type="Boolean" DefaultValue="0"/>
+    <Pref ID="Language" Type="Enum" DefaultValue="zh-CN"/>
+    <Pref ID="PinCode" Type="Int" DefaultValue="0"/>
+    <Pref ID="PreferFitting" Type="Enum" DefaultValue="TwoPowerBands_5080"/>
+    <Pref ID="SpecType" Type="Enum" DefaultValue="IEC118_0"/>
+    <Pref ID="UpdatesCheckOnSchedule" Type="Boolean" DefaultValue="1"/>
+    <Pref ID="UpdatesFrequency" Type="Enum" DefaultValue="TwoWeeks"/>
+    <Pref ID="WebLaunchSite" Type="String" DefaultValue="www.resoundchina.com"/>
+    <Pref ID="P3" Type="Enum" DefaultValue="TFOG"/>
+  </Preferences>
+</Market>

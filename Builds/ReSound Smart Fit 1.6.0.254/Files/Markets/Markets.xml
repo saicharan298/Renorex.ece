@@ -1,0 +1,753 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Image="" - Image can be set to "" : the flag will not display -->
+<Product ProductCode="{B1AEFBD8-442C-4815-9A2E-8649C899540D}" ExeName="SmartFit" ProductName="ReSound Smart Fit 1.6" Brand="RS" ProductVersion="4.6" NextPatchProductVersion="4.6" GTIN="05708296181056" AssistAppVersion="50" PreviousProductCode="{C4CBE011-575B-4A64-AD81-B31B65B49090}" PreviousProductVersion="3.170" PreviousExeName="Aventa" PreviousProductName="ReSound Aventa 3" PreviousGTIN="05708296176649" PreviousAssistAppVersion="30" LDKey="mob-251b4223-dc6a-4e30-9d2d-07fe67450c66">
+  <NoahModule SuperModuleLocalId="1" SuperModuleName="ReSound" SubModuleOneId="2" SubModuleTwoId="79" LocalId="3" NoahModuleName="ReSound Smart Fit 1.6"/>
+  <Languages>
+    <Language ID="2052" Name="Chinese"/>
+    <Language ID="1043" Name="Dutch"/>
+    <Language ID="1033" Name="English"/>
+    <Language ID="1036" Name="French"/>
+    <Language ID="1041" Name="Japanese"/>
+    <Language ID="1031" Name="German"/>
+  </Languages>
+  <PrecompiledAssembies>
+    <PrecompiledAssembly Name="Aventa.exe"/>
+    <PrecompiledAssembly Name="ReSound.Fuse.Common.dll"/>
+    <PrecompiledAssembly Name="ReSound.Fuse.Config.dll"/>
+    <PrecompiledAssembly Name="ReSound.Fuse.DataAccessLayer.dll"/>
+    <PrecompiledAssembly Name="ReSound.Fuse.DataAccessLayerInterface.dll"/>
+    <PrecompiledAssembly Name="ReSound.Fuse.Domain.dll"/>
+  </PrecompiledAssembies>
+  <Markets>
+    <Market ID="US" Image="FlagBitmaps\USA.bmp" IsNordic="0">
+      <DisplayNames>
+        <English>United States</English>
+        <German>Vereinigte Staaten</German>
+        <Dutch>Verenigde Staten</Dutch>
+        <French>États-Unis</French>
+        <Japanese>アメリカ合衆国</Japanese>
+        <Chinese>美国</Chinese>
+      </DisplayNames>
+      <files>
+        <file name="mkt\US.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>
+        <file name="mkt\US.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt\HAE\US.mkt" destpath="INSTALLDIR" dest="data\Market\HAE\market.mkt"/>
+        <file name="mkt\Excel\US.mkt" destpath="INSTALLDIR" dest="data\Market\Excel\market.mkt"/>
+        <file name="mkt\Encore\US.mkt" destpath="INSTALLDIR" dest="data\Market\Encore\market.mkt"/>
+        <file name="mkt\HearPlan\US.mkt" destpath="INSTALLDIR" dest="data\Market\HearPlan\market.mkt"/>
+        <file name="mkt\Optimal\US.mkt" destpath="INSTALLDIR" dest="data\Market\Optimal\market.mkt"/>
+        <file name="mkt\Communicator\US.mkt" destpath="INSTALLDIR" dest="data\Market\Communicator\market.mkt"/>
+        <file name="mkt\Wave\US.mkt" destpath="INSTALLDIR" dest="data\Market\Wave\market.mkt"/>
+        <file name="mkt\Concept\US.mkt" destpath="INSTALLDIR" dest="data\Market\Concept\market.mkt"/>
+        <file name="mkt\Emeritus\US.mkt" destpath="INSTALLDIR" dest="data\Market\Emeritus\market.mkt"/>
+        <file name="mkt\Intelahear\US.mkt" destpath="INSTALLDIR" dest="data\Market\Intelahear\market.mkt"/>
+        <file name="mkt2\US.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>
+        <file name="mkt2\US.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt2\market.fflag" destpath="INSTALLDIR" dest="data\Market\market.fflag"/>
+        <file name="mkt2\Communicator\US.mkt" destpath="INSTALLDIR" dest="data\Market\Communicator\market.mkt"/>
+        <file name="mkt2\Concept\US.mkt" destpath="INSTALLDIR" dest="data\Market\Concept\market.mkt"/>
+        <file name="mkt2\Emeritus\US.mkt" destpath="INSTALLDIR" dest="data\Market\Emeritus\market.mkt"/>
+        <file name="mkt2\fujilex\US.mkt" destpath="INSTALLDIR" dest="data\Market\fujilex\market.mkt"/>
+        <file name="mkt2\HAE\US.mkt" destpath="INSTALLDIR" dest="data\Market\HAE\market.mkt"/>
+        <file name="mkt2\Intelahear\US.mkt" destpath="INSTALLDIR" dest="data\Market\Intelahear\market.mkt"/>
+        <file name="mkt2\Optimal\US.mkt" destpath="INSTALLDIR" dest="data\Market\Optimal\market.mkt"/>
+        <file name="mkt2\Wave\US.mkt" destpath="INSTALLDIR" dest="data\Market\Wave\market.mkt"/>
+      </files>
+    </Market>
+    <Market ID="AT" Image="FlagBitmaps\Austria.bmp" IsNordic="0">
+      <DisplayNames>
+        <English>Austria</English>
+        <German>Österreich</German>
+        <Japanese>オーストリア</Japanese>
+        <Chinese>奥地利</Chinese>
+        <Dutch>Oostenrijk</Dutch>
+        <French>Autriche</French>
+      </DisplayNames>
+      <files>
+        <file name="mkt\AT.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>
+        <file name="mkt\AT.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt2\AT.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>
+        <file name="mkt2\AT.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt2\market.fflag" destpath="INSTALLDIR" dest="data\Market\market.fflag"/>
+      </files>
+    </Market>
+    <Market ID="AU" Image="FlagBitmaps\Australia.bmp" IsNordic="0">
+      <DisplayNames>
+        <English>Australia</English>
+        <German>Australien</German>
+        <Chinese>澳大利亚</Chinese>
+        <Japanese>オーストラリア</Japanese>
+        <Dutch>Australië</Dutch>
+        <French>Australie</French>
+      </DisplayNames>
+      <files>
+        <file name="mkt\AU.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>
+        <file name="mkt\AU.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt2\AU.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>
+        <file name="mkt2\AU.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt2\market.fflag" destpath="INSTALLDIR" dest="data\Market\market.fflag"/>
+      </files>
+    </Market>
+    <Market ID="BE" Image="FlagBitmaps\Belgium.bmp" IsNordic="0">
+      <DisplayNames>
+        <English>Belgium</English>
+        <German>Belgien</German>
+        <French>Belgique</French>
+        <Chinese>比利时</Chinese>
+        <Japanese>ベルギー</Japanese>
+        <Dutch>België</Dutch>
+      </DisplayNames>
+      <files>
+        <file name="mkt\BE.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>
+        <file name="mkt\BE.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt2\BE.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>
+        <file name="mkt2\BE.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt2\market.fflag" destpath="INSTALLDIR" dest="data\Market\market.fflag"/>
+      </files>
+    </Market>
+    <Market ID="BG" Image="FlagBitmaps\Bulgaria.bmp" IsNordic="0">
+      <DisplayNames>
+        <English>Bulgaria</English>
+        <German>Bulgarien</German>
+        <Japanese>ブルガリア</Japanese>
+        <Chinese>保加利亚</Chinese>
+        <French>Bulgarie</French>
+        <Dutch>Bulgarije</Dutch>
+      </DisplayNames>
+      <files>
+        <file name="mkt\BG.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>
+        <file name="mkt\BG.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt2\BG.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>
+        <file name="mkt2\BG.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt2\market.fflag" destpath="INSTALLDIR" dest="data\Market\market.fflag"/>
+      </files>
+    </Market>
+    <Market ID="BR" Image="FlagBitmaps\Brazil.bmp" IsNordic="0">
+      <DisplayNames>
+        <English>Brazil</English>
+        <German>Brasilien</German>
+        <Japanese>ブラジル</Japanese>
+        <Chinese>巴西</Chinese>
+        <Dutch>Brazilië</Dutch>
+        <French>Brésil</French>
+      </DisplayNames>
+      <files>
+        <file name="mkt\BR.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>
+        <file name="mkt\BR.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt2\BR.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>
+        <file name="mkt2\BR.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt2\market.fflag" destpath="INSTALLDIR" dest="data\Market\market.fflag"/>
+      </files>
+    </Market>
+    <Market ID="CA" Image="FlagBitmaps\Canada.bmp" IsNordic="0">
+      <DisplayNames>
+        <English>Canada</English>
+        <German>Kanada</German>
+        <Japanese>カナダ</Japanese>
+        <Chinese>加拿大</Chinese>
+        <French>Canada</French>
+        <Dutch>Canada</Dutch>
+      </DisplayNames>
+      <files>
+        <file name="mkt\CA.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>
+        <file name="mkt\CA.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt2\CA.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>
+        <file name="mkt2\CA.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt2\market.fflag" destpath="INSTALLDIR" dest="data\Market\market.fflag"/>
+      </files>
+    </Market>
+    <Market ID="CH" Image="FlagBitmaps\Switzerland.bmp" IsNordic="0">
+      <DisplayNames>
+        <English>Switzerland</English>
+        <German>Schweiz</German>
+        <French>Suisse</French>
+        <Dutch>Zwitserland</Dutch>
+        <Chinese>瑞士</Chinese>
+        <Japanese>スイス</Japanese>
+      </DisplayNames>
+      <files>
+        <file name="mkt\CH.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>
+        <file name="mkt\CH.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt2\CH.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>
+        <file name="mkt2\CH.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt2\market.fflag" destpath="INSTALLDIR" dest="data\Market\market.fflag"/>
+      </files>
+    </Market>
+    <Market ID="CN" Image="FlagBitmaps\China.bmp" IsNordic="0">
+      <DisplayNames>
+        <English>China</English>
+        <German>China</German>
+        <Dutch>China</Dutch>
+        <French>Chine</French>
+        <Chinese>中国</Chinese>
+        <Japanese>中国</Japanese>
+      </DisplayNames>
+      <files>
+        <file name="mkt\CN.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>
+        <file name="mkt\CN.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt2\CN.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>
+        <file name="mkt2\CN.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt2\market.fflag" destpath="INSTALLDIR" dest="data\Market\market.fflag"/>
+      </files>
+    </Market>
+    <Market ID="CZ" Image="FlagBitmaps\Czech Republic.bmp" IsNordic="0">
+      <DisplayNames>
+        <English>Czech Republic</English>
+        <German>Tschechische Republik</German>
+        <French>République tchèque</French>
+        <Chinese>捷克共和国</Chinese>
+        <Japanese>チェコ共和国</Japanese>
+        <Dutch>Tsjechische Republiek</Dutch>
+      </DisplayNames>
+      <files>
+        <file name="mkt\CZ.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>
+        <file name="mkt\CZ.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt2\CZ.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>
+        <file name="mkt2\CZ.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt2\market.fflag" destpath="INSTALLDIR" dest="data\Market\market.fflag"/>
+      </files>
+    </Market>
+    <Market ID="DE" Image="FlagBitmaps\Germany.bmp" IsNordic="0">
+      <DisplayNames>
+        <English>Germany</English>
+        <German>Deutschland</German>
+        <Chinese>德国</Chinese>
+        <Japanese>ドイツ</Japanese>
+        <French>Allemagne</French>
+        <Dutch>Duitsland</Dutch>
+      </DisplayNames>
+      <files>
+        <file name="mkt\DE.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>
+        <file name="mkt\DE.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt2\DE.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>
+        <file name="mkt2\DE.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt2\market.fflag" destpath="INSTALLDIR" dest="data\Market\market.fflag"/>
+      </files>
+    </Market>
+    <Market ID="DH" Image="FlagBitmaps\DH.bmp" IsNordic="1">
+      <DisplayNames>
+        <English>NLHL</English>
+        <German>NLHL</German>
+        <Dutch>NLHL</Dutch>
+        <French>NLHL</French>
+        <Chinese>NLHL</Chinese>
+        <Japanese>NLHL</Japanese>
+      </DisplayNames>
+      <files>
+        <file name="mkt\DH.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>
+        <file name="mkt\DH.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt2\DH.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>
+        <file name="mkt2\DH.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt2\market.fflag" destpath="INSTALLDIR" dest="data\Market\market.fflag"/>
+      </files>
+    </Market>
+    <Market ID="DK" Image="FlagBitmaps\Denmark.bmp" IsNordic="1">
+      <DisplayNames>
+        <English>Denmark</English>
+        <German>Dänemark</German>
+        <Dutch>Denemarken</Dutch>
+        <Chinese>丹麦</Chinese>
+        <Japanese>デンマーク</Japanese>
+        <French>Danemark</French>
+      </DisplayNames>
+      <files>
+        <file name="mkt\DK.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>
+        <file name="mkt\DK.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt2\DK.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>
+        <file name="mkt2\DK.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt2\market.fflag" destpath="INSTALLDIR" dest="data\Market\market.fflag"/>
+      </files>
+    </Market>
+    <Market ID="ES" Image="FlagBitmaps\Spain.bmp" IsNordic="0">
+      <DisplayNames>
+        <English>Spain</English>
+        <German>Spanien</German>
+        <Dutch>Spanje</Dutch>
+        <French>Espagne</French>
+        <Chinese>西班牙</Chinese>
+        <Japanese>スペイン</Japanese>
+      </DisplayNames>
+      <files>
+        <file name="mkt\ES.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>
+        <file name="mkt\ES.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt\Amplifon\ES.mkt" destpath="INSTALLDIR" dest="data\Market\Amplifon\market.mkt"/>
+        <file name="mkt2\ES.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>
+        <file name="mkt2\ES.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt2\Amplifon\ES.mkt" destpath="INSTALLDIR" dest="data\Market\Amplifon\market.mkt"/>
+        <file name="mkt2\market.fflag" destpath="INSTALLDIR" dest="data\Market\market.fflag"/>
+      </files>
+    </Market>
+    <Market ID="FI" Image="FlagBitmaps\Finland.bmp" IsNordic="1">
+      <DisplayNames>
+        <English>Finland</English>
+        <German>Finland</German>
+        <French>Finlande</French>
+        <Chinese>芬兰</Chinese>
+        <Japanese>フィンランド</Japanese>
+        <Dutch>Finland</Dutch>
+      </DisplayNames>
+      <files>
+        <file name="mkt\FI.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>
+        <file name="mkt\FI.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt2\FI.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>
+        <file name="mkt2\FI.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt2\market.fflag" destpath="INSTALLDIR" dest="data\Market\market.fflag"/>
+      </files>
+    </Market>
+    <Market ID="FR" Image="FlagBitmaps\France.bmp" IsNordic="0">
+      <DisplayNames>
+        <English>France</English>
+        <German>Frankreich</German>
+        <French>France</French>
+        <Dutch>Frankrijk</Dutch>
+        <Chinese>法国</Chinese>
+        <Japanese>フランス</Japanese>
+      </DisplayNames>
+      <files>
+        <file name="mkt\FR.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>
+        <file name="mkt\FR.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt2\FR.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>
+        <file name="mkt2\FR.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt2\market.fflag" destpath="INSTALLDIR" dest="data\Market\market.fflag"/>
+      </files>
+    </Market>
+    <Market ID="GB" Image="FlagBitmaps\Great Britain.bmp" IsNordic="0">
+      <DisplayNames>
+        <English>United Kingdom</English>
+        <German>Vereinigtes Königreich</German>
+        <Dutch>Verenigd Koninkrijk</Dutch>
+        <French>Royaume-Uni</French>
+        <Chinese>联合王国</Chinese>
+        <Japanese>イギリス</Japanese>
+      </DisplayNames>
+      <files>
+        <file name="mkt\GB.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>
+        <file name="mkt\GB.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt2\GB.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>
+        <file name="mkt2\GB.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt2\market.fflag" destpath="INSTALLDIR" dest="data\Market\market.fflag"/>
+      </files>
+    </Market>
+    <Market ID="GR" Image="FlagBitmaps\Greece.bmp" IsNordic="0">
+      <DisplayNames>
+        <English>Greece</English>
+        <German>Griechenland</German>
+        <Japanese>ギリシャ</Japanese>
+        <Chinese>希腊</Chinese>
+        <French>Grèce</French>
+        <Dutch>Griekenland</Dutch>
+      </DisplayNames>
+      <files>
+        <file name="mkt\GR.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>
+        <file name="mkt\GR.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt2\GR.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>
+        <file name="mkt2\GR.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt2\market.fflag" destpath="INSTALLDIR" dest="data\Market\market.fflag"/>
+      </files>
+    </Market>
+    <Market ID="HK" Image="FlagBitmaps\HK.bmp" IsNordic="0">
+      <DisplayNames>
+        <English>Hong Kong</English>
+        <German>Hongkong</German>
+        <Dutch>Hong Kong</Dutch>
+        <French>Hong-Kong</French>
+        <Chinese>香港</Chinese>
+        <Japanese>香港</Japanese>
+      </DisplayNames>
+      <files>
+        <file name="mkt\HK.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>
+        <file name="mkt\HK.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt2\HK.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>
+        <file name="mkt2\HK.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt2\market.fflag" destpath="INSTALLDIR" dest="data\Market\market.fflag"/>
+      </files>
+    </Market>
+    <Market ID="HR" Image="FlagBitmaps\Croatia.bmp" IsNordic="0">
+      <DisplayNames>
+        <English>Croatia</English>
+        <German>Kroatien</German>
+        <Japanese>クロアチア</Japanese>
+        <Chinese>克罗地亚</Chinese>
+        <Dutch>Kroatië</Dutch>
+        <French>Croatie</French>
+      </DisplayNames>
+      <files>
+        <file name="mkt\HR.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>
+        <file name="mkt\HR.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt2\HR.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>
+        <file name="mkt2\HR.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt2\market.fflag" destpath="INSTALLDIR" dest="data\Market\market.fflag"/>
+      </files>
+    </Market>
+    <Market ID="HU" Image="FlagBitmaps\Hungary.bmp" IsNordic="0">
+      <DisplayNames>
+        <English>Hungary</English>
+        <German>Ungarn</German>
+        <Japanese>ハンガリー</Japanese>
+        <Chinese>匈牙利</Chinese>
+        <Dutch>Hongarije</Dutch>
+        <French>Hongrie</French>
+      </DisplayNames>
+      <files>
+        <file name="mkt\HU.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>
+        <file name="mkt\HU.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt2\HU.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>
+        <file name="mkt2\HU.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt2\market.fflag" destpath="INSTALLDIR" dest="data\Market\market.fflag"/>
+      </files>
+    </Market>
+    <Market ID="IG" Image="FlagBitmaps\International.bmp" IsNordic="0">
+      <DisplayNames>
+        <English>International</English>
+        <German>International</German>
+        <French>International</French>
+        <Dutch>Internationale</Dutch>
+        <Chinese>国际</Chinese>
+        <Japanese>インターナショナル</Japanese>
+      </DisplayNames>
+      <files>
+        <file name="mkt\IG.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>
+        <file name="mkt\IG.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt2\IG.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>
+        <file name="mkt2\IG.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt2\market.fflag" destpath="INSTALLDIR" dest="data\Market\market.fflag"/>
+      </files>
+    </Market>
+    <Market ID="IN" Image="FlagBitmaps\India.bmp" IsNordic="0">
+      <DisplayNames>
+        <English>India</English>
+        <German>Indien</German>
+        <Dutch>Indië</Dutch>
+        <French>Inde</French>
+        <Chinese>印度</Chinese>
+        <Japanese>インド</Japanese>
+      </DisplayNames>
+      <files>
+        <file name="mkt\IN.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>
+        <file name="mkt\IN.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt2\IN.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>
+        <file name="mkt2\IN.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt2\market.fflag" destpath="INSTALLDIR" dest="data\Market\market.fflag"/>
+      </files>
+    </Market>
+    <Market ID="IR" Image="FlagBitmaps\Iran.bmp" IsNordic="0">
+      <DisplayNames>
+        <English>Iran</English>
+        <German>Iran</German>
+        <French>Iran</French>
+        <Dutch>Iran</Dutch>
+        <Chinese>伊朗</Chinese>
+        <Japanese>イラン</Japanese>
+      </DisplayNames>
+      <files>
+        <file name="mkt\IR.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>
+        <file name="mkt\IR.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt2\IR.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>
+        <file name="mkt2\IR.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt2\market.fflag" destpath="INSTALLDIR" dest="data\Market\market.fflag"/>
+      </files>
+    </Market>
+    <Market ID="IT" Image="FlagBitmaps\Italy.bmp" IsNordic="0">
+      <DisplayNames>
+        <English>Italy</English>
+        <German>Italien</German>
+        <Chinese>意大利</Chinese>
+        <Japanese>イタリア</Japanese>
+        <French>Italie</French>
+        <Dutch>Italië</Dutch>
+      </DisplayNames>
+      <files>
+        <file name="mkt\IT.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>
+        <file name="mkt\IT.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt2\IT.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>
+        <file name="mkt2\IT.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt2\market.fflag" destpath="INSTALLDIR" dest="data\Market\market.fflag"/>
+      </files>
+    </Market>
+    <Market ID="JP" Image="FlagBitmaps\Japan.bmp" IsNordic="0">
+      <DisplayNames>
+        <English>Japan</English>
+        <German>Japan</German>
+        <Japanese>日本</Japanese>
+        <Chinese>日本</Chinese>
+        <French>Japon</French>
+        <Dutch>Japan</Dutch>
+      </DisplayNames>
+      <files>
+        <file name="mkt\JP.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>
+        <file name="mkt\JP.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt\FujiLex\JP.mkt" destpath="INSTALLDIR" dest="data\Market\FujiLex\market.mkt"/>
+        <file name="mkt\JPRepair\JP.mkt" destpath="INSTALLDIR" dest="data\Market\JPRepair\market.mkt"/>
+        <file name="mkt\MakickieLex\JP.mkt" destpath="INSTALLDIR" dest="data\Market\MakickieLex\market.mkt"/>
+        <file name="mkt\XVEX\JP.mkt" destpath="INSTALLDIR" dest="data\Market\XVEX\market.mkt"/>
+        <file name="mkt\Sousa\JP.mkt" destpath="INSTALLDIR" dest="data\Market\Sousa\market.mkt"/>
+        <file name="mkt\Sousa\JP.pref" destpath="INSTALLDIR" dest="data\Market\Sousa\market.pref"/>
+        <file name="mkt2\JP.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>
+        <file name="mkt2\JP.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt2\MakickieLex\JP.mkt" destpath="INSTALLDIR" dest="data\Market\MakickieLex\market.mkt"/>
+        <file name="mkt2\market.fflag" destpath="INSTALLDIR" dest="data\Market\market.fflag"/>
+      </files>
+    </Market>
+    <Market ID="KR" Image="FlagBitmaps\South Korea.bmp" IsNordic="0">
+      <DisplayNames>
+        <English>Korea</English>
+        <German>Korea</German>
+        <Japanese>韓国</Japanese>
+        <Chinese>韩国</Chinese>
+        <French>Corée</French>
+        <Dutch>Korea</Dutch>
+      </DisplayNames>
+      <files>
+        <file name="mkt\KR.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>
+        <file name="mkt\KR.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt2\KR.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>
+        <file name="mkt2\KR.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt2\market.fflag" destpath="INSTALLDIR" dest="data\Market\market.fflag"/>
+      </files>
+    </Market>
+    <Market ID="NL" Image="FlagBitmaps\Netherlands.bmp" IsNordic="0">
+      <DisplayNames>
+        <English>Netherlands</English>
+        <German>Niederlande</German>
+        <Japanese>オランダ</Japanese>
+        <Chinese>荷兰</Chinese>
+        <Dutch>Nederland</Dutch>
+        <French>Pays-Bas</French>
+      </DisplayNames>
+      <files>
+        <file name="mkt\NL.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>
+        <file name="mkt\NL.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt2\NL.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>
+        <file name="mkt2\NL.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt2\market.fflag" destpath="INSTALLDIR" dest="data\Market\market.fflag"/>
+      </files>
+    </Market>
+    <Market ID="NO" Image="FlagBitmaps\Norway.bmp" IsNordic="1">
+      <DisplayNames>
+        <English>Norway</English>
+        <German>Norwegen</German>
+        <French>Norvège</French>
+        <Dutch>Noorwegen</Dutch>
+        <Chinese>挪威</Chinese>
+        <Japanese>ノルウェー</Japanese>
+      </DisplayNames>
+      <files>
+        <file name="mkt\NO.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>
+        <file name="mkt\NO.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt2\NO.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>
+        <file name="mkt2\NO.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt2\market.fflag" destpath="INSTALLDIR" dest="data\Market\market.fflag"/>
+      </files>
+    </Market>
+    <Market ID="NZ" Image="FlagBitmaps\New Zealand.bmp" IsNordic="0">
+      <DisplayNames>
+        <English>New Zealand</English>
+        <German>Neuseeland</German>
+        <Dutch>Nieuw-Zeeland</Dutch>
+        <French>Nouvelle-Zélande</French>
+        <Japanese>ニュージーランド</Japanese>
+        <Chinese>新西兰</Chinese>
+      </DisplayNames>
+      <files>
+        <file name="mkt\NZ.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>
+        <file name="mkt\NZ.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt2\NZ.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>
+        <file name="mkt2\NZ.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt2\market.fflag" destpath="INSTALLDIR" dest="data\Market\market.fflag"/>
+      </files>
+    </Market>
+    <Market ID="PL" Image="FlagBitmaps\Poland.bmp" IsNordic="0">
+      <DisplayNames>
+        <English>Poland</English>
+        <German>Polen</German>
+        <Dutch>Polen</Dutch>
+        <French>Pologne</French>
+        <Chinese>波兰</Chinese>
+        <Japanese>ポーランド</Japanese>
+      </DisplayNames>
+      <files>
+        <file name="mkt\PL.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>
+        <file name="mkt\PL.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt2\PL.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>
+        <file name="mkt2\PL.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt2\market.fflag" destpath="INSTALLDIR" dest="data\Market\market.fflag"/>
+      </files>
+    </Market>
+    <Market ID="PT" Image="FlagBitmaps\Portugal.bmp" IsNordic="0">
+      <DisplayNames>
+        <English>Portugal</English>
+        <German>Portugal</German>
+        <Chinese>葡萄牙</Chinese>
+        <Japanese>ポルトガル</Japanese>
+        <Dutch>Portugal</Dutch>
+        <French>Portugal</French>
+      </DisplayNames>
+      <files>
+        <file name="mkt\PT.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>
+        <file name="mkt\PT.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt2\PT.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>
+        <file name="mkt2\PT.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt2\market.fflag" destpath="INSTALLDIR" dest="data\Market\market.fflag"/>
+      </files>
+    </Market>
+    <Market ID="RO" Image="FlagBitmaps\Romania.bmp" IsNordic="0">
+      <DisplayNames>
+        <English>Romania</English>
+        <German>Rumänien</German>
+        <French>Roumanie</French>
+        <Dutch>Roemenië</Dutch>
+        <Chinese>罗马尼亚</Chinese>
+        <Japanese>ルーマニア</Japanese>
+      </DisplayNames>
+      <files>
+        <file name="mkt\RO.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>
+        <file name="mkt\RO.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt2\RO.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>
+        <file name="mkt2\RO.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt2\market.fflag" destpath="INSTALLDIR" dest="data\Market\market.fflag"/>
+      </files>
+    </Market>
+    <Market ID="RU" Image="FlagBitmaps\Russia.bmp" IsNordic="0">
+      <DisplayNames>
+        <English>Russia</English>
+        <German>Russland</German>
+        <Chinese>俄国</Chinese>
+        <Japanese>ロシア</Japanese>
+        <Dutch>Rusland</Dutch>
+        <French>Russie</French>
+      </DisplayNames>
+      <files>
+        <file name="mkt\RU.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>
+        <file name="mkt\RU.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt\Istok\RU.mkt" destpath="INSTALLDIR" dest="data\Market\Istok\market.mkt"/>
+        <file name="mkt\Istok\RU.pref" destpath="INSTALLDIR" dest="data\Market\Istok\market.pref"/>
+        <file name="mkt2\RU.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>
+        <file name="mkt2\RU.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt2\market.fflag" destpath="INSTALLDIR" dest="data\Market\market.fflag"/>
+      </files>
+    </Market>
+    <Market ID="SE" Image="FlagBitmaps\Sweden.bmp" IsNordic="1">
+      <DisplayNames>
+        <English>Sweden</English>
+        <German>Schweden</German>
+        <Japanese>スウェーデン</Japanese>
+        <Chinese>瑞典</Chinese>
+        <Dutch>Zweden</Dutch>
+        <French>La Suède</French>
+      </DisplayNames>
+      <files>
+        <file name="mkt\SE.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>
+        <file name="mkt\SE.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt2\SE.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>
+        <file name="mkt2\SE.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt2\market.fflag" destpath="INSTALLDIR" dest="data\Market\market.fflag"/>
+      </files>
+    </Market>
+    <Market ID="TH" Image="FlagBitmaps\Thailand.bmp" IsNordic="0">
+      <DisplayNames>
+        <English>Thailand</English>
+        <German>Thailand</German>
+        <Dutch>Thailand</Dutch>
+        <French>Thaïlande</French>
+        <Chinese>泰国</Chinese>
+        <Japanese>タイ</Japanese>
+      </DisplayNames>
+      <files>
+        <file name="mkt\TH.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>
+        <file name="mkt\TH.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt2\TH.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>
+        <file name="mkt2\TH.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt2\market.fflag" destpath="INSTALLDIR" dest="data\Market\market.fflag"/>
+      </files>
+    </Market>
+    <Market ID="TR" Image="FlagBitmaps\Turkey.bmp" IsNordic="0">
+      <DisplayNames>
+        <English>Turkey</English>
+        <German>Türkei</German>
+        <French>Turquie</French>
+        <Dutch>Turkije</Dutch>
+        <Chinese>土耳其</Chinese>
+        <Japanese>トルコ</Japanese>
+      </DisplayNames>
+      <files>
+        <file name="mkt\TR.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>
+        <file name="mkt\TR.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt2\TR.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>
+        <file name="mkt2\TR.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt2\market.fflag" destpath="INSTALLDIR" dest="data\Market\market.fflag"/>
+      </files>
+    </Market>
+    <Market ID="TW" Image="FlagBitmaps\TW.bmp" IsNordic="0">
+      <DisplayNames>
+        <English>Taiwan</English>
+        <German>Taiwan</German>
+        <Dutch>Taiwan</Dutch>
+        <French>Taiwan</French>
+        <Chinese>台湾</Chinese>
+        <Japanese>台湾</Japanese>
+      </DisplayNames>
+      <files>
+        <file name="mkt\TW.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>
+        <file name="mkt\TW.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt2\TW.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>
+        <file name="mkt2\TW.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt2\market.fflag" destpath="INSTALLDIR" dest="data\Market\market.fflag"/>
+      </files>
+    </Market>
+    <Market ID="ZA" Image="FlagBitmaps\SouthAfrica.bmp" IsNordic="0">
+      <DisplayNames>
+        <English>South Africa</English>
+        <German>Südafrika</German>
+        <Dutch>Zuid-Afrika</Dutch>
+        <French>Afrique du Sud</French>
+        <Chinese>南非</Chinese>
+        <Japanese>南アフリカ</Japanese>
+      </DisplayNames>
+      <files>
+        <file name="mkt\ZA.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>
+        <file name="mkt\ZA.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt2\ZA.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>
+        <file name="mkt2\ZA.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt2\market.fflag" destpath="INSTALLDIR" dest="data\Market\market.fflag"/>
+      </files>
+    </Market>
+    <!-- Please enable the following when you test Private Label Markets
+    <Market ID="OP" Image="FlagBitmaps\OP.bmp" IsNordic="0">
+      <DisplayNames>
+        <English>ReSound Operations</English>
+        <German>ReSound Operations</German>
+        <Dutch>ReSound Operations</Dutch>
+        <French>ReSound opérations</French>
+        <Chinese>ReSound 行动</Chinese>
+        <Japanese>ReSound 操作</Japanese>
+      </DisplayNames>
+      <files>
+        <file name="mkt\OP.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt\US.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>
+        <file name="mkt2\OP.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt2\US.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>
+        <file name="mkt2\market.fflag" destpath="INSTALLDIR" dest="data\Market\market.fflag"/>
+      </files>
+    </Market>
+    <Market ID="PV" Image="FlagBitmaps\PV.bmp" IsNordic="0">
+      <DisplayNames>
+        <English>Private Label Market</English>
+        <German>Private Label Market</German>
+        <Dutch>Private Label Market</Dutch>
+        <French>Private Label Market</French>
+        <Chinese>Private Label Market</Chinese>
+        <Japanese>Private Label Market</Japanese>
+      </DisplayNames>
+      <files>
+        <file name="mkt\PV.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt\US.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>
+        <file name="mkt2\PV.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt2\US.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>      
+        <file name="mkt2\market.fflag" destpath="INSTALLDIR" dest="data\Market\market.fflag"/>
+      </files>
+    </Market>
+     -->
+  </Markets>
+  <Files>
+  </Files>
+</Product>

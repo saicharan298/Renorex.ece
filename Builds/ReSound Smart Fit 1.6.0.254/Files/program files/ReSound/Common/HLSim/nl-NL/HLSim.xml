@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <Version Major="1" Minor="0" />
+  <SoundAssets>
+      <SoundAsset Name="5473" SoundName="coldseason_nl.ave"/>
+      <SoundAsset Name="2249" SoundName="md+5lunch_nl.ave"/>
+      <SoundAsset Name="2250" SoundName="morning_nl.ave"/>
+      <SoundAsset Name="5475" SoundName="Police_Norway.ave"/>
+      <SoundAsset Name="2256" SoundName="soccer_nl.ave"/>
+      <SoundAsset Name="2251" SoundName="stocktip_nl.ave"/>
+      <SoundAsset Name="2252" SoundName="summer_nl.ave"/>
+  </SoundAssets>
+</Root>

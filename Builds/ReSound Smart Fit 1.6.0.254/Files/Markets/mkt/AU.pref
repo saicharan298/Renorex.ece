@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Market xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="AU.mkt">
+  <Version Major="3" Minor="12" DataVersion="0"/>
+  <Preferences>
+    <Pref ID="BASS" Type="Enum" DefaultValue="P1AsBasic"/>
+    <Pref ID="BASS3" Type="Enum" DefaultValue="P1AsBasic"/>
+    <Pref ID="CommDevices" Type="Enum" DefaultValue="FittingDongle:0"/>
+    <Pref ID="DFSGainClampingEnabled" Type="Boolean" DefaultValue="0"/>
+    <Pref ID="ECommerceWebSite" Type="String" DefaultValue="https://online.gnresound.com.au/en"/>
+    <Pref ID="Language" Type="Enum" DefaultValue="en-US"/>
+    <Pref ID="PinCode" Type="Int" DefaultValue="0"/>
+    <Pref ID="SpecType" Type="Enum" DefaultValue="IEC118_7"/>
+    <Pref ID="UpdatesCheckOnSchedule" Type="Boolean" DefaultValue="1"/>
+    <Pref ID="WebLaunchSite" Type="String" DefaultValue="http://www.resoundpro.com/en-AU"/>
+    <Pref ID="IsPediatricFittingEnabled" Type="Boolean" DefaultValue="1"/>
+    <Pref ID="FrequentEnvironments2" Type="Enum" DefaultValue="None"/>
+  </Preferences>
+</Market>

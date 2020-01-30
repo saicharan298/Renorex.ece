@@ -1,0 +1,80 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script src="avlupdates.js"></script>
+<link id="uistyles" href="UpdaterStyle.css" rel="stylesheet" type="text/css"/>
+<script>
+var twdl = unescape(top.window.document.location);
+var twdls = twdl.substr(twdl.indexOf("?"));
+var attribs = twdls.split("&");
+var _CustomCSS="";
+var _CustomStrings="";
+for (ii = 0; ii < attribs.length; ii++)
+{
+	var attrib = attribs[ii].split("=");
+	if (attrib[0].indexOf("CSS") != -1)
+		_CustomCSS = unescape(attrib[1]);
+	if (attrib[0].indexOf("Strings") != -1)
+		_CustomStrings = unescape(attrib[1]);
+}
+if (_CustomCSS.length > 0)
+	document.getElementById("uistyles").href=_CustomCSS;
+</script>
+<script src="lang/resource.js"></script>
+</head>
+<body topmargin="0" bottommargin="0" leftmargin="0" rightmargin="0" onload="populate()"  scroll="no">
+<!-- TOP NAVIGATION AND LOGO -->
+<div id="mainNavHeader">
+	<div id="mainNavLogo"></div>
+</div>
+
+<!-- SECONDARY NAVIGATION -->
+<div id="secNavHeader">
+</div>
+
+<div id="mainAlert">
+	<div id="mainPanel">
+		<div class="alertContent">You are not connected to the Internet</div>
+		<!--div class="alertClose"><img src="images/icon_close.gif" width="21" height="21" border="0"></div-->
+	</div>
+</div>
+		<div id="bottom">
+			<table cellpadding=0 cellspacing=0>
+			<tr>
+			<td>
+			<div id="copyright"><span id="ids_copyright">Copyright (c) 1997-2011 Flexera Software LLC.  All Rights Reserved.</span>| <a id="Aterms" href="http://www.flexerasoftware.com/company/terms_of_use.htm" target="_blank"><span id="ids_terms">Terms of Use</span></a>  | <a id="Aprivacy" href="http://www.flexerasoftware.com/company/legal.htm" target="_blank"><span id="ids_privacy">Privacy Statement</span></a></div></td>
+			<td width="18"><a href="help.htm" target="_blank"><img src="images/icon_help.gif" width="14" height="14" border="0" align="left"></a></td>
+			<td><a href="help.htm" target="_blank"><span id="ids_help">Help</span></a></td>
+			</tr>
+			</table>
+		</div>
+</body>
+<script>
+		function populate()
+		{
+			loadStrings();
+		}
+		function loadStrings()
+		{
+			document.charset = window.parent._UIcharset;
+
+			if (_CustomStrings.length > 0)
+				document.getElementById("strings").src = _CustomStrings + "/strings" + window.parent._UILangID + ".js";
+			else
+				document.getElementById("strings").src = "lang/strings" + window.parent._UILangID + ".js";
+			if (typeof(ar) == "undefined")
+				document.getElementById("strings").src = "lang/strings" + ((window.parent._UILangID & 0xff) + 1024) + ".js";
+			if (typeof(ar) == "undefined")
+				document.getElementById("strings").src = "lang/strings1033.js";
+
+			document.getElementById("ids_copyright").innerText = ar[IDS_COPYRIGHT];
+			document.getElementById("ids_terms").innerText = ar[IDS_TERMS];
+			document.getElementById("ids_privacy").innerText = ar[IDS_PRIVACY];
+			document.getElementById("ids_help").innerText = ar[IDS_HELP];
+		}
+</script>
+<script id="strings">
+</script>
+</html>

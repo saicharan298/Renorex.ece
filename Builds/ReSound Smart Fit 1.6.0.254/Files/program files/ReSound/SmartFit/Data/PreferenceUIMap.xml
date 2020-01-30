@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <tab StringID="3116">
+    <preferenceList>
+      <PreferenceID>Language</PreferenceID>
+      <PreferenceID>AutorelateSaveOption</PreferenceID>
+      <PreferenceID>StartScrn_NewFitting</PreferenceID>
+      <PreferenceID>StartScrn_FineTune</PreferenceID>
+      <PreferenceID>NavigatingToFitting</PreferenceID>
+      <PreferenceID>PreferFitting</PreferenceID>
+      <PreferenceID>InSituToneType</PreferenceID>
+      <PreferenceID>InSituToneLength</PreferenceID>
+      <PreferenceID>PercentGain</PreferenceID>
+      <PreferenceGroup GroupID ="DefaultEnvironmentPrograms">
+        <PreferenceID>FrequentEnvironments1</PreferenceID>
+        <PreferenceID>FrequentEnvironments2</PreferenceID>
+        <PreferenceID>FrequentEnvironments3</PreferenceID>
+        <PreferenceID>FrequentEnvironments4</PreferenceID>
+      </PreferenceGroup>
+    </preferenceList>
+    <preferenceList>
+      <PreferenceID>UseUCL</PreferenceID>
+      <PreferenceID>CheckVentCorrection</PreferenceID>
+      <PreferenceID>UseBoneConduction</PreferenceID>
+      <PreferenceID>DFSGainClampingEnabled</PreferenceID>
+      <PreferenceID>MuteHIWhenFitting</PreferenceID>
+      <PreferenceID>AlwaysPromptCalibration</PreferenceID>
+      <PreferenceID>BinauralCorrection</PreferenceID>
+      <PreferenceID>Bimodal</PreferenceID>
+      <PreferenceGroup GroupID ="RemoteFineTuneGroup">
+        <PreferenceID>RemoteFineTune</PreferenceID>
+        <PreferenceID>PatientFineTuneInitialStatus</PreferenceID>
+      </PreferenceGroup>
+      <PreferenceGroup GroupID ="RemoteFirmwareUpdateGroup">
+        <PreferenceID>RemoteFirmwareUpdate</PreferenceID>
+        <PreferenceID>PatientFirmwareUpdateInitialStatus</PreferenceID>
+      </PreferenceGroup>
+    </preferenceList>
+  </tab>
+  <tab StringID="3117">
+    <preferenceList>
+      <PreferenceID>SpecType</PreferenceID>
+      <PreferenceID>CommDevices</PreferenceID>
+      <PreferenceID>CouplerType</PreferenceID>
+      <PreferenceID>TargetRule</PreferenceID>
+      <PreferenceID>PediatricTargetRule</PreferenceID>
+      <PreferenceID>ExperienceLevel</PreferenceID>
+      <PreferenceID>RemDriverType</PreferenceID>
+      <PreferenceGroup GroupID ="PinCode">
+        <PreferenceID>UsePinCode</PreferenceID>
+        <PreferenceID>PinCode</PreferenceID>
+        <PreferenceID>PinCodePeriod</PreferenceID>
+      </PreferenceGroup>
+      <PreferenceID>SNS</PreferenceID>
+    </preferenceList>
+  </tab>
+  <tab StringID="3154">
+    <preferenceList>
+      <PreferenceID>ClinicName</PreferenceID>
+      <PreferenceID>ClinicAddress</PreferenceID>
+      <PreferenceID>ClinicPhone</PreferenceID>
+      <PreferenceID>ClinicLogo</PreferenceID>
+    </preferenceList>
+  </tab>
+  <tab StringID="8248">
+    <preferenceList>
+      <PreferenceGroup GroupID ="TestDevice">
+        <PreferenceID>P1</PreferenceID>
+        <PreferenceID>P2</PreferenceID>
+        <PreferenceID>P3</PreferenceID>
+        <PreferenceID>P4</PreferenceID>
+      </PreferenceGroup>
+    </preferenceList>
+  </tab>
+  <tab StringID="3573">
+    <preferenceList>
+      <PreferenceGroup GroupID ="WebUpdates">
+        <PreferenceID>EnableWebUpdates</PreferenceID>
+        <PreferenceID>UpdatesCheckOnSchedule</PreferenceID>
+        <PreferenceID>UpdatesDownloadAutomatically</PreferenceID>
+        <PreferenceID>UpdatesFrequency</PreferenceID>
+      </PreferenceGroup>
+    </preferenceList>
+  </tab>
+</Root>

@@ -1,0 +1,127 @@
+Build executed 2019-06-11 16:47
+User: hearing\!svctfsbuildagent
+Host: DKCPHTFSPBLD01
+Compiler version: I-2014.03-SP1-1
+commit: 3ee174a7f06df8dbf226552ebc281d0a47274ac1
+by: Build Robot 2019-06-11 16:45:28 +0200
+subject: Preparing Dooku1 release for version 1.0.42.3
+
+On branch Dooku1/release/1.0.42
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   ../QAVersion.txt
+	modified:   ../Tools/ConnectTest/ConnectTest/TestSpecification/Properties/AssemblyInfo.cs
+	modified:   ../Tools/MipsTest/MipsTest/Properties/AssemblyInfo.cs
+	modified:   ../Tools/VbatMonitor/VbatMonitor/Properties/AssemblyInfo.cs
+	modified:   ../Tools/VcoreMonitor/VcoreMonitor/Properties/AssemblyInfo.cs
+	modified:   ../algo/firmware/tst/PC24bit/PC24bitTestControl/Properties/AssemblyInfo.cs
+	modified:   ../ccos/firmware/test/TestRadioSleep/ConsoleApplication1/Backup/ConsoleApplication1/Properties/AssemblyInfo.cs
+	modified:   ../ccos/firmware/test/TestRadioSleep/ConsoleApplication1/ConsoleApplication1/Properties/AssemblyInfo.cs
+	modified:   ../ccos/firmware/test/TestWriteProtectFlash/ConsoleApplication1/Backup/ConsoleApplication1/Properties/AssemblyInfo.cs
+	modified:   ../ccos/firmware/test/TestWriteProtectFlash/ConsoleApplication1/ConsoleApplication1/Properties/AssemblyInfo.cs
+	modified:   ../controls/AlgoLabtest.Platform.Dooku1/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.Ad4Agc.Recipe/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.Ad4Agc.Test/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.Afgc.Initialization.Matlab.Test/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.Afgc.Initialization/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.Afgc.Recipe/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.Afgc.Test/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.Afgc/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.Afxdfs.Recipe/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.Afxdfs.Test/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.Afxdfs/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.AfxdfsInitFree.Recipe/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.AfxdfsInitFree.Test/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.AfxdfsInitFree/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.AutoSteering.Recipe/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.AutoSteering.Test/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.AutoSteering/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.BilateralCompression.Recipe/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.BilateralCompression.Test/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.Codec.Recipe/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.Codec.Test/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.Codec/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.DataLogging.Recipe/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.DataLogging.Test/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.DataLogging/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.DfsDataStorage/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.DfsInitialization.Test/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.DfsInitialization/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.DfsModeller1.Matlab.Test/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.DfsModeller1.Test/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.DfsModeller1/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.Directionality.Recipe/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.Directionality.Test/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.Directionality/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.DirectionalityCalibration.Test/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.DirectionalityCalibration/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.EnvironmentalClassifier.Recipe/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.EnvironmentalClassifier.Test/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.EnvironmentalClassifier/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.FineTuner.Recipe/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.FineTuner.Test/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.FineTuner/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.FrequencyLowering.Matlab.Test/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.FrequencyLowering.Recipe/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.FrequencyLowering.Test/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.FrequencyLowering/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.GainCoordination.Test/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.GainCoordination/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.HighFrequencyShifter.Recipe/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.HighFrequencyShifter.Test/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.HighFrequencyShifter/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.IO.Test/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.ImpulseNoiseReduction.Fixture/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.ImpulseNoiseReduction.ImpulseNoiseReduction/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.ImpulseNoiseReduction.Recipe/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.InSitu.Recipe/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.InSitu.Test/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.InSitu/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.InputMode.Recipe/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.InputMode.Test/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.InputMode/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.MelodyPlayer.Recipe/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.MelodyPlayer.Test/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.MelodyPlayer/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.NoiseReduction.Recipe/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.NoiseReduction.Test/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.NoiseReduction/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.Platform.Test/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.Platform/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.Satisfy.Recipe/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.Satisfy.Test/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.Satisfy/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.ShapingFilter.Test/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.ShapingFilter/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.Synchronization.Recipe/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.Synchronization.Test/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.Synchronization/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.TelecoilDfs.Test/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.TelecoilDfs/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.TinnitusSoundGenerator.Recipe/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.TinnitusSoundGenerator.Test/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.TinnitusSoundGenerator/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.UnitTestConfiguration/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.Warp.Recipe/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.Warp.Test/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.Warp/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.WindNoiseReduction.Recipe/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.WindNoiseReduction.Test/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.WindNoiseReduction/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.WirelessFeatures.Recipe/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.WirelessFeatures.Test/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.Dooku1.WirelessFeatures/Properties/AssemblyInfo.cs
+	modified:   ../controls/Algorithm.IO.TestHelpers/Properties/AssemblyInfo.cs
+	modified:   ../controls/Ratatosk.Platforms.OperatingSystem.Dooku1.Test/Properties/AssemblyInfo.cs
+	modified:   ../controls/Ratatosk.Platforms.OperatingSystem.Dooku1/Properties/AssemblyInfo.cs
+	modified:   ../hdi/controls/C5Dooku1Hybrid.Test/Properties/AssemblyInfo.cs
+	modified:   ../hdi/controls/C5Dooku1HybridShared.Test/Properties/AssemblyInfo.cs
+	modified:   ../hdi/controls/C5Dooku1HybridtestControl/Resound.HybridTest.UnitTestConfiguration/Properties/AssemblyInfo.cs
+	modified:   ../hdi/controls/C5Dooku1SharedControls/Properties/AssemblyInfo.cs
+	modified:   ../hdi/controls/C5HybridtestTestFrameWork/HybridtestControlGui/Properties/AssemblyInfo.cs
+	modified:   ../hdi/controls/HybridtestTestApplication/Properties/AssemblyInfo.cs
+
+no changes added to commit (use "git add" and/or "git commit -a")
+

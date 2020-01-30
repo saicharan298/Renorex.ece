@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Market xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="FR.mkt">
+  <Version Major="1" Minor="1" DataVersion="0"/>
+  <Preferences>
+    <Pref ID="Language" Type="Enum" DefaultValue="fr-FR"/>
+    <Pref ID="CheckVentCorrection" Type="Boolean" DefaultValue="0"/>
+    <Pref ID="DFSGainClampingEnabled" Type="Boolean" DefaultValue="0"/>
+    <Pref ID="AutorelateSaveOption" Type="Enum" DefaultValue="Prompt"/>
+    <Pref ID="FrequentEnvironments2" Type="Enum" DefaultValue="None"/>
+    <Pref ID="FrequentEnvironments3" Type="Enum" DefaultValue="None"/>
+    <Pref ID="PercentGain" Type="Enum" DefaultValue="Seventy"/>
+    <Pref ID="SpecType" Type="Enum" DefaultValue="IEC118_0"/>
+    <Pref ID="UpdatesDownloadAutomatically" Type="Boolean" DefaultValue="0"/>
+    <Pref ID="WebLaunchSite" Type="String" DefaultValue="www.resound.fr"/>
+    <Pref ID="P2" Type="Enum" DefaultValue="RefIEC"/>
+  </Preferences>
+</Market>

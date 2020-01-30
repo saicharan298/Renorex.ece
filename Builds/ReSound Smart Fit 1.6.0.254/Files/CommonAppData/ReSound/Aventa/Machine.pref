@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <Version Major="3" Minor="0" />
+  <Preferences>
+    <Pref ID="GainToggle" Type="Enum" DefaultValue="MaxNumber">
+      <Name ID="862"/>
+      <Values>
+        <Value ID="MaxNumber">
+          <Name ID="863"/>
+        </Value>
+        <Value ID="MidNumber">
+          <Name ID="863"/>
+        </Value>
+        <Value ID="MinNumber">
+          <Name ID="864"/>
+        </Value>
+      </Values>
+    </Pref>
+  </Preferences>
+  <Print>
+    <PrintPref>
+      <FittingDate Dispenser="true" Patient="true" />
+      <FitterName Dispenser="true" Patient="true" Value="" />
+      <NextAppointment Dispenser="true" Patient="true" />
+      <PatientName Dispenser="true" Patient="true" />
+      <PatientBirthDate Dispenser="true" Patient="true" />
+      <PatientExperience Dispenser="true" Patient="true" />
+      <PatientID Dispenser="true" Patient="true" />
+      <ClinicLogo Dispenser="true" Patient="true" />
+      <ClinicName Dispenser="true" Patient="true" />
+      <ClinicAddress Dispenser="true" Patient="true" />
+      <HIFamilyModel Dispenser="true" Patient="true" />
+      <HIPicture Dispenser="true" Patient="true" />
+      <HISerialNumber Dispenser="true" Patient="true" />
+      <HIPhysicalProperties Dispenser="true" Patient="true" />
+      <HITrialEndDate Dispenser="true" Patient="true" />
+      <HIBattery Dispenser="true" Patient="true" />
+      <HITubeSize Dispenser="true" Patient="true" />
+      <HIPatientNotes Dispenser="true" Patient="true" />
+      <AudiogramData Dispenser="true" Patient="true" />
+	  <SatisfyData Dispenser="true" Patient="true"/>
+      <ADL Dispenser="true" Patient="true" />
+      <ProgramData Dispenser="true" Patient="true" />
+      <Curves Dispenser="true" Patient="true" />
+      <EnvironmentOptimizer Dispenser="true" Patient="true" />
+      <BeepsVC Dispenser="true" Patient="true" />
+      <Notes Dispenser="true" Patient="true" />
+      <ProgramNames Dispenser="true" Patient="true" />
+      <ProgramDescriptions Dispenser="true" Patient="true" />
+      <Coupler Dispenser="true" Patient="true" />
+      <StimulusType Dispenser="true" Patient="true" />
+      <EarToEar Dispenser="true" Patient="false" />
+      <TSGProgramSettings Dispenser="true" Patient="false" />
+      <LEDVisualSettings Dispenser="false" Patient="true" />
+	  <PairedAccessories Dispenser="true" Patient="false" />
+    </PrintPref>
+  </Print>
+</Root>

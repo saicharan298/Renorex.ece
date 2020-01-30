@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Market xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="RU.mkt">
+  <Version Major="3" Minor="10" DataVersion="1"/>
+  <Preferences>
+    <Pref ID="AutorelateSaveOption" Type="Enum" DefaultValue="No"/>
+    <Pref ID="BASS" Type="Enum" DefaultValue="P1AsNaturalDirectionality"/>
+    <Pref ID="BASS3" Type="Enum" DefaultValue="P1AsNaturalDirectionality"/>
+    <Pref ID="CableGuideWebSite" Type="String" DefaultValue="http://www.resoundfiles.com/redirect/r.php?id=09TkKS5"/>
+    <Pref ID="CommDevices" Type="Enum" DefaultValue="Hipro"/>
+    <Pref ID="CouplerType" Type="Enum" DefaultValue="TwoCCGain"/>
+    <Pref ID="DFSGainClampingEnabled" Type="Boolean" DefaultValue="1"/>
+    <Pref ID="EcademyWebSite" Type="String" DefaultValue="http://www.resoundfiles.com/redirect/r.php?id=jAVgCoN"/>
+    <Pref ID="ECommerceWebSite" Type="String" DefaultValue=""/>
+    <Pref ID="ExperienceLevel" Type="Enum" DefaultValue="FirstTimeUser"/>
+    <Pref ID="Language" Type="Enum" DefaultValue="ru-RU"/>
+    <Pref ID="MuteHIWhenFitting" Type="Boolean" DefaultValue="0"/>
+    <Pref ID="NavigatingToFitting" Type="Enum" DefaultValue="SimulationMode"/>
+    <Pref ID="PediatricTargetRule" Type="Enum" DefaultValue="7"/>
+    <Pref ID="PinCode" Type="Int" DefaultValue="0"/>
+    <Pref ID="ShowADLAfterRead" Type="Boolean" DefaultValue="0"/>
+    <Pref ID="ShoweCommerceMenu" Type="Boolean" DefaultValue="0"/>
+    <Pref ID="SpecType" Type="Enum" DefaultValue="IEC118_7"/>
+    <Pref ID="StartScrn_FineTune" Type="Enum" DefaultValue="Fit"/>
+    <Pref ID="StartScrn_NewFitting" Type="Enum" DefaultValue="Start"/>
+    <Pref ID="TargetRule" Type="Enum" DefaultValue="0"/>
+    <Pref ID="UpdatesCheckOnSchedule" Type="Boolean" DefaultValue="1"/>
+    <Pref ID="UpdatesDownloadAutomatically" Type="Boolean" DefaultValue="1"/>
+    <Pref ID="UpdatesFrequency" Type="Enum" DefaultValue="FourWeeks"/>
+    <Pref ID="UsePLCode" Type="Boolean" DefaultValue="1"/>
+    <Pref ID="PLCode" Type="Int" DefaultValue="10"/>
+    <Pref ID="UseUCL" Type="Boolean" DefaultValue="1"/>
+    <Pref ID="UseBoneConduction" Type="Boolean" DefaultValue="1"/>
+    <Pref ID="WebLaunchSite" Type="String" DefaultValue="www.resound.com"/>
+    <Pref ID="FrequentEnvironments2" Type="Enum" DefaultValue="None"/>
+    <Pref ID="CheckVentCorrection" Type="Boolean" DefaultValue="1"/>
+  </Preferences>
+</Market>

@@ -1,0 +1,467 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FeatureFlag_Validation</name>
+    </assembly>
+    <members>
+        <member name="T:FeatureFlag_Validation.FeatureFlag_ValidationRepository">
+            <summary>
+            The class representing the FeatureFlag_ValidationRepository element repository.
+            </summary>
+        </member>
+        <member name="M:FeatureFlag_Validation.FeatureFlag_ValidationRepository.#ctor">
+            <summary>
+            Repository class constructor.
+            </summary>
+        </member>
+        <member name="P:FeatureFlag_Validation.FeatureFlag_ValidationRepository.Instance">
+            <summary>
+            Gets the singleton class instance representing the FeatureFlag_ValidationRepository element repository.
+            </summary>
+        </member>
+        <member name="P:FeatureFlag_Validation.FeatureFlag_ValidationRepository.TxtMkt">
+            <summary>
+            Gets or sets the value of variable TxtMkt.
+            </summary>
+        </member>
+        <member name="P:FeatureFlag_Validation.FeatureFlag_ValidationRepository.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:FeatureFlag_Validation.FeatureFlag_ValidationRepository.SmartFit15InstallShieldWizard">
+            <summary>
+            The SmartFit15InstallShieldWizard folder.
+            </summary>
+        </member>
+        <member name="P:FeatureFlag_Validation.FeatureFlag_ValidationRepository.ReSoundSmartFit15InstallShieldWi">
+            <summary>
+            The ReSoundSmartFit15InstallShieldWi folder.
+            </summary>
+        </member>
+        <member name="P:FeatureFlag_Validation.FeatureFlag_ValidationRepository.ResoundSmartFitProgramsAndFeature">
+            <summary>
+            The ResoundSmartFitProgramsAndFeature folder.
+            </summary>
+        </member>
+        <member name="P:FeatureFlag_Validation.FeatureFlag_ValidationRepository.List1000">
+            <summary>
+            The List1000 folder.
+            </summary>
+        </member>
+        <member name="T:FeatureFlag_Validation.FeatureFlag_ValidationRepositoryFolders">
+            <summary>
+            Inner folder classes.
+            </summary>
+        </member>
+        <member name="T:FeatureFlag_Validation.FeatureFlag_ValidationRepositoryFolders.SmartFit15InstallShieldWizardAppFolder">
+            <summary>
+            The SmartFit15InstallShieldWizardAppFolder folder.
+            </summary>
+        </member>
+        <member name="M:FeatureFlag_Validation.FeatureFlag_ValidationRepositoryFolders.SmartFit15InstallShieldWizardAppFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new SmartFit15InstallShieldWizard  folder.
+            </summary>
+        </member>
+        <member name="P:FeatureFlag_Validation.FeatureFlag_ValidationRepositoryFolders.SmartFit15InstallShieldWizardAppFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:FeatureFlag_Validation.FeatureFlag_ValidationRepositoryFolders.SmartFit15InstallShieldWizardAppFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:FeatureFlag_Validation.FeatureFlag_ValidationRepositoryFolders.SmartFit15InstallShieldWizardAppFolder.ButtonOK">
+            <summary>
+            The ButtonOK item.
+            </summary>
+        </member>
+        <member name="P:FeatureFlag_Validation.FeatureFlag_ValidationRepositoryFolders.SmartFit15InstallShieldWizardAppFolder.ButtonOKInfo">
+            <summary>
+            The ButtonOK item info.
+            </summary>
+        </member>
+        <member name="T:FeatureFlag_Validation.FeatureFlag_ValidationRepositoryFolders.ReSoundSmartFit15InstallShieldWiAppFolder">
+            <summary>
+            The ReSoundSmartFit15InstallShieldWiAppFolder folder.
+            </summary>
+        </member>
+        <member name="M:FeatureFlag_Validation.FeatureFlag_ValidationRepositoryFolders.ReSoundSmartFit15InstallShieldWiAppFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new ReSoundSmartFit15InstallShieldWi  folder.
+            </summary>
+        </member>
+        <member name="P:FeatureFlag_Validation.FeatureFlag_ValidationRepositoryFolders.ReSoundSmartFit15InstallShieldWiAppFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:FeatureFlag_Validation.FeatureFlag_ValidationRepositoryFolders.ReSoundSmartFit15InstallShieldWiAppFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:FeatureFlag_Validation.FeatureFlag_ValidationRepositoryFolders.ReSoundSmartFit15InstallShieldWiAppFolder.ButtonNext">
+            <summary>
+            The ButtonNext item.
+            </summary>
+        </member>
+        <member name="P:FeatureFlag_Validation.FeatureFlag_ValidationRepositoryFolders.ReSoundSmartFit15InstallShieldWiAppFolder.ButtonNextInfo">
+            <summary>
+            The ButtonNext item info.
+            </summary>
+        </member>
+        <member name="P:FeatureFlag_Validation.FeatureFlag_ValidationRepositoryFolders.ReSoundSmartFit15InstallShieldWiAppFolder.IAcceptTheTermsInTheLicenseAgreem">
+            <summary>
+            The IAcceptTheTermsInTheLicenseAgreem item.
+            </summary>
+        </member>
+        <member name="P:FeatureFlag_Validation.FeatureFlag_ValidationRepositoryFolders.ReSoundSmartFit15InstallShieldWiAppFolder.IAcceptTheTermsInTheLicenseAgreemInfo">
+            <summary>
+            The IAcceptTheTermsInTheLicenseAgreem item info.
+            </summary>
+        </member>
+        <member name="P:FeatureFlag_Validation.FeatureFlag_ValidationRepositoryFolders.ReSoundSmartFit15InstallShieldWiAppFolder.CheckBoxStandalone">
+            <summary>
+            The CheckBoxStandalone item.
+            </summary>
+        </member>
+        <member name="P:FeatureFlag_Validation.FeatureFlag_ValidationRepositoryFolders.ReSoundSmartFit15InstallShieldWiAppFolder.CheckBoxStandaloneInfo">
+            <summary>
+            The CheckBoxStandalone item info.
+            </summary>
+        </member>
+        <member name="P:FeatureFlag_Validation.FeatureFlag_ValidationRepositoryFolders.ReSoundSmartFit15InstallShieldWiAppFolder.SomeButton">
+            <summary>
+            The SomeButton item.
+            </summary>
+        </member>
+        <member name="P:FeatureFlag_Validation.FeatureFlag_ValidationRepositoryFolders.ReSoundSmartFit15InstallShieldWiAppFolder.SomeButtonInfo">
+            <summary>
+            The SomeButton item info.
+            </summary>
+        </member>
+        <member name="P:FeatureFlag_Validation.FeatureFlag_ValidationRepositoryFolders.ReSoundSmartFit15InstallShieldWiAppFolder.ComboBox17344">
+            <summary>
+            The ComboBox17344 item.
+            </summary>
+        </member>
+        <member name="P:FeatureFlag_Validation.FeatureFlag_ValidationRepositoryFolders.ReSoundSmartFit15InstallShieldWiAppFolder.ComboBox17344Info">
+            <summary>
+            The ComboBox17344 item info.
+            </summary>
+        </member>
+        <member name="P:FeatureFlag_Validation.FeatureFlag_ValidationRepositoryFolders.ReSoundSmartFit15InstallShieldWiAppFolder.ButtonInstall">
+            <summary>
+            The ButtonInstall item.
+            </summary>
+        </member>
+        <member name="P:FeatureFlag_Validation.FeatureFlag_ValidationRepositoryFolders.ReSoundSmartFit15InstallShieldWiAppFolder.ButtonInstallInfo">
+            <summary>
+            The ButtonInstall item info.
+            </summary>
+        </member>
+        <member name="P:FeatureFlag_Validation.FeatureFlag_ValidationRepositoryFolders.ReSoundSmartFit15InstallShieldWiAppFolder.ButtonFinish">
+            <summary>
+            The ButtonFinish item.
+            </summary>
+        </member>
+        <member name="P:FeatureFlag_Validation.FeatureFlag_ValidationRepositoryFolders.ReSoundSmartFit15InstallShieldWiAppFolder.ButtonFinishInfo">
+            <summary>
+            The ButtonFinish item info.
+            </summary>
+        </member>
+        <member name="T:FeatureFlag_Validation.FeatureFlag_ValidationRepositoryFolders.ResoundSmartFitProgramsAndFeatureAppFolder">
+            <summary>
+            The ResoundSmartFitProgramsAndFeatureAppFolder folder.
+            </summary>
+        </member>
+        <member name="M:FeatureFlag_Validation.FeatureFlag_ValidationRepositoryFolders.ResoundSmartFitProgramsAndFeatureAppFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new ResoundSmartFitProgramsAndFeature  folder.
+            </summary>
+        </member>
+        <member name="P:FeatureFlag_Validation.FeatureFlag_ValidationRepositoryFolders.ResoundSmartFitProgramsAndFeatureAppFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:FeatureFlag_Validation.FeatureFlag_ValidationRepositoryFolders.ResoundSmartFitProgramsAndFeatureAppFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:FeatureFlag_Validation.FeatureFlag_ValidationRepositoryFolders.ResoundSmartFitProgramsAndFeatureAppFolder.ReSoundSmartFit15">
+            <summary>
+            The ReSoundSmartFit15 item.
+            </summary>
+        </member>
+        <member name="P:FeatureFlag_Validation.FeatureFlag_ValidationRepositoryFolders.ResoundSmartFitProgramsAndFeatureAppFolder.ReSoundSmartFit15Info">
+            <summary>
+            The ReSoundSmartFit15 item info.
+            </summary>
+        </member>
+        <member name="P:FeatureFlag_Validation.FeatureFlag_ValidationRepositoryFolders.ResoundSmartFitProgramsAndFeatureAppFolder.Close">
+            <summary>
+            The Close item.
+            </summary>
+        </member>
+        <member name="P:FeatureFlag_Validation.FeatureFlag_ValidationRepositoryFolders.ResoundSmartFitProgramsAndFeatureAppFolder.CloseInfo">
+            <summary>
+            The Close item info.
+            </summary>
+        </member>
+        <member name="P:FeatureFlag_Validation.FeatureFlag_ValidationRepositoryFolders.ResoundSmartFitProgramsAndFeatureAppFolder.ComboBox17062">
+            <summary>
+            The ComboBox17062 item.
+            </summary>
+        </member>
+        <member name="P:FeatureFlag_Validation.FeatureFlag_ValidationRepositoryFolders.ResoundSmartFitProgramsAndFeatureAppFolder.ComboBox17062Info">
+            <summary>
+            The ComboBox17062 item info.
+            </summary>
+        </member>
+        <member name="P:FeatureFlag_Validation.FeatureFlag_ValidationRepositoryFolders.ResoundSmartFitProgramsAndFeatureAppFolder.ComboBox17451">
+            <summary>
+            The ComboBox17451 item.
+            </summary>
+        </member>
+        <member name="P:FeatureFlag_Validation.FeatureFlag_ValidationRepositoryFolders.ResoundSmartFitProgramsAndFeatureAppFolder.ComboBox17451Info">
+            <summary>
+            The ComboBox17451 item info.
+            </summary>
+        </member>
+        <member name="T:FeatureFlag_Validation.FeatureFlag_ValidationRepositoryFolders.List1000AppFolder">
+            <summary>
+            The List1000AppFolder folder.
+            </summary>
+        </member>
+        <member name="M:FeatureFlag_Validation.FeatureFlag_ValidationRepositoryFolders.List1000AppFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new List1000  folder.
+            </summary>
+        </member>
+        <member name="P:FeatureFlag_Validation.FeatureFlag_ValidationRepositoryFolders.List1000AppFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:FeatureFlag_Validation.FeatureFlag_ValidationRepositoryFolders.List1000AppFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:FeatureFlag_Validation.FeatureFlag_ValidationRepositoryFolders.List1000AppFolder.Australia">
+            <summary>
+            The Australia item.
+            </summary>
+        </member>
+        <member name="P:FeatureFlag_Validation.FeatureFlag_ValidationRepositoryFolders.List1000AppFolder.AustraliaInfo">
+            <summary>
+            The Australia item info.
+            </summary>
+        </member>
+        <member name="P:FeatureFlag_Validation.FeatureFlag_ValidationRepositoryFolders.List1000AppFolder.SomeIndicator">
+            <summary>
+            The SomeIndicator item.
+            </summary>
+        </member>
+        <member name="P:FeatureFlag_Validation.FeatureFlag_ValidationRepositoryFolders.List1000AppFolder.SomeIndicatorInfo">
+            <summary>
+            The SomeIndicator item info.
+            </summary>
+        </member>
+        <member name="T:FeatureFlag_Validation.Installation">
+             <summary>
+            The Installation recording.
+             </summary>
+        </member>
+        <member name="F:FeatureFlag_Validation.Installation.repo">
+            <summary>
+            Holds an instance of the FeatureFlag_ValidationRepository repository.
+            </summary>
+        </member>
+        <member name="M:FeatureFlag_Validation.Installation.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="M:FeatureFlag_Validation.Installation.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:FeatureFlag_Validation.Installation.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:FeatureFlag_Validation.Installation.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:FeatureFlag_Validation.Installation.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="P:FeatureFlag_Validation.Installation.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="P:FeatureFlag_Validation.Installation.FSWBrand">
+            <summary>
+            Gets or sets the value of variable FSWBrand.
+            </summary>
+        </member>
+        <member name="P:FeatureFlag_Validation.Installation.TxtMkt">
+            <summary>
+            Gets or sets the value of variable TxtMkt.
+            </summary>
+        </member>
+        <member name="T:ReportToPDF.ReportToPDF">
+            <summary>
+            Allows conversion of Ranorex report files to PDF
+            </summary>
+        </member>
+        <member name="M:ReportToPDF.ReportToPDF.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="M:ReportToPDF.ReportToPDF.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this module.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="T:FeatureFlag_Validation.UserCodeCollection1">
+            <summary>
+            Creates a Ranorex user code collection. A collection is used to publish user code methods to the user code library.
+            </summary>
+        </member>
+        <member name="M:FeatureFlag_Validation.UserCodeCollection1.XMl_FlagKey_Method2(System.String,System.String)">
+            <summary>
+            This is a placeholder text. Please describe the purpose of the
+            user code method here. The method is published to the user code library
+            within a user code collection.
+            </summary>
+        </member>
+        <member name="M:FeatureFlag_Validation.UserCodeCollection1.Excel_FlagKeyMethod2(System.String,System.String)">
+            <summary>
+            This is a placeholder text. Please describe the purpose of the
+            user code method here. The method is published to the user code library
+            within a user code collection.
+            </summary>
+        </member>
+        <member name="T:FeatureFlag_Validation.ValidatingXML_And_Excel">
+             <summary>
+            The ValidatingXML_And_Excel recording.
+             </summary>
+        </member>
+        <member name="F:FeatureFlag_Validation.ValidatingXML_And_Excel.repo">
+            <summary>
+            Holds an instance of the FeatureFlag_ValidationRepository repository.
+            </summary>
+        </member>
+        <member name="M:FeatureFlag_Validation.ValidatingXML_And_Excel.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="M:FeatureFlag_Validation.ValidatingXML_And_Excel.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:FeatureFlag_Validation.ValidatingXML_And_Excel.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:FeatureFlag_Validation.ValidatingXML_And_Excel.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:FeatureFlag_Validation.ValidatingXML_And_Excel.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="P:FeatureFlag_Validation.ValidatingXML_And_Excel.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="P:FeatureFlag_Validation.ValidatingXML_And_Excel.XMl_FlagKey_Buildname">
+            <summary>
+            Gets or sets the value of variable XMl_FlagKey_Buildname.
+            </summary>
+        </member>
+        <member name="P:FeatureFlag_Validation.ValidatingXML_And_Excel.XML_flagKey_Marketname">
+            <summary>
+            Gets or sets the value of variable XML_flagKey_Marketname.
+            </summary>
+        </member>
+        <member name="P:FeatureFlag_Validation.ValidatingXML_And_Excel.XML_FeatureFlag_Values_Buildname">
+            <summary>
+            Gets or sets the value of variable XML_FeatureFlag_Values_Buildname.
+            </summary>
+        </member>
+        <member name="P:FeatureFlag_Validation.ValidatingXML_And_Excel.TxtKey">
+            <summary>
+            Gets or sets the value of variable TxtKey.
+            </summary>
+        </member>
+        <member name="P:FeatureFlag_Validation.ValidatingXML_And_Excel.Excel_FlagKeyMethod_Buildname">
+            <summary>
+            Gets or sets the value of variable Excel_FlagKeyMethod_Buildname.
+            </summary>
+        </member>
+        <member name="P:FeatureFlag_Validation.ValidatingXML_And_Excel.TxtValue">
+            <summary>
+            Gets or sets the value of variable TxtValue.
+            </summary>
+        </member>
+        <member name="P:FeatureFlag_Validation.ValidatingXML_And_Excel.Excel_Brand_Buildname">
+            <summary>
+            Gets or sets the value of variable Excel_Brand_Buildname.
+            </summary>
+        </member>
+        <member name="P:FeatureFlag_Validation.ValidatingXML_And_Excel.TxtMarket">
+            <summary>
+            Gets or sets the value of variable TxtMarket.
+            </summary>
+        </member>
+        <member name="P:FeatureFlag_Validation.ValidatingXML_And_Excel.DeleteFilesBuildname">
+            <summary>
+            Gets or sets the value of variable DeleteFilesBuildname.
+            </summary>
+        </member>
+        <member name="P:FeatureFlag_Validation.ValidatingXML_And_Excel.UninstallBuildname">
+            <summary>
+            Gets or sets the value of variable UninstallBuildname.
+            </summary>
+        </member>
+        <member name="T:__RxMain.__RxProgram">
+            <summary>
+            Modified Program class that ensures that the Ranorex System gets initialized and cleaned up
+            correctly. This file is auto-generated during project build. This class will invoke the
+            original 'Main' method implementation as needed.
+            </summary>
+        </member>
+        <member name="M:__RxMain.__RxProgram.Main(System.String[])">
+            <summary>
+            The entry point of the application.
+            </summary>
+            <param name="args">Contains any number of command line arguments.</param>
+            <returns>The return value of the projects original 'Main' implementation.</returns>
+        </member>
+    </members>
+</doc>

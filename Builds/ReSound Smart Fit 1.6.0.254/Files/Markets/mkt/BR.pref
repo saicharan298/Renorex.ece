@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Market xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="BR.mkt">
+  <Version Major="3" Minor="8" DataVersion="1"/>
+  <Preferences>
+    <Pref ID="BASS" Type="Enum" DefaultValue="P1AsBasic"/>
+    <Pref ID="BASS3" Type="Enum" DefaultValue="P1AsNaturalDirectionality"/>
+    <Pref ID="Language" Type="Enum" DefaultValue="pt-PT"/>
+    <Pref ID="PinCode" Type="Int" DefaultValue="0"/>
+    <Pref ID="PreferFitting" Type="Enum" DefaultValue="TwoPowerBands_5080"/>
+    <Pref ID="ShowADLAfterRead" Type="Boolean" DefaultValue="1"/>
+    <Pref ID="SpecType" Type="Enum" DefaultValue="IEC118_0"/>
+    <Pref ID="UpdatesCheckOnSchedule" Type="Boolean" DefaultValue="1"/>
+    <Pref ID="WebLaunchSite" Type="String" DefaultValue="http://www.resoundpro.com/pt-BR"/>
+    <Pref ID="FrequentEnvironments3" Type="Enum" DefaultValue="TelecoilPhone"/>
+  </Preferences>
+</Market>

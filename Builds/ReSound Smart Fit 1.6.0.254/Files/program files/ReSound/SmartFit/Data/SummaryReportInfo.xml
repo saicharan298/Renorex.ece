@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <ClinicianReportSections IsDisplayOnly="false" CanReorderSections="true">
+    <ReportArrangement ArrangementName="Default" IsSelected="false">
+      <Visible>
+        <Section EarSide="NO_EARS" IsEditable="true">3043</Section>
+        <Section EarSide="NO_EARS" IsEditable="false">3034</Section>
+        <Section EarSide="NO_EARS" IsEditable="false">3038</Section>
+        <Section EarSide="BOTH_EARS" IsEditable="false">3757</Section>
+        <Section EarSide="BOTH_EARS" IsEditable="false">2925</Section>
+        <Section EarSide="BOTH_EARS" IsEditable="false">2967</Section>
+        <Section EarSide="BOTH_EARS" IsEditable="false">9260</Section>
+        <Section EarSide="BOTH_EARS" IsEditable="false">9016</Section>
+        <Section EarSide="BOTH_EARS" IsEditable="false">5041</Section>
+        <Section EarSide="BOTH_EARS" IsEditable="false">5042</Section>
+        <Section EarSide="NO_EARS" IsEditable="false">1874</Section>
+        <Section EarSide="NO_EARS" IsEditable="false">914</Section>
+        <section EarSide="NO_EARS" IsEditable="false">3758</section>
+        <Section EarSide="NO_EARS" IsEditable="true">3273</Section>
+      </Visible>
+      <Hidden>
+      </Hidden>
+    </ReportArrangement>
+    <ReportArrangement ArrangementName="Report Arrangement 1" IsSelected="true">
+      <Visible>
+        <Section IsEditable="true" EarSide="NO_EARS">3043</Section>
+        <Section IsEditable="False" EarSide="NO_EARS">3034</Section>
+        <Section IsEditable="False" EarSide="NO_EARS">3038</Section>
+        <Section IsEditable="False" EarSide="BOTH_EARS">3757</Section>
+        <Section IsEditable="False" EarSide="BOTH_EARS">2925</Section>
+        <Section IsEditable="False" EarSide="BOTH_EARS">2967</Section>
+        <Section IsEditable="False" EarSide="BOTH_EARS">9260</Section>
+        <Section IsEditable="False" EarSide="BOTH_EARS">9016</Section>
+        <Section IsEditable="False" EarSide="BOTH_EARS">5041</Section>
+        <Section IsEditable="False" EarSide="BOTH_EARS">5042</Section>
+        <Section IsEditable="False" EarSide="NO_EARS">1874</Section>
+        <Section IsEditable="False" EarSide="NO_EARS">914</Section>
+        <Section IsEditable="False" EarSide="NO_EARS">3758</Section>
+        <Section IsEditable="True" EarSide="NO_EARS">3273</Section>
+      </Visible>
+      <Hidden>
+      </Hidden>
+    </ReportArrangement>
+    <ReportArrangement ArrangementName="Report Arrangement 2" IsSelected="false">
+      <Visible>
+        <Section EarSide="NO_EARS" IsEditable="true">3043</Section>
+        <Section EarSide="NO_EARS" IsEditable="false">3034</Section>
+        <Section EarSide="NO_EARS" IsEditable="false">3038</Section>
+        <Section EarSide="BOTH_EARS" IsEditable="false">3757</Section>
+        <Section EarSide="BOTH_EARS" IsEditable="false">2925</Section>
+        <Section EarSide="BOTH_EARS" IsEditable="false">2967</Section>
+        <Section EarSide="BOTH_EARS" IsEditable="false">9260</Section>
+        <Section EarSide="BOTH_EARS" IsEditable="false">9016</Section>
+        <Section EarSide="BOTH_EARS" IsEditable="false">5041</Section>
+        <Section EarSide="BOTH_EARS" IsEditable="false">5042</Section>
+        <Section EarSide="NO_EARS" IsEditable="false">1874</Section>
+        <Section EarSide="NO_EARS" IsEditable="false">914</Section>
+        <section EarSide="NO_EARS" IsEditable="false">3758</section>
+        <Section EarSide="NO_EARS" IsEditable="true">3273</Section>
+      </Visible>
+      <Hidden>
+      </Hidden>
+    </ReportArrangement>
+    <ReportArrangement ArrangementName="Report Arrangement 3" IsSelected="false">
+      <Visible>
+        <Section EarSide="NO_EARS" IsEditable="true">3043</Section>
+        <Section EarSide="NO_EARS" IsEditable="false">3034</Section>
+        <Section EarSide="NO_EARS" IsEditable="false">3038</Section>
+        <Section EarSide="BOTH_EARS" IsEditable="false">3757</Section>
+        <Section EarSide="BOTH_EARS" IsEditable="false">2925</Section>
+        <Section EarSide="BOTH_EARS" IsEditable="false">2967</Section>
+        <Section EarSide="BOTH_EARS" IsEditable="false">9260</Section>
+        <Section EarSide="BOTH_EARS" IsEditable="false">9016</Section>
+        <Section EarSide="BOTH_EARS" IsEditable="false">5041</Section>
+        <Section EarSide="BOTH_EARS" IsEditable="false">5042</Section>
+        <Section EarSide="NO_EARS" IsEditable="false">1874</Section>
+        <Section EarSide="NO_EARS" IsEditable="false">914</Section>
+        <section EarSide="NO_EARS" IsEditable="false">3758</section>
+        <Section EarSide="NO_EARS" IsEditable="true">3273</Section>
+      </Visible>
+      <Hidden>
+      </Hidden>
+    </ReportArrangement>
+    <ReportArrangement ArrangementName="Report Arrangement 4" IsSelected="false">
+      <Visible>
+        <Section EarSide="NO_EARS" IsEditable="true">3043</Section>
+        <Section EarSide="NO_EARS" IsEditable="false">3034</Section>
+        <Section EarSide="NO_EARS" IsEditable="false">3038</Section>
+        <Section EarSide="BOTH_EARS" IsEditable="false">3757</Section>
+        <Section EarSide="BOTH_EARS" IsEditable="false">2925</Section>
+        <Section EarSide="BOTH_EARS" IsEditable="false">2967</Section>
+        <Section EarSide="BOTH_EARS" IsEditable="false">9260</Section>
+        <Section EarSide="BOTH_EARS" IsEditable="false">9016</Section>
+        <Section EarSide="BOTH_EARS" IsEditable="false">5041</Section>
+        <Section EarSide="BOTH_EARS" IsEditable="false">5042</Section>
+        <Section EarSide="NO_EARS" IsEditable="false">1874</Section>
+        <Section EarSide="NO_EARS" IsEditable="false">914</Section>
+        <section EarSide="NO_EARS" IsEditable="false">3758</section>
+        <Section EarSide="NO_EARS" IsEditable="true">3273</Section>
+      </Visible>
+      <Hidden>
+      </Hidden>
+    </ReportArrangement>
+  </ClinicianReportSections>
+  <PatientReportSections IsDisplayOnly="false" CanReorderSections="true">
+    <ReportArrangement ArrangementName="Default" IsSelected="false">
+      <Visible>
+        <Section EarSide="NO_EARS" IsEditable="true">3043</Section>
+        <Section EarSide="NO_EARS" IsEditable="false">3034</Section>
+        <Section EarSide="NO_EARS" IsEditable="false">3038</Section>
+        <Section EarSide="BOTH_EARS" IsEditable="false">3757</Section>
+        <Section EarSide="BOTH_EARS" IsEditable="false">2967</Section>
+        <Section EarSide="NO_EARS" IsEditable="false">9043</Section>
+        <Section EarSide="NO_EARS" IsEditable="true">9060</Section>
+        <Section EarSide="NO_EARS" IsEditable="true">9061</Section>
+        <Section EarSide="NO_EARS" IsEditable="true">3273</Section>
+      </Visible>
+      <Hidden>
+        <section EarSide="NO_EARS" IsEditable="false">3758</section>
+        <Section EarSide="BOTH_EARS" IsEditable="false">9048</Section>
+      </Hidden>
+    </ReportArrangement>
+    <ReportArrangement ArrangementName="Report Arrangement 1" IsSelected="true">
+      <Visible>
+        <Section IsEditable="true" EarSide="NO_EARS">3043</Section>
+        <Section IsEditable="False" EarSide="NO_EARS">3034</Section>
+        <Section IsEditable="False" EarSide="NO_EARS">3038</Section>
+        <Section IsEditable="False" EarSide="BOTH_EARS">3757</Section>
+        <Section IsEditable="False" EarSide="BOTH_EARS">2967</Section>
+        <Section IsEditable="False" EarSide="NO_EARS">9043</Section>
+        <Section IsEditable="True" EarSide="NO_EARS">9060</Section>
+        <Section IsEditable="true" EarSide="NO_EARS">9061</Section>
+        <Section IsEditable="True" EarSide="NO_EARS">3273</Section>
+      </Visible>
+      <Hidden>
+        <section EarSide="NO_EARS" IsEditable="false">3758</section>
+        <Section IsEditable="False" EarSide="BOTH_EARS">9048</Section>
+      </Hidden>
+    </ReportArrangement>
+  </PatientReportSections>
+  <FittingReportSections IsDisplayOnly="true" CanReorderSections="false">
+    <ReportArrangement ArrangementName="Default" IsSelected="false">
+      <Visible>
+        <Section EarSide="BOTH_EARS" IsEditable="false">3757</Section>
+        <Section EarSide="BOTH_EARS" IsEditable="true">9048</Section>
+        <Section EarSide="NO_EARS" IsEditable="true">3273</Section>
+      </Visible>
+      <Hidden></Hidden>
+    </ReportArrangement>
+    <ReportArrangement ArrangementName="Report Arrangement 1" IsSelected="true">
+      <Visible>
+        <Section EarSide="BOTH_EARS" IsEditable="false">3757</Section>
+        <Section EarSide="BOTH_EARS" IsEditable="false">9048</Section>
+        <Section EarSide="NO_EARS" IsEditable="true">3273</Section>
+      </Visible>
+      <Hidden />
+    </ReportArrangement>
+  </FittingReportSections>
+</Root>

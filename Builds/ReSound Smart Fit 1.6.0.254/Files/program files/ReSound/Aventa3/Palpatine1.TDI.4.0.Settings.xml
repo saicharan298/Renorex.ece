@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Settings>
+  <PropertyCategory Name="Algorithm Settings" Program="SoundProcessing">
+    <PropertyGroup Name="Compressor">
+      <Property DisplayName="Number Of Gain Handles" TargetProperty="GainCurveConfiguration" 
+                TargetName="ReSound.Algorithm.Palpatine1.WarpGlobals" TargetType="BlackboardComponent" Description="Defines the number of gain handles for the HI. The numbers in parentes describes the levels for the gain handles."/>
+    </PropertyGroup>
+  </PropertyCategory>
+  <PropertyCategory Name="Vent" Program="UIInformation"/>
+</Settings>

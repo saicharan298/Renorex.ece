@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <Version Major="1" Minor="0" />
+  <SoundAssets>
+      <SoundAsset Name="5476" SoundName="beethoven.ave"/>
+      <SoundAsset Name="5477" SoundName="jazz_hls.ave"/>
+      <SoundAsset Name="5478" SoundName="piano.ave"/>
+  </SoundAssets>
+</Root>

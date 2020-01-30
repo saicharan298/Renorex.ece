@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<FirmwareUpdatePackage CustomUpdater="HornToHorn2Updater">
+  <FirmwareUpdate ProcessorType="Bootloader" FirmwareFileName="FittingDongle\2.06\Bootloader_nRF51_Secured_update_package.hex" Version="2.06"/>
+  <FirmwareUpdate ProcessorType="MicroController" FirmwareFileName="FittingDongle\2.06\PIC.hex" Version="2.06"/>
+  <FirmwareUpdate ProcessorType="SecurityModule" FirmwareFileName="FittingDongle\2.06\SM.hex" Certificate="FittingDongle\2.06\SM_cert.hex" Version="2.06"/>
+  <FirmwareUpdate ProcessorType="NordicRadio51" FirmwareFileName="FittingDongle\2.06\Wireless_nRF51.hex" Certificate="FittingDongle\2.06\Wireless_nRF51_cert.hex" Version="2.06"/>
+</FirmwareUpdatePackage>

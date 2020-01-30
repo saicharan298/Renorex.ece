@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<FirmwareUpdatePackage >
+  <FirmwareUpdate ProcessorType="MicroController" FirmwareFileName="SpouseMicrophone.1.2.hex" Version="1.2"/>
+  <FirmwareUpdate ProcessorType="Dsp" FirmwareFileName="SpouseMicrophone.1.2.fdi" Version="1.2"/>
+</FirmwareUpdatePackage>

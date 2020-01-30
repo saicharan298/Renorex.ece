@@ -1,0 +1,262 @@
+; miniCom.inf
+; Copyright (C) 2006, GN ReSound A/S
+ 			  
+ 
+[Version] 
+Signature = "$Windows NT$" 
+Class=USB
+ClassGUID={36fc9e60-c465-11cf-8056-444553540000} 
+Provider=%GNR% 
+CatalogFile.ntx86=miniCom.cat
+DriverVer=10/13/2006,2.04
+
+[SourceDisksNames.x86]
+1=%miniComDesc%
+
+[SourceDisksFiles.x86]
+miniCom.sys=1
+
+[DestinationDirs] 
+miniCom.Files.x86_12 = 12 
+
+[Manufacturer] 
+%GNR%=GNR
+%GNR%=GNR,NTx86
+
+[GNR]
+%miniComDesc%=miniCom_Inst,USB\VID_16F0&PID_0001
+
+[GNR.NTx86]
+%miniComDesc%=miniCom_Inst,USB\VID_16F0&PID_0001
+
+[miniCom_Inst.ntx86] 
+CopyFiles = miniCom.Files.x86_12
+
+[miniCom_Inst.ntx86.Services] 
+AddService = minicom,0x00000002,miniCom_Service_Instx86
+
+[miniCom_Service_Instx86] 
+ServiceType = %SERVICE_KERNEL_DRIVER%
+DisplayName    = %miniComDesc.SvcDesc%
+StartType = %SERVICE_DEMAND_START% 
+ErrorControl = %SERVICE_ERROR_IGNORE% 
+ServiceBinary = %12%\miniCom.sys
+LoadOrderGroup = "Base"
+
+[miniCom.Files.x86_12] 
+miniCom.sys
+
+[Strings] 
+;  *******Localizable Strings******* 
+GNR= "GN ReSound as" 
+miniComDesc= "SpeedLink Hearing Instrument Interface" 
+miniComDesc.SvcDesc="SpeedLink Hearing Instrument Interface (miniCom.sys)"
+
+;  *******Non Localizable Strings******* 
+
+SERVICE_BOOT_START = 0x0 
+SERVICE_SYSTEM_START = 0x1 
+SERVICE_AUTO_START = 0x2 
+SERVICE_DEMAND_START = 0x3 
+SERVICE_DISABLED = 0x4 
+
+SERVICE_KERNEL_DRIVER = 0x1 
+SERVICE_ERROR_IGNORE = 0x0 
+SERVICE_ERROR_NORMAL = 0x1 
+SERVICE_ERROR_SEVERE = 0x2 
+SERVICE_ERROR_CRITICAL = 0x3 
+
+REG_EXPAND_SZ = 0x00020000 
+REG_DWORD = 0x00010001 
+
+[Strings.0413]
+; Dutch
+;  *******Localizable Strings******* 
+GNR= "GN ReSound as" 
+miniComDesc= "SpeedLink Hearing Instrument Interface" 
+miniComDesc.SvcDesc="SpeedLink Hearing Instrument Interface (miniCom.sys)"
+
+;  *******Non Localizable Strings******* 
+
+SERVICE_BOOT_START = 0x0 
+SERVICE_SYSTEM_START = 0x1 
+SERVICE_AUTO_START = 0x2 
+SERVICE_DEMAND_START = 0x3 
+SERVICE_DISABLED = 0x4 
+
+SERVICE_KERNEL_DRIVER = 0x1 
+SERVICE_ERROR_IGNORE = 0x0 
+SERVICE_ERROR_NORMAL = 0x1 
+SERVICE_ERROR_SEVERE = 0x2 
+SERVICE_ERROR_CRITICAL = 0x3 
+
+REG_EXPAND_SZ = 0x00020000 
+REG_DWORD = 0x00010001 
+
+[Strings.0809]
+; English UK
+;  *******Localizable Strings******* 
+GNR= "GN ReSound as" 
+miniComDesc= "SpeedLink Hearing Instrument Interface" 
+miniComDesc.SvcDesc="SpeedLink Hearing Instrument Interface (miniCom.sys)"
+
+;  *******Non Localizable Strings******* 
+
+SERVICE_BOOT_START = 0x0 
+SERVICE_SYSTEM_START = 0x1 
+SERVICE_AUTO_START = 0x2 
+SERVICE_DEMAND_START = 0x3 
+SERVICE_DISABLED = 0x4 
+
+SERVICE_KERNEL_DRIVER = 0x1 
+SERVICE_ERROR_IGNORE = 0x0 
+SERVICE_ERROR_NORMAL = 0x1 
+SERVICE_ERROR_SEVERE = 0x2 
+SERVICE_ERROR_CRITICAL = 0x3 
+
+REG_EXPAND_SZ = 0x00020000 
+REG_DWORD = 0x00010001 
+
+[Strings.040C]
+; French
+;  *******Localizable Strings******* 
+GNR= "GN ReSound as" 
+miniComDesc= "SpeedLink Hearing Instrument Interface" 
+miniComDesc.SvcDesc="SpeedLink Hearing Instrument Interface (miniCom.sys)"
+
+;  *******Non Localizable Strings******* 
+
+SERVICE_BOOT_START = 0x0 
+SERVICE_SYSTEM_START = 0x1 
+SERVICE_AUTO_START = 0x2 
+SERVICE_DEMAND_START = 0x3 
+SERVICE_DISABLED = 0x4 
+
+SERVICE_KERNEL_DRIVER = 0x1 
+SERVICE_ERROR_IGNORE = 0x0 
+SERVICE_ERROR_NORMAL = 0x1 
+SERVICE_ERROR_SEVERE = 0x2 
+SERVICE_ERROR_CRITICAL = 0x3 
+
+REG_EXPAND_SZ = 0x00020000 
+REG_DWORD = 0x00010001 
+
+[Strings.0407]
+; German
+;  *******Localizable Strings******* 
+GNR= "GN ReSound as" 
+miniComDesc= "SpeedLink Hearing Instrument Interface" 
+miniComDesc.SvcDesc="SpeedLink Hearing Instrument Interface (miniCom.sys)"
+
+;  *******Non Localizable Strings******* 
+
+SERVICE_BOOT_START = 0x0 
+SERVICE_SYSTEM_START = 0x1 
+SERVICE_AUTO_START = 0x2 
+SERVICE_DEMAND_START = 0x3 
+SERVICE_DISABLED = 0x4 
+
+SERVICE_KERNEL_DRIVER = 0x1 
+SERVICE_ERROR_IGNORE = 0x0 
+SERVICE_ERROR_NORMAL = 0x1 
+SERVICE_ERROR_SEVERE = 0x2 
+SERVICE_ERROR_CRITICAL = 0x3 
+
+REG_EXPAND_SZ = 0x00020000 
+REG_DWORD = 0x00010001 
+
+[Strings.0410]
+; Italian
+;  *******Localizable Strings******* 
+GNR= "GN ReSound as" 
+miniComDesc= "SpeedLink Hearing Instrument Interface" 
+miniComDesc.SvcDesc="SpeedLink Hearing Instrument Interface (miniCom.sys)"
+
+;  *******Non Localizable Strings******* 
+
+SERVICE_BOOT_START = 0x0 
+SERVICE_SYSTEM_START = 0x1 
+SERVICE_AUTO_START = 0x2 
+SERVICE_DEMAND_START = 0x3 
+SERVICE_DISABLED = 0x4 
+
+SERVICE_KERNEL_DRIVER = 0x1 
+SERVICE_ERROR_IGNORE = 0x0 
+SERVICE_ERROR_NORMAL = 0x1 
+SERVICE_ERROR_SEVERE = 0x2 
+SERVICE_ERROR_CRITICAL = 0x3 
+
+REG_EXPAND_SZ = 0x00020000 
+REG_DWORD = 0x00010001 
+
+[Strings.0816]
+; Portuguese
+;  *******Localizable Strings******* 
+GNR= "GN ReSound as" 
+miniComDesc= "SpeedLink Hearing Instrument Interface" 
+miniComDesc.SvcDesc="SpeedLink Hearing Instrument Interface (miniCom.sys)"
+
+;  *******Non Localizable Strings******* 
+
+SERVICE_BOOT_START = 0x0 
+SERVICE_SYSTEM_START = 0x1 
+SERVICE_AUTO_START = 0x2 
+SERVICE_DEMAND_START = 0x3 
+SERVICE_DISABLED = 0x4 
+
+SERVICE_KERNEL_DRIVER = 0x1 
+SERVICE_ERROR_IGNORE = 0x0 
+SERVICE_ERROR_NORMAL = 0x1 
+SERVICE_ERROR_SEVERE = 0x2 
+SERVICE_ERROR_CRITICAL = 0x3 
+
+REG_EXPAND_SZ = 0x00020000 
+REG_DWORD = 0x00010001 
+
+[Strings.0C0A]
+; Spanish
+;  *******Localizable Strings******* 
+GNR= "GN ReSound as" 
+miniComDesc= "SpeedLink Hearing Instrument Interface" 
+miniComDesc.SvcDesc="SpeedLink Hearing Instrument Interface (miniCom.sys)"
+
+;  *******Non Localizable Strings******* 
+
+SERVICE_BOOT_START = 0x0 
+SERVICE_SYSTEM_START = 0x1 
+SERVICE_AUTO_START = 0x2 
+SERVICE_DEMAND_START = 0x3 
+SERVICE_DISABLED = 0x4 
+
+SERVICE_KERNEL_DRIVER = 0x1 
+SERVICE_ERROR_IGNORE = 0x0 
+SERVICE_ERROR_NORMAL = 0x1 
+SERVICE_ERROR_SEVERE = 0x2 
+SERVICE_ERROR_CRITICAL = 0x3 
+
+REG_EXPAND_SZ = 0x00020000 
+REG_DWORD = 0x00010001 
+
+[Strings.041D]
+; Swedish
+;  *******Localizable Strings******* 
+GNR= "GN ReSound as" 
+miniComDesc= "SpeedLink Hearing Instrument Interface" 
+miniComDesc.SvcDesc="SpeedLink Hearing Instrument Interface (miniCom.sys)"
+
+;  *******Non Localizable Strings******* 
+
+SERVICE_BOOT_START = 0x0 
+SERVICE_SYSTEM_START = 0x1 
+SERVICE_AUTO_START = 0x2 
+SERVICE_DEMAND_START = 0x3 
+SERVICE_DISABLED = 0x4 
+
+SERVICE_KERNEL_DRIVER = 0x1 
+SERVICE_ERROR_IGNORE = 0x0 
+SERVICE_ERROR_NORMAL = 0x1 
+SERVICE_ERROR_SEVERE = 0x2 
+SERVICE_ERROR_CRITICAL = 0x3 
+
+REG_EXPAND_SZ = 0x00020000 
+REG_DWORD = 0x00010001 

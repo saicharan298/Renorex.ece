@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <AssetPresenter Type="NAV" ID="Features" Name="8375" ToolTipText="" ImageName="" IconName="" CanAddNotes="false" CanDrawOn="false" CanAddToReport="false" PartnerID="" ReportSectionName="" ReportText="" WarnOnReportDuplicate="false">
+    <ImageInfo IsLanguageNeutral="false"/>
+    <IconInfo IsLanguageNeutral="false"/>
+    <Explanations/>
+    <Children>
+      <AssetPresenter Type="NAV" ID="FeatureDemos" Name="8374" ToolTipText="" ImageName="" IconName="" IsExpanded="True" CanAddNotes="false" CanDrawOn="false" CanAddToReport="false" PartnerID="" ReportSectionName="" ReportText="" WarnOnReportDuplicate="false">
+        <ImageInfo IsLanguageNeutral="false"/>
+        <IconInfo IsLanguageNeutral="false"/>
+        <Explanations/>
+        <Children>
+          <VideoPresenter Type="VIDEO" ID="Bass4" Name="8683" ToolTipText="" ImageName="" IconName="" CanAddNotes="true" CanDrawOn="true" CanAddToReport="true" PartnerID="" ReportSectionName="" ReportText="" WarnOnReportDuplicate="true" VideoName="ReSound_480x480_FeatureDemo_BASS4_002.wmv">
+            <ImageInfo IsLanguageNeutral="true"/>
+            <IconInfo IsLanguageNeutral="true"/>
+            <Explanations>
+              <Explanation Header="8683" Text="8681"/>
+            </Explanations>
+            <VideoInfo IsLanguageNeutral="true"/>
+            <Children/>
+          </VideoPresenter>
+          <VideoPresenter Type="VIDEO" ID="SpatialHearingLite" Name="8578" ToolTipText="" ImageName="" IconName="" CanAddNotes="true" CanDrawOn="true" CanAddToReport="true" PartnerID="" ReportSectionName="" ReportText="" WarnOnReportDuplicate="true" VideoName="ReSound_480x480_FeatureDemo_SHL_001.wmv">
+            <ImageInfo IsLanguageNeutral="true"/>
+            <IconInfo IsLanguageNeutral="true"/>
+            <Explanations>
+              <Explanation Header="8578" Text="8807"/>
+            </Explanations>
+            <VideoInfo IsLanguageNeutral="true"/>
+            <Children/>
+          </VideoPresenter>
+          <VideoPresenter Type="VIDEO" ID="TSGNaturalSound" Name="8684" ToolTipText="" ImageName="" IconName="" CanAddNotes="true" CanDrawOn="true" CanAddToReport="true" PartnerID="" ReportSectionName="" ReportText="" WarnOnReportDuplicate="true" VideoName="ReSound_480x480_FeatureDemo_TSG Natural Sounds_002.wmv">
+            <ImageInfo IsLanguageNeutral="true"/>
+            <IconInfo IsLanguageNeutral="true"/>
+            <Explanations>
+              <Explanation Header="8684" Text="8682"/>
+            </Explanations>
+            <VideoInfo IsLanguageNeutral="true"/>
+            <Children/>
+          </VideoPresenter>
+          <VideoPresenter Type="VIDEO" ID="MadeForIPhone" Name="8834" ToolTipText="" ImageName="" IconName="" CanAddNotes="true" CanDrawOn="true" CanAddToReport="true" PartnerID="" ReportSectionName="" ReportText="" WarnOnReportDuplicate="true" VideoName="ReSound_480x480_FeatureDemo_Accessories_MFI_004.wmv">
+            <ImageInfo IsLanguageNeutral="true"/>
+            <IconInfo IsLanguageNeutral="true"/>
+            <Explanations>
+              <Explanation Header="8834" Text="8844"/>
+            </Explanations>
+            <VideoInfo IsLanguageNeutral="true"/>
+            <Children/>
+          </VideoPresenter>
+          <VideoPresenter Type="VIDEO" ID="DeviceToDevice" Name="8391" ToolTipText="" ImageName="" IconName="" CanAddNotes="true" CanDrawOn="true" CanAddToReport="true" PartnerID="" ReportSectionName="" ReportText="" WarnOnReportDuplicate="true" VideoName="ReSound_480x480_FeatureDemo18_DeviceToDevice_003.wmv">
+            <ImageInfo IsLanguageNeutral="true"/>
+            <IconInfo IsLanguageNeutral="true"/>
+            <VideoInfo IsLanguageNeutral="true"/>
+            <Explanations>
+              <Explanation Header="8391" Text="8554"/>
+            </Explanations>
+            <Children/>
+          </VideoPresenter>
+          <VideoPresenter Type="VIDEO" ID="BinauralDirectionality" Name="6946" ToolTipText="" ImageName="" IconName="" CanAddNotes="true" CanDrawOn="true" CanAddToReport="true" PartnerID="" ReportSectionName="" ReportText="" WarnOnReportDuplicate="true" VideoName="ReSound_480x480_FeatureDemo01_BinDir_002.wmv">
+            <ImageInfo IsLanguageNeutral="true"/>
+            <IconInfo IsLanguageNeutral="true"/>
+            <Explanations>
+              <Explanation Header="6946" Text="8380"/>
+            </Explanations>
+            <VideoInfo IsLanguageNeutral="true"/>
+            <Children/>
+          </VideoPresenter>
+          <VideoPresenter Type="VIDEO" ID="NaturalDirectionality" Name="291" ToolTipText="" ImageName="" IconName="" CanAddNotes="true" CanDrawOn="true" CanAddToReport="true" PartnerID="" ReportSectionName="" ReportText="" WarnOnReportDuplicate="true" VideoName="ReSound_480x480_FeatureDemo02_NaturalDir_002.wmv">
+            <ImageInfo IsLanguageNeutral="true"/>
+            <IconInfo IsLanguageNeutral="true"/>
+            <Explanations>
+              <Explanation Header="291" Text="8381"/>
+            </Explanations>
+            <VideoInfo IsLanguageNeutral="true"/>
+            <Children/>
+          </VideoPresenter>
+          <VideoPresenter Type="VIDEO" ID="DirectionalMix" Name="8392" ToolTipText="" ImageName="" IconName="" CanAddNotes="true" CanDrawOn="true" CanAddToReport="true" PartnerID="" ReportSectionName="" ReportText="" WarnOnReportDuplicate="true" VideoName="ReSound_480x480_FeatureDemo04_DirMix_003.wmv">
+            <ImageInfo IsLanguageNeutral="true"/>
+            <IconInfo IsLanguageNeutral="true"/>
+            <VideoInfo IsLanguageNeutral="true"/>
+            <Explanations>
+              <Explanation Header="8392" Text="8556"/>
+            </Explanations>
+            <Children/>
+          </VideoPresenter>
+          <VideoPresenter Type="VIDEO" ID="AutoScope" Name="3660" ToolTipText="" ImageName="" IconName="" CanAddNotes="true" CanDrawOn="true" CanAddToReport="true" PartnerID="" ReportSectionName="" ReportText="" WarnOnReportDuplicate="true" VideoName="ReSound_480x480_FeatureDemo05_ABWA_003.wmv">
+            <ImageInfo IsLanguageNeutral="true"/>
+            <IconInfo IsLanguageNeutral="true"/>
+            <Explanations>
+              <Explanation Header="3660" Text="8383"/>
+            </Explanations>
+            <VideoInfo IsLanguageNeutral="true"/>
+            <Children/>
+          </VideoPresenter>
+          <VideoPresenter Type="VIDEO" ID="DFSUltra2" Name="6971" ToolTipText="" ImageName="" IconName="" CanAddNotes="true" CanDrawOn="true" CanAddToReport="true" PartnerID="" ReportSectionName="" ReportText="" WarnOnReportDuplicate="true" VideoName="ReSound_480x480_FeatureDemo09_DFS_Ultra_003.wmv">
+            <ImageInfo IsLanguageNeutral="true"/>
+            <IconInfo IsLanguageNeutral="true"/>
+            <VideoInfo IsLanguageNeutral="true"/>
+            <Explanations>
+              <Explanation Header="6971" Text="8387"/>
+            </Explanations>
+            <Children/>
+          </VideoPresenter>
+          <VideoPresenter Type="VIDEO" ID="DFSUltra" Name="8139" ToolTipText="" ImageName="" IconName="" CanAddNotes="true" CanDrawOn="true" CanAddToReport="true" PartnerID="" ReportSectionName="" ReportText="" WarnOnReportDuplicate="true" VideoName="ReSound_480x480_FeatureDemo09_DFS_Ultra_003.wmv">
+            <ImageInfo IsLanguageNeutral="true"/>
+            <IconInfo IsLanguageNeutral="true"/>
+            <VideoInfo IsLanguageNeutral="true"/>
+            <Explanations>
+              <Explanation Header="8139" Text="8557"/>
+            </Explanations>
+            <Children/>
+          </VideoPresenter>
+          <VideoPresenter Type="VIDEO" ID="DualStabilizerIIwWhistleControl" Name="6160" ToolTipText="" ImageName="" IconName="" CanAddNotes="true" CanDrawOn="true" CanAddToReport="true" PartnerID="" ReportSectionName="" ReportText="" WarnOnReportDuplicate="true" VideoName="ReSound_480x480_FeatureDemo09_DFS_Ultra_003.wmv">
+            <ImageInfo IsLanguageNeutral="true"/>
+            <IconInfo IsLanguageNeutral="true"/>
+            <VideoInfo IsLanguageNeutral="true"/>
+            <Explanations>
+              <Explanation Header="6160" Text="8812"/>
+            </Explanations>
+            <Children/>
+          </VideoPresenter>
+          <VideoPresenter Type="VIDEO" ID="NoiseTracker2" Name="8393" ToolTipText="" ImageName="" IconName="" CanAddNotes="true" CanDrawOn="true" CanAddToReport="true" PartnerID="" ReportSectionName="" ReportText="" WarnOnReportDuplicate="true" VideoName="ReSound_480x480_FeatureDemo06_NoiseReduction_003.wmv">
+            <ImageInfo IsLanguageNeutral="true"/>
+            <IconInfo IsLanguageNeutral="true"/>
+            <Explanations>
+              <Explanation Header="8393" Text="8384"/>
+            </Explanations>
+            <VideoInfo IsLanguageNeutral="true"/>
+            <Children/>
+          </VideoPresenter>
+          <VideoPresenter Type="VIDEO" ID="NoiseTracker" Name="6247" ToolTipText="" ImageName="" IconName="" CanAddNotes="true" CanDrawOn="true" CanAddToReport="true" PartnerID="" ReportSectionName="" ReportText="" WarnOnReportDuplicate="true" VideoName="ReSound_480x480_FeatureDemo06_NoiseReduction_003.wmv">
+            <ImageInfo IsLanguageNeutral="true"/>
+            <IconInfo IsLanguageNeutral="true"/>
+            <Explanations>
+              <Explanation Header="6247" Text="8813"/>
+            </Explanations>
+            <VideoInfo IsLanguageNeutral="true"/>
+            <Children/>
+          </VideoPresenter>
+          <VideoPresenter Type="VIDEO" ID="WindGuard" Name="5704" ToolTipText="" ImageName="" IconName="" CanAddNotes="true" CanDrawOn="true" CanAddToReport="true" PartnerID="" ReportSectionName="" ReportText="" WarnOnReportDuplicate="true" VideoName="ReSound_480x480_FeatureDemo07_WNR_003.wmv">
+            <ImageInfo IsLanguageNeutral="true"/>
+            <IconInfo IsLanguageNeutral="true"/>
+            <Explanations>
+              <Explanation Header="5704" Text="8385"/>
+            </Explanations>
+            <VideoInfo IsLanguageNeutral="true"/>
+            <Children/>
+          </VideoPresenter>
+          <VideoPresenter Type="VIDEO" ID="Expansion" Name="236" ToolTipText="" ImageName="" IconName="" CanAddNotes="true" CanDrawOn="true" CanAddToReport="true" PartnerID="" ReportSectionName="" ReportText="" WarnOnReportDuplicate="true" VideoName="ReSound_480x480_FeatureDemo08_Expansion_002.wmv">
+            <ImageInfo IsLanguageNeutral="true"/>
+            <IconInfo IsLanguageNeutral="true"/>
+            <VideoInfo IsLanguageNeutral="true"/>
+            <Explanations>
+              <Explanation Header="236" Text="8386"/>
+            </Explanations>
+            <Children/>
+          </VideoPresenter>
+          <VideoPresenter Type="VIDEO" ID="LowFreqBoost" Name="8376" ToolTipText="" ImageName="" IconName="" CanAddNotes="true" CanDrawOn="true" CanAddToReport="true" PartnerID="" ReportSectionName="" ReportText="" WarnOnReportDuplicate="true" VideoName="ReSound_480x480_FeatureDemo13_LowFrequencyBoost_003.wmv">
+            <ImageInfo IsLanguageNeutral="true"/>
+            <IconInfo IsLanguageNeutral="true"/>
+            <VideoInfo IsLanguageNeutral="true"/>
+            <Explanations>
+              <Explanation Header="8376" Text="8389"/>
+            </Explanations>
+            <Children/>
+          </VideoPresenter>
+          <VideoPresenter Type="VIDEO" ID="EnvironmentalOptimizer2" Name="8394" ToolTipText="" ImageName="" IconName="" CanAddNotes="true" CanDrawOn="true" CanAddToReport="true" PartnerID="" ReportSectionName="" ReportText="" WarnOnReportDuplicate="true" VideoName="ReSound_480x480_FeatureDemo03_EVFT2_005.wmv">
+            <ImageInfo IsLanguageNeutral="true"/>
+            <IconInfo IsLanguageNeutral="true"/>
+            <Explanations>
+              <Explanation Header="8394" Text="8382"/>
+            </Explanations>
+            <VideoInfo IsLanguageNeutral="true"/>
+            <Children/>
+          </VideoPresenter>
+          <VideoPresenter Type="VIDEO" ID="SoundShaper" Name="7905" ToolTipText="" ImageName="" IconName="" CanAddNotes="true" CanDrawOn="true" CanAddToReport="true" PartnerID="" ReportSectionName="" ReportText="" WarnOnReportDuplicate="true" VideoName="ReSound_480x480_FeatureDemo12_SoundShaper_002.wmv">
+            <ImageInfo IsLanguageNeutral="true"/>
+            <IconInfo IsLanguageNeutral="true"/>
+            <VideoInfo IsLanguageNeutral="true"/>
+            <Explanations>
+              <Explanation Header="7905" Text="8388"/>
+            </Explanations>
+            <Children/>
+          </VideoPresenter>
+          <VideoPresenter Type="VIDEO" ID="AcceptanceManager" Name="7917" ToolTipText="" ImageName="" IconName="" CanAddNotes="true" CanDrawOn="true" CanAddToReport="true" PartnerID="" ReportSectionName="" ReportText="" WarnOnReportDuplicate="true" VideoName="ReSound_480x480_FeatureDemo15_AcceptanceManager_003.wmv" LastVideoName="ReSound_480x480_FeatureDemo15_AcceptanceManager_004.wmv">
+            <ImageInfo IsLanguageNeutral="true"/>
+            <IconInfo IsLanguageNeutral="true"/>
+            <VideoInfo IsLanguageNeutral="true"/>
+            <Explanations>
+              <Explanation Header="7917" Text="8390"/>
+            </Explanations>
+            <Children/>
+          </VideoPresenter>
+          <VideoPresenter Type="VIDEO" ID="PhoneNowComfortPhone" Name="8808" ToolTipText="" ImageName="" IconName="" CanAddNotes="true" CanDrawOn="true" CanAddToReport="true" PartnerID="" ReportSectionName="" ReportText="" WarnOnReportDuplicate="true" VideoName="ReSound_480x480_FeatureDemo25_PhoneNowComfortPhone_005.wmv" LastVideoName="ReSound_480x480_FeatureDemo24_PhoneNowComfortPhone_005.wmv">
+            <ImageInfo IsLanguageNeutral="true"/>
+            <IconInfo IsLanguageNeutral="true"/>
+            <VideoInfo IsLanguageNeutral="true"/>
+            <Explanations>
+              <Explanation Header="8808" Text="8809"/>
+            </Explanations>
+            <Children/>
+          </VideoPresenter>
+          <VideoPresenter Type="VIDEO" ID="PhoneNow" Name="8810" ToolTipText="" ImageName="" IconName="" CanAddNotes="true" CanDrawOn="true" CanAddToReport="true" PartnerID="" ReportSectionName="" ReportText="" WarnOnReportDuplicate="true" VideoName="ReSound_480x480_FeatureDemo24_PhoneNow_003.wmv">
+            <ImageInfo IsLanguageNeutral="true"/>
+            <IconInfo IsLanguageNeutral="true"/>
+            <VideoInfo IsLanguageNeutral="true"/>
+            <Explanations>
+              <Explanation Header="8810" Text="8811"/>
+            </Explanations>
+            <Children/>
+          </VideoPresenter>
+          <VideoPresenter Type="VIDEO" ID="StreamerBassBoost" Name="5543" ToolTipText="" ImageName="" IconName="" CanAddNotes="true" CanDrawOn="true" CanAddToReport="true" PartnerID="" ReportSectionName="" ReportText="" WarnOnReportDuplicate="true" VideoName="ReSound_480x480_FeatureDemo17_StreamerBassBoost_001.wmv">
+            <ImageInfo IsLanguageNeutral="true"/>
+            <IconInfo IsLanguageNeutral="true"/>
+            <Explanations>
+              <Explanation Header="5543" Text="8553"/>
+            </Explanations>
+            <VideoInfo IsLanguageNeutral="true"/>
+            <Children/>
+          </VideoPresenter>
+          <VideoPresenter Type="VIDEO" ID="UniteTV" Name="8835" ToolTipText="" ImageName="" IconName="" CanAddNotes="true" CanDrawOn="true" CanAddToReport="true" PartnerID="" ReportSectionName="" ReportText="" WarnOnReportDuplicate="true" VideoName="ReSound_480x480_FeatureDemo_Accessories_TV_004.wmv">
+            <ImageInfo IsLanguageNeutral="true"/>
+            <IconInfo IsLanguageNeutral="true"/>
+            <Explanations>
+              <Explanation Header="8835" Text="8845"/>
+            </Explanations>
+            <VideoInfo IsLanguageNeutral="true"/>
+            <Children/>
+          </VideoPresenter>
+          <VideoPresenter Type="VIDEO" ID="UniteMiniMicrophone" Name="8836" ToolTipText="" ImageName="" IconName="" CanAddNotes="true" CanDrawOn="true" CanAddToReport="true" PartnerID="" ReportSectionName="" ReportText="" WarnOnReportDuplicate="true" VideoName="ReSound_480x480_FeatureDemo_Accessories_SM_004.wmv">
+            <ImageInfo IsLanguageNeutral="true"/>
+            <IconInfo IsLanguageNeutral="true"/>
+            <Explanations>
+              <Explanation Header="8836" Text="8846"/>
+            </Explanations>
+            <VideoInfo IsLanguageNeutral="true"/>
+            <Children/>
+          </VideoPresenter>
+          <VideoPresenter Type="VIDEO" ID="UnitePhoneClipPlus" Name="8837" ToolTipText="" ImageName="" IconName="" CanAddNotes="true" CanDrawOn="true" CanAddToReport="true" PartnerID="" ReportSectionName="" ReportText="" WarnOnReportDuplicate="true" VideoName="ReSound_480x480_FeatureDemo_Accessories_PC_004.wmv">
+            <ImageInfo IsLanguageNeutral="true"/>
+            <IconInfo IsLanguageNeutral="true"/>
+            <Explanations>
+              <Explanation Header="8837" Text="8847"/>
+            </Explanations>
+            <VideoInfo IsLanguageNeutral="true"/>
+            <Children/>
+          </VideoPresenter>
+          <VideoPresenter Type="VIDEO" ID="UniteRemoteControl" Name="8838" ToolTipText="" ImageName="" IconName="" CanAddNotes="true" CanDrawOn="true" CanAddToReport="true" PartnerID="" ReportSectionName="" ReportText="" WarnOnReportDuplicate="true" VideoName="ReSound_480x480_FeatureDemo_Accessories_RC_004.wmv">
+            <ImageInfo IsLanguageNeutral="true"/>
+            <IconInfo IsLanguageNeutral="true"/>
+            <Explanations>
+              <Explanation Header="8838" Text="8848"/>
+            </Explanations>
+            <VideoInfo IsLanguageNeutral="true"/>
+            <Children/>
+          </VideoPresenter>
+        </Children>
+      </AssetPresenter>
+    </Children>
+  </AssetPresenter>
+</Root>

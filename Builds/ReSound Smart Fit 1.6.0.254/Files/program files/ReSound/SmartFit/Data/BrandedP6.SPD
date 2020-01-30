@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SPDProductData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <!--
+	THIS FILE DEFINES BRAND ALTERATIONS TO THE STANDARD MODEL FOR
+
+	RESOUND PALPATINE 6
+	
+	This file contains ONLY those values that in the given Brand 
+         that need to be different from the Standard.SPD file
+
+	DO NOT CHANGE THIS FILE - EVER.
+
+	VALUES in this file can be changed in the specific release SPD files.
+	- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-->
+  <Version MajorVersion="1" MinorVersion="1" DataVersion="2"/>
+  <PricePoints/>
+  <!-- FormFactors should NOT be defined at Brand level -->
+  <ProductFeatures>
+    <ProductProperties/>
+    <MelodyFeatures/>
+    <SatisfyFeatures/>
+    <ButtonEventFeatures/>
+    <RangeFeatures/>
+  </ProductFeatures>
+  <ProgramFeatures>
+    <DirectionalFeatures/>
+    <AudiologicalFeatures>
+      <Feature xml:id="EXP" FeatureID="Expansion" RatatoskID="Expansion" DataType="Enum" FeatureRestriction="NoRestriction" FeatureType="Program" SupportsSurround="false" NeedsBinaural="false" OffValue="Off" RftRestricted="false">
+        <UICategories xml:id="UICATS">
+          <UICategory Category="AdvancedFeature"/>
+        </UICategories>
+        <Strings xml:id="STRNGS">
+          <String StringID="236" ToolTipId="8386"/>
+        </Strings>
+        <FeatureValues>
+          <FeatureValue xml:id="EXPMLD" EV="8095" FeatureValueId="Mild" RatatoskID="Mild" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="237"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="EXPMED" EV="8095" FeatureValueId="Medium" RatatoskID="Medium" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String PP="7" StringID="817"/>
+              <String PP="248" StringID="257"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="EXPMOD" EV="8095" PP="7" FeatureValueId="Moderate" RatatoskID="Moderate" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="4998"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="EXPSTG" EV="8095" PP="1" FeatureValueId="Strong" RatatoskID="Strong" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="1786"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="EXPTCOFF" EV="96" FeatureValueId="Off" RatatoskID="Off" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="237"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="true"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="EXPTCMLD" EV="96" FeatureValueId="TeleCoilMild" RatatoskID="TelecoilMild" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String PP="7" StringID="817"/>
+              <String PP="248" StringID="257"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="EXPTCMOD" EV="96" PP="7" FeatureValueId="TeleCoilModerate" RatatoskID="TelecoilMedium" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="4998"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+          <FeatureValue xml:id="EXPTCSTG" EV="96" PP="1" FeatureValueId="TeleCoilStrong" RatatoskID="TelecoilModerate" NeedsBinaural="false" AlgoValue="0">
+            <Strings xml:id="STRNGS">
+              <String StringID="1786"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets/>
+          </FeatureValue>
+        </FeatureValues>
+        <DefaultValues/>
+      </Feature>
+    </AudiologicalFeatures>
+    <TinnitusFeatures/>
+    <BalanceFeatures/>
+    <EVFTFeatures/>
+    <SynchronizationFeatures/>
+    <FSWFeatures>
+      <Feature xml:id="LOWFBB" FeatureID="FSW.LFBassboost" RatatoskID="FittingSoftwareData.LFBassboost" DataType="Enum" FeatureRestriction="NeedsUPReciever" FeatureType="ProgramInfoSpace" SupportsSurround="false" NeedsBinaural="false" OffValue="" RftRestricted="false">
+        <UICategories xml:id="UICATS">
+          <UICategory PP="127" Category="AdvancedFeature"/>
+          <UICategory PP="128" Category="None"/>
+        </UICategories>
+        <Strings xml:id="STRNGS">
+          <String StringID="7923" ToolTipId="9806"/>
+        </Strings>
+        <FeatureValues>
+          <FeatureValue xml:id="LOWFBBNONE" FeatureValueId="None" RatatoskID="0" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings xml:id="STRNGS">
+              <String StringID="7924" ToolTipId="9643"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="true"/>
+            </DefaultValues>
+            <Offsets>
+              <SoundInputLevel xml:id="SIL50" InputLevel="DB50"> (250 0) (500 0) (750 0) (1000 0) (1500 0) (2000 0) (3000 0) (4000 0) (6000 0) </SoundInputLevel>
+              <SoundInputLevel xml:id="SIL65" InputLevel="DB65"> (250 0) (500 0) (750 0) (1000 0) (1500 0) (2000 0) (3000 0) (4000 0) (6000 0) </SoundInputLevel>
+              <SoundInputLevel xml:id="SIL80" InputLevel="DB80"> (250 0) (500 0) (750 0) (1000 0) (1500 0) (2000 0) (3000 0) (4000 0) (6000 0) </SoundInputLevel>
+            </Offsets>
+          </FeatureValue>
+          <FeatureValue xml:id="LOWFBBLOW" PP="127" FeatureValueId="Low" RatatoskID="1" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings xml:id="STRNGS">
+              <String PP="7" StringID="7925"/>
+              <String PP="120" StringID="257"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets>
+              <SoundInputLevel xml:id="SIL50" InputLevel="DB50"> (250 3) (500 6) (750 3) (1000 1) (1500 0) (2000 0) (3000 0) (4000 0) (6000 0) </SoundInputLevel>
+              <SoundInputLevel xml:id="SIL65" InputLevel="DB65"> (250 3) (500 6) (750 3) (1000 1) (1500 0) (2000 0) (3000 0) (4000 0) (6000 0) </SoundInputLevel>
+              <SoundInputLevel xml:id="SIL80" InputLevel="DB80"> (250 3) (500 6) (750 3) (1000 1) (1500 0) (2000 0) (3000 0) (4000 0) (6000 0) </SoundInputLevel>
+            </Offsets>
+          </FeatureValue>
+          <FeatureValue xml:id="LOWFBBMED" PP="7" FeatureValueId="Medium" RatatoskID="2" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings xml:id="STRNGS">
+              <String StringID="7926"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets>
+              <SoundInputLevel xml:id="SIL50" InputLevel="DB50"> (250 6) (500 9) (750 5) (1000 2) (1500 0) (2000 0) (3000 0) (4000 0) (6000 0) </SoundInputLevel>
+              <SoundInputLevel xml:id="SIL65" InputLevel="DB65"> (250 6) (500 9) (750 5) (1000 2) (1500 0) (2000 0) (3000 0) (4000 0) (6000 0) </SoundInputLevel>
+              <SoundInputLevel xml:id="SIL80" InputLevel="DB80"> (250 6) (500 9) (750 5) (1000 2) (1500 0) (2000 0) (3000 0) (4000 0) (6000 0) </SoundInputLevel>
+            </Offsets>
+          </FeatureValue>
+          <FeatureValue xml:id="LOWFBBHIGH" PP="1" FeatureValueId="High" RatatoskID="3" NeedsBinaural="false" AlgoValue="0" FeatureValueRestriction="NoRestriction">
+            <Strings xml:id="STRNGS">
+              <String StringID="7927"/>
+            </Strings>
+            <DefaultValues xml:id="DFTVALS">
+              <DefaultValue Value="false"/>
+            </DefaultValues>
+            <Offsets>
+              <SoundInputLevel xml:id="SIL50" InputLevel="DB50"> (250 9) (500 12) (750 8) (1000 3) (1500 0) (2000 0) (3000 0) (4000 0) (6000 0) </SoundInputLevel>
+              <SoundInputLevel xml:id="SIL65" InputLevel="DB65"> (250 9) (500 12) (750 8) (1000 3) (1500 0) (2000 0) (3000 0) (4000 0) (6000 0) </SoundInputLevel>
+              <SoundInputLevel xml:id="SIL80" InputLevel="DB80"> (250 9) (500 12) (750 8) (1000 3) (1500 0) (2000 0) (3000 0) (4000 0) (6000 0) </SoundInputLevel>
+            </Offsets>
+          </FeatureValue>
+        </FeatureValues>
+        <DefaultValues/>
+      </Feature>
+    </FSWFeatures>
+  </ProgramFeatures>
+</SPDProductData>

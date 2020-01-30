@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <Version>
+    <Major>1</Major>
+    <Minor>0</Minor>
+  </Version>
+  <NavigationDataRoot>
+    <NavigationData ID="Start"  NavigationID="Start" ImageID="" NameID="2009" Type ="NavPage">
+      <NavigationData ID="Patient" NavigationID="PatientData" ImageID="" NameID="2010" Type="NavPatientData"/>
+    </NavigationData>
+    <NavigationData ID="Select"  ImageID="" NavigationID="Select"  NameID="1978" Type="NavPage">
+      <NavigationData ID="Patient" NavigationID="PatientData"  ImageID="" NameID="2010" Type="NavPatientData"/>
+      <NavigationData ID="MeasurementModules" NavigationID="Data"   ImageID="" NameID="1979" Type="NavDataTools">
+        <NavigationData ID="Audiogram"  NavigationID="Audiograms"  ImageID="" NameID="2240" Type="NavSubPage"/>
+        <NavigationData ID="Insitu"  NavigationID="Insitu"  ImageID="" NameID="5831" Type="NavDialog"/>
+        <NavigationData ID="Seperator" NavigationID="Data"  ImageID="" NameID="0" Type="NavSeperator"/>
+        <NavigationData ID="RECD" NavigationID="RECD"  ImageID="" NameID="6410" Type="NavSubPage"/>
+        <NavigationData ID="REUG" NavigationID="REUG"  ImageID="" NameID="6411" Type="NavSubPage"/>
+        <NavigationData ID="Speech" NavigationID="Speech"  ImageID="" NameID="1254" Type="NavDialog"/>
+        <NavigationData ID="Seperator" NavigationID="Data"  ImageID="" NameID="0" Type="NavSeperator"/>
+        <NavigationData ID="CouncelAud"  NavigationID="CouncelingAudiogram"  ImageID="" NameID="6893" Type="NavDialog"/>
+        <NavigationData ID="HLS"  NavigationID="CouncelingHLSIM"  ImageID="" NameID="1980" Type="NavDialog"/>
+      </NavigationData>
+      <NavigationData ID="Wireless" NavigationID="Data"  ImageID="" NameID="5455" Type="NavDataTools">
+        <NavigationData ID="Accessories"  NavigationID="WirelessAccessory" ImageID="imgSASicon" NameID="3758" Type="NavDialog"/>
+        <NavigationData ID="BluetoothSmartDevices"  NavigationID="WirelessBLE" ImageID="imgGenericBTicon" NameID="3759" Type="NavDialog"/>
+      </NavigationData>
+    </NavigationData>
+    <NavigationData ID="Fit"  ImageID="" NavigationID="Fit"  NameID="1982" Type="NavPage">
+      <NavigationData ID="Patient"  NavigationID="PatientData"  ImageID="" NameID="2010" Type="NavPatientData"/>
+      <NavigationData ID="Tools"  NavigationID="Data" ImageID="" NameID="1984" Type="NavDataTools">
+        <NavigationData ID="GainAdjustments" NavigationID="GainAdjustMent"   ImageID="GainAdjustmentIcon" NameID="1985" Type="NavSubPage"/>
+        <NavigationData ID="AdvancedFeatures" NavigationID="Features"  ImageID="AdvancedFeaturesIcon" NameID="1986" Type="NavSubPage"/>
+        <NavigationData ID="PhysicalProperties" NavigationID="PhysicalProperties"  ImageID="PhysicalPropertiesIcon" NameID="1987" Type="NavDialog"/>
+        <NavigationData ID="Seperator" NavigationID="Data"  ImageID="" NameID="0" Type="NavSeperator"/>
+        <NavigationData ID="AventaGuide" NavigationID="TextBasedSolutions"  ImageID="AventaGuideIcon" NameID="1988" Type="NavSubPage"/>
+        <NavigationData ID="DataLogging" NavigationID="DataLogging"  ImageID="DataLoggingIcon" NameID="1989" Type="NavDialog"/>
+        <NavigationData ID="Seperator"  NavigationID="Data" ImageID="" NameID="0" Type="NavSeperator"/>
+        <NavigationData ID="EVFT2" NavigationID="EVFT2"  ImageID="EnvironmentOptIcon" NameID="3734" Type="NavSubPage"/>
+        <NavigationData ID="TinnitusSoundGenerator" NavigationID="TSG"  ImageID="TSGIcon" NameID="1991" Type="NavSubPage"/>
+        <NavigationData ID="Satisfy" NavigationID="Satisfy"  ImageID="SatisfyIcon" NameID="7917" Type="NavDialog"/>
+        <NavigationData ID="BeepsAndVC"  NavigationID="BeepsAndVC" ImageID="BeepsIcon" NameID="1992" Type="NavDialog"/>
+      </NavigationData>
+      <NavigationData ID="Wireless"  NavigationID="Data" ImageID="" NameID="5455" Type="NavDataTools">
+        <NavigationData ID="Accessories"  NavigationID="WirelessAccessory" ImageID="imgSASicon" NameID="3758" Type="NavDialog"/>
+        <NavigationData ID="BluetoothSmartDevices"  NavigationID="WirelessBLE" ImageID="imgGenericBTicon" NameID="3759" Type="NavDialog"/>
+      </NavigationData>
+    </NavigationData>
+    <NavigationData ID="Summary"  NavigationID="Summary" ImageID="" NameID="1993" Type ="NavPage">
+      <NavigationData ID="Patient"  NavigationID="PatientData" ImageID="" NameID="2010" Type="NavPatientData"/>
+    </NavigationData>
+  </NavigationDataRoot>
+  <SANavigationRoot>
+    <SA_Start Type="SA_Start">
+      <Name ID="2008">Start</Name>
+    </SA_Start>
+    <SA_Profile Type="SA_Profile">
+      <Name ID="3244">Profile</Name>
+    </SA_Profile>
+    <SA_History Type="SA_SessionHistory">
+      <Name ID="3246">Session History</Name>
+    </SA_History>
+    <SA_AGandHI Type="SA_AGHI">
+      <Name ID="3247">Audiogram and Hearing Instruments</Name>
+    </SA_AGandHI>
+  </SANavigationRoot>
+</Root>

@@ -1,0 +1,696 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+
+		<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+		<meta content="no-cache" http-equiv="pragma">
+		<meta content="no-cache" http-equiv="cache-control">
+		<meta content="-1" http-equiv="expires">
+		<meta http-equiv="MSThemeCompatible" content="yes"/>
+		<title>Update Service</title>
+		<script src="avlupdates.js" language="javascript"></script>
+		<script src="lang/resource.js"></script>
+		<link id="uistyles" type="text/css" rel="stylesheet" href="UpdaterStyle.css">
+<script>
+var twdl = unescape(top.window.document.location);
+var twdls = twdl.substr(twdl.indexOf("?"));
+var attribs = twdls.split("&");
+var _CustomCSS="";
+var _CustomStrings="";
+for (ii = 0; ii < attribs.length; ii++)
+{
+	var attrib = attribs[ii].split("=");
+	if (attrib[0].indexOf("CSS") != -1)
+		_CustomCSS = unescape(attrib[1]);
+	if (attrib[0].indexOf("Strings") != -1)
+		_CustomStrings = unescape(attrib[1]);
+}
+if (_CustomCSS.length > 0)
+	document.getElementById("uistyles").href=_CustomCSS;
+</script>
+
+		<FORM id="StringTable" name="StringTable" style="display:none">
+			<input name="IDS_PLEASEWAIT_WAIT2" type="hidden" value="Please wait...">
+			<input name="IDS_PLEASEWAIT_SEARCHING" type="hidden" value="The Update Service is searching for updates for your application.">
+			<input name="IDS_AVAILABLEUPDATES_TITLE" type="hidden" value="Available Updates">
+			<input name="IDS_AVAILABLEUPDATES_EXCLUSIVE_MSG1" id="IDS_AVAILABLEUPDATES_EXCLUSIVE_MSG1"  type="hidden" value="{0} must be installed separately from all other updates. If you add {0} to the list of updates, the Update Service will automatically remove other updates from the list. To remove all others and add only {0}, click OK. To return to browsing without adding this update, click Cancel.">
+			<input name="IDS_AVAILABLEUPDATES_EXCLUSIVE_MSG2" id="IDS_AVAILABLEUPDATES_EXCLUSIVE_MSG2" type="hidden" value="The list of total selected updates currently contains {0}, which is an exclusive item and must be installed separately from all other updates. To remove {0} from your list, and add {1} instead, click OK. To Keep {0} without adding {1}, click Cancel.">
+			<input name="IDS_GENERAL_INSTALLERROR" type="hidden" value="The Update Service Agent has failed to install properly. In order for the Update Service Agent to properly install, you must be an administrator on your computer and you must be using your browsers default security settings. Press OK to try again to Show Updates through Update Service Agent. Press Cancel to continue without the Update Service Agent. If you choose to proceed without the Agent, you will not be able to see some updates.">
+		</FORM>
+	</head>
+
+	<body scroll="no" rightmargin="0" leftmargin="0" bottommargin="0" topmargin="0" onload="populate()">
+
+		<DIV id="mainNavHeader">
+			<DIV id="mainNavLogo"></DIV>
+			<DIV id="mainNavIconUpdatesS">
+				<DIV class="theNavS">
+				<img border="0" height="32" width="32" src="images/icon_update.gif"><br>
+				<a class="theNavS" id="ids_updates">Updates</a>
+				</DIV>
+			</DIV>
+			<div id="mainNavIconSettings">
+				<div class="theNav">
+				<a href="settings.htm"><img src="images/icon_settings.gif" width="32" height="32" border="0"></a><br>
+				<a href="settings.htm" id="ids_settings">Settings</a>
+				</div>
+			</div>
+			<div id="mainNavIconAbout">
+				<div class="theNav">
+				<a href="about.htm"><img src="images/icon_about.gif" width="32" height="32" border="0"></a><br>
+				<a href="about.htm" id="ids_about">About</a>
+				</div>
+			</div>
+		</DIV>
+
+		<DIV id="secNavHeader">
+			<DIV id="secNavLogo"><img border="0" height="61" width="261" src="images/update_header.jpg"></DIV>
+			<DIV id="secNavTitle">Updates</DIV>
+			<DIV id="secNavSeparator"></DIV>
+			<DIV id="secNavLinks">
+				<a href="updates.htm" id="ids_new_updates2">New updates &amp; messages</a><br>
+				<a href="updates.htm?archive=1" id="ids_restore_hidden">Restore hidden updates</a><br>
+				<a href="history.htm" id="ids_view_your_history">View your history</a>
+			</DIV>
+		</DIV>
+
+		<DIV id="mainContentUpdate">
+			<DIV id="leftPanel">
+			<span id="leftpanelmsg">The FLEXnet Connect Update Manager keeps your programs up-to-date with the latest security patches, improvements, and bug fixes. \nWhen an update is available, you can: </span>
+				<ul><li>
+						<span id="leftpanelmsgpt1">View the updates for your system </span>
+					</li><li>
+						<span id="leftpanelmsgpt2">View update descriptions </span>
+					</li><li>
+						<span id="leftpanelmsgpt3">Download and install updates </span>
+					</li>
+				</ul>
+				<DIV class="shortHorizSeparator"></DIV>
+				<DIV class="subContentHeader" id="ids_select_product">Select by Product</DIV>
+				<DIV class="indentLeftPanel">
+					<select name="frequency1" id="frequency1" style="width:195px" onchange="onSelectProduct()">
+						<option value="">All</option>
+					</select>
+				</DIV>
+				<!--DIV class="subContentHeader">Select by Type</DIV-->
+		          		<div class="indentLeftPanel">
+            				<a><strong><span id="ids_updates_count">Updates</span> -- (<span id="UpdatesCount">00</span>)</strong></a><br/>
+		            			<div class="indentLeftPanel">
+		              		<a><span id="ids_cupdates_count">Critical</span> -- (<span id="CUpdatesCount">00</span>)</a><br/>
+		              		<a><span id="ids_iupdates_count">Important</span> -- (<span id="IUpdatesCount">00</span>)</a>
+					</div>
+		            		<a><strong><span id="ids_msgs_count">Messages</span> -- (<span id="MessagesCount">00</span>)</strong></a><br/>
+				             <div class="indentLeftPanel">
+				             <a><span id="ids_cmsgs_count">Critical</span> -- (<span id="CMessagesCount">00</span>)</a><br/>
+		              		<a><span id="ids_imsgs_count">Important</span> -- (<span id="IMessagesCount">00</span>)</a></div>
+					</div>
+		        		</div>
+			</DIV>
+		</DIV>
+
+		<DIV id="rightPanel">
+			<div class="contentHeader" id="ids_new_updates">New updates & messages</div>
+			<DIV style="display:none;position:relative;left:10;top:0;" id="toparea">
+				<TABLE ID="Table1" cellpadding="0" cellspacing="0">
+					<TR>
+						<TD id="opleasewait" name="opleasewait" class="titletext" align="left">Please wait. The FLEXnet Connect Update Manager is locating the program updates available for your system.</TD>
+					</TR>
+					<TR>
+						<TD align="left">
+							<p style="display:none;color:red" id="warningmessage">Warning: some messages may not have been delivered to you. Please contact your software vendor to obtain these updates.</p>
+						</TD>
+					</TR>
+				</TABLE>
+			</DIV>
+			<DIV id="msgarea">
+				<DIV class="scrollerUpdate">
+					<table border="0" cellspacing="0" cellpadding="0">
+						<tr>
+							<td name="updatesarea" id="updatesarea">
+							</td>
+						</tr>
+					</table>
+				</DIV>
+			</DIV>
+			<DIV name="noupdates" id="noupdates" style="display:none;left:10">
+			</DIV>
+		
+			<DIV id="itemsSelected"><span id="itemsselectedtext">Items selected:</span> <span name="selected" id="selected">0</span><br><span name="downloadsizetext" id="downloadsizetext">Download size (total):</span> <span name="selectedsize" id="selectedsize">0</span></DIV>
+			<img src="images/icon_shield.gif" id="imgshield" name="imgshield" border="0" style="display:none"/>
+			<DIV id="downloadButtons" ><input onclick="go('INSTALL')" disabled="true" value=" Install " name="btnInstall" type="button" id="btnInstall"> <input onclick="go('DOWNLOAD')" disabled="true" value="Download Only" name="btnDownload" type="button" id="btnDownload"></DIV>
+			<DIV id="restoreButton"><input onclick="go('RESTORE')"  disabled="true" value=" Restore " name="btnRestore" type="button" id="btnRestore"></DIV>
+			<div id="closeButton" style="display:none"><input id="btnClose" name="btnClose" type="button" class="stdbutton" onclick="location.href = '#btnCloseWindow';" value='Close'></input>
+			</div>
+		</DIV><!-- end right panel -->
+
+		<div id="bottom">
+			<table cellpadding=0 cellspacing=0>
+			<tr>
+			<td>
+			<div id="copyright"><span id="ids_copyright">Copyright (c) 1997-2011 Flexera Software LLC.  All Rights Reserved.</span>| <a id="Aterms" href="http://www.flexerasoftware.com/company/terms_of_use.htm" target="_blank"><span id="ids_terms">Terms of Use</span></a>  | <a id="Aprivacy" href="http://www.flexerasoftware.com/company/legal.htm" target="_blank"><span id="ids_privacy">Privacy Statement</span></a></div></td>
+			<td width="18"><a href="help.htm" target="_blank"><img src="images/icon_help.gif" width="14" height="14" border="0" align="left"></a></td>
+			<td><a href="help.htm" target="_blank"><span id="ids_help">Help</span></a></td>
+			</tr>
+			</table>
+		</div>
+
+	</body>
+
+	<SCRIPT>
+	  <!--
+		var messagesarevisible = false;
+		var errorloading = false;
+		var totalselected = 0;
+		var totalselectedsize = 0;
+		var m_msgid = "";
+		var arrayUC = new Array();
+		var arrayU = new Array();
+		var arrayMC = new Array();
+		var arrayM = new Array();
+		var totalElevReq = 0;
+		var WinOSver = 0;
+
+		function onSelectProduct()
+		{
+			document.getElementById("noupdates").style.display = "none";
+			document.getElementById("msgarea").style.display = "block";
+			if (frequency1.selectedIndex == 0)
+			{
+				var i;
+				for (i = 1; i < frequency1.options.length; i++)
+				{
+					if (document.getElementById("p_" + i) != null)
+					{
+						document.getElementById("p_" + i).style.display = "block";
+						document.getElementById("pop" + i + "A").style.display = "block";
+					}
+				}
+			}
+			else
+			{
+				var i;
+				for (i = 1; i < frequency1.options.length; i++)
+				{
+					if (frequency1.selectedIndex == i)
+					{
+						if (document.getElementById("p_" + i) != null)
+						{
+							document.getElementById("p_" + i).style.display = "block";
+							document.getElementById("pop" + i + "A").style.display = "block";
+						}
+					}
+					else
+					{
+						if (document.getElementById("p_" + i) != null)
+						{
+							document.getElementById("p_" + i).style.display = "none";
+							document.getElementById("pop" + i + "A").style.display = "none";
+						}
+					}
+				}
+			}
+			if ((arrayU[frequency1.selectedIndex] == 0) && (arrayM[frequency1.selectedIndex] == 0))
+			{
+				document.getElementById("noupdates").style.display = "block";
+				document.getElementById("msgarea").style.display = "none";
+				if (frequency1.selectedIndex == 0)
+					document.getElementById("noupdates").innerHTML = "<br>&nbsp;&nbsp;"+ar[IDS_FOUND_NO_UPDATES];
+				else
+					document.getElementById("noupdates").innerHTML = "<br>&nbsp;&nbsp;"+ar[IDS_NO_UPDATES_PROD];
+			}
+			document.getElementById("UpdatesCount").innerText = arrayU[frequency1.selectedIndex];
+			document.getElementById("CUpdatesCount").innerText = arrayUC[frequency1.selectedIndex];
+			document.getElementById("IUpdatesCount").innerText = arrayU[frequency1.selectedIndex] - arrayUC[frequency1.selectedIndex];
+			document.getElementById("MessagesCount").innerText = arrayM[frequency1.selectedIndex];
+			document.getElementById("CMessagesCount").innerText = arrayMC[frequency1.selectedIndex];
+			document.getElementById("IMessagesCount").innerText = arrayM[frequency1.selectedIndex] - arrayMC[frequency1.selectedIndex];
+		}
+	    function ExistsInArray(arr, str)
+		{
+			var i;
+			for (i = 0; i < arr.length; i++)
+			{
+				if (arr[i] == str)
+					return i;
+			}
+			return -1;
+		}
+		function formatSize(size)
+		{
+			var n = new Number(size);
+			if (n <= 0)
+				return "";
+            if (eval(size) < 1024)
+            {
+                return (size + " " + ar[IDS_KB]);
+            }
+            else
+            {
+                return ((Math.round(size*100/1024))/100 +" " + ar[IDS_MB]);
+            }
+		}
+		function formatDate(date)
+		{
+			return date.substr(0, date.indexOf(" ")+1);
+		}
+		function populatefrequency1()
+		{
+			var i;
+			for (i = 0; i < window.parent._ProductsName.length; i++)
+			{
+				var oOption = document.createElement("OPTION");
+				frequency1.options.add(oOption);
+				oOption.innerText = window.parent._ProductsName[i];
+				oOption.value = window.parent._ProductsGUID[i];
+			}
+		}
+		function getOptionIndex(guid)
+		{
+			var i;
+			for (i = 1; i < frequency1.options.length; i++)
+			{
+				if (guid.toLowerCase().indexOf(frequency1.options[i].value.toLowerCase()) != -1)
+					return i;
+			}
+		}
+		function populateSeverityArrays()
+		{
+			var i;
+			for (i = 0; i < frequency1.options.length; i++)
+			{
+				arrayUC[i]=0;
+				arrayU[i]=0;
+				arrayMC[i]=0;
+				arrayM[i]=0;
+			}			
+		}
+		function populate()
+		{
+			document.all("opleasewait").innerHTML="";
+			
+			if (document.all("msgarea") != null)
+				msgarea.style.display="block";
+			
+			loadStrings();
+
+			populatefrequency1();
+
+			populateSeverityArrays();
+
+			var nUpdatesCount = 0;
+
+			if (window.parent.usUpdates != null)		
+				nUpdatesCount=window.parent.usUpdates.Count;
+
+			var nnn = navigator.userAgent.indexOf("Windows NT");
+			if (nnn != -1)
+				WinOSver = navigator.userAgent.substr(nnn+11,navigator.userAgent.indexOf(";", nnn)-(nnn+11));
+				
+			var dynHTML = "";
+			var arrayCats;
+			var popname;
+			var catname;
+			var bArchiveMode;
+			
+			setsize();
+			
+			if (nUpdatesCount == 0)
+			{
+				noupdates.style.display="block";
+				msgarea.style.display="none";
+			}
+
+			if (location.search.indexOf("archive=1") > 0)
+				bArchiveMode=true;
+			else
+				bArchiveMode=false;
+	
+			if (bArchiveMode==false)
+			{
+				document.getElementById("ids_new_updates2").style.fontWeight="bold";
+				document.getElementById("ids_restore_hidden").style.fontWeight="normal";
+				document.getElementById("restoreButton").style.visibility="hidden";
+  				document.getElementById("downloadsizetext").style.visibility="visible";
+  				document.getElementById("selectedsize").style.visibility="visible";
+				document.getElementById("ids_new_updates").innerText=ar[IDS_NEW_UPDATES];
+				if (nUpdatesCount == 0)
+				{
+					document.getElementById("downloadButtons").style.visibility="hidden";
+					document.getElementById("closeButton").style.display="block";
+				}
+				else
+					document.getElementById("downloadButtons").style.visibility="visible";
+			}
+			else
+			{
+				document.getElementById("ids_new_updates2").style.fontWeight="normal";
+				document.getElementById("ids_restore_hidden").style.fontWeight="bold";
+  				document.getElementById("downloadsizetext").style.visibility="hidden";
+  				document.getElementById("selectedsize").style.visibility="hidden";
+				document.getElementById("ids_new_updates").innerText=ar[IDS_RESTORE_HIDDEN];
+				document.getElementById("downloadButtons").style.visibility="hidden";
+				if (nUpdatesCount == 0)
+				{
+					document.getElementById("restoreButton").style.visibility="hidden";
+					document.getElementById("closeButton").style.display="block";
+				}
+				else
+					document.getElementById("restoreButton").style.visibility="visible";
+			}
+			
+			var bVisibleUpdateExists = false;
+			
+			for (i = 1; i <= nUpdatesCount; i++)
+			{
+				var objUpdate = window.parent.usUpdates.Item(i);
+				var displayName = objUpdate.QueryValue(32);
+				if (displayName.length < 1)
+					displayName = objUpdate.QueryValue(5);
+				var prodGUID = objUpdate.QueryValue(2);
+				var prodID = getOptionIndex(prodGUID);
+
+				if (bArchiveMode == true && objUpdate.QueryValue(28) == false)
+					continue;
+
+				if (bArchiveMode == false && objUpdate.QueryValue(28) == true)
+					continue;
+				
+ 				var downloadtype = objUpdate.QueryValue(30);
+				if (downloadtype == 1)
+				{
+					var bdone=false;
+					bdone=objUpdate.ScheduleDownload();
+					if (bdone != true)
+						continue;
+					else
+						bVisibleUpdateExists = true;
+				}
+				else
+					bVisibleUpdateExists = true;
+					
+				if (objUpdate.QueryValue(16) != 0)
+				{
+					var nsver = parseFloat(window.parent.Agent.NSVersion(prodGUID));
+					
+					if(isNaN(nsver) || nsver < 5)
+						continue;
+				}
+
+				if (document.getElementById("p_"+prodID) == null)
+				{
+					popname = "pop" + prodID + "A";
+					dynHTML = "<DIV class='updatesProductContainer' id='p_" + prodID + "'><a class='anchorColorNone' onClick='shoh(\"" + popname + "\"," + objUpdate.QueryValue(4) +",\"" + prodGUID + "\"," + objUpdate.QueryValue(31) + ");' href='#" + popname + "'>";
+					dynHTML = dynHTML + "<img border='0' height='9' width='9' name='img" + popname + "' src='images/d.gif'>&nbsp;" + displayName + "</a></div>";
+					dynHTML = dynHTML + "<DIV id='" + popname + "' style='display: all;'></DIV>";
+					document.all.updatesarea.insertAdjacentHTML("beforeEnd", dynHTML);
+					arrayCats = new Array();
+					arrayCats[0] = ar[IDS_UPDATES_CRITICAL];
+					arrayCats[1] = ar[IDS_UDPATES_IMPORTANT];
+					arrayCats[2] = ar[IDS_MESSAGES_CRITICAL];
+					arrayCats[3] = ar[IDS_MESSAGES_IMPORTANT];
+					var kk=0;
+					for (kk=0; kk < 4; kk++)
+					{
+						catname = prodID + "__" + kk;
+						dynHTML = "<DIV style='display: none;' class='updatesHeaderContainer' id='" + catname + "' name='" + catname + "'>";
+						dynHTML = dynHTML + "<DIV class='updatesUpdateHeaderCell'>" + arrayCats[kk] + "</DIV>";
+						dynHTML = dynHTML + "<DIV class='updatesDateHeaderCell'>" + ar[IDS_DATE] + "</DIV><DIV class='updatesStatusHeaderCell'>" + ar[IDS_SIZE] + "</DIV></DIV>";
+						document.getElementById(popname).insertAdjacentHTML("beforeEnd", dynHTML);
+					}
+				}
+				popname = "pop" + prodID + "A";
+				var type = objUpdate.QueryValue(18);
+				var catID=0;
+				var PMID = prodID + "_" + objUpdate.QueryValue(4);
+				var sev = objUpdate.QueryValue(34);
+				if (sev == "")
+				{
+					if (objUpdate.IsNextUse() == true)
+						sev = "C";
+					else
+						sev = "I";
+				}
+				if ((type & 0x2) || (type & 0x4) || (type & 0x8))
+				{
+					if (sev == "C")
+					{
+						catID = 2;
+						arrayMC[0] = arrayMC[0] + 1;
+						arrayMC[prodID] = arrayMC[prodID] + 1;
+					}
+					else
+						catID = 3;
+					arrayM[0] = arrayM[0] + 1;
+					arrayM[prodID] = arrayM[prodID] + 1;
+				}
+				else 
+				{
+					if (sev == "C")
+					{
+						catID = 0;
+						arrayUC[0] = arrayUC[0] + 1;
+						arrayUC[prodID] = arrayUC[prodID] + 1;
+					}
+					else
+						catID = 1;
+					arrayU[0] = arrayU[0]  + 1;
+					arrayU[prodID] = arrayU[prodID] + 1;
+				}
+				catname = prodID + "__" + catID;
+				document.getElementById(catname).style.display = "block";
+
+				var mediatype = objUpdate.QueryValue(15);
+				var basketable = (objUpdate.QueryValue(14) == 1);
+				if ((type == 1) || (type == 16) || (type == 49))
+				{
+					if (basketable == true)
+					{
+						if (objUpdate.QueryValue(16) != 0)
+							basketable = false;
+						if ((mediatype == 2) || (mediatype == 3))
+							basketable = false;
+						if (downloadtype == 1)
+							basketable = false;
+					}
+				}
+				var asterik;
+				if (basketable == true)
+					asterik = "";
+				else
+					asterik = " *";
+				var details = objUpdate.QueryValue(10);
+				var detailsURL = objUpdate.QueryValue(9);
+				var bNotCheckBox = ((type != 1) && (type != 16) && (type != 33) && (type != 49) || (mediatype == 4)) && (bArchiveMode == false);
+				var description = objUpdate.QueryValue(17);
+				var startDate = objUpdate.QueryValue(25);
+				var bNew = objUpdate.QueryValue(27);
+
+				dynHTML = "<DIV style='display: block;' class='updatesColumnContainer' id='col_" + PMID + "' name='col_" + PMID + "'>";
+				dynHTML = dynHTML + "<DIV class='updatesUpdateCell'>";
+				if (bNotCheckBox == true)
+				{
+					basketable = true;
+					asterik = "";
+					if (mediatype == 4)
+					{
+						dynHTML = dynHTML + "<div style='padding:3px0px3px0px'><a target='_new' href='" + objUpdate.QueryValue(1) + "' onClick='logReadVerb(";
+						dynHTML = dynHTML + objUpdate.QueryValue(4) +",\""+ prodGUID +"\","+ objUpdate.QueryValue(31) +")'><img src='images/icon_web.gif' width='14' height='14' border='0' align='left'/></a></div>";
+					}
+				}
+				else
+				{
+					if (bArchiveMode == false)
+						dynHTML = dynHTML + "<input type='checkbox' id='cb_" + PMID + "' name='cb_" + PMID + "' onclick='boxchecked(\"" + PMID + "\");'>";
+					else
+						dynHTML = dynHTML + "<input type='checkbox' id='cb_" + PMID + "' name='cb_" + PMID + "' onclick='restoreboxchecked(\"" + PMID + "\","+i+");'>";
+				}
+				if (bNew.indexOf("1") == -1)
+					dynHTML = dynHTML + "</DIV><DIV class='updatesUpdateNameCell' ";
+				else
+					dynHTML = dynHTML + "</DIV><DIV class='updatesUpdateNameCellNew' ";
+				dynHTML = dynHTML + "id='UpdateNameCell_" + PMID + "' name='UpdateNameCell_" + PMID + "'>";
+				dynHTML = dynHTML + "<a href='#pop" + PMID + "' onClick='shoh(\"pop" + PMID + "\"," + objUpdate.QueryValue(4) +",\"" + prodGUID + "\"," + objUpdate.QueryValue(31) + ");'><img border='0' height='9' width='9' src='images/u.gif' name='imgpop" + PMID + "'>";
+				dynHTML = dynHTML + "<span id='Name_" + PMID + "' name='Name_" + PMID + "'>" + objUpdate.QueryValue(0);
+				if (bNew.indexOf("1") != -1)
+					dynHTML = dynHTML + " - " + ar[IDS_NEW];
+				dynHTML = dynHTML + "</span>" + asterik + "</a>" + "</DIV><DIV class='updatesDateCell'><a href='#pop" + PMID + "' onClick='shoh(\"pop" + PMID + "\"," + objUpdate.QueryValue(4) +",\"" + prodGUID + "\"," + objUpdate.QueryValue(31) + ");'>" + formatDate(startDate) + "</a>";
+				dynHTML = dynHTML + "</DIV><DIV class='updatesSizeCell'>";
+				dynHTML = dynHTML + "<a href='#pop" + PMID + "' onClick='shoh(\"pop" + PMID + "\"," + objUpdate.QueryValue(4) +",\"" + prodGUID + "\"," + objUpdate.QueryValue(31) + ");'>";
+				if (mediatype != 4)
+					dynHTML = dynHTML + formatSize(objUpdate.QueryValue(6));
+				dynHTML = dynHTML + "</a></DIV>";
+				dynHTML = dynHTML + "<DIV class='updatesUpdateContent' style='display: none;' id='pop"+ PMID + "'>";
+				dynHTML = dynHTML + "<DIV class='shortSpacerVert'></DIV>";
+				if (details.length != 0)
+					dynHTML = dynHTML + details + "<br><DIV class='shortSpacerVert'></DIV>";
+				if (mediatype == 4)
+				{
+					dynHTML = dynHTML + "<table border='0' cellspacing='0' cellpadding='3'><tr><td>";
+					dynHTML = dynHTML + "<a href=''><img align='left' border='0' height='14' width='14' src='images/icon_web.gif'></a>";
+					dynHTML = dynHTML + "</td><td><a target='_new' onClick='logReadVerb("+ objUpdate.QueryValue(4) +",\""+ prodGUID +"\","+ objUpdate.QueryValue(31) +")' href='" + objUpdate.QueryValue(1) + "'>";
+					dynHTML = dynHTML + ar[IDS_LEARN_MORE] + "</a></td></tr></table>";
+				}				
+				if (detailsURL.length != 0)
+				{
+					dynHTML = dynHTML + "<table border='0' cellspacing='0' cellpadding='3'><tr><td>";
+					dynHTML = dynHTML + "<a target='_new' onClick='logReadVerb("+ objUpdate.QueryValue(4) +",\""+ prodGUID +"\","+ objUpdate.QueryValue(31) +")' href='" + detailsURL + "'><img align='left' border='0' height='14' width='14'";
+					if ((type != 1) && (type != 16) && (type != 33) && (type != 49))
+						dynHTML = dynHTML + " src='images/icon_web.gif'></a>";
+					else
+						dynHTML = dynHTML + " src='images/icon_view.gif'></a>";
+					dynHTML = dynHTML + "</td><td><a target='_new' onClick='logReadVerb("+ objUpdate.QueryValue(4) +",\""+ prodGUID +"\","+ objUpdate.QueryValue(31) +")' href='" + detailsURL + "'>";
+					if ((type != 1) && (type != 16) && (type != 33) && (type != 49))
+						dynHTML = dynHTML + ar[IDS_LEARN_MORE] + "</a></td></tr></table>";
+					else
+						dynHTML = dynHTML + ar[IDS_READ_MORE] + "</a></td></tr></table>";
+				}
+				if (description.length != 0)
+				{
+					dynHTML = dynHTML + "<table border='0' cellspacing='0' cellpadding='3'><tr><td>";
+					dynHTML = dynHTML + "<a href=''><img align='left' border='0' height='14' width='14' src='images/icon_instructions.gif'></a>";
+					dynHTML = dynHTML + "</td><td><a id='installinstr' href='javascript:showinstructions(\"" + PMID;
+					dynHTML = dynHTML + "\");'>" + ar[IDS_INSTALL_INSTR] + "</a></td></tr></table>";
+				}
+				if (bArchiveMode == false){
+					dynHTML = dynHTML + "<table border='0' cellspacing='0' cellpadding='3'><tr><td>";
+					dynHTML = dynHTML + "<a href='javascript:DonotDisturb("+ i +")'><img src='images/icon_archive.gif' width='14' height='14' border='0' align='left'></a>";
+					dynHTML = dynHTML + "</td><td><a href='javascript:DonotDisturb("+ i + "," + objUpdate.QueryValue(4) +",\""+ prodGUID +"\","+ objUpdate.QueryValue(31) + ")' name=\"donotlist_" + PMID + "\" id=\"donotlist_" + PMID + "\" >";
+					dynHTML = dynHTML + ar[IDS_DONT_SHOW] + "</a></td></tr></table>";
+				}
+
+				if (basketable == false)
+				{
+					if (window.parent._UILangID != 1042)
+					{
+						dynHTML = dynHTML + "<table border='0' cellspacing='0' cellpadding='3'><tr><td>";
+						dynHTML = dynHTML + "* - " + ar[IDS_EXCLUSIVE_MSG];
+						dynHTML = dynHTML + "</td></tr></table><DIV class='shortSpacerVert'></DIV>";
+					}
+				}
+				dynHTML = dynHTML + "</DIV>";
+				dynHTML = dynHTML + "<form style='display:none' method='post' name='FORM_" + PMID + "' id='FORM_" + PMID + "'>"
+				dynHTML = dynHTML + "<input id='prid' name='prid' type='hidden' value='" + objUpdate.QueryValue(2) + "'>";
+				dynHTML = dynHTML + "<input id='MSGID' name='MSGID' type='hidden' value='" + objUpdate.QueryValue(4) + "'>";
+				dynHTML = dynHTML + "<input id='PRODUCTNAME' name='PRODUCTNAME' type='hidden' value='" + escape(objUpdate.QueryValue(5)) + "'>";
+				dynHTML = dynHTML + "<input id='DisplayVersion' name='DisplayVersion' type='hidden' value='" + objUpdate.QueryValue(3) + "'>";
+				dynHTML = dynHTML + "<input id='MSGNAME' name='MSGNAME' type='hidden' value='" + objUpdate.QueryValue(0) + "'>";
+				dynHTML = dynHTML + "<input id='MSGTYPE' name='MSGTYPE' type='hidden' value='" + objUpdate.QueryValue(18) + "'>";
+				dynHTML = dynHTML + "<input id='DOWNLOADURL' name='DOWNLOADURL' type='hidden' value='" + objUpdate.QueryValue(1) + "'>";
+				dynHTML = dynHTML + "<input id='DOWNLOADSIZE' name='DOWNLOADSIZE' type='hidden' value='" + objUpdate.QueryValue(6) + "'>";
+				dynHTML = dynHTML + "<input id='DESCRIPTION' name='DESCRIPTION' type='hidden' value='" + escape(objUpdate.QueryValue(17)) + "'>";
+				dynHTML = dynHTML + "<input id='MediaType' name='MediaType' type='hidden' value='" + objUpdate.QueryValue(15) + "'>";
+				dynHTML = dynHTML + "<input id='DETAILSURL' name='DETAILSURL' type='hidden' value='" + objUpdate.QueryValue(9) + "'>";
+				dynHTML = dynHTML + "<input id='TargetDir' name='TargetDir' type='hidden' value='" + objUpdate.QueryValue(8) + "'>";
+				dynHTML = dynHTML + "<input id='CommandLine' name='CommandLine' type='hidden' value='" + objUpdate.QueryValue(7) + "'>";
+				dynHTML = dynHTML + "<input id='AuthID' name='AuthID' type='hidden' value='" + objUpdate.QueryValue(16) + "'>";
+				dynHTML = dynHTML + "<input id='AuthMsgDisplay' name='AuthMsgDisplay' type='hidden' value='" + escape(objUpdate.QueryValue(19)) + "'>";
+				dynHTML = dynHTML + "<input id='AuthMsgFailed' name='AuthMsgFailed' type='hidden' value='" + objUpdate.QueryValue(20) + "'>";
+				dynHTML = dynHTML + "<input id='AuthInfoURL' name='AuthInfoURL' type='hidden' value='" + objUpdate.QueryValue(20) + "'>";
+				dynHTML = dynHTML + "<input id='Details' name='Details' type='hidden' value='" + escape(objUpdate.QueryValue(10)) + "'>";
+				dynHTML = dynHTML + "<input id='Basketable' name='Basketable' type='hidden' value='" + objUpdate.QueryValue(14) + "'>";
+				dynHTML = dynHTML + "<input id='BasketPriority' name='BasketPriority' type='hidden' value='" + objUpdate.QueryValue(13) + "'>";
+				dynHTML = dynHTML + "<input id='CalloutURL' name='CalloutURL' type='hidden' value='" + objUpdate.QueryValue(22) + "'>";
+				dynHTML = dynHTML + "<input id='SecurityType' name='SecurityType' type='hidden' value='" + objUpdate.QueryValue(23) + "'>";
+				dynHTML = dynHTML + "<input id='SecuritySignature' name='SecuritySignature' type='hidden' value='" + objUpdate.QueryValue(24) + "'>";
+				dynHTML = dynHTML + "<input id='DownloadType' name='DownloadType' type='hidden' value='" + objUpdate.QueryValue(30) + "'>";
+				dynHTML = dynHTML + "<input id='VersionID' name='VersionID' type='hidden' value='" + objUpdate.QueryValue(31) + "'>";
+				dynHTML = dynHTML + "<input id='SDURL' name='SDURL' name='SDURL' type='hidden' value='" + objUpdate.QueryValue(29) + "'>";
+				dynHTML = dynHTML + "<input id='ElevReq' name='ElevReq' name='ElevReq' type='hidden' value='" + objUpdate.QueryValue(33) + "'></form>";
+
+				dynHTML = dynHTML + "<script>	messagesarevisible=true; noupdates.style.display='none'; </script>";
+
+
+				dynHTML = dynHTML + "</DIV>";
+				document.getElementById(catname).insertAdjacentHTML("afterEnd", dynHTML);
+			}
+			
+			if (bVisibleUpdateExists == false)
+			{
+				noupdates.style.display="block";
+				msgarea.style.display="none";
+			}
+			
+			document.getElementById("UpdatesCount").innerText = arrayU[0];
+			document.getElementById("CUpdatesCount").innerText = arrayUC[0];
+			document.getElementById("IUpdatesCount").innerText = arrayU[0] - arrayUC[0];
+			document.getElementById("MessagesCount").innerText = arrayM[0];
+			document.getElementById("CMessagesCount").innerText = arrayMC[0];
+			document.getElementById("IMessagesCount").innerText = arrayM[0] - arrayMC[0];			
+		}
+
+		function loadStrings()
+		{	
+			document.charset = window.parent._UIcharset;
+			
+			if (_CustomStrings.length > 0)
+				document.getElementById("strings").src = _CustomStrings + "/strings" + window.parent._UILangID + ".js";
+			else
+				document.getElementById("strings").src = "lang/strings" + window.parent._UILangID + ".js";
+			if (typeof(ar) == "undefined")
+				document.getElementById("strings").src = "lang/strings" + ((window.parent._UILangID & 0xff) + 1024) + ".js";
+			if (typeof(ar) == "undefined")
+				document.getElementById("strings").src = "lang/strings1033.js";
+
+			document.getElementById("ids_settings").innerText = ar[IDS_SETTINGS];
+			document.getElementById("ids_about").innerText = ar[IDS_ABOUT];
+			document.getElementById("ids_updates").innerText = ar[IDS_UPDATES];
+			document.getElementById("secNavTitle").innerText = ar[IDS_UPDATES];
+			document.getElementById("ids_new_updates").innerText = ar[IDS_NEW_UPDATES];
+			document.getElementById("ids_new_updates2").innerText = ar[IDS_NEW_UPDATES];
+			document.getElementById("ids_restore_hidden").innerText = ar[IDS_RESTORE_HIDDEN];
+			document.getElementById("leftpanelmsg").innerText = ar[IDS_LEFTPANEL_MSG];
+			document.getElementById("leftpanelmsgpt1").innerText = ar[IDS_LEFTPANEL_PT1];
+			document.getElementById("leftpanelmsgpt2").innerText = ar[IDS_LEFTPANEL_PT2];
+			document.getElementById("leftpanelmsgpt3").innerText = ar[IDS_LEFTPANEL_PT3];
+			document.getElementById("ids_select_product").innerText = ar[IDS_SELECT_PRODUCT];
+			document.getElementById("frequency1").options[0].innerText = ar[IDS_ALL];
+			document.getElementById("opleasewait").innerText = ar[IDS_CHECKING_WAIT];
+			document.getElementById("itemsselectedtext").innerText = ar[IDS_ITEMS_SELECTED];
+			document.getElementById("downloadsizetext").innerText = ar[IDS_DOWNLOAD_SIZE];
+			document.getElementById("btnInstall").value = ar[IDS_INSTALL];
+			document.getElementById("btnDownload").value = ar[IDS_DOWNLOAD];
+			document.getElementById("btnRestore").value = ar[IDS_RESTORE];
+			document.getElementById("ids_copyright").innerText = ar[IDS_COPYRIGHT];
+			document.getElementById("ids_terms").innerText = ar[IDS_TERMS];
+			document.getElementById("ids_privacy").innerText = ar[IDS_PRIVACY];
+			document.getElementById("ids_help").innerText = ar[IDS_HELP];
+			document.getElementById("noupdates").innerHTML = "<br>&nbsp;&nbsp;"+ar[IDS_FOUND_NO_UPDATES];
+			document.getElementById("ids_view_your_history").innerText = ar[IDS_VIEW_YOUR_HISTORY];
+			document.getElementById("ids_updates_count").innerText = ar[IDS_UPDATES];
+			document.getElementById("ids_cupdates_count").innerText = ar[IDS_CRITICAL];
+			document.getElementById("ids_iupdates_count").innerText = ar[IDS_IMPORTANT];
+			document.getElementById("ids_msgs_count").innerText = ar[IDS_MESSAGES];
+			document.getElementById("ids_cmsgs_count").innerText = ar[IDS_CRITICAL];
+			document.getElementById("ids_imsgs_count").innerText = ar[IDS_IMPORTANT];	
+			document.getElementById("IDS_AVAILABLEUPDATES_EXCLUSIVE_MSG1").value = ar[IDS_EXCLUSIVE_MSG1];	
+			document.getElementById("IDS_AVAILABLEUPDATES_EXCLUSIVE_MSG2").value = ar[IDS_EXCLUSIVE_MSG2];
+			document.getElementById("btnClose").value = ar[IDS_CLOSE];
+		}
+		function showinstructions(id)
+		{
+			var txt = document.getElementById("FORM_" + id).DESCRIPTION.value;
+			window.open("installinstr.htm?text="+txt+"&l="+window.parent._UILangID+"&cs="+window.parent._UIcharset, "", "width=400px, height=200px, scrollbars");
+		}
+		
+		function logReadVerb(msgID, productID, versionID)
+        {
+            if(typeof(webagent.Report) != "undefined") {
+                webagent.Report("MSGREAD", msgID, productID, versionID);
+            } else {
+                var ampchar="%26"; 
+                var v="verb=MSGREAD"+unescape(ampchar)+"triplets=" + msgID + "," + productID + "," + versionID + unescape(ampchar)+"comments=Message from Web Site"; 
+                webagent.ProductCode = productID;
+                webagent.Home(v, 0);
+            }
+        }
+	  -->
+	</SCRIPT>
+	<script id="strings">
+	</script>
+
+	<OBJECT ID="webagent" align="baseline" height="1" width="1" classid="CLSID:E49B30C9-6D7E-48F5-91DA-F2F0414C6A13" />
+</html>
+
+
+
+

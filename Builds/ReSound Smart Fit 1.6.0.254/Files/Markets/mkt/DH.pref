@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Market xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="DK.mkt" InternalName="NLHL">
+  <Version Major="3" Minor="12" DataVersion="0"/>
+  <Preferences>
+    <Pref ID="AutorelateSaveOption" Type="Enum" DefaultValue="Yes"/>
+    <Pref ID="BASS" Type="Enum" DefaultValue="P1AsBasic"/>
+    <Pref ID="BASS3" Type="Enum" DefaultValue="P1AsNaturalDirectionality"/>
+    <Pref ID="CommDevices" Type="Enum" DefaultValue="FittingDongle:0"/>
+    <Pref ID="ECommerceWebSite" Type="String" DefaultValue="https://online.gnresound.dk"/>
+    <Pref ID="IsPediatricFittingEnabled" Type="Boolean" DefaultValue="1"/>
+    <Pref ID="Language" Type="Enum" DefaultValue="da-DK"/>
+    <Pref ID="MuteHIWhenFitting" Type="Boolean" DefaultValue="1"/>
+    <Pref ID="NavigatingToFitting" Type="Enum" DefaultValue="ConnectHI"/>
+    <Pref ID="PinCode" Type="Int" DefaultValue="0"/>
+    <Pref ID="ShowADLAfterRead" Type="Boolean" DefaultValue="1"/>
+    <Pref ID="ShoweCommerceMenu" Type="Boolean" DefaultValue="1"/>
+    <Pref ID="SpecType" Type="Enum" DefaultValue="IEC118_7"/>
+    <Pref ID="UpdatesCheckOnSchedule" Type="Boolean" DefaultValue="1"/>
+    <Pref ID="UseBoneConduction" Type="Boolean" DefaultValue="0"/>
+    <Pref ID="WebLaunchSite" Type="String" DefaultValue="www.gnhearing.dk"/>
+    <Pref ID="FrequentEnvironments2" Type="Enum" DefaultValue="None"/>
+  </Preferences>
+</Market>

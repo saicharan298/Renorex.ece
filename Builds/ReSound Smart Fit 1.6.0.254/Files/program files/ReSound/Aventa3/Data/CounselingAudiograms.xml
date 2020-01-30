@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CounselingAudiograms>
+	<!-- Type is Type of the audiogram, description is the string ID-->
+	<Audiogram Type="Normal" DescriptionID="2242">		
+		<Points>
+			<Point frequency="125" intensity="0" />
+			<Point frequency="250" intensity="0" />
+			<Point frequency="500" intensity="0" />
+			<Point frequency="1000" intensity="0" />
+			<Point frequency="1500" intensity="0" />
+			<Point frequency="2000" intensity="0" />
+			<Point frequency="3000" intensity="0" />
+			<Point frequency="4000" intensity="0" />
+			<Point frequency="6000" intensity="0" />
+			<Point frequency="8000" intensity="0" />			
+		</Points>
+	</Audiogram>
+	<Audiogram Type="Age" Subtype="Age20" DescriptionID="1836" >		
+		<Points>
+			<Point frequency="125" intensity="0" />
+			<Point frequency="250" intensity="0" />
+			<Point frequency="500" intensity="0" />
+			<Point frequency="1000" intensity="0" />
+			<Point frequency="1500" intensity="0" />
+			<Point frequency="2000" intensity="0" />
+			<Point frequency="3000" intensity="0" />
+			<Point frequency="4000" intensity="0" />
+			<Point frequency="6000" intensity="0" />
+			<Point frequency="8000" intensity="0" />
+		</Points>
+	</Audiogram>
+	<Audiogram Type="Age" Subtype="Age30" DescriptionID="7675">
+		<Points>
+			<Point frequency="125" intensity="0" />
+			<Point frequency="250" intensity="0" />
+			<Point frequency="500" intensity="1" />
+			<Point frequency="1000" intensity="1" />
+			<Point frequency="1500" intensity="1" />
+			<Point frequency="2000" intensity="1" />
+			<Point frequency="3000" intensity="2" />
+			<Point frequency="4000" intensity="2" />
+			<Point frequency="6000" intensity="3" />
+			<Point frequency="8000" intensity="3" />
+		</Points>
+	</Audiogram>
+	<Audiogram Type="Age" Subtype="Age40" DescriptionID="7676">
+		<Points>
+			<Point frequency="125" intensity="2" />
+			<Point frequency="250" intensity="2" />
+			<Point frequency="500" intensity="2" />
+			<Point frequency="1000" intensity="2" />
+			<Point frequency="1500" intensity="3" />
+			<Point frequency="2000" intensity="3" />
+			<Point frequency="3000" intensity="6" />
+			<Point frequency="4000" intensity="8" />
+			<Point frequency="6000" intensity="9" />
+			<Point frequency="8000" intensity="11" />
+		</Points>
+	</Audiogram>
+	<Audiogram Type="Age" Subtype="Age50" DescriptionID="7677">		
+		<Points>
+			<Point frequency="125" intensity="3" />
+			<Point frequency="250" intensity="3" />
+			<Point frequency="500" intensity="4" />
+			<Point frequency="1000" intensity="4" />
+			<Point frequency="1500" intensity="6" />
+			<Point frequency="2000" intensity="7" />
+			<Point frequency="3000" intensity="12" />
+			<Point frequency="4000" intensity="16" />
+			<Point frequency="6000" intensity="18" />
+			<Point frequency="8000" intensity="23" />
+		</Points>
+	</Audiogram>
+	<Audiogram Type="Age" Subtype="Age60" DescriptionID="7678">		
+		<Points>
+			<Point frequency="125" intensity="5" />
+			<Point frequency="250" intensity="5" />
+			<Point frequency="500" intensity="6" />
+			<Point frequency="1000" intensity="7" />
+			<Point frequency="1500" intensity="10" />
+			<Point frequency="2000" intensity="12" />
+			<Point frequency="3000" intensity="20" />
+			<Point frequency="4000" intensity="28" />
+			<Point frequency="6000" intensity="32" />
+			<Point frequency="8000" intensity="39" />
+		</Points>
+	</Audiogram>
+	<Audiogram Type="Age" Subtype="Age70" DescriptionID="7729">
+		<Points>
+			<Point frequency="125" intensity="8" />
+			<Point frequency="250" intensity="8" />
+			<Point frequency="500" intensity="9" />
+			<Point frequency="1000" intensity="11" />
+			<Point frequency="1500" intensity="15" />
+			<Point frequency="2000" intensity="19" />
+			<Point frequency="3000" intensity="31" />
+			<Point frequency="4000" intensity="43" />
+			<Point frequency="6000" intensity="49" />
+			<Point frequency="8000" intensity="60" />
+		</Points>
+	</Audiogram>
+	<Audiogram Type="Typical" Subtype="Mild" DescriptionID="331">		
+		<Points>
+			<Point frequency="125" intensity="20" />
+			<Point frequency="250" intensity="25" />
+			<Point frequency="500" intensity="25" />
+			<Point frequency="1000" intensity="30" />
+			<Point frequency="1500" intensity="33" />
+			<Point frequency="2000" intensity="36" />
+			<Point frequency="3000" intensity="38" />
+			<Point frequency="4000" intensity="40" />
+			<Point frequency="6000" intensity="40" />
+			<Point frequency="8000" intensity="40" />
+		</Points>
+	</Audiogram>
+	<Audiogram Type="Typical" Subtype="Moderate" DescriptionID="332">		
+		<Points>
+			<Point frequency="125" intensity="35" />
+			<Point frequency="250" intensity="40" />
+			<Point frequency="500" intensity="45" />
+			<Point frequency="1000" intensity="50" />
+			<Point frequency="1500" intensity="52" />
+			<Point frequency="2000" intensity="55" />
+			<Point frequency="3000" intensity="58" />
+			<Point frequency="4000" intensity="60" />
+			<Point frequency="6000" intensity="60" />
+			<Point frequency="8000" intensity="60" />
+		</Points>
+	</Audiogram>
+	<Audiogram Type="Typical" Subtype="Severe" DescriptionID="333">		
+		<Points>
+			<Point frequency="125" intensity="50" />
+			<Point frequency="250" intensity="45" />
+			<Point frequency="500" intensity="65" />
+			<Point frequency="1000" intensity="65" />
+			<Point frequency="1500" intensity="68" />
+			<Point frequency="2000" intensity="70" />
+			<Point frequency="3000" intensity="72" />
+			<Point frequency="4000" intensity="75" />
+			<Point frequency="6000" intensity="78" />
+			<Point frequency="8000" intensity="80" />
+		</Points>
+	</Audiogram>
+	<Audiogram Type="Typical" Subtype="Profound" DescriptionID="334">		
+		<Points>
+			<Point frequency="125" intensity="85" />
+			<Point frequency="250" intensity="85" />
+			<Point frequency="500" intensity="90" />
+			<Point frequency="1000" intensity="95" />
+			<Point frequency="1500" intensity="98" />
+			<Point frequency="2000" intensity="100" />
+			<Point frequency="3000" intensity="107" />
+			<Point frequency="4000" intensity="110" />
+			<Point frequency="6000" intensity="115" />
+			<Point frequency="8000" intensity="120" />
+		</Points>
+	</Audiogram>
+	<Audiogram Type="Typical" Subtype="SkiSlope" DescriptionID="7679">		
+		<Points>
+			<Point frequency="125" intensity="15" />
+			<Point frequency="250" intensity="15" />
+			<Point frequency="500" intensity="20" />
+			<Point frequency="1000" intensity="20" />
+			<Point frequency="1500" intensity="35" />
+			<Point frequency="2000" intensity="45" />
+			<Point frequency="3000" intensity="60" />
+			<Point frequency="4000" intensity="70" />
+			<Point frequency="6000" intensity="75" />
+			<Point frequency="8000" intensity="80" />
+		</Points>
+	</Audiogram>
+</CounselingAudiograms>

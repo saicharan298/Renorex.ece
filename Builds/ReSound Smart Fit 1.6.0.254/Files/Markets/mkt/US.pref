@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Market xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="US.mkt">
+  <Version Major="3" Minor="12" DataVersion="0"/>
+  <Preferences>
+    <Pref ID="BASS" Type="Enum" DefaultValue="P1AsNaturalDirectionality"/>
+    <Pref ID="BASS3" Type="Enum" DefaultValue="P1AsNaturalDirectionality"/>
+    <Pref ID="CommDevices" Type="Enum" DefaultValue="FittingDongle:0"/>
+    <Pref ID="DisableTSGOnProgram" Type="Boolean" DefaultValue="1"/>
+    <Pref ID="EcademyWebSite" Type="String" DefaultValue="http://www.audiologyonline.com/audiology-ceus/search/cp:resound/"/>
+    <Pref ID="ECommerceWebSite" Type="String" DefaultValue="https://online.gnresound.com"/>
+    <Pref ID="Language" Type="Enum" DefaultValue="en-US"/>
+    <Pref ID="PinCode" Type="Int" DefaultValue="0"/>
+    <Pref ID="PreferFitting" Type="Enum" DefaultValue="TwoPowerBands_5080"/>
+    <Pref ID="ShoweCommerceMenu" Type="Boolean" DefaultValue="1"/>
+    <Pref ID="UpdatesCheckOnSchedule" Type="Boolean" DefaultValue="1"/>
+    <Pref ID="UpdatesFrequency" Type="Enum" DefaultValue="OneWeek"/>
+    <Pref ID="FrequentEnvironments3" Type="Enum" DefaultValue="TelecoilPhone"/>
+    <Pref ID="SupportThreeGainHandles" Type="Boolean" DefaultValue="0"/>
+    <Pref ID="P2" Type="Enum" DefaultValue="None"/>
+  </Preferences>
+</Market>

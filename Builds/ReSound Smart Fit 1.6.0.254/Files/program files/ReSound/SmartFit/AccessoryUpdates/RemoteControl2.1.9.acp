@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<FirmwareUpdatePackage >
+  <FirmwareUpdate ProcessorType="MicroController" FirmwareFileName="RemoteControl2.4.0.hex" Version="4.0"/>
+  <FirmwareUpdate ProcessorType="NordicRadio" FirmwareFileName="RemoteControl2Nrf.2.0.hex" Version="2.0"/>  
+  <FirmwareUpdate ProcessorType="CharacterRom" FirmwareFileName="RemoteControl2CharacterRom.2.6.hex" Version="2.6"/>
+</FirmwareUpdatePackage>

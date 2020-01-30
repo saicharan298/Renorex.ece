@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modulegroupdoc>
+  <testsuiteentryhierarchy>
+    <flatlistofchildren>
+      <modulegroups
+      name="FeatureFlag_Validation"
+      id="eb7aba58-0087-409e-8722-b60c4389eb5d"/>
+    </flatlistofchildren>
+    <childhierarchy>
+      <modulegroups
+      name="FeatureFlag_Validation"
+      id="eb7aba58-0087-409e-8722-b60c4389eb5d"/>
+    </childhierarchy>
+  </testsuiteentryhierarchy>
+</modulegroupdoc>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Market xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="DE.mkt">
+  <Version Major="1" Minor="1" DataVersion="0"/>
+  <Preferences>
+    <Pref ID="Language" Type="Enum" DefaultValue="de-DE"/>
+    <Pref ID="CheckVentCorrection" Type="Boolean" DefaultValue="0"/>
+    <Pref ID="DFSGainClampingEnabled" Type="Boolean" DefaultValue="0"/>
+    <Pref ID="P3" Type="Enum" DefaultValue="TFOG"/>
+    <Pref ID="SpecType" Type="Enum" DefaultValue="IEC118_7"/>
+    <Pref ID="EnableWebUpdates" Type="Boolean" DefaultValue="0"/>
+    <Pref ID="UpdatesCheckOnSchedule" Type="Boolean" DefaultValue="0"/>
+    <Pref ID="UpdatesDownloadAutomatically" Type="Boolean" DefaultValue="0"/>
+    <Pref ID="ShoweCommerceMenu" Type="Boolean" DefaultValue="1"/>
+    <Pref ID="ECommerceWebSite" Type="String" DefaultValue="https://meingnresound.de/"/>
+  </Preferences>
+</Market>

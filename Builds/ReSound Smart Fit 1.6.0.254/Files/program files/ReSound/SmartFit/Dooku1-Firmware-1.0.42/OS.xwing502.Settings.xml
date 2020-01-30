@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Settings>
+  
+  <PropertyCategory Name="Operating System">
+
+   <PropertyGroup Name="Device Info">
+      <Property DisplayName="Options For Device" TargetProperty="OptionsForDevice" TargetName="ProductIdentification" TargetType="LayoutItem"/>
+   </PropertyGroup>
+
+   <PropertyGroup Name="Event Assignments">
+      <Property DisplayName="Gmr Sensor Long Event" TargetProperty="Os.GmrSensorLongEvent" TargetName="PushButton" TargetType="BlackboardComponent"/>
+      <Property DisplayName="Gmr Sensor Short Event" TargetProperty="Os.GmrSensorShortEvent" TargetName="PushButton" TargetType="BlackboardComponent"/>
+      <Property DisplayName="Button Long Event" TargetProperty="Os.ButtonLongEvent" TargetName="PushButton" TargetType="BlackboardComponent"/>
+      <Property DisplayName="Button Short Event" TargetProperty="Os.ButtonShortEvent" TargetName="PushButton" TargetType="BlackboardComponent"/>
+      <Property DisplayName="VolumeDown Long Event" TargetProperty="Os.VolumeDownLongEvent" TargetName="PushButton" TargetType="BlackboardComponent"/>
+      <Property DisplayName="VolumeDown Short Event" TargetProperty="Os.VolumeDownShortEvent" TargetName="PushButton" TargetType="BlackboardComponent"/>
+      <Property DisplayName="VolumeUp Long Event" TargetProperty="Os.VolumeUpLongEvent" TargetName="PushButton" TargetType="BlackboardComponent"/>
+      <Property DisplayName="VolumeUp Short Event" TargetProperty="Os.VolumeUpShortEvent" TargetName="PushButton" TargetType="BlackboardComponent"/>	
+    </PropertyGroup>
+
+
+    <PropertyGroup Name="Sense Port Assignments">
+      <Property DisplayName="Volume Up Port Assignment" TargetProperty="HardwareConfiguration[osButtonVolUpMask]" TargetName="HardwareInitData" TargetType="LayoutItem" PossibleValues="0,1,2,4,8,16"  Notification="Volume up button sense port assignment:0->None 1->Port0; 2->Port1; 4->Port2; 8->Port3 16->Port4"/>
+      <Property DisplayName="Volume Down Port Assigment" TargetProperty="HardwareConfiguration[osButtonVolDownMask]" TargetName="HardwareInitData" TargetType="LayoutItem" PossibleValues="0,1,2,4,8,16" Notification="Volume down button sense port assignment:0->None 1->Port0; 2->Port1; 4->Port2; 8->Port3 16->Port4"/>
+      <Property DisplayName="Gmr Sensor Port Assignment" TargetProperty="HardwareConfiguration[osButtonGMRMask]" TargetName="HardwareInitData" TargetType="LayoutItem" PossibleValues="0,1,2,4,8,16" Notification="GMR sense port assignment:0->None 4->Port2"/>
+      <Property DisplayName="Button Port Assignment" TargetProperty="HardwareConfiguration[osButtonPresetMask]" TargetName="HardwareInitData" TargetType="LayoutItem" PossibleValues="0,1,2,4,8,16" Notification="Program button sense port assignment:1->Port0; 2->Port1; 4->Port2; 8->Port3; 16 ->Port4"/>
+    </PropertyGroup>
+    <PropertyGroup Name="Input Configuration">
+      <Property DisplayName="Telecoil Amplification and Microphone coupling" TargetProperty="HardwareConfiguration[AD4InputsCfg]" TargetName="HardwareInitData" TargetType="LayoutItem" Notification="This setting controls AD4 Inputs config register, which controls telecoil amplification and bias for the microphones" />
+   </PropertyGroup>
+
+   <PropertyGroup Name="OS Audio Settings">
+	  <Property DisplayName="Boost Mode Enable" TargetProperty="HardwareConfiguration[NoiseShaperConfig]" TargetName="HardwareInitData" TargetType="LayoutItem" PossibleValues="21513,21515" Notification="With a value of 21515 the max output is boosted 1db"/>
+      <Property DisplayName="Limiter Regulator Config" TargetProperty="HardwareConfiguration[RegulatorLimiterRegConfig]" TargetName="HardwareInitData" TargetType="LayoutItem" Notification="For devices where the H-Bridge is powered from battery this setting controls the target voltage for the H-bridge regulation refer to C5 - user manaul"/>
+   </PropertyGroup>
+
+   <PropertyGroup Name="Wireless">
+      <Property DisplayName="E2E running Mode" TargetProperty="Os.IsE2EBLEModeEnabled" TargetName="WirelessConfiguration" TargetType="BlackboardComponent" Notification="True: E2E runs on BLE mode; False: E2E runs on Proximity mode. ONLY custom device shall run BLE mode!!"/>
+    </PropertyGroup>
+
+    
+  </PropertyCategory>
+
+  <!--aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa-->
+</Settings>

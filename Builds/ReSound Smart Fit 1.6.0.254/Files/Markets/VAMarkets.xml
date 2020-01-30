@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Image="" - Image can be set to "" : the flag will not display -->
+<Product ProductCode="{A08AFDA2-4C7B-45E0-AABD-3E2A544B167B}" ExeName="SmartFit" ProductName="ReSound Smart Fit 1.6" Brand="RS" ProductVersion="4.6" NextPatchProductVersion="4.6" AssistAppVersion="54" GTIN="05708296181056" PreviousProductCode="{40706897-1F34-4D25-A11E-8D2484BBB098}" PreviousProductVersion="3.170" PreviousExeName="Aventa" PreviousProductName="ReSound Aventa 3" PreviousGTIN="05708296176649" PreviousAssistAppVersion="30" LDKey="mob-251b4223-dc6a-4e30-9d2d-07fe67450c66" Tag="VA">
+  <NoahModule SuperModuleLocalId="1" SuperModuleName="ReSound" SubModuleOneId="2" SubModuleTwoId="79" LocalId="3" NoahModuleName="ReSound Smart Fit 1.6"/>
+  <Languages>
+    <Language ID="2052" Name="Chinese"/>
+    <Language ID="1043" Name="Dutch"/>
+    <Language ID="1033" Name="English"/>
+    <Language ID="1036" Name="French"/>
+    <Language ID="1041" Name="Japanese"/>
+    <Language ID="1031" Name="German"/>
+  </Languages>
+  <PrecompiledAssembies>
+    <PrecompiledAssembly Name="Aventa.exe"/>
+    <PrecompiledAssembly Name="ReSound.Fuse.Common.dll"/>
+    <PrecompiledAssembly Name="ReSound.Fuse.Config.dll"/>
+    <PrecompiledAssembly Name="ReSound.Fuse.DataAccessLayer.dll"/>
+    <PrecompiledAssembly Name="ReSound.Fuse.DataAccessLayerInterface.dll"/>
+    <PrecompiledAssembly Name="ReSound.Fuse.Domain.dll"/>
+  </PrecompiledAssembies>
+  <Markets>
+    <Market ID="US" Image="FlagBitmaps\USA.bmp" IsNordic="0">
+      <DisplayNames>
+        <English>United States</English>
+        <German>Vereinigte Staaten</German>
+        <Dutch>Verenigde Staten</Dutch>
+        <French>États-Unis</French>
+        <Japanese>アメリカ合衆国</Japanese>
+        <Chinese>美国</Chinese>
+      </DisplayNames>
+      <files>
+        <file name="mkt\US.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>
+        <file name="mkt\US.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt2\US.pref" destpath="INSTALLDIR" dest="data\Market\market.pref"/>
+        <file name="mkt2\US.mkt" destpath="INSTALLDIR" dest="data\Market\market.mkt"/>
+        <file name="mkt2\VA.fflag" destpath="INSTALLDIR" dest="data\Market\market.fflag"/>
+      </files>
+    </Market>
+  </Markets>
+  <Files>
+  </Files>
+</Product>

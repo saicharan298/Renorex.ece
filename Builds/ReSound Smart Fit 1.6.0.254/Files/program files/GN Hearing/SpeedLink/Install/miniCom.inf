@@ -1,0 +1,71 @@
+; MINICOM.INF
+; Copyright (c) 2009 GN Hearing A/S
+
+[Version]
+Signature="$Windows NT$"
+Class = DeviceClass
+ClassGuid={fcc9e9de-fb0f-4c24-a2de-4cf6edcf3613}
+Provider=%ProviderName%
+CatalogFile=miniCom.cat
+DriverVer=12/29/2009,2.05.00
+
+[SourceDisksNames]
+1=%DriversDisk%,,,
+
+[SourceDisksFiles]
+miniCom.sys = 1,i386
+
+[SourceDisksFiles.amd64]
+miniCom.sys = 1,amd64
+
+[DestinationDirs]
+miniCom.NT.Copy = 10,system32\drivers
+miniCom.NTamd64.Copy = 10,system32\drivers
+
+[ClassInstall32]
+Addreg=DeviceClassReg
+
+[DeviceClassReg]
+HKR,,,0,%ClassName%
+HKR,,Icon,,-1
+
+[Manufacturer]
+%ProviderName%=miniCom,NTamd64
+
+[miniCom]
+%USB\miniCom.DeviceDesc%=miniCom.dev.NT, USB\VID_16F0&PID_0001
+
+[miniCom.NTamd64]
+%USB\miniCom.DeviceDesc%=miniCom.dev.NTamd64, USB\VID_16F0&PID_0001
+
+[miniCom.dev.NT]
+CopyFiles=miniCom.NT.Copy
+
+[miniCom.dev.NTamd64]
+CopyFiles=miniCom.NTamd64.Copy
+
+[miniCom.dev.NT.Services]
+AddService = miniCom, 0x00000002, miniCom.NT.AddService
+
+[miniCom.dev.NTamd64.Services]
+AddService = miniCom, 0x00000002, miniCom.NT.AddService
+
+[miniCom.NT.AddService]
+DisplayName = %SvcDesc%
+ServiceType = 1 ; SERVICE_KERNEL_DRIVER
+StartType = 3 ; SERVICE_DEMAND_START
+ErrorControl = 1 ; SERVICE_ERROR_NORMAL
+ServiceBinary = %10%\system32\drivers\miniCom.sys
+
+[miniCom.NT.Copy]
+miniCom.sys
+
+[miniCom.NTamd64.Copy]
+miniCom.sys
+
+[Strings]
+ProviderName="GN Hearing A/S"
+DriversDisk="SpeedLink drivers disc"
+USB\miniCom.DeviceDesc="SpeedLink Hearing Instrument Interface"
+SvcDesc="SpeedLink Hearing Instrument Interface (miniCom.sys)"
+ClassName="GN Hearing Devices"

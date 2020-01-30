@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Market xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="SE.mkt" InternalName="Sweden">
+  <Version Major="1" Minor="1" DataVersion="0"/>
+  <Preferences>
+    <Pref ID="Language" Type="Enum" DefaultValue="sv-SE"/>
+    <Pref ID="UseUCL" Type="Boolean" DefaultValue="0"/>
+    <Pref ID="UseBoneConduction" Type="Boolean" DefaultValue="0"/>
+    <Pref ID="FrequentEnvironments3" Type="Enum" DefaultValue="TelecoilLoop"/>
+    <Pref ID="FrequentEnvironments4" Type="Enum" DefaultValue="DAI"/>
+    <Pref ID="SpecType" Type="Enum" DefaultValue="IEC118_0"/>
+    <Pref ID="P3" Type="Enum" DefaultValue="TFOG"/>
+    <Pref ID="UpdatesCheckOnSchedule" Type="Boolean" DefaultValue="0"/>
+    <Pref ID="UpdatesDownloadAutomatically" Type="Boolean" DefaultValue="0"/>
+    <Pref ID="WebLaunchSite" Type="String" DefaultValue="www.gnhearing.se"/>
+  </Preferences>
+</Market>

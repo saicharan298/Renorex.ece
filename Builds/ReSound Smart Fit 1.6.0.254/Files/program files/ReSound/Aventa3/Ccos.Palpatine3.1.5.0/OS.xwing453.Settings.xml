@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Settings>
+  <PropertyCategory Name="Operating System" >
+    <PropertyGroup Name="Wireless">
+      <Property DisplayName="Clock source" TargetProperty="HardwareConfiguration[HardwareConfiguration]"
+                TargetName="HardwareInitData" TargetType="LayoutItem" PossibleValues="0,1"
+                Notification="0 = RC Clock, 1 = Crystal clock (To use HI as wireless this must be one)"/>
+      <Property DisplayName="Flight mode Control" TargetProperty="Os.WirelessMode"
+                Notification="Configures how Flight Mode is entered"
+                TargetName="WirelessConfiguration" TargetType="BlackboardComponent"/>
+      <Property DisplayName="Input Modes with Wireless Disabled" TargetProperty="HardwareConfiguration[InputModeDisablingRadio]"
+                TargetName="HardwareInitData" TargetType="LayoutItem" 
+                Notification="Configure input modes that will disable wireless: 0 Wireless enabled for all inputmodes, 48: Telecoil, 192: DAI, 240: DAI+Telecoil"/>
+      <Property DisplayName="Presets with  with wireless disabled" TargetProperty="Os.WirelessDisabledValuesToLookFor"
+                TargetName="WirelessSpecialHandler" TargetType="BlackboardComponent"
+                Notification="Controls which presets the RC cannot change to, based on the InputMode used in that preset.(Lookup InputMode names in standard features under InputMode)."/>
+    </PropertyGroup>
+
+    <PropertyGroup Name="Button Thresholds">
+      <Property DisplayName="Short Threshold" TargetProperty="Os.ButtonShortThreshold"
+                TargetName="PushButton2" TargetType="BlackboardComponent"/>
+      <Property DisplayName="Long Threshold" TargetProperty="Os.ButtonLongThreshold"
+                TargetName="PushButton2" TargetType="BlackboardComponent"/>
+      <Property DisplayName="Long UpDown Threshold" TargetProperty="Os.VolumeUpDownLongThreshold"
+            TargetName="PushButton2" TargetType="BlackboardComponent" />
+      <Property DisplayName="Short UpDown Threshold" TargetProperty="Os.VolumeUpDownShortThreshold"
+                TargetName="PushButton2" TargetType="BlackboardComponent" />
+    </PropertyGroup>
+    <PropertyGroup Name="General OS Configuration">
+      <Property DisplayName="Sub system Enable" TargetProperty="HardwareConfiguration[ClockEnable]"
+                TargetName="HardwareInitData" TargetType="LayoutItem" PossibleValues="236,237,252,253"
+                Notification="236 Wireless disabled/LED disabled, 237 Wireless disabled/LED enabled,252 Wireless enabled/LED disabled, 253 Wireless enabled/LED enabled"/>
+      <Property DisplayName="Block Size" TargetProperty="BlockSize" TargetName="OsConfig"
+                TargetType="BlackboardComponent" Notification="The number of samples processed per block"/>
+      <Property DisplayName="Sample rate" TargetProperty="HardwareConfiguration[AD4SamplerateIndex]"
+                TargetName="HardwareInitData" TargetType="LayoutItem" PossibleValues="4,5,7"
+                Notification="4 = 25Ks/s, 5 = 20Ks/s 7 = 15 Ks/s"/>
+      <Property DisplayName="Pds Save Time Out" TargetProperty="PdsSaveTimeOut" TargetName="PdsHandling" TargetType="BlackboardComponent"
+                Notification="No of seconds between PDS writes"/>
+      <Property DisplayName="Led Driver enabled" TargetProperty="Os.IsLedPlayerEnabled" TargetName="LedSequencer" TargetType="BlackboardComponent"
+                Notification="Enables visual notification of status change must also enable sub Led subsystem"/>
+      <Property DisplayName="Led Status enabled" TargetProperty="Os.IsLedPlayerStatusEnabled" TargetName="LedSequencer" TargetType="BlackboardComponent" PossibleValues="0,1"
+                Notification="Enables visual continues status reporting of status note led driver must also be enabled"/>
+      <Property DisplayName="Boost Mode Enable" TargetProperty="HardwareConfiguration[BoostModeEnable]"
+                TargetName="HardwareInitData" TargetType="LayoutItem" PossibleValues="0,1"
+                Notification="In Boost output is +1 db higher : Boost mode disabled, 1 Boost mode enabled "/>
+    </PropertyGroup>
+    <PropertyGroup Name="Power mangament">
+      <Property DisplayName="Wireless exit voltage" TargetProperty="HardwareConfiguration[BatmonRadioExitV]"
+                TargetName="HardwareInitData" TargetType="LayoutItem" Notification="The voltage (Val*8.2+725) at which the HI act in wireless mode"/>  
+      <Property DisplayName="Fitting warning level" TargetProperty="HardwareConfiguration[BatmonFittingWarnV]"
+                TargetName="HardwareInitData" TargetType="LayoutItem" Notification="The voltage (Val*8.2+725) at which the HI warn in fitting mode"/>  
+      <Property DisplayName="Lowbat warning level" TargetProperty="HardwareConfiguration[BatmonLowBattNotificationV]"
+                TargetName="HardwareInitData" TargetType="LayoutItem" Notification="The voltage (Val*8.2+725) at which the HI warns about lowbat"/>
+    </PropertyGroup>
+    <PropertyGroup Name="Sense Port Assignments">
+      <Property DisplayName="Button Port Assignment" TargetProperty="Os.ButtonAssignment"
+                TargetName="PushButton2" TargetType="BlackboardComponent"/>
+      <Property DisplayName="Volume Up Port Assignment" TargetProperty="Os.VolumeUpButtonAssignment"
+                TargetName="PushButton2" TargetType="BlackboardComponent"/>
+      <Property DisplayName="Volume Down Port Assignment" TargetProperty="Os.VolumeDownButtonAssignment"
+                TargetName="PushButton2" TargetType="BlackboardComponent"/>
+      <Property DisplayName="Gmr Sensor Port Assignment" TargetProperty="Os.GmrSensorAssignment"
+                TargetName="PushButton2" TargetType="BlackboardComponent"/>
+    </PropertyGroup>
+
+    <PropertyGroup Name="Event Assignments">
+      <Property DisplayName="Gmr Sensor Long Event" TargetProperty="Os.GmrSensorLongEvent"
+                TargetName="PushButton2" TargetType="BlackboardComponent"/>
+      <Property DisplayName="Gmr Sensor Short Event" TargetProperty="Os.GmrSensorShortEvent"
+                TargetName="PushButton2" TargetType="BlackboardComponent"/>
+      <Property DisplayName="Button Long Event" TargetProperty="Os.ButtonLongEvent"
+                TargetName="PushButton2" TargetType="BlackboardComponent"/>
+      <Property DisplayName="Button Short Event" TargetProperty="Os.ButtonShortEvent"
+                TargetName="PushButton2" TargetType="BlackboardComponent"/>
+      <Property DisplayName="VolumeDown Long Event" TargetProperty="Os.VolumeDownLongEvent"
+                TargetName="PushButton2" TargetType="BlackboardComponent"/>
+      <Property DisplayName="VolumeDown Short Event" TargetProperty="Os.VolumeDownShortEvent"
+                TargetName="PushButton2" TargetType="BlackboardComponent"/>
+      <Property DisplayName="VolumeUp Long Event" TargetProperty="Os.VolumeUpLongEvent"
+                TargetName="PushButton2" TargetType="BlackboardComponent"/>
+      <Property DisplayName="VolumeUp Short Event" TargetProperty="Os.VolumeUpShortEvent"
+                TargetName="PushButton2" TargetType="BlackboardComponent"/>
+    </PropertyGroup>
+
+    <PropertyGroup Name="Analog Volume Control">
+      <Property DisplayName="Sense port assignment" TargetProperty="Os.AnalogVolumeControlSensePort"
+                TargetName="AnalogVolumeControl" TargetType="BlackboardComponent"/>
+      <Property DisplayName="Is Analog Volume Control Enabled" TargetProperty="Os.IsAnalogVolumeControlEnabled"
+                TargetName="AnalogVolumeControl" TargetType="BlackboardComponent"/>
+      <Property DisplayName="Analog Volume Wheel Direction" TargetProperty="Os.AnalogVolumeWheelDirection"
+                TargetName="AnalogVolumeControl" TargetType="BlackboardComponent"/>
+    </PropertyGroup>
+  </PropertyCategory>
+</Settings>

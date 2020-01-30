@@ -1,0 +1,449 @@
+<MultiMedia>
+  <Version Major="3" Minor="50"/>
+  <LN>
+    <de-DE>1</de-DE>
+    <en-US>2</en-US>
+    <es-ES>4</es-ES>
+    <fr-FR>8</fr-FR>
+    <ja-JP>16</ja-JP>
+    <nl-NL>32</nl-NL>
+    <no-NO>64</no-NO>
+    <pt-PT>128</pt-PT>
+  </LN>
+  <Sounds>
+    <Sound T="O" ID="230" LN="1" SDM="7" SDMV="770">
+      <SoundPath T="P">
+        <V T="V">_DECDFemale.wma</V>
+      </SoundPath>
+      <PicturePath T="P">
+        <V T="V">Continous Discourse-Female</V>
+      </PicturePath>
+      <MinIntensity T="P">
+        <V T="V">48</V>
+      </MinIntensity>
+      <MaxIntensity T="P">
+        <V T="V">72</V>
+      </MaxIntensity>
+      <AvgIntensity T="P">
+        <V T="V">65</V>
+      </AvgIntensity>
+      <RelatedSounds T="O">
+        <SoundID T="P">
+          <V T="V">195</V>
+        </SoundID>
+        <SoundID T="P">
+          <V T="V">231</V>
+        </SoundID>
+        <SoundID T="P">
+          <V T="V">233</V>
+        </SoundID>
+      </RelatedSounds>
+      <StringId T="P">
+        <V T="V">1220</V>
+      </StringId>
+    </Sound>
+    <Sound T="O" ID="231" LN="1" SDM="7" SDMV="770" EV="1">
+      <SoundPath T="P">
+        <V T="V">_DECDMale.wma</V>
+      </SoundPath>
+      <PicturePath T="P">
+        <V T="V">Continous Discourse-Male</V>
+      </PicturePath>
+      <MinIntensity T="P">
+        <V T="V">32</V>
+      </MinIntensity>
+      <MaxIntensity T="P">
+        <V T="V">75</V>
+      </MaxIntensity>
+      <AvgIntensity T="P">
+        <V T="V">65</V>
+      </AvgIntensity>
+      <RelatedSounds T="O">
+        <SoundID T="P">
+          <V T="V">195</V>
+        </SoundID>
+        <SoundID T="P">
+          <V T="V">230</V>
+        </SoundID>
+        <SoundID T="P">
+          <V T="V">232</V>
+        </SoundID>
+      </RelatedSounds>
+      <StringId T="P">
+        <V T="V">1221</V>
+      </StringId>
+    </Sound>
+    <Sound T="O" ID="232" LN="1" SDM="7" SDMV="770" EV="1">
+      <SoundPath T="P">
+        <V T="V">_DEStockTip.wma</V>
+      </SoundPath>
+      <PicturePath T="P">
+        <V T="V">Adult Talker-Stock Tip</V>
+      </PicturePath>
+      <MinIntensity T="P">
+        <V T="V">32</V>
+      </MinIntensity>
+      <MaxIntensity T="P">
+        <V T="V">81</V>
+      </MaxIntensity>
+      <AvgIntensity T="P">
+        <V T="V">66</V>
+      </AvgIntensity>
+      <RelatedSounds T="O">
+        <SoundID T="P">
+          <V T="V">233</V>
+        </SoundID>
+        <SoundID T="P">
+          <V T="V">234</V>
+        </SoundID>
+        <SoundID T="P">
+          <V T="V">243</V>
+        </SoundID>
+      </RelatedSounds>
+      <StringId T="P">
+        <V T="V">1222</V>
+      </StringId>
+    </Sound>
+    <Sound T="O" ID="234" LN="1" SDM="7" SDMV="770">
+      <SoundPath T="P">
+        <V T="V">_DESoccer.wma</V>
+      </SoundPath>
+      <PicturePath T="P">
+        <V T="V">Child Talker-7yr Girl-Soccer</V>
+      </PicturePath>
+      <MinIntensity T="P">
+        <V T="V">31</V>
+      </MinIntensity>
+      <MaxIntensity T="P">
+        <V T="V">77</V>
+      </MaxIntensity>
+      <AvgIntensity T="P">
+        <V T="V">62</V>
+      </AvgIntensity>
+      <RelatedSounds T="O">
+        <SoundID T="P">
+          <V T="V">235</V>
+        </SoundID>
+        <SoundID T="P">
+          <V T="V">236</V>
+        </SoundID>
+        <SoundID T="P">
+          <V T="V">237</V>
+        </SoundID>
+      </RelatedSounds>
+      <StringId T="P">
+        <V T="V">1224</V>
+      </StringId>
+    </Sound>
+    <Sound T="O" ID="243" LN="1" SDM="7" SDMV="772">
+      <SoundPath T="P">
+        <V T="V">_DEmorning.wma</V>
+      </SoundPath>
+      <PicturePath T="P">
+        <V T="V">Adult Talkers-Morning at the Beach</V>
+      </PicturePath>
+      <MinIntensity T="P">
+        <V T="V">35</V>
+      </MinIntensity>
+      <MaxIntensity T="P">
+        <V T="V">73</V>
+      </MaxIntensity>
+      <AvgIntensity T="P">
+        <V T="V">65</V>
+      </AvgIntensity>
+      <RelatedSounds T="O">
+        <SoundID T="P">
+          <V T="V">232</V>
+        </SoundID>
+        <SoundID T="P">
+          <V T="V">234</V>
+        </SoundID>
+        <SoundID T="P">
+          <V T="V">244</V>
+        </SoundID>
+      </RelatedSounds>
+      <StringId T="P">
+        <V T="V">1233</V>
+      </StringId>
+    </Sound>
+    <Sound T="O" ID="244" LN="1" SDM="7" SDMV="772">
+      <SoundPath T="P">
+        <V T="V">_DEsummer2.wma</V>
+      </SoundPath>
+      <PicturePath T="P">
+        <V T="V">Adult Talkers-Summer Drinks</V>
+      </PicturePath>
+      <MinIntensity T="P">
+        <V T="V">31</V>
+      </MinIntensity>
+      <MaxIntensity T="P">
+        <V T="V">76</V>
+      </MaxIntensity>
+      <AvgIntensity T="P">
+        <V T="V">64</V>
+      </AvgIntensity>
+      <RelatedSounds T="O">
+        <SoundID T="P">
+          <V T="V">234</V>
+        </SoundID>
+        <SoundID T="P">
+          <V T="V">242</V>
+        </SoundID>
+        <SoundID T="P">
+          <V T="V">254</V>
+        </SoundID>
+      </RelatedSounds>
+      <StringId T="P">
+        <V T="V">1234</V>
+      </StringId>
+    </Sound>
+    <Sound T="O" ID="245" LN="1" SDM="7" SDMV="772" EV="16386">
+      <SoundPath T="P">
+        <V T="V">_DEitalianrestaurant.wma</V>
+      </SoundPath>
+      <PicturePath T="P">
+        <V T="V">Adult Talkers-Italian Restaurant</V>
+      </PicturePath>
+      <MinIntensity T="P">
+        <V T="V">56</V>
+      </MinIntensity>
+      <MaxIntensity T="P">
+        <V T="V">80</V>
+      </MaxIntensity>
+      <AvgIntensity T="P">
+        <V T="V">71</V>
+      </AvgIntensity>
+      <RelatedSounds T="O">
+        <SoundID T="P">
+          <V T="V">24</V>
+        </SoundID>
+        <SoundID T="P">
+          <V T="V">89</V>
+        </SoundID>
+        <SoundID T="P">
+          <V T="V">254</V>
+        </SoundID>
+      </RelatedSounds>
+      <StringId T="P">
+        <V T="V">1235</V>
+      </StringId>
+    </Sound>
+    <Sound T="O" ID="250" LN="1" SDM="7" SDMV="770">
+      <SoundPath T="P">
+        <V T="V">_DEmdonly.wma</V>
+      </SoundPath>
+      <PicturePath T="P">
+        <V T="V">Adult Talkers-Bistro-Speech Only</V>
+      </PicturePath>
+      <MinIntensity T="P">
+        <V T="V">35</V>
+      </MinIntensity>
+      <MaxIntensity T="P">
+        <V T="V">77</V>
+      </MaxIntensity>
+      <AvgIntensity T="P">
+        <V T="V">64</V>
+      </AvgIntensity>
+      <RelatedSounds T="O">
+        <SoundID T="P">
+          <V T="V">247</V>
+        </SoundID>
+        <SoundID T="P">
+          <V T="V">249</V>
+        </SoundID>
+        <SoundID T="P">
+          <V T="V">251</V>
+        </SoundID>
+      </RelatedSounds>
+      <StringId T="P">
+        <V T="V">1240</V>
+      </StringId>
+    </Sound>
+    <Sound T="O" ID="251" LN="1" SDM="7" SDMV="772">
+      <SoundPath T="P">
+        <V T="V">_DEmd+10lunch.wma</V>
+      </SoundPath>
+      <PicturePath T="P">
+        <V T="V">Adult Talkers-Bistro-+10dB S/NR</V>
+      </PicturePath>
+      <MinIntensity T="P">
+        <V T="V">33</V>
+      </MinIntensity>
+      <MaxIntensity T="P">
+        <V T="V">76</V>
+      </MaxIntensity>
+      <AvgIntensity T="P">
+        <V T="V">63</V>
+      </AvgIntensity>
+      <RelatedSounds T="O">
+        <SoundID T="P">
+          <V T="V">246</V>
+        </SoundID>
+        <SoundID T="P">
+          <V T="V">252</V>
+        </SoundID>
+        <SoundID T="P">
+          <V T="V">253</V>
+        </SoundID>
+      </RelatedSounds>
+      <StringId T="P">
+        <V T="V">1241</V>
+      </StringId>
+    </Sound>
+    <Sound T="O" ID="252" LN="1" SDM="7" SDMV="772" EV="4098">
+      <SoundPath T="P">
+        <V T="V">_DEmd+5lunch.wma</V>
+      </SoundPath>
+      <PicturePath T="P">
+        <V T="V">Adult Talkers-Bistro-+5dB S/NR</V>
+      </PicturePath>
+      <MinIntensity T="P">
+        <V T="V">43</V>
+      </MinIntensity>
+      <MaxIntensity T="P">
+        <V T="V">76</V>
+      </MaxIntensity>
+      <AvgIntensity T="P">
+        <V T="V">64</V>
+      </AvgIntensity>
+      <RelatedSounds T="O">
+        <SoundID T="P">
+          <V T="V">247</V>
+        </SoundID>
+        <SoundID T="P">
+          <V T="V">251</V>
+        </SoundID>
+        <SoundID T="P">
+          <V T="V">253</V>
+        </SoundID>
+      </RelatedSounds>
+      <StringId T="P">
+        <V T="V">1242</V>
+      </StringId>
+    </Sound>
+    <Sound T="O" ID="253" LN="1" SDM="7" SDMV="772" EV="8">
+      <SoundPath T="P">
+        <V T="V">_DEmd+0lunch.wma</V>
+      </SoundPath>
+      <PicturePath T="P">
+        <V T="V">Adult Talkers-Bistro-0dB S/NR</V>
+      </PicturePath>
+      <MinIntensity T="P">
+        <V T="V">34</V>
+      </MinIntensity>
+      <MaxIntensity T="P">
+        <V T="V">76</V>
+      </MaxIntensity>
+      <AvgIntensity T="P">
+        <V T="V">66</V>
+      </AvgIntensity>
+      <RelatedSounds T="O">
+        <SoundID T="P">
+          <V T="V">248</V>
+        </SoundID>
+        <SoundID T="P">
+          <V T="V">251</V>
+        </SoundID>
+        <SoundID T="P">
+          <V T="V">252</V>
+        </SoundID>
+      </RelatedSounds>
+      <StringId T="P">
+        <V T="V">1243</V>
+      </StringId>
+    </Sound>
+    <Sound T="O" ID="257" LN="1" SDM="7" SDMV="784">
+      <SoundPath T="P">
+        <V T="V">_DESkitchen.wma</V>
+      </SoundPath>
+      <PicturePath T="P">
+        <V T="V">Verification Env.-Kitchen</V>
+      </PicturePath>
+      <MinIntensity T="P">
+        <V T="V">35</V>
+      </MinIntensity>
+      <MaxIntensity T="P">
+        <V T="V">78</V>
+      </MaxIntensity>
+      <AvgIntensity T="P">
+        <V T="V">64</V>
+      </AvgIntensity>
+      <RelatedSounds T="O">
+        <SoundID T="P">
+          <V T="V">254</V>
+        </SoundID>
+        <SoundID T="P">
+          <V T="V">260</V>
+        </SoundID>
+        <SoundID T="P">
+          <V T="V">261</V>
+        </SoundID>
+      </RelatedSounds>
+      <StringId T="P" LN="1">
+        <V T="V">1247</V>
+      </StringId>
+    </Sound>
+    <Sound T="O" ID="255" LN="1" SDM="7" SDMV="784">
+      <SoundPath T="P">
+        <V T="V">_DEPharmacy.wma</V>
+      </SoundPath>
+      <PicturePath T="P">
+        <V T="V">Verification Env.-Pharmacy</V>
+      </PicturePath>
+      <MinIntensity T="P">
+        <V T="V">33</V>
+      </MinIntensity>
+      <MaxIntensity T="P">
+        <V T="V">77</V>
+      </MaxIntensity>
+      <AvgIntensity T="P">
+        <V T="V">65</V>
+      </AvgIntensity>
+      <RelatedSounds T="O">
+        <SoundID T="P">
+          <V T="V">254</V>
+        </SoundID>
+        <SoundID T="P">
+          <V T="V">257</V>
+        </SoundID>
+        <SoundID T="P">
+          <V T="V">262</V>
+        </SoundID>
+      </RelatedSounds>
+      <StringId T="P" LN="1">
+        <V T="V">1245</V>
+      </StringId>
+    </Sound>
+    <Sound T="O" ID="259" LN="1" SDM="7" SDMV="784">
+      <SoundPath T="P">
+        <V T="V">_DESWedding.wma</V>
+      </SoundPath>
+      <PicturePath T="P">
+        <V T="V">Verification Env.-Wedding</V>
+      </PicturePath>
+      <MinIntensity T="P">
+        <V T="V">31</V>
+      </MinIntensity>
+      <MaxIntensity T="P">
+        <V T="V">79</V>
+      </MaxIntensity>
+      <AvgIntensity T="P">
+        <V T="V">70</V>
+      </AvgIntensity>
+      <RelatedSounds T="O">
+        <SoundID T="P">
+          <V T="V">256</V>
+        </SoundID>
+        <SoundID T="P">
+          <V T="V">257</V>
+        </SoundID>
+        <SoundID T="P">
+          <V T="V">261</V>
+        </SoundID>
+      </RelatedSounds>
+      <StringId T="P" LN="1">
+        <V T="V">1249</V>
+      </StringId>
+    </Sound>
+  </Sounds>
+</MultiMedia>

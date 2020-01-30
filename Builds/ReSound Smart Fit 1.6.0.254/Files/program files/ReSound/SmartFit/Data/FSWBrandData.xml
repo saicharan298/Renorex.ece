@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FuseGlobals xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Environments>
+    <!-- IF YOU DEFINE AN OFFSET FOR DB80 - MUST ALSO DEFINE FOR DB65 to prevent issues with Linear Compression Targets -->
+    <Environment xml:id="E1" Id="1" StringId="8307" DescriptionId="4999" RemoteControlAppStringId="8307" EnvironmentType="Microphone" AlternateId="1" XML_NAME_ID="Basic" FactoryGainType="LIN18" CanFitMonauralInBinauralFitting="false">
+      <Offsets/>
+    </Environment>
+    <Environment xml:id="E2" Id="2" StringId="769" DescriptionId="5000" RemoteControlAppStringId="8309" EnvironmentType="Microphone" AlternateId="1" XML_NAME_ID="Restaurant" FactoryGainType="FOG" CanFitMonauralInBinauralFitting="false">
+      <Offsets>
+        <SoundInputLevel InputLevel="DB50"> (250 -3) (500 0) (1000 0) (2000 3) (4000 3) (6000 0) (8000 0) (10000 0)</SoundInputLevel>
+      </Offsets>
+    </Environment>
+    <Environment xml:id="E3" Id="3" StringId="770" DescriptionId="5001" RemoteControlAppStringId="8110" EnvironmentType="Microphone" AlternateId="1" XML_NAME_ID="Music" FactoryGainType="RTG7" CanFitMonauralInBinauralFitting="false">
+      <Offsets>
+        <SoundInputLevel InputLevel="DB50"> (250 -2) (500 -2) (1000 -2) (2000 -2) (4000 -2) (6000 -2) (8000 -2) (10000 -2)</SoundInputLevel>
+        <SoundInputLevel InputLevel="DB65"> (250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0) (10000 0)</SoundInputLevel>
+        <SoundInputLevel InputLevel="DB80"> (250 1) (500 1) (1000 1) (2000 1) (4000 1) (6000 1) (8000 1) (10000 1)</SoundInputLevel>
+      </Offsets>
+    </Environment>
+    <Environment xml:id="E4" Id="4" StringId="782" DescriptionId="5838" RemoteControlAppStringId="8111" EnvironmentType="Microphone" AlternateId="1" XML_NAME_ID="Outdoor" FactoryGainType="LIN18" CanFitMonauralInBinauralFitting="false">
+      <Offsets/>
+    </Environment>
+    <Environment xml:id="E5" Id="5" StringId="773" DescriptionId="5004" RemoteControlAppStringId="8112" EnvironmentType="AcousticPhone" AlternateId="1" XML_NAME_ID="AcousticTelephone" FactoryGainType="LIN18" CanFitMonauralInBinauralFitting="true">
+      <Offsets>
+        <SoundInputLevel InputLevel="DB50"> (250 0) (500 3) (1000 5) (2000 0) (4000 -3) (6000 -9) (8000 -9) (10000 -9)</SoundInputLevel>
+      </Offsets>
+    </Environment>
+    <Environment xml:id="E6" Id="6" StringId="4969" DescriptionId="5007" RemoteControlAppStringId="8114" EnvironmentType="Telcoil" AlternateId="5" XML_NAME_ID="TelecoilPhone" FactoryGainType="FOG" CanFitMonauralInBinauralFitting="true">
+      <Offsets>
+        <SoundInputLevel InputLevel="DB50"> (250 -3) (500 9) (1000 11) (2000 11) (4000 6) (6000 -6) (8000 -6) (10000 -6)</SoundInputLevel>
+        <SoundInputLevel InputLevel="DB65"> (250 -3) (500 9) (1000 11) (2000 11) (4000 6) (6000 -6) (8000 -6) (10000 -6)</SoundInputLevel>
+        <SoundInputLevel InputLevel="DB80"> (250 -3) (500 9) (1000 11) (2000 11) (4000 6) (6000 -6) (8000 -6) (10000 -6)</SoundInputLevel>
+      </Offsets>
+    </Environment>
+    <Environment xml:id="E7" Id="7" StringId="8737" DescriptionId="5006" RemoteControlAppStringId="8313" EnvironmentType="TelecoilLoop" AlternateId="5" XML_NAME_ID="TelecoilLoop" FactoryGainType="FOG" CanFitMonauralInBinauralFitting="true">
+      <Offsets>
+        <SoundInputLevel InputLevel="DBMPO"> (250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0) (10000 0)</SoundInputLevel>
+        <SoundInputLevel InputLevel="DB50"> (250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0) (10000 0)</SoundInputLevel>
+        <SoundInputLevel InputLevel="DB65"> (250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0) (10000 0)</SoundInputLevel>
+        <SoundInputLevel InputLevel="DB80"> (250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0) (10000 0)</SoundInputLevel>
+      </Offsets>
+    </Environment>
+    <Environment xml:id="E8" Id="8" StringId="779" DescriptionId="5008" RemoteControlAppStringId="8113" EnvironmentType="TestEnvironment" AlternateId="1" XML_NAME_ID="REMTest" FactoryGainType="LIN18" CanFitMonauralInBinauralFitting="false">
+      <Offsets/>
+    </Environment>
+    <Environment xml:id="E9" Id="9" StringId="5548" DescriptionId="5726" RemoteControlAppStringId="8116" EnvironmentType="DirectAudioInput" AlternateId="1" XML_NAME_ID="DAI" FactoryGainType="RTG7" CanFitMonauralInBinauralFitting="false">
+      <Offsets>
+        <SoundInputLevel InputLevel="DBMPO"> (250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0) (10000 0)</SoundInputLevel>
+        <SoundInputLevel InputLevel="DB50"> (250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0) (10000 0)</SoundInputLevel>
+        <SoundInputLevel InputLevel="DB65"> (250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0) (10000 0)</SoundInputLevel>
+        <SoundInputLevel InputLevel="DB80"> (250 0) (500 0) (1000 0) (2000 0) (4000 0) (6000 0) (8000 0) (10000 0)</SoundInputLevel>
+      </Offsets>
+    </Environment>
+    <Environment xml:id="E10" Id="10" StringId="7000" DescriptionId="5013" RemoteControlAppStringId="8320; 8321; 8322" EnvironmentType="Streamer" AlternateId="1" XML_NAME_ID="StreamerTVRadioPCPlusM" FactoryGainType="LIN18" CanFitMonauralInBinauralFitting="false">
+      <Offsets/>
+    </Environment>
+    <Environment xml:id="E11" Id="11" StringId="8407" DescriptionId="5014" RemoteControlAppStringId="8119; 8118" EnvironmentType="BlueToothBridge" AlternateId="1" XML_NAME_ID="BTBSpeechPlusM" FactoryGainType="LIN18" CanFitMonauralInBinauralFitting="false">
+      <Offsets/>
+    </Environment>
+    <Environment xml:id="E12" Id="12" StringId="4967" DescriptionId="5002" RemoteControlAppStringId="8325" EnvironmentType="Microphone" AlternateId="1" XML_NAME_ID="Lecture" FactoryGainType="LIN18" CanFitMonauralInBinauralFitting="false">
+      <Offsets>
+        <SoundInputLevel InputLevel="DB50"> (250 -5) (500 -3) (750 -3) (1000 -1) (1500 0) (2000 0) (3000 0) (4000 -1) (6000 -3) (8000 -3) (10000 -3)</SoundInputLevel>
+      </Offsets>
+    </Environment>
+    <Environment xml:id="E13" Id="13" StringId="9941" DescriptionId="5000" RemoteControlAppStringId="6806" EnvironmentType="Microphone" AlternateId="1" XML_NAME_ID="Demo" FactoryGainType="FOG" CanFitMonauralInBinauralFitting="false">
+      <Offsets>
+        <SoundInputLevel InputLevel="DB50"> (250 -3) (500 0) (1000 0) (2000 3) (3000 -3) (4000 0) (6000 -3) (8000 -3) (10000 -3)</SoundInputLevel>
+      </Offsets>
+    </Environment>
+  </Environments>
+</FuseGlobals>

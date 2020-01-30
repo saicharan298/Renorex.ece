@@ -1,0 +1,113 @@
+<HTML>
+<script src="lang/resource.js"></script>
+<link href="UpdaterStyle.css" rel="stylesheet" type="text/css"/>
+<OBJECT ID="USUM" align="baseline" height="1" width="1" classid="CLSID:965d9025-6c41-4488-b781-f1b7acf7b4c3" VIEWASTEXT></OBJECT>
+<title></title>
+<BODY topmargin="0" bottommargin="0" leftmargin="0" rightmargin="0" onload="onpageload()">
+<table cellpadding="10" cellspacing="0" border="0"><tr><td>
+<img src="images/help_logo.jpg" border="0">
+<p></p>
+<DIV id="thetext">
+
+</DIV>
+</td></tr></table>
+<p align="center"><INPUT TYPE='button' ID='btnClose' VALUE='Close' onClick="window.close();"></p>
+</BODY>
+<SCRIPT>
+function onpageload()
+{
+			var _UILangID = USUM.GetLanguageID();
+			var _UIcharset = "windows-1252";
+			switch(_UILangID & 0xff)
+			{
+			case 0x02:// bulgarian
+				_UIcharset = "windows-1251";
+				break;
+			case 0x05:// czech
+				_UIcharset = "windows-1250";
+				break;
+			case 0x08:// greek
+				_UIcharset = "windows-1253";
+				break;
+			case 0x0E:// hungarian
+				_UIcharset = "windows-1250";
+				break;
+			case 0x11:// japanese
+				_UIcharset = "shift-jis";
+				break;
+			case 0x12:// korean
+				_UIcharset = "ks_c_5601";
+				break;
+			case 0x15:// polish
+				_UIcharset = "windows-1250";
+				break;
+			case 0x18:// romanian
+				_UIcharset = "windows-1250";
+				break;
+			case 0x19:// russian
+				_UIcharset = "windows-1251";
+				break;
+			case 0x1A:
+				{
+				if (_UILangID == 2074) //serbian
+					_UIcharset = "windows-1251";
+				else // croatian
+					_UIcharset = "windows-1250";
+				}
+				break;
+			case 0x1B:// slovak
+				_UIcharset = "windows-1250";
+				break;
+			case 0x1E:// thai
+				_UIcharset = "windows-874";
+				break;
+			case 0x1F:// turkish
+				_UIcharset = "windows-1254";
+				break;
+			case 0x24:// slovenian
+				_UIcharset = "windows-1250";
+				break;
+			default: _UIcharset = "windows-1252";
+	}
+	if (_UILangID == 0x804)
+		_UIcharset = "gb2312";
+	if (_UILangID == 0x404)
+		_UIcharset = "big5";
+	document.charset = _UIcharset;
+
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+	script.src = "lang/strings" + _UILangID + ".js";
+	document.body.appendChild(script);
+	if (typeof(ar) == "undefined")
+	{
+		document.body.removeChild(script);
+        	script = document.createElement("script");
+        	script.type = "text/javascript";
+		script.src = "lang/strings" + ((_UILangID & 0xff) + 1024) + ".js";
+		document.body.appendChild(script);
+		if (typeof(ar) == "undefined")
+		{
+			document.body.removeChild(script);
+        		script = document.createElement("script");
+        		script.type = "text/javascript";
+			script.src = "lang/strings1033.js";
+			document.body.appendChild(script);
+		}
+	}	
+
+	var dynHTML = "<B>" + ar[140];
+	dynHTML = dynHTML + "</B><BR>" + ar[142] + "<BR>" + ar[143] + "<BR><BR><B>" + ar[144] + "</B><BR>";
+	dynHTML = dynHTML + ar[145] + "<BR>" + ar[146] + "<BR>" + ar[147] + "<BR>" + ar[148] + "<BR>" + ar[149] + "<BR>" + ar[150];
+	dynHTML = dynHTML + "<BR>" + ar[151] + "<BR><BR><B>" + ar[152] + "</B><BR>" + ar[153] + "<BR>" + ar[154] + "<BR>" + ar[155];
+	dynHTML = dynHTML + "<BR>" + ar[156] + "<BR><BR><B>" + ar[157] + "</B><BR>" + ar[158] + "<BR>" + ar[159] + "<BR>" + ar[160];
+	dynHTML = dynHTML + "<BR>";
+
+	document.getElementById("thetext").insertAdjacentHTML("afterBegin", dynHTML);
+
+	document.title = ar[IDS_HELP];
+	
+	document.getElementById('btnClose').value = ar[IDS_CLOSE];
+}
+</SCRIPT>
+</HTML>

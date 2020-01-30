@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CommunicationInterfaces NameID="827">
+  <CommunicationInterface ID="Hipro" Type="Wired" NameID="828" InstructionalTextID="7857" ImageName="Hipro.png"/>
+  <CommunicationInterface ID="NoahLink" Type="Wired" NameID="829" InstructionalTextID="7858" ImageName="NoahLinkAnimation.png"/>
+  <CommunicationInterface ID="SpeedLink:0" Type="Wired" NameID="830" InstructionalTextID="7856" ImageName="SpeedLink.png"/>
+  <CommunicationInterface ID="FittingDongle:0" Type="Wireless" NameID="3443" InstructionalTextID="7595" ImageName="AirLink2.png" ImageName2="Airlink.png"/>
+  <Animations>
+    <Animation Type="Wired" ThumbNail="BTE.jpg" ToolTipID="8541" FileName="SuperPower.wmv" DeviceDisplayTextID="8931"/>
+    <Animation Type="Wired" ThumbNail="BTE.jpg" ToolTipID="5565" FileName="MilanoBTE.wmv" DeviceDisplayTextID="8926"/>
+    <Animation Type="Wired" ThumbNail="Delhi_BTE.jpg" ToolTipID="6248" FileName="Delhi_BTE.wmv" DeviceDisplayTextID="8927"/>
+    <Animation Type="Wireless" ThumbNail="BTE.jpg" ToolTipID="3443" FileName="WL_BTE_RIE.wmv" DeviceDisplayTextID="8924"/>
+    <Animation Type="Wired" ThumbNail="RIE_MFI.jpg" ToolTipID="5367" FileName="LimaLuxur.wmv" DeviceDisplayTextID="8932"/>
+    <Animation Type="Wired" ThumbNail="RIE.jpg" ToolTipID="5367" FileName="SydneyRIE.wmv" DeviceDisplayTextID="8928"/>    
+    <Animation Type="Wireless" ThumbNail="ITC.jpg" ToolTipID="3443" FileName="WL_Custom.wmv" DeviceDisplayTextID="8925"/>
+    <Animation Type="Wired" ThumbNail="ITC.jpg" ToolTipID="5367" FileName="Customs.wmv" DeviceDisplayTextID="8929"/>
+    <Animation Type="Wired" ThumbNail="CIC.jpg" ToolTipID="7866" FileName="IIC.wmv" DeviceDisplayTextID="8930"/>
+    <!--<Animation Type="Wired" ThumbNail="Lex.jpg" ToolTipID="5839" FileName="Lex.wmv"/>-->
+  </Animations>
+</CommunicationInterfaces>

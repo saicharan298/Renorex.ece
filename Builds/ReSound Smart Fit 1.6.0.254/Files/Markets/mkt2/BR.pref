@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Market xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="BR.mkt">
+  <Version Major="1" Minor="1" DataVersion="0"/>
+  <Preferences>
+    <Pref ID="Language" Type="Enum" DefaultValue="pt-PT"/>
+    <Pref ID="CommDevices" Type="Enum" DefaultValue="SpeedLink:0"/>
+    <Pref ID="FrequentEnvironments3" Type="Enum" DefaultValue="TelecoilPhone"/>
+    <Pref ID="SpecType" Type="Enum" DefaultValue="IEC118_0"/>
+    <Pref ID="WebLaunchSite" Type="String" DefaultValue="http://www.resoundpro.com/pt-BR"/>
+    <Pref ID="UpdatesFrequency" Type="Enum" DefaultValue="FourWeeks"/>
+    <Pref ID="PatientFineTuneInitialStatus" Type="Boolean" DefaultValue="0"/>
+  </Preferences>
+</Market>
